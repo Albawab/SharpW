@@ -1,0 +1,56 @@
+﻿<section class="row">
+
+    @if (SectionKinderenGroup != null)
+    {
+        @if (Section.Row > 0)
+        {
+            <label class="row col-@Section.Columns offset-@Section.Column" id="@Section.SectionNumber">
+                <label class="border border-dark bg-dark text-light m-1 col-1" style="height:30px">@Section.SectionNumber</label>
+                <label class="border border-dark bg-dark text-light m-1 col-10" style="height:30px">@Section.Title</label>
+            </label>
+        }
+
+        @foreach (dynamic elementGroup in SectionKinderenGroup)
+        {
+            <div class="col-12 m-2">
+                @foreach (dynamic element in elementGroup)
+                {
+                    if (element.GetType() == typeof(FormulierSectie))
+                    {
+                        <FormulierSectionChild SectionChild="@(element as FormulierSectie)"></FormulierSectionChild>
+                    }
+                    else
+                    {
+                        <FormulierElementen element="@(element as FormulierElement)"></FormulierElementen>
+                    }
+                }
+
+
+            </div>
+        }
+    }
+</section>
+
+@code {
+    [Parameter]
+    public FormulierSectie Section { get; set; }
+
+    dynamic SectionKinderenGroup;
+
+    protected override void OnInitialized()
+    {
+        if (Section.SectionKinderen != null)
+        {
+            SectionKinderenGroup = Section.SectionKinderen.GroupBy(G => G.Row);
+        }
+
+    }
+
+    protected override void OnParametersSet()
+    {
+        if (Section.SectionKinderen != null)
+        {
+            SectionKinderenGroup = Section.SectionKinderen.GroupBy(G => G.Row);
+        }
+    }
+}

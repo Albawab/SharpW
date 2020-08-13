@@ -1,0 +1,25 @@
+﻿@if (ElementVraag.Tooltip != null)
+{<label class="col-@ElementVraag.Columns offset-@ElementVraag.Column">
+        <FormulierTooltipElement Vraag="ElementVraag"></FormulierTooltipElement>
+    </label>
+}
+else
+{ <label class="col-@ElementVraag.Columns offset-@ElementVraag.Column">
+        <FormulierElementVraag ElementVraag=ElementVraag></FormulierElementVraag>
+    </label>
+}
+
+@if (ElementVraag.Antwoorden != null)
+{
+    @foreach (var antwoord in ElementVraag.Antwoorden)
+    {
+        <FormulierElementAntwoord formulierAntwoord="@antwoord"></FormulierElementAntwoord>
+    }
+}
+
+
+@code {
+    [Parameter]
+    public FormulierVraag ElementVraag { get; set; }
+
+}

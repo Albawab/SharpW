@@ -1,0 +1,57 @@
+﻿@page "/bootsrrapForm"
+@using _00_Bootstrap.Data
+@inject Handler handler
+<h3>Bootstrap_Form</h3>
+
+<hr />
+<EditForm Model="@persoon" OnValidSubmit="@SaveData">
+    <div class="form-row container-fluid">
+        <div class="p-3">
+            <label>First name:</label>
+            <input type="text" class="@class_name form-control" @bind-value="persoon.Naam" placeholder="Fisrt name" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="p-3">
+            <label>Second name:</label>
+            <input type="text" class="@class_achternaam form-control" @bind-value="persoon.AchterNaam" placeholder="Second name" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary">Submit</button>
+</EditForm>
+
+@code {
+    public Persoon persoon { get; set; }
+    string class_name;
+    string class_achternaam;
+
+    protected override async Task OnInitializedAsync()
+    {
+        persoon = new Persoon();
+    }
+
+    public void SaveData()
+    {
+        if (persoon.Naam == "Arno")
+        {
+            class_name = "is-valid";
+        }
+        else
+        {
+            class_name = "is-invalid";
+        }
+        if (persoon.AchterNaam == "Horlings")
+        {
+            class_achternaam = "is-valid";
+        }
+        else
+        {
+            class_achternaam = "is-invalid";
+        }
+    }
+}

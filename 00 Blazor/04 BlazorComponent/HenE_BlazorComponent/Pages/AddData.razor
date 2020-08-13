@@ -1,0 +1,13 @@
+﻿<h3>Add Data</h3>
+
+<div>
+    <button @onclick="Onclick">Save</button>
+</div>
+
+
+@code {
+
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> Onclick { get; set; }
+}

@@ -1,0 +1,33 @@
+﻿@using HenE_BlazorComponent.Data
+
+    <span class="d-flex col-@dateCardElement.Columns @HAlign @VAlign ">
+        <SfDateTimePicker CssClass="col-6" Value="@DateTime.Now" Min="@dateCardElement.MinDate" Max="@dateCardElement.MaxDate"></SfDateTimePicker>
+    </span>
+
+@code {
+    [Parameter]
+    public CardDateElement dateCardElement { get; set; }
+    
+    [Inject]
+    protected IJSRuntime JsRuntime {get;set;}
+
+    public string HAlign
+    {
+        get
+        {
+            return $"justify-content-{@dateCardElement.HorizontalAlign.ToBootstrap()}";
+        }
+    }
+    public string VAlign
+    {
+        get
+        {
+            return $"align-items-{dateCardElement.VerticalAlign.ToBootstrap()}";
+        }
+    }
+        protected override void OnAfterRender(bool firstRender)
+    {
+        //this.JsRuntime.Ejs().LoadLocaleData("wwwroot/ej2-locale/src/nl.json").SetCulture("nl").LoadCldrData(new string[] { "wwwroot/cldr-data/main/nl/ca-gregorian.json", "wwwroot/cldr-data/main/nl/timeZoneNames.json", "wwwroot/cldr-data/main/nl/numbers.json" });
+    }
+}
+

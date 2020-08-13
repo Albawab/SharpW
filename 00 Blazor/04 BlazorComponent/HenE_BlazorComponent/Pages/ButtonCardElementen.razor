@@ -1,0 +1,38 @@
+﻿@using HenE_BlazorComponent.Data
+
+    <label class="d-flex col-@cardButtonElement.Columns  align-items-@cardButtonElement.HorizontalAlign.ToBootstrap() justify-content-@cardButtonElement.VerticalAlign.ToBootstrap()">
+        <SfProgressButton Content="Change Value" EnableProgress="true" CssClass="e-round-corner e-danger" @onclick="MouseClicked">
+            <ProgressButtonSpinSettings ></ProgressButtonSpinSettings>
+            <ProgressButtonAnimationSettings Effect="AnimationEffect.ZoomIn"></ProgressButtonAnimationSettings>
+        </SfProgressButton>
+    </label>
+
+
+@code {
+    [Parameter]
+    public CardButtonElement cardButtonElement { get; set; }
+    [Parameter]
+    public EventCallback<MouseEventArgs> MouseClicked { get; set; }
+
+
+    public SpinPosition Position
+    {
+        get
+        {
+            switch (cardButtonElement.ButtonSpinPosition)
+            {
+                case ButtonSpinPosition.Right:
+                    return SpinPosition.Right;
+                case ButtonSpinPosition.Top:
+                    return SpinPosition.Top;
+                case ButtonSpinPosition.Bottom:
+                    return SpinPosition.Bottom;
+                case ButtonSpinPosition.Center:
+                    return SpinPosition.Center;
+                default:
+                    return SpinPosition.Center;
+            };
+        }
+    }
+
+}

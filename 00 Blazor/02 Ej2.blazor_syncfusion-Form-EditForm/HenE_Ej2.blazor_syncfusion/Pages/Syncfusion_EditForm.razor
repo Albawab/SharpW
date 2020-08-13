@@ -1,0 +1,117 @@
+﻿@page "/syncfusion_EditForm"
+
+@using HenE_Ej2.blazor_syncfusion.Data
+@using System.Threading
+
+
+<Syncfusion_file/>
+<hr />
+
+<EditForm Model="@employee" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form-group">
+        <div class="col-5">
+            <label for="employee-wachtwoord">Employee Password</label>
+            <EjsTextBox id="employee-wachtwoord" Placeholder="wachtwoord" @bind-Value="@employee.Wachtwoord"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.Wachtwoord)" />
+        </div>
+        <br />
+        <br />
+        <div class="col-5">
+            <label for="employee-id">Employee ID</label>
+            <EjsTextBox id="employee-id" Placeholder='Provide employee ID' @bind-Value="@employee.ID"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.ID)" />
+        </div>
+        <div class="col-5">
+            <label for="employee-name">Employee First name</label>
+            <EjsTextBox id="employee-name" Placeholder='Provide employee name' @bind-Value="@employee.Name"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.Name)" />
+        </div>
+        <div class="col-5">
+            <label for="employee-secondname">Second name</label>
+            <EjsTextBox id="employee-secondname" Placeholder='Provide employee second name' @bind-Value="@employee.SecondName"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.SecondName)" />
+        </div>
+        <div class="col-5">
+            <label for="employee-email">Employee Email</label>
+            <EjsTextBox id="employee-email" Placeholder='Provide employee email' @bind-Value="@employee.Email"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.Email)" />
+        </div>
+        <div class="col-5">
+            <label for="employee-phone">Employee Phone Number</label>
+            <EjsTextBox id="employee-phone" Placeholder='Provide employee phone' @bind-Value="@employee.PhoneNumber"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.PhoneNumber)" />
+        </div>
+        <div class="col-5">
+            <label for="employee-bsn">Employee BSN number</label>
+            <EjsTextBox id="employee-bsn" Placeholder='Provide employee BSN' @bind-Value="@employee.BSN"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.BSN)" />
+        </div>
+        <div class="col-5">
+            <label for="employee-IBAN">Employee IBAN</label>
+            <EjsTextBox id="employee-IBAN" Placeholder='Provide employee IBAN' @bind-Value="@employee.IBAN"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.IBAN)" />
+        </div>
+        <div class="col-5">
+            <label for="employee-code">Employee ZipCode</label>
+            <EjsTextBox id="employee-code" Placeholder='Provide employee ZipCode' @bind-Value="@employee.ZipCode"></EjsTextBox>
+            <div style="background-color:lightcoral; ">
+                <ValidationMessage For="@(() => employee.ZipCode)" />
+            </div>
+            <div class="col-5">
+                <label for="employee-homeNumber">Employee Home Number</label>
+                <InputNumber id="employee-homeNumber" @bind-Value="@employee.HomeNumber"></InputNumber>
+                <ValidationMessage For="@(() => employee.HomeNumber)" />
+            </div>
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</EditForm>
+<hr />
+<table class="table table-hover">
+    <thead>
+        <tr class="thead-dark">
+            <th scope="col">First Naam</th>
+            <th scope="col">Second Naam</th>
+            <th scope="col">Email Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employeesItem in employees)
+        {
+            <tr scope="row">
+                <td>@employeesItem.Name</td>
+                <td>@employeesItem.SecondName</td>
+                <td>@employeesItem.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code
+ {
+
+    string message = "";
+    List<Employee> employees = new List<Employee>();
+
+        public Boolean IsLoading;
+    // nieuwe objectinstantie
+    public Employee employee = new Employee();
+
+    //Als de gegevens zijn goed.
+    public void HandleValidSubmit()
+    {
+        employees.Add(employee);
+        employee = new Employee();
+    }
+
+
+    //Als de gegevens zijn niet goed.
+    public void HandleInvalidSubmit()
+    {
+        message = "Not Ok!";
+    }
+}

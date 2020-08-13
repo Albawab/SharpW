@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_07_T4TextTemplate</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="T4.TemplateFileManager" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="EntityClassGenerator.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityClassGenerator.razor</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="EntityClassGenerator.razor">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EntityClassGenerator.tt</DependentUpon>
+    </Content>
+  </ItemGroup>
+
+</Project>

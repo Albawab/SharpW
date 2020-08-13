@@ -1,0 +1,46 @@
+﻿@using HenE_BlazorComponent.Data
+@using System.Linq
+
+<span class="d-flex  col-@CardElement.Columns offset-@CardElement.Column @Bold @VAlign @HAlign @TextSize">
+    <label>
+        @CardElement.Title
+    </label>
+</span>
+
+@code {
+
+    [Parameter]
+    public CardLabelElement CardElement { get; set; }
+
+    private string Bold
+    {
+        get
+        {
+            return CardElement.Type == CardLabelSoorten.Nadruk ? "font-weight-bold" : string.Empty;
+        }
+    }
+
+    private string HAlign
+    {
+        get
+        {
+            return $"justify-content-{@CardElement.HorizontalAlign.ToBootstrap()}";
+        }
+    }
+
+    private string VAlign
+    {
+        get
+        {
+            return $"align-items-{@CardElement.VerticalAlign.ToBootstrap()}";
+        }
+    }
+
+    private string TextSize{
+        get
+        {
+            return CardElement.Type == CardLabelSoorten.Kop ? "h4 text-danger" : string.Empty;
+        }
+    }
+}
+

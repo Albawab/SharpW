@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HenE_Grid</name>
+    </assembly>
+    <members>
+        <member name="T:HenE_Grid.AppLocalizer">
+            <summary>
+            Geef de applicatie lokalisator.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.AppLocalizer.Manager">
+            <inheritdoc/>
+        </member>
+        <member name="M:HenE_Grid.AppLocalizer.Get(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:HenE_Grid.Data.Order">
+            <summary>
+            Een klas van de order waarin de properties staan.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Order.OrderID">
+            <summary>
+            Gets or sets de id van de order.
+            </summary>
+        </member>
+        <member name="T:HenE_Grid.Data.Vwaangepastewoningen">
+            <summary>
+            Vw aangepastewoningen waarin de properties van de woningen staatn.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Vwaangepastewoningenid">
+            <summary>
+            Gets or sets de id van een woning.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Aanvraagnummer">
+            <summary>
+            Gets or sets de nummer van de aanvraag.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Aanvraagdatum">
+            <summary>
+            Gets or sets de datum van de aanvraag.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Typeadres">
+            <summary>
+            Gets or sets de type van het adres.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Straat">
+            <summary>
+            Gets or sets de straat van de woning.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Postcode1">
+            <summary>
+            Gets or sets het postcode van de woning.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Plaats">
+            <summary>
+            Gets or sets de plaats van de woning.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Geraanpassingen">
+            <summary>
+            Gets or sets de aanpassingen van de woning.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Product">
+            <summary>
+            Gets or sets de product.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Bsn">
+            <summary>
+            Gets or sets de psn nummer.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Data.Vwaangepastewoningen.Client">
+            <summary>
+            Gets or sets de cliënt van de woning.
+            </summary>
+        </member>
+        <member name="T:HenE_Grid.Interface.IHaveSettings">
+            <summary>
+            Interface waarin de instellingen van de applicatie staan.
+            </summary>
+        </member>
+        <member name="M:HenE_Grid.Interface.IHaveSettings.GetInstellingen">
+            <summary>
+            Gets de instellingen van de applicatie.
+            </summary>
+            <returns>De instellingen van de applicatie.</returns>
+        </member>
+        <member name="T:HenE_Grid.Program">
+            <summary>
+            The program class.
+            </summary>
+        </member>
+        <member name="M:HenE_Grid.Program.Main(System.String[])">
+            <summary>
+            Main functie.
+            </summary>
+            <param name="args">ar.</param>
+        </member>
+        <member name="M:HenE_Grid.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            CreateHostBuilder.
+            </summary>
+            <param name="args">ar.</param>
+            <returns>Builder.</returns>
+        </member>
+        <member name="T:HenE_Grid.Resources.SyncfusionBlazorLocale">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Calendar_Today">
+            <summary>
+              Looks up a localized string similar to Default.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Datepicker_placeholder">
+            <summary>
+              Looks up a localized string similar to sfasdf.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Add">
+            <summary>
+              Looks up a localized string similar to Add.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_AddFormTitle">
+            <summary>
+              Looks up a localized string similar to Add New Record.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_AND">
+            <summary>
+              Looks up a localized string similar to AND.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_autoFit">
+            <summary>
+              Looks up a localized string similar to Autofit this column.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_autoFitAll">
+            <summary>
+              Looks up a localized string similar to Autofit all columns.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_BatchSaveConfirm">
+            <summary>
+              Looks up a localized string similar to Are you sure you want to save changes?.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_BatchSaveLostChanges">
+            <summary>
+              Looks up a localized string similar to Unsaved changes will be lost. Are you sure you want to continue?.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Between">
+            <summary>
+              Looks up a localized string similar to Between.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Blanks">
+            <summary>
+              Looks up a localized string similar to Blanks.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Cancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_CancelButton">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_CancelEdit">
+            <summary>
+              Looks up a localized string similar to Are you sure you want to Cancel the changes?.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ChooseColumns">
+            <summary>
+              Looks up a localized string similar to Choose Column.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ChooseDate">
+            <summary>
+              Looks up a localized string similar to Choose a Date.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ClearButton">
+            <summary>
+              Looks up a localized string similar to Clear.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ClearFilter">
+            <summary>
+              Looks up a localized string similar to Clear Filter.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Columnchooser">
+            <summary>
+              Looks up a localized string similar to Columns.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ColumnChooserDialogARIA">
+            <summary>
+              Looks up a localized string similar to Column chooser dialog.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ColumnMenuDialogARIA">
+            <summary>
+              Looks up a localized string similar to Column menu dialog.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ConfirmDelete">
+            <summary>
+              Looks up a localized string similar to Are you sure you want to Delete Record?.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Contains">
+            <summary>
+              Looks up a localized string similar to Contains.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Copy">
+            <summary>
+              Looks up a localized string similar to Copy.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Csvexport">
+            <summary>
+              Looks up a localized string similar to CSV Export.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_CustomFilter">
+            <summary>
+              Looks up a localized string similar to Custom Filter.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_CustomFilterDatePlaceHolder">
+            <summary>
+              Looks up a localized string similar to Choose a date.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_CustomFilterDialogARIA">
+            <summary>
+              Looks up a localized string similar to Customer filter dialog.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_CustomFilterPlaceHolder">
+            <summary>
+              Looks up a localized string similar to Enter the value.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_DateFilter">
+            <summary>
+              Looks up a localized string similar to Date Filters.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_DateTimeFilter">
+            <summary>
+              Looks up a localized string similar to DateTime Filters.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Delete">
+            <summary>
+              Looks up a localized string similar to Delete.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_DeleteOperationAlert">
+            <summary>
+              Looks up a localized string similar to No records selected for delete operation.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_DeleteRecord">
+            <summary>
+              Looks up a localized string similar to Delete Record.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_DialogEditARIA">
+            <summary>
+              Looks up a localized string similar to Edit dialog.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Edit">
+            <summary>
+              Looks up a localized string similar to Edit.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_EditFormTitle">
+            <summary>
+              Looks up a localized string similar to Details of .
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_EditOperationAlert">
+            <summary>
+              Looks up a localized string similar to No records selected for edit operation.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_EditRecord">
+            <summary>
+              Looks up a localized string similar to Edit Record.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_EmptyDataSourceError">
+            <summary>
+              Looks up a localized string similar to DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_EmptyRecord">
+            <summary>
+              Looks up a localized string similar to No records to display.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_EndsWith">
+            <summary>
+              Looks up a localized string similar to Ends With.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_EnterValue">
+            <summary>
+              Looks up a localized string similar to Enter the value.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Equal">
+            <summary>
+              Looks up a localized string similar to Equal.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Excelexport">
+            <summary>
+              Looks up a localized string similar to Excel Export.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ExcelFilterDialogARIA">
+            <summary>
+              Looks up a localized string similar to Excel filter dialog.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Export">
+            <summary>
+              Looks up a localized string similar to Export.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_False">
+            <summary>
+              Looks up a localized string similar to false.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_FilterbarTitle">
+            <summary>
+              Looks up a localized string similar to \&apos;s filter bar cell.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_FilterButton">
+            <summary>
+              Looks up a localized string similar to Filter.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_FilterFalse">
+            <summary>
+              Looks up a localized string similar to False.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_FilterMenu">
+            <summary>
+              Looks up a localized string similar to Filter.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_FilterMenuDialogARIA">
+            <summary>
+              Looks up a localized string similar to Filter menu dialog.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_FilterTrue">
+            <summary>
+              Looks up a localized string similar to True.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_FirstPage">
+            <summary>
+              Looks up a localized string similar to First Page.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_GreaterThan">
+            <summary>
+              Looks up a localized string similar to Greater Than.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_GreaterThanOrEqual">
+            <summary>
+              Looks up a localized string similar to Greater Than Or Equal.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Group">
+            <summary>
+              Looks up a localized string similar to Group by this column.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_GroupDisable">
+            <summary>
+              Looks up a localized string similar to Grouping is disabled for this column.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_GroupDropArea">
+            <summary>
+              Looks up a localized string similar to Common Drag a column header here to group its column.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_InvalidFilterMessage">
+            <summary>
+              Looks up a localized string similar to Invalid Filter Data.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Item">
+            <summary>
+              Looks up a localized string similar to item.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Items">
+            <summary>
+              Looks up a localized string similar to items.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_LastPage">
+            <summary>
+              Looks up a localized string similar to Last Page.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_LessThan">
+            <summary>
+              Looks up a localized string similar to Less Than.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_LessThanOrEqual">
+            <summary>
+              Looks up a localized string similar to Less Than Or Equal.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_MatchCase">
+            <summary>
+              Looks up a localized string similar to Match Case.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Matchs">
+            <summary>
+              Looks up a localized string similar to No Matches Found.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_NextPage">
+            <summary>
+              Looks up a localized string similar to Next Page.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_NoResult">
+            <summary>
+              Looks up a localized string similar to No Matches Found.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_NotEqual">
+            <summary>
+              Looks up a localized string similar to Not Equal.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_NumberFilter">
+            <summary>
+              Looks up a localized string similar to Number Filters.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_OKButton">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_OR">
+            <summary>
+              Looks up a localized string similar to OR.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Pdfexport">
+            <summary>
+              Looks up a localized string similar to PDF Export.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_PreviousPage">
+            <summary>
+              Looks up a localized string similar to Previous Page.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Print">
+            <summary>
+              Looks up a localized string similar to Print.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Save">
+            <summary>
+              Looks up a localized string similar to Save.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_SaveButton">
+            <summary>
+              Looks up a localized string similar to Save.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Search">
+            <summary>
+              Looks up a localized string similar to Search.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_SearchColumns">
+            <summary>
+              Looks up a localized string similar to search columns.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_SelectAll">
+            <summary>
+              Looks up a localized string similar to Select All.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_ShowRowsWhere">
+            <summary>
+              Looks up a localized string similar to Show rows where:.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_SortAscending">
+            <summary>
+              Looks up a localized string similar to Sort Ascending.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_SortDescending">
+            <summary>
+              Looks up a localized string similar to Sort Descending.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_StartsWith">
+            <summary>
+              Looks up a localized string similar to Starts With.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_TextFilter">
+            <summary>
+              Looks up a localized string similar to Text Filters.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_True">
+            <summary>
+              Looks up a localized string similar to true.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_UnGroup">
+            <summary>
+              Looks up a localized string similar to Click here to ungroup.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Ungrouping">
+            <summary>
+              Looks up a localized string similar to Ungroup by this column.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Update">
+            <summary>
+              Looks up a localized string similar to Update.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Resources.SyncfusionBlazorLocale.Grid_Wordexport">
+            <summary>
+              Looks up a localized string similar to Word Export.
+            </summary>
+        </member>
+        <member name="T:HenE_Grid.Settings.Instellingen">
+            <summary>
+            Hier in staat de method en properties die we het nodig hebben voor de applicatie.
+            </summary>
+        </member>
+        <member name="P:HenE_Grid.Settings.Instellingen.OdatabaseUrl">
+            <summary>
+            Gets or Sets the link of the odatabase.
+            </summary>
+        </member>
+        <member name="T:HenE_Grid.Settings.InstellingenOdata">
+            <summary>
+            Klas Gets de instellingen van de odata.
+            </summary>
+        </member>
+        <member name="M:HenE_Grid.Settings.InstellingenOdata.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_Grid.Settings.InstellingenOdata"/> class.
+            </summary>
+            <param name="configuration">configuration.</param>
+        </member>
+        <member name="P:HenE_Grid.Settings.InstellingenOdata.Configuration">
+            <summary>
+            Gets de configuratie.
+            </summary>
+        </member>
+        <member name="M:HenE_Grid.Settings.InstellingenOdata.GetInstellingen">
+            <summary>
+            Geef url van de odata terug.
+            </summary>
+            <returns>De instellingen van de applicatie.</returns>
+        </member>
+        <member name="T:HenE_Grid.Startup">
+            <summary>
+            Startup class.
+            </summary>
+        </member>
+        <member name="M:HenE_Grid.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_Grid.Startup"/> class.
+            </summary>
+            <param name="configuration">configuration.</param>
+        </member>
+        <member name="P:HenE_Grid.Startup.Configuration">
+            <summary>
+            Gets Configuration.
+            </summary>
+        </member>
+        <member name="M:HenE_Grid.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940.
+            </summary>
+            <param name="services">services.</param>
+        </member>
+        <member name="M:HenE_Grid.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">app.</param>
+            <param name="env">env.</param>
+        </member>
+    </members>
+</doc>

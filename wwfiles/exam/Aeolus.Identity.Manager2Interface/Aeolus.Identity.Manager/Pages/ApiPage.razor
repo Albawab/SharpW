@@ -1,0 +1,30 @@
+﻿@page "/apiPage"
+
+@using HenE.Aeolus.Identity.Manager.Api.Models
+@using HenE.Aeolus.Identity.Manager.Api.Services
+@{
+    RenderFragment renderFragment = builder =>
+    {
+        builder.OpenComponent<ListAndItemsComponent>(0);
+        builder.AddAttribute(1, "TypeObject", model);
+        builder.AddAttribute(2, "Service", Service);
+        builder.AddAttribute(3, "ToolsMenuSevice", toolsMenuSevice);
+        builder.CloseComponent();
+    };
+
+    @renderFragment
+
+}
+
+@code {
+    IAppService Service;
+    IToolsMenuSevice toolsMenuSevice;
+    ApiModel model;
+
+    protected override void OnInitialized()
+    {
+        Service = new InternalApiService();
+        toolsMenuSevice = new InternalToolsMenuService();
+        model = new ApiModel();
+    }
+}

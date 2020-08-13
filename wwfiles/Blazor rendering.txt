@@ -1,0 +1,3 @@
+After pre-rendering has completed, client-side SignalR establishes a connection to the server, and your app is rendered. This time (second time the method OnInitializedAsync is called) UriHelper.NavigateTo("/counter"); is properly executed, and we are happily navigated to the counter page (first time)
+It makes page rendering quicker in some circumstances.
+https://chrissainty.com/prerendering-a-client-side-blazor-application/

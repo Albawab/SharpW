@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\HenE_Ej2.blazor_syncfusion\\HenE_Ej2.blazor_syncfusion.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\HenE_Ej2.blazor_syncfusion\\HenE_Ej2.blazor_syncfusion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\HenE_Ej2.blazor_syncfusion\\HenE_Ej2.blazor_syncfusion.csproj",
+        "projectName": "HenE_Ej2.blazor_syncfusion",
+        "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\HenE_Ej2.blazor_syncfusion\\HenE_Ej2.blazor_syncfusion.csproj",
+        "packagesPath": "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\HenE_Ej2.blazor_syncfusion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AbdulAbdulbawab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\WebApplication1\\Application.csproj": {
+                "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\WebApplication1\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
+              "target": "Package",
+              "version": "[3.1.0-preview4.19579.2, )"
+            },
+            "Syncfusion.EJ2.Blazor": {
+              "target": "Package",
+              "version": "[17.3.0.29-beta, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\WebApplication1\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\WebApplication1\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\WebApplication1\\Application.csproj",
+        "packagesPath": "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\02 Ej2.blazor_syncfusion-Form-EditForm\\WebApplication1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AbdulAbdulbawab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

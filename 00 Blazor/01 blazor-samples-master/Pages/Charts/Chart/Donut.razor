@@ -1,0 +1,52 @@
+﻿@page "/Charts/Donut"
+@using Syncfusion.EJ2.Blazor.Charts
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@{
+    SampleBrowser.CurrentSampleName = "Donut Chart";
+    SampleBrowser.CurrentControlName = "Chart";
+    SampleBrowser.CurrentControlCategory = "Chart";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.Chart;
+    SampleBrowser.ActionDescription = new string[] {
+        @"This sample visualizes the project cost breakdown statistics by using doughnut series. Datalabel shows the Information about the points."
+    };
+    SampleBrowser.Description = new string[] {
+        @"In this example, you can see how to render and configure the pyramid chart. You can use <code>Border</code>, <code>Fill</code> properties to customize the pie point. <code>DataLabel</code> is used to represent individual data and its value.
+
+        Tooltip is enabled in this example, to see the tooltip in action, hover a point or tap on a point in touch enabled devices."
+    };
+}
+@*End:Hidden*@
+
+<div class="control-section">
+    <EjsAccumulationChart Title="Project Cost Breakdown">
+        <AccumulationChartLegendSettings Visible="true" Position="LegendPosition.Top">
+        </AccumulationChartLegendSettings>
+        <AccumulationChartTooltipSettings Enable="false"></AccumulationChartTooltipSettings>
+        <AccumulationChartSeriesCollection>
+            <AccumulationChartSeries DataSource="@dataSource" XName="xValue" YName="yValue" Radius="70%" InnerRadius="40%" Name="Project" Explode="true"  ExplodeOffset="10%" ExplodeIndex=3>
+                <AccumulationDataLabelSettings Visible="true" Name="text">
+                    <AccumulationChartDataLabelFont FontWeight="600" Color="white"></AccumulationChartDataLabelFont>
+                </AccumulationDataLabelSettings>
+            </AccumulationChartSeries>
+        </AccumulationChartSeriesCollection>
+    </EjsAccumulationChart>
+</div>
+
+@code{
+    public class DoughnutData
+    {
+        public string xValue  { get; set; }
+        public double yValue  { get; set; }
+        public string text  { get; set; }
+    }
+    public List<DoughnutData> dataSource = new List<DoughnutData>
+    {
+        new DoughnutData  { xValue =  "Chrome", yValue = 37, text = "37%" },
+        new DoughnutData  { xValue =  "UC Browser", yValue = 17, text = "17%" },
+        new DoughnutData  { xValue =  "iPhone", yValue = 19, text = "19%" },
+        new DoughnutData  { xValue =  "Others", yValue = 4, text = "4%" },
+        new DoughnutData  { xValue =  "Opera", yValue = 11, text = "11%" },
+        new DoughnutData  { xValue =  "Android", yValue = 12, text = "12%" },
+    };
+}

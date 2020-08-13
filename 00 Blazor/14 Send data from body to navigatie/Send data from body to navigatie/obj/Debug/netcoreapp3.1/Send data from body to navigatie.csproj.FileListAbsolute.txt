@@ -1,0 +1,47 @@
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.AssemblyInfoInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.AssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.RazorComponent.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\NavigatieOmschrijvingComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.exe
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.deps.json
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.runtimeconfig.json
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.runtimeconfig.dev.json
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.dll
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.Views.dll
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\bin\Debug\netcoreapp3.1\Send data from body to navigatie.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\RazorDeclaration\Send data from body to navigatie.dll
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.TagHelpers.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.TagHelpers.output.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.RazorCoreGenerate.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\Components\NavigatieOmschrijvingComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.RazorAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.RazorAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.RazorTargetAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.RazorTargetAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\staticwebassets\Send data from body to navigatie.StaticWebAssets.Manifest.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\staticwebassets\Send data from body to navigatie.StaticWebAssets.xml
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.dll
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.genruntimeconfig.cache
+C:\Users\AbdulAbdulbawab\Desktop\Send data from body to navigatie\Send data from body to navigatie\obj\Debug\netcoreapp3.1\Send data from body to navigatie.csproj.CopyComplete

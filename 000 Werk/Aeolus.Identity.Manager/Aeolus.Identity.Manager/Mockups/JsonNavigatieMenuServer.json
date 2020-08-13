@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Titel": "Api",
+    "IsFavoriet": false,
+    "Url" : "apiPage"
+  },  {
+    "Titel": "Cleints",
+    "IsFavoriet": false,
+    "Url": "cleintPage"
+  },  {
+    "Titel": "Users",
+    "IsFavoriet": false,
+  },  {
+    "Titel": "Index",
+    "IsFavoriet": true
+  },
+  
+]

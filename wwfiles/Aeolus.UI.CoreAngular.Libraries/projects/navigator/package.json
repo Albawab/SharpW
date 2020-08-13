@@ -1,0 +1,14 @@
+{
+  "name": "navigator",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^2.1.2",
+    "@syncfusion/ej2-ng-buttons": "^16.2.50",
+    "@syncfusion/ej2-ng-dropdowns": "^16.2.50",
+    "@syncfusion/ej2-ng-navigations": "^16.2.50",
+    "@syncfusion/ej2-ng-popups": "^16.2.52",
+    "bootstrap": "^4.1.1"
+  }
+}

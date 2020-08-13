@@ -1,0 +1,29 @@
+﻿@using HenE.Aeolus.Blazor.Common.Navigatie.Components
+<div class="top-row pl-4">
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="sidebar-body" @onclick="ToggleNavMenu">
+    <div>
+        <NavigatorComponent />
+    </div>
+    <div class="navFooter">
+        <a href="https://www.google.com/"><span style="color:black" target="_blank">Ga naar Google</span></a>
+    </div>
+</div>
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    protected override void OnInitialized()
+    {
+    }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bK1sd4Oa3RBdGxHhGYzGBAOvnhuSp6Kcg3uU6hz3Otwed0iXbUh97Cm8d+coYRh6FKwd4LbPmXNdBQvR1+l4OA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\00 Blazor\\07 T4TextTemplate\\07 T4TextTemplate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\t4.templatefilemanager\\2.2.1\\t4.templatefilemanager.2.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

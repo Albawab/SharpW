@@ -1,0 +1,57 @@
+<div>
+  <h4 *ngIf="!itemPreview" class="titeDetail">Selecteer een item</h4>
+  <h4 *ngIf="itemPreview" class="titeDetail">{{itemPreview.titel}}</h4>
+</div>
+
+<div *ngIf="!itemPreview" class="empty">
+  <!-- <p><i class="fas fa-users fa-5x"></i></p> -->
+  <p>Selecteer een item</p>
+</div>
+
+<div id="itemContainer" *ngIf="itemPreview">
+
+  <div class="actiesWrap">
+      <button id="btnActies" (click)="showActiesMenu()">
+        Acties <i class="fas fa-angle-down"></i>
+      </button>
+
+      <div id="actiesMenu" *ngIf="showActies">
+        <ul class="top-level-menu">
+            <li *ngFor="let item of itemPreview.acties" [class.topBorder]="item?.items?.length > 0" ><a href="#" (click)="action($event, item)">{{item.text}}</a>
+              <ul *ngIf="item.items && item.items.length > 0" class="second-level-menu">
+                  <li *ngFor="let subItem of item.items"><a href="#" (click)="action($event, subItem)">{{subItem.text}}</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+
+      <hene-edit-bericht [bericht]="itemPreview"></hene-edit-bericht>
+
+  </div>
+
+    <h2 [ngSwitch]="itemPreview.soort">
+        <!-- SoortItem enum in class -->
+        <span *ngSwitchCase="soortItem.Klant">
+            <i class="fas fa-users"></i>
+        </span>
+        <span *ngSwitchCase="soortItem.Bericht">
+            <i class="far fa-paper-plane"></i>
+        </span>
+        {{itemPreview.titel}}
+      </h2>
+    <p>{{itemPreview.omschrijving}}</p>
+
+  <div [ngSwitch]="itemPreview.soort">
+      <!-- SoortItem enum in -->
+      <div *ngSwitchCase="soortItem.Klant">
+        Ik ben een klant
+        <hene-klant-preview [itemPreview]="itemPreview"></hene-klant-preview>
+      </div>
+      <div *ngSwitchCase="soortItem.Bericht">
+        Ik ben een Bericht
+        <hene-bericht-preview [itemPreview]="itemPreview"></hene-bericht-preview>
+      </div>
+      <div *ngSwitchDefault>
+      </div>
+  </div>
+</div>

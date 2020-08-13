@@ -1,0 +1,4 @@
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp2.1\01 Ej2.blazor_syncfusion.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp2.1\01 Ej2.blazor_syncfusion.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp2.1\01 Ej2.blazor_syncfusion.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp2.1\01 Ej2.blazor_syncfusion.AssemblyInfo.cs

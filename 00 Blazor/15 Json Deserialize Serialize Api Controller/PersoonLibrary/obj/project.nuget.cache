@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3QQ3mELgW3I+rfDwK5TP170XUxLciMqUyjCxVvq9LR4iezeTZezOZpbKeV0+bJ4bH5dvgv5ua1zk0X/UZkboww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\repos\\15 Json Deserialize Serialize Api Controller\\PersoonLibrary\\PersoonLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

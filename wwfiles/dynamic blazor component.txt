@@ -1,0 +1,16 @@
+@page "/"
+
+@foreach (CounterParent counter in components)
+{
+    RenderFragment renderFragment = (builder) => { builder.OpenComponent(0, counter.GetType()); builder.CloseComponent(); };
+    <div>
+        <div>Before the component</div>
+        @renderFragment
+        <div>Afterthe component</div>
+    </div>
+}
+
+@code
+{
+    List<CounterParent> components = new List<CounterParent>() { new CounterParent(), new CounterChild() };
+}

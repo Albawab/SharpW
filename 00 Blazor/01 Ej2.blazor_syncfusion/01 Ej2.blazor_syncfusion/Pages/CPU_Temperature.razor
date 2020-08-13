@@ -1,0 +1,81 @@
+﻿@page "/temperature"
+
+@using _01_Ej2.blazor_syncfusion.Data
+@inject DataBase Getdata
+
+<p>Temperature : @Temperature</p>
+<button @onclick="GetTem">Get temperature</button>
+
+
+<hr />
+<br />
+<hr />
+<span id="datetime" style="width:170px; height:100px">
+    <EjsSparkline XName="xDate" YName="yval" TValue="SparkDataSource" DataSource="@DateTimeData"
+                  ValueType="SparklineValueType.DateTime"
+                  Type="@Syncfusion.EJ2.Blazor.Charts.SparklineType.Column"
+                  LineWidth="1" Height="300px" Width="400px" Fill="#3C78EF">
+        <SparklineTooltipSettings Visible="true" Format="${xDate}: ${yval}hrs">
+        </SparklineTooltipSettings>
+    </EjsSparkline>
+</span>
+
+<span id="datetime" style="width:170px; height:100px">
+    <EjsSparkline XName="xDate" YName="yval" TValue="SparkDataSource" DataSource="@DateTimeData"
+                  ValueType="SparklineValueType.DateTime"
+                  Type="@Syncfusion.EJ2.Blazor.Charts.SparklineType.Area"
+                  LineWidth="1" Height="300px" Width="400px" Fill="#3C78EF">
+        <SparklineTooltipSettings Visible="true" Format="${xDate}: ${yval}hrs">
+        </SparklineTooltipSettings>
+    </EjsSparkline>
+</span>
+
+<span id="datetime" style="width:170px; height:100px">
+    <EjsSparkline XName="xDate" YName="yval" TValue="SparkDataSource" DataSource="@DateTimeData"
+                  ValueType="SparklineValueType.DateTime"
+                  Type="@Syncfusion.EJ2.Blazor.Charts.SparklineType.Line"
+                  LineWidth="1" Height="300px" Width="400px" Fill="#3C78EF">
+        <SparklineTooltipSettings Visible="true" Format="${xDate}: ${yval}hrs">
+        </SparklineTooltipSettings>
+    </EjsSparkline>
+</span>
+
+@code{
+    public class SparkDataSource
+    {
+        public double x;
+        public DateTime xDate;
+        public double yval;
+    };
+
+    public string Temperature { get; set; }
+    private void GetTem()
+    {
+    }
+
+    public List<SparkDataSource> DateTimeData = new List<SparkDataSource>
+{
+        new SparkDataSource { xDate= new DateTime(2020, 1, 1), x= 0, yval= 4 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 2), x= 1, yval= 4.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 3), x= 2, yval= 8 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 4), x= 3, yval= 7 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 5), x= 4, yval= 6 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 8), x= 5, yval= 8 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 9), x= 6, yval= 8 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 10), x= 7, yval= 6.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 11), x= 8, yval= 4 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 12), x= 9, yval= 5.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 15), x= 10, yval= 8 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 16), x= 11, yval= 6 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 17), x= 12, yval= 6.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 18), x= 13, yval= 7.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 19), x= 14, yval= 7.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 22), x= 15, yval= 4 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 23), x= 16, yval= 8 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 24), x= 17, yval= 6 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 25), x= 18, yval= 7.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 26), x= 19, yval= 4.5 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 29), x= 20, yval= 6 },
+        new SparkDataSource { xDate= new DateTime(2020, 1, 30), x= 21, yval= 7 }
+    };
+}

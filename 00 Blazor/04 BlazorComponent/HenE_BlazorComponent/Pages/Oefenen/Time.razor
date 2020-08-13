@@ -1,0 +1,58 @@
+﻿@page "/timePicker"
+<div style="width:300px">
+    <h2>EjsTimePicker</h2>
+    <div>
+        <p>30 min of 15 min TimePicker Step</p>
+        <SfTimePicker Step=15 Value="@TimeValue" Format="HH:mm"></SfTimePicker>
+    </div>
+    <br />
+    <div>
+        <p>Data Dynamic value binding</p>
+        <SfTimePicker Step=13 Value="@TimeValue" Format="HH:mm" ></SfTimePicker>
+    </div>
+    <br />
+    <div>
+        <p style="color:red">Strictmode</p>
+        <p>range of 9:00 AM to 11:30 AM</p>
+        <SfTimePicker Step=13 Value="@TimeValue" Format="HH:mm"  Min="@MinVal" Max="@MaxVal" StrictMode="true"></SfTimePicker>
+    </div>
+</div>
+<hr />
+<br />
+<div style="width:400px">
+    <h2 style="color:red">DateRangePicker</h2>
+    <div>
+        <p>Start date, End Date, FirstDayOfWeek</p>
+        <SfDateRangePicker FirstDayOfWeek=4 Placeholder="Choose a Range" Min="@MinVal" Max="@MaxVal" StartDate="@Start" EndDate="@End"></SfDateRangePicker>
+    </div>
+
+    <div>
+        <p>Min days , Max days, Strict mode</p>
+        <SfDateRangePicker MinDays=5 MaxDays=10 StrictMode="true" Placeholder="Choose a Range" Min="@MinVal" Max="@MaxVal" StartDate="@Start" EndDate="@End"></SfDateRangePicker>
+    </div>
+
+</div>
+
+<br />
+<hr />
+<div style="width:200px">
+    <h2 style="color:red">DatePicker</h2>
+    <div>
+        <SfDatePicker TValue="DateTime"  Value="@TimeValue" Start="CalendarView.Decade"></SfDatePicker>
+    </div>
+
+</div>
+
+@code {
+    public DateTime TimeValue { get; set; }
+    public DateTime MinVal { get; set; } = new DateTime(DateTime.Now.Year - 1, DateTime.Now.Month, DateTime.Now.Day, 07, 00, 00);
+    public DateTime MaxVal { get; set; } = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 17, 00, 00);
+    public DateTime Start { get; set; }
+    public DateTime End { get; set; }
+
+    /*    private void onChange(Syncfusion.Blazor.Calendars.ChangeEventArgs args)
+        {
+            TimeValue = args.Value;
+            StateHasChanged();
+        }*/
+}

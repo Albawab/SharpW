@@ -1,0 +1,62 @@
+
+<div id="aeolus-menu" [ngClass]="{'closeMenu': isOpen}">
+    <h1 id="logo">
+      <!-- <i class="far fa-align-center fa-rotate-180"></i> -->
+      <img src="assets/images/aeolus-icon-white.svg" style="width:22px;">
+      Aeolus
+      <span (click)="toggleMenu()" >
+          <i class="fa fa-times white"></i>
+      </span>
+    </h1>
+
+    <div id="menuWrap">
+      <ul *ngIf="modules?.length > 0" class="nav flex-column fa-ul">
+        <li *ngFor="let item of modules" class="nav-item">
+          <a class="nav-link" href="{{item.href}}">
+              <span class="fa-li">
+            <i class="{{item.icon}}"></i>
+            </span>{{item.titel}}</a>
+        </li>
+      </ul>
+
+      <!-- Fixed links -->
+      <div class="separator"></div>
+      <ul class="nav flex-column fa-ul">
+        <li class="nav-item">
+          <a class="nav-link" href="http://support.hene.nl/Back/" target="_blank">
+              <span class="fa-li">
+                <i class="far fa-info-circle"></i>
+            </span>H&E SUPPORT</a>
+        </li>
+      </ul>
+
+    </div>
+    <div id="menuBottomFixed">
+        <ul class="nav flex-column fa-ul">
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="http://support.hene.nl/Back/" target="_blank">
+                  <span class="fa-li">
+                    <i class="far fa-info-circle"></i>
+                </span>H&E SUPPORT</a>
+            </li> -->
+
+            <li id="logout" class="nav-item">
+              <a class="nav-link" (click)="confirmLogout()">
+                <span class="fa-li">
+                  <i class="fas fa-power-off"></i>
+                </span>Afmelden</a>
+                <span>{{usernaam}}</span>
+            </li>
+          </ul>
+    </div>
+  </div>
+
+  <!-- Render the confirmation Dialog -->
+  <ejs-dialog #confirmDialog [buttons]='confirmDlgButtons' [visible]='hidden' [header]='confirmHeader'
+      [animationSettings]='animationSettings' [showCloseIcon]='confirmCloseIcon' [isModal]='isModal' [position]="position"
+      [target]='target' [width]='confirmWidth'>
+    <ng-template #content>
+      <span>{{dialogContent}}</span>
+    </ng-template>
+  </ejs-dialog>

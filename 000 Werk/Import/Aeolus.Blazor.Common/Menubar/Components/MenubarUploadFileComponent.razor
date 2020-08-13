@@ -1,0 +1,34 @@
+﻿@using System.IO    
+<div class="modal-body">
+        <div class="center">
+            <div class="title">
+                <h1>Zet het bestand neer om te uploaden</h1>
+            </div>
+            <div class="dropzone">
+                <SfUploader ID="UploadFiles" Multiple="false">
+                    <UploaderEvents ValueChange="OnChange"></UploaderEvents>
+                </SfUploader>
+            </div>
+        </div>
+    </div>
+
+
+@code {  
+    [Parameter]
+    public EventCallback<dynamic> Callback { get; set; }
+
+    private void OnChange(UploadChangeEventArgs args)
+    {
+        dynamic fileName = args.Files[0].FileInfo.Name;
+        Callback.InvokeAsync(fileName);
+    }
+}
+
+<style>
+    .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-status.e-upload-success {
+        color: white;
+    }
+    .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-size, .e-bigger.e-small .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-file-size {
+        color: black;
+    }
+</style>

@@ -1,0 +1,33 @@
+﻿@inject Aeolus.Blazor.Common.Body.Interfaces.IBodyService Service
+@foreach (var tool in ToolMenuItems)
+{
+    if (tool is ToolMenuLinkModel)
+    {
+        <ToolMenuLinkComponent ToolMenuLink="@((ToolMenuLinkModel)tool)" ExcelExportEventCallback="@ExcelExportEventCallback" PdfExportEventCallback="@PdfExportEventCallback" />
+    }
+    else if (tool is ToolMenuButtonModel)
+    {
+
+    }
+    else if (tool is ToolMenuSearchModel)
+    {
+
+    }
+    else if (tool is ToolMenuGroupModel)
+    {
+        <ToolMenuGroupComponent Tool="@((ToolMenuGroupModel)tool)" />
+    }
+}
+@code {
+    [Parameter]
+    public EventCallback ExcelExportEventCallback { get; set; }
+    [Parameter]
+    public EventCallback PdfExportEventCallback { get; set; }
+    [Parameter]
+    public dynamic ToolMenuItems { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ToolMenuItems = Service.GetToolItems();
+    }
+}

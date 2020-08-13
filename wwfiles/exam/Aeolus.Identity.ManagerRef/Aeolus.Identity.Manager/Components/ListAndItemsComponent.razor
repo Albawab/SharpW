@@ -1,0 +1,63 @@
+﻿@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Interfaces
+@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Components.LijstItems
+@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Components.Toolbars
+@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Models
+
+<div class="body-of-page">
+    <div class="toolsHeader">
+        <ToolbarBodyComponent @ref="toolbarBody" Service="ToolsMenuSevice" ToolbarCallBack="ToolbarCallBack"/>
+    </div>
+    <div class=" list-body-element">
+        <div class=" list-items-block">
+            <LijstItemsComponent Service="lijstItems" Callback="CallBack" />
+        </div>
+        <div class="body-of-component">
+            <SubBodyComponent @ref="subBody" Service="@((IAppService)Service)" Key="Key"/>
+        </div>        
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public object TypeObject { get; set; }
+    [Parameter]
+    public IAppService Service { get; set; }
+    [Parameter]
+    public IToolsMenuSevice ToolsMenuSevice { get; set; }
+
+    private ILijstItemsService lijstItems;
+    int Key = 0;
+    object huidigeObject = null;
+
+    String messageFromToolbarToBody = "";
+
+    ToolbarBodyComponent toolbarBody;
+    SubBodyComponent subBody;
+
+
+    protected override void OnInitialized()
+    {
+        lijstItems = (ILijstItemsService)Service;
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            toolbarBody.Update(subBody);
+            StateHasChanged();
+        }
+
+    }
+
+    private void CallBack(LijstItemModel listItem)
+    {
+        huidigeObject = listItem;
+        Key = listItem.Id;
+    }
+
+    private void ToolbarCallBack(string callBack)
+    {
+        messageFromToolbarToBody = callBack;
+    }
+}

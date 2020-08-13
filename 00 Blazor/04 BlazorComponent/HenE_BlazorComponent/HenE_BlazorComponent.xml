@@ -1,0 +1,1088 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HenE_BlazorComponent</name>
+    </assembly>
+    <members>
+        <member name="T:HenE_BlazorComponent.Controllers.FormulierController">
+            <summary>
+            De controller van de formulier date.
+            Geeft een formulier terug.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Controllers.FormulierController.GetData(System.Int32)">
+            <summary>
+            Geeft de juist formulier terug.
+            </summary>
+            <param name="idFormulier">Het formulier die aan wordt gevraagd.</param>
+            <returns>Het juist formulier.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Controllers.FormulierController.GetFormuliers">
+            <summary>
+            Geeft eem lijst van de formuliers terug.
+            </summary>
+            <returns>Een list van de formulier.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardButtonElement">
+            <summary>
+            De card butten element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardButtonElement.ButtonSpinPosition">
+            <summary>
+            Gets or sets waar de spin van de butten staat.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardButtonElement.ButtonAnimationEffect">
+            <summary>
+            Gets or sets de animation effect van een button.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardChartDateElement">
+            <summary>
+            De char data.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardChartDateElement.XValueDate">
+            <summary>
+            Gets or sets X Value. De datum.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardChartDateElement.YValueData">
+            <summary>
+            Gets or sets Y waarde/ Data.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardChartDateElement.YValueData1">
+            <summary>
+            Gets or sets Y waarde/ Data.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardChartElement">
+            <summary>
+            De chart element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardChartElement.ChartData">
+            <summary>
+            Gets or sets Data van de chart.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardCircularGaugeElement">
+            <summary>
+            de card circular gauge element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardCircularGaugeElement.StartAngle">
+            <summary>
+            Gets or sets start van de circular gauge.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardCircularGaugeElement.EndAngle">
+            <summary>
+            Gets or sets eind van de circular gauge.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardCircularGaugeElement.Value">
+            <summary>
+            Gets or sets De value van de circular gauge.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardDateElement">
+            <summary>
+            De card date element.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.CardDateElement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Data.CardDateElement"/> class.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardDateElement.Date">
+            <summary>
+            Gets or sets Data van een card.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardDateElement.MinDate">
+            <summary>
+            Gets or sets Start datum.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardDateElement.MaxDate">
+            <summary>
+            Gets or sets End datum.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardElement">
+            <summary>
+            De basecontroller van de card elementen.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardElement.Row">
+            <summary>
+            Gets or sets row van de table.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardElement.Column">
+            <summary>
+            Gets or sets kolom van de table.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardElement.Rows">
+            <summary>
+            Gets or sets aantal rijen dat dit element moet beslaan.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardElement.Columns">
+            <summary>
+            Gets or sets aantal Kolommen die dit element moet innemen.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardElement.Soort">
+            <summary>
+            Gets or sets de soort van de element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardElement.HorizontalAlign">
+            <summary>
+            Gets or sets de horizontal align van een element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardElement.VerticalAlign">
+            <summary>
+            Gets or sets de vertical align van een element.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardLabelElement">
+            <summary>
+            De label element.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.CardLabelElement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Data.CardLabelElement"/> class.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardLabelElement.Title">
+            <summary>
+            Gets or sets de title.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardLabelElement.Type">
+            <summary>
+            Gets or sets de soort van een card.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.CardTextElement">
+            <summary>
+            De text card.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.CardTextElement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Data.CardTextElement"/> class.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardTextElement.Type">
+            <summary>
+            Gets or sets de type van de text box.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardTextElement.Placeholder">
+            <summary>
+            Gets or sets de placeholder van de text box.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.CardTextElement.MaxLength">
+            <summary>
+            Gets or sets de maxlenght van de textbox.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.AangifteDividendBelasting">
+            <summary>
+            De aangift dividen belasting.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Data.AangifteDividendBelasting"/> class.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateKinderenSection">
+            <summary>
+            Create een nieuwe section element.
+            </summary>
+            <returns>Nieuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateKinderenSectionMedium">
+            <summary>
+            Create een nieuwe section element.
+            </summary>
+            <returns>Nieuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateKinderenSectionBig">
+            <summary>
+            Create een nieuwe section element.
+            </summary>
+            <returns>Nieuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateGegevensSection">
+            <summary>
+             Create een nieuwe section Element.
+            </summary>
+            <returns>Niuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateAandelenSection">
+            <summary>
+            Create new section waar de gegeven van de aandelen staan.
+            </summary>
+            <returns>Aandelen Section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateUitkeringenSection">
+            <summary>
+            Create een nieuwe section element waar de gegeven van de uitkeringen staan.
+            </summary>
+            <returns>Uitkeringen section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateUitkeringenGeenDividendbelastingIngoudenSection">
+            <summary>
+            Create Uitkeringen waarop geen dividendbelasting wordt ingehouden section.
+            </summary>
+            <returns>Uitkeringen waarop geen dividendbelasting wordt ingehouden Section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateUitkeringenMetvijftienprocentSection">
+            <summary>
+            Create uitkering met 15% inhouden dividendbelasting.
+            </summary>
+            <returns>uitkering met 15% inhouden dividendbelasting Section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateUitkeringenVolgensBRKSection">
+            <summary>
+            Create Uitkeringen met ingehouden dividendbelasting volgens een verdragspercentage of de BRK Section.
+            </summary>
+            <returns>Uitkeringen met ingehouden dividendbelasting volgens een verdragspercentage of de BRK Section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateDividendbelastingBijzondereSituatiesSection">
+            <summary>
+            Create dividendbelasting bijzondere situaties section.
+            </summary>
+            <returns> nieuwe dividendbelasting bijzondere situaties section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.AfdrachtverminderingenSection">
+            <summary>
+            Create Afdrachtverminderingen section.
+            </summary>
+            <returns>Return nieuwe section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.VerzamelstaatSection">
+            <summary>
+            Create Verzamelstaat section.
+            </summary>
+            <returns>Return nieuwe section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.AanvullendeinformatieSection">
+            <summary>
+            Create Aanvullende informatie section.
+            </summary>
+            <returns>Return nieuwe section.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteDividendBelasting.CreateOndertekeningSection">
+            <summary>
+            Create een niuwe section Element.
+            </summary>
+            <returns>Niuwe element.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.AangifteSchenkbelasting">
+            <summary>
+            De aangifte schenk belasting.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.AangifteSchenkbelasting.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Data.AangifteSchenkbelasting"/> class.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.KennisgevingDouane">
+            <summary>
+            De kennisgeving douane formulier.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.KennisgevingDouane.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Data.KennisgevingDouane"/> class.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.KennisgevingDouane.AddBedrijfsgegevens">
+            <summary>
+            Create een nieuwe sectie waar de elementen van het bedrijf staat.
+            </summary>
+            <returns>Nieuwe sectie.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.KennisgevingDouane.AddGegevensVergunning">
+            <summary>
+            Create een nieuwe sectie waar de elementen van het bedrijf staat.
+            </summary>
+            <returns>Nieuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.KennisgevingDouane.AddGegevensKennisgeving">
+            <summary>
+            Create een nieuwe sectie waar de elementen van het bedrijf staat.
+            </summary>
+            <returns>Nieuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.KennisgevingDouane.AddGegevensAangifteOfBewijsstuk">
+            <summary>
+            Create een nieuwe sectie waar de elementen van het bedrijf staat.
+            </summary>
+            <returns>Nieuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.KennisgevingDouane.AddRuimteVoorToelichting">
+            <summary>
+            Create een nieuwe sectie waar de elementen van het bedrijf staat.
+            </summary>
+            <returns>Nieuwe element.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.KennisgevingDouane.AddOndertekening">
+            <summary>
+            Create een nieuwe sectie waar de elementen van het bedrijf staat.
+            </summary>
+            <returns>Nieuwe sectie.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.SoortAntwoord">
+            <summary>
+            Een klas waar de soorte antwoord staan.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortAntwoord.Text">
+            <summary>
+            Een soorte text.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortAntwoord.Nummer">
+            <summary>
+            Een soorte nummer.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortAntwoord.Date">
+            <summary>
+            Een soorte DateTime.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortAntwoord.CheckBox">
+            <summary>
+            Een soorte Checkbox.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortAntwoord.Textarea">
+            <summary>
+            Een text area.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortAntwoord.RadioButton">
+            <summary>
+            Een Radio button.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortAntwoord.Tijd">
+            <summary>
+            De tijd.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.Formulier">
+            <summary>
+            De basis formulier.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.Formulier.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Data.Formulier"/> class.
+            </summary>
+            <param name="titel">Titel.</param>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.Formulier.Titel">
+            <summary>
+            Gets de title van het formulier.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.Formulier.Kinderen">
+            <summary>
+            Gets or sets de sections van een formulier.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.FormulierAntwoord">
+            <summary>
+            De eigenschappen van de antwoord.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierAntwoord.SoortAntwoord">
+            <summary>
+            Gets or sets de soort van een antwoord.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierAntwoord.AntwoordToelichting">
+            <summary>
+            Gets or sets toelichting van een antwoord.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.FormulierElement">
+            <summary>
+            De gegevens van de formulier element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierElement.Row">
+            <summary>
+            Gets or sets de rij van de element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierElement.Rows">
+            <summary>
+            Gets or sets de rijen van de element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierElement.Column">
+            <summary>
+            Gets or sets de kolom van de element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierElement.Columns">
+            <summary>
+            Gets or sets de kolomen van de element.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.FormulierSectie">
+            <summary>
+            De klas van een sectio van de belasting.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSectie.HorizontalAlign">
+            <summary>
+            Gets or sets de horizontal align van een element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSectie.VerticalAlign">
+            <summary>
+            Gets or sets de vertical align van een element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSectie.SectionNumber">
+            <summary>
+            Gets or sets de nummer van de section.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSectie.Toelichting">
+            <summary>
+            Gets or sets toelichting van een section.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSectie.Title">
+            <summary>
+            Gets or sets de title van de section.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSectie.SectionKinderen">
+            <summary>
+            Gets or sets de kinderen van een section.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSectie.Type">
+            <summary>
+            Gets or sets de soort van een card.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.FormulierSpecificatie">
+            <summary>
+            De specificatie van een formulier.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSpecificatie.SpecificatieSoort">
+            <summary>
+            Gets or sets de soort van de specificatie.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSpecificatie.SpecificatieSize">
+            <summary>
+            Gets or sets de groote van de specificatie.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSpecificatie.Elements">
+            <summary>
+            Gets or sets de emlementen van een specificatie.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierSpecificatie.Kinder">
+            <summary>
+            Gets or sets een kind.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.FormulierToelichting">
+            <summary>
+            De toelichting van een element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierToelichting.ToelichtingText">
+            <summary>
+            Gets or sets toelichting van een element.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.FormulierVraag">
+            <summary>
+            De eigenschappen van een vraag.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierVraag.Text">
+            <summary>
+            Gets or sets de text van een element.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.FormulierVraag.Antwoorden">
+            <summary>
+            Gets or sets de antwoorden van de vraag.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.KinderFormulier">
+            <summary>
+            De gegevens van een kinder.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.KinderFormulier.EersteNaam">
+            <summary>
+            Gets or sets de eerste naam van een kind.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.KinderFormulier.Voorletter">
+            <summary>
+            Gets or sets het voor letter van een kind.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.KinderFormulier.AchterNaam">
+            <summary>
+            Gets or sets de achter naam van een kind.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.KinderFormulier.GeboorteDatum">
+            <summary>
+            Gets or sets de geboortedatum van een kind.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.Persoon">
+            <summary>
+            De klas waar de gegevens van een persoon staat.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.Persoon.Id">
+            <summary>
+            Gets or sets de id van een persoon.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.Persoon.Naam">
+            <summary>
+            Gets or sets de naam van een persoon.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.Persoon.Achternaam">
+            <summary>
+            Gets or sets de achter naam van een persoon.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.Persoon.Email">
+            <summary>
+            Gets or sets de email van een persoon.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.Persoon.Wachtwoord">
+            <summary>
+            Gets or sets de telefoon nummer van een persoon.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.SoortCardElementen">
+            <summary>
+            De soorten van een card.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.Checkbox">
+            <summary>
+            Checkbox antwoord.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.Text">
+            <summary>
+            Text element.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.Date">
+            <summary>
+            Date element.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.Label">
+            <summary>
+            Tag element.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.Button">
+            <summary>
+            Button element.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.CircularGauge">
+            <summary>
+            Circular Gauge.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.Chart">
+            <summary>
+            Een soort van Chart.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Data.SoortCardElementen.Nummer">
+            <summary>
+            Nummer soort.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.WeatherForecast">
+            <summary>
+            De weather cast.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.WeatherForecast.Date">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.WeatherForecast.TemperatureC">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.WeatherForecast.TemperatureF">
+            <summary>
+            Gets .
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Data.WeatherForecast.Summary">
+            <summary>
+            Gets or sets.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Data.WeatherForecastService">
+            <summary>
+            Weather.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Data.WeatherForecastService.GetForecastAsync(System.DateTime)">
+            <summary>
+            De gegevens die wordt gepasseerd.
+            </summary>
+            <param name="startDate">Startdata.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.ButtonAnimationEffect">
+            <summary>
+            Waar de effect van een button staat.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonAnimationEffect.ZoomOut">
+            <summary>
+            De spin in de button wordt groter.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonAnimationEffect.ZoomIn">
+            <summary>
+            De spin in de button wordt Kleiner.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonAnimationEffect.SlideLeft">
+            <summary>
+            De spin in de button gaat van de linkskant starten.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonAnimationEffect.SlideRight">
+            <summary>
+            De spin in de button gaat van de richtskant starten.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.ButtonSpinPosition">
+            <summary>
+            De positie van de elementen.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonSpinPosition.Right">
+            <summary>
+            Op het recht kant.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonSpinPosition.Top">
+            <summary>
+            Aan het boven kant.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonSpinPosition.Bottom">
+            <summary>
+            Aan het beneden kant.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.ButtonSpinPosition.Center">
+            <summary>
+            Center Kant.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.CardLabelSoorten">
+            <summary>
+            Hier onder staat de soorten van de kaarten.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.CardLabelSoorten.Normaal">
+            <summary>
+            Normaal
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.CardLabelSoorten.Nadruk">
+            <summary>
+            Nadruk
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.CardLabelSoorten.Kop">
+            <summary>
+            Kop
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.ConvertAlignToBootstrapString">
+            <summary>
+            Helpt de enumeratie om string te worden.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Enumeration.ConvertAlignToBootstrapString.ToBootstrap(HenE_BlazorComponent.Enumeration.VerticalAlign)">
+            <summary>
+            Zet de vertical align tot string om.
+            </summary>
+            <param name="verticlaAlign">Waar een element wordt geplaatst.// Vertical.</param>
+            <returns>De vertival aligan enum als string.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Enumeration.ConvertAlignToBootstrapString.ToBootstrap(HenE_BlazorComponent.Enumeration.HorizontalAlign)">
+            <summary>
+            Zet de horizontal align tot string om.
+            </summary>
+            <param name="horizontal">Waar een element wordt geplaatst.// horizontal.</param>
+            <returns>De horizontal aligan enum als string.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.HorizontalAlign">
+            <summary>
+            Positie een element op een pagina.//Horizontaal.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.HorizontalAlign.Left">
+            <summary>
+            Left op de cel.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.HorizontalAlign.Center">
+            <summary>
+            centurm op de cel.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.HorizontalAlign.Right">
+            <summary>
+            Right op de cel.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.SpecificatieSize">
+            <summary>
+            De size van de grid.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.SpecificatieSize.Small">
+            <summary>
+            Een small grid.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.SpecificatieSize.Medium">
+            <summary>
+            Een medium grid.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.SpecificatieSize.Big">
+            <summary>
+            Een groote grid.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.SpecificatieSoort">
+            <summary>
+            De sert van de grid.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.SpecificatieSoort.InlineEditing">
+            <summary>
+            Kan inline een element veranderen.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.SpecificatieSoort.DialogEditing">
+            <summary>
+            Kan Dialog een element veranderen.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.SpecificatieSoort.BatchEditing">
+            <summary>
+            Kan Batch een element veranderen.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.SpecificatieSoort.Normaal">
+            <summary>
+            Geen Grid.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.TextBoxTypes">
+            <summary>
+            Hier onder staat de type van de text box.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.TextBoxTypes.Text">
+            <summary>
+            De text type van de text box.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.TextBoxTypes.Email">
+            <summary>
+            De email type van de text box.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.TextBoxTypes.Password">
+            <summary>
+            De password type van de text box.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.TextBoxTypes.TelefoonNummer">
+            <summary>
+            De telefoon nummer van een persoon.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Enumeration.VerticalAlign">
+            <summary>
+            Positie een element op een pagina.//Vertical.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.VerticalAlign.Top">
+            <summary>
+            Top op de cel.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.VerticalAlign.Center">
+            <summary>
+            Centurm op de cel.
+            </summary>
+        </member>
+        <member name="F:HenE_BlazorComponent.Enumeration.VerticalAlign.Bottom">
+            <summary>
+            Eind op de cel.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Extensions">
+            <summary>
+            Klas waar de Extensions functies staan.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Extensions.NavigateToFragmentAsync(Microsoft.AspNetCore.Components.NavigationManager,Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            zorg dat de scroller gaat naar een nieuwe deel van de pagina.
+            </summary>
+            <param name="navigationManager">De navigationManager.</param>
+            <param name="jSRuntime">De runtime van javascript.</param>
+            <returns>Een nieuwe runtime.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Interface.IHaveSettings">
+            <summary>
+            Interface waarin de instellingen van de applicatie staan.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Interface.IHaveSettings.GetInstellingen">
+            <summary>
+            Get de instellingen.
+            </summary>
+            <returns>De instellingen.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor">
+            <summary>
+            Deze klas doet de data voor de blazor klaar.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.Id">
+            <summary>
+            Gets or sets De id from de slidebar.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.FormulierElementenGroup">
+            <summary>
+            Gets or sets formulier elementen.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.Controller">
+            <summary>
+            Gets controle.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.EenFormulier">
+            <summary>
+            Gets or sets een formulier.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.NavigationManager">
+            <summary>
+            Gets or sets navigation manager.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.JsRuntime">
+            <summary>
+            Gets or sets JsRunTime.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.OnInitialized">
+            <summary>
+            start wanneer de project start.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            als de webpage is klaar dan loopt deze functie.
+            </summary>
+            <param name="firstRender">Is het eerst renderen.</param>
+            <returns>Een Task waar de webpage wordt verandert.</returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Pages.Formulier.BaseControllerFormulierBlazor.TryFragmentNavigation(System.Object,Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs)">
+            <summary>
+            Probeer om naar een deel van de webpagina te gaan.
+            </summary>
+            <param name="sender">De sender.</param>
+            <param name="args">De details op webpagen wordt verandert.</param>
+        </member>
+        <member name="M:HenE_BlazorComponent.Pages.Formulier.FormulierInTextArea.TimeStartTeOpslaan">
+            <summary>
+            Deze functie gaat de timer starten.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Pages.Formulier.FormulierInTextArea.Opgeslagen">
+            <summary>
+            Deze functie gaat de timer stoppen.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Pages.Formulier.FormulierInTextArea.OpslaanData(System.Object)">
+            <summary>
+            Deze functie slaat de data op.
+            </summary>
+            <param name="obj">.</param>
+        </member>
+        <member name="T:HenE_BlazorComponent.Program">
+            <summary>
+            Main class.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Program.Main(System.String[])">
+            <summary>
+            Main function.
+            </summary>
+            <param name="args">args.</param>
+        </member>
+        <member name="M:HenE_BlazorComponent.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Greate host.
+            </summary>
+            <param name="args">args.</param>
+            <returns>Host builder.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Setting.Instellingen">
+            <summary>
+            Hier staat de eigenschap van de instellingen.
+            </summary>
+        </member>
+        <member name="P:HenE_BlazorComponent.Setting.Instellingen.TimerTextAreaDataOpslaanMS">
+            <summary>
+            Gets or sets Timer van de functie.Die wordt aangeroept om de gegevens te opslaan.
+            </summary>
+        </member>
+        <member name="T:HenE_BlazorComponent.Setting.InstellingenDataBase">
+            <summary>
+            Haalt de gegevens van uit de database.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Setting.InstellingenDataBase.GetInstellingen">
+            <summary>
+            Geeft de data terug die uit de database gehaald.
+            </summary>
+            <returns>De nieuwe main instellingen.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Setting.InstellingenJSON">
+            <summary>
+            Deze klas haalt de data van de appsetting.json op.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Setting.InstellingenJSON.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Setting.InstellingenJSON"/> class.
+            </summary>
+            <param name="configuration">con.</param>
+        </member>
+        <member name="P:HenE_BlazorComponent.Setting.InstellingenJSON.Configuration">
+            <summary>
+            Gets de configuration.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Setting.InstellingenJSON.GetInstellingen">
+            <summary>
+            Geeft de data terug die uit de bestand appsetting.json gehaald.
+            </summary>
+            <returns>De data.</returns>
+        </member>
+        <member name="T:HenE_BlazorComponent.Startup">
+            <summary>
+            Startup.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE_BlazorComponent.Startup"/> class.
+            </summary>
+            <param name="configuration">configuration.</param>
+        </member>
+        <member name="P:HenE_BlazorComponent.Startup.Configuration">
+            <summary>
+            Gets Configuration.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940.
+            </summary>
+            <param name="services">services.</param>
+        </member>
+        <member name="M:HenE_BlazorComponent.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">app.</param>
+            <param name="env">env.</param>
+        </member>
+        <member name="M:HenE_BlazorComponent.Shared.NavMenu.ToggleNavMenu">
+            <summary>
+            verandert de situatie van de slidebar.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Shared.NavMenu.ToggleDataList(HenE_BlazorComponent.Data.Formulier)">
+            <summary>
+            Toon of verstoppen de data van een formulier.
+            </summary>
+        </member>
+        <member name="M:HenE_BlazorComponent.Shared.NavMenu.GetUrl(HenE_BlazorComponent.Data.FormulierSectie,HenE_BlazorComponent.Data.Formulier)">
+            <summary>
+            Verzamelt de URL delen in een URL.
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HenE_BlazorComponent.Shared.NavMenu.GetUrl(HenE_BlazorComponent.Data.Formulier)">
+            <summary>
+            Verzamelt de URL delen in een URL.
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

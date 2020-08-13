@@ -1,0 +1,166 @@
+﻿@inject NavigationManager NavigationManager
+@inherits NavMenuCode
+
+<div class="top-row pl-4 navbar">
+    <a class="navbar-brand" href="">BlazorComponent</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" style="font-size:18px" @onclick="ToggleNavMenu">
+    @foreach (Formulier huidigeformulier in formulieren)
+    {
+    <ol class="nav" style="overflow:visible">
+        <li class="nav-item">
+            <NavLink class="nav-link" @onclick="(()=>ToggleDataList(huidigeformulier))" style="font-size:16px" href="@GetUrl(huidigeformulier)">
+
+                <span aria-hidden="true"></span>@huidigeformulier.Titel
+            </NavLink>
+        </li>
+        @if (formulier == huidigeformulier)
+        {
+            @if (formulierElementenGroup != null)
+            {
+                @foreach (var sections in formulierElementenGroup)
+                {
+                    @foreach (FormulierSectie section in sections)
+                    {
+                        @if (section is FormulierSectie)
+                        {
+                            FormulierSectie sectie = section as FormulierSectie;
+                            <li class="custom active pl-3 border-bottom list-unstyled" style="font-size:medium">
+                                <NavLink class="nav-link" href="@GetUrl(section,huidigeformulier)" Match="NavLinkMatch.All">
+                                    <span class="text-light" aria-hidden="true" style="font-size:13px" @onclick="(()=>ToggleDataSection(sectie))">
+                                        @(section.Title)
+                                    </span>
+                                </NavLink>
+                            </li>
+                            @if (sectie == Section)
+                            {
+                                if (formulierSectionsKindGroup != null)
+                                {
+                                    @foreach (var sectionkinds in formulierSectionsKindGroup)
+                                    {
+                                        @foreach (var sectionkind in sectionkinds)
+                                        {
+                                            @if (sectionkind is FormulierSectie)
+                                            {
+                                                FormulierSectie sectiekind = sectionkind as FormulierSectie;
+                                                <li class="custom active pl-5 border-bottom list-unstyled" style="font-size:medium">
+                                                    <NavLink class="nav-link" href="@GetUrl(sectionkind, huidigeformulier)" Match="NavLinkMatch.All">
+                                                        <span class="text-light" aria-hidden="true" style="font-size:13px">
+                                                            @(sectiekind.Title)
+                                                        </span>
+                                                    </NavLink>
+                                                </li>
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    </ol>
+    }
+
+    @*
+        <ul class="nav flex-column">
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="base" Match="NavLinkMatch.All">
+                    <span class="oi oi-home" aria-hidden="true"></span> Home
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="fetchdata">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="bootstrap">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Bootstrap
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="registreren">
+                    <span class="oi oi-account-login" aria-hidden="true"></span> Registreren
+                </NavLink>
+            </li>
+            <li class=" px-3">
+                <NavLink class="nav-link" href="baseControllerFormulier/1">
+                    <span class="oi oi-book" aria-hidden="true"></span>Aangift DividendBelasting
+                </NavLink>
+            </li>
+            <li class=" px-3">
+                <NavLink class="nav-link" href="baseControllerFormulier/2">
+                    <span class="oi oi-book" aria-hidden="true"></span>Aangift Schenkbelasting
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="apiFormulier">
+                    <span class="oi oi-book" aria-hidden="true"></span> API Formulier
+                </NavLink>
+            </li>
+            <li class=" px-3">
+                <NavLink class="nav-link" href="#" @onclick="ToggleDataList">
+                    <span class="oi oi-book" aria-hidden="true"></span>Aangift DividendBelasting
+                </NavLink>
+            </li>
+            <li class=" px-3">
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="timePicker">
+                    <span class="oi oi-clock" aria-hidden="true"></span> Time
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="grid">
+                    <span class="oi oi-book" aria-hidden="true"></span> Grid
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="inPlaceEditor">
+                    <span class="oi oi-bookmark" aria-hidden="true"></span> inPlaceEditoI
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="tooltip">
+                    <span class="oi oi-pulse" aria-hidden="true"></span> Tooltip
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="sidebar">
+                    <span class="oi oi-badge" aria-hidden="true"></span> Sidebar
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="toast">
+                    <span class="oi oi-badge" aria-hidden="true"></span> Toast
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="toast1">
+                    <span class="oi oi-badge" aria-hidden="true"></span> Toast Twee
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="dialog">
+                    <span class="oi oi-dial" aria-hidden="true"></span> Dialog
+                </NavLink>
+            </li>
+        </ul>*@
+</div>
+
+<style>
+
+
+    .custom {
+        width: 100%;
+        opacity: 0.7;
+    }
+</style>

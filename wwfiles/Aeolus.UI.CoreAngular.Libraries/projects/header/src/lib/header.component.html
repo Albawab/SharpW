@@ -1,0 +1,66 @@
+<header>
+    <h2><i class="{{icon}}"></i> {{titel}}
+        <span (click)="openMenu()" >
+          <!-- <i class="far fa-align-center fa-rotate-180"></i> -->
+          <img src="assets/images/aeolus-icon-white.svg" style="width:22px;">
+        </span>
+    </h2>
+    <div id="rightMenu">
+
+        <div id="zoekForm">
+            <ejs-autocomplete id='zoek' #zoek [(value)]='value' enabledPersistence='true'
+            [sortOrder]="sorting" [placeholder]='waterMark' locale="nl" (change)='onChange($event)'>
+
+          </ejs-autocomplete>
+          <div id="searchBtn">
+              <button id="btnSearch"><span class="far fa-search"></span></button>
+          </div>
+        </div>
+
+
+        <span class="iconmenu">
+          <i class="far fa-id-card"></i>
+        </span>
+
+        <span class="iconmenu">
+          <span class="fa-layers fa-fw">
+              <i class="far fa-envelope" style="color: #76b729;"></i>
+            <span class="fa-layers-counter fa-2x counter">67</span>
+          </span>
+        </span>
+
+        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+          <span class="iconmenu" id="dropdownManual" ngbDropdownAnchor (click)="myDrop.open()">
+            <i class="far fa-bell"></i>
+          </span>
+          <div ngbDropdownMenu aria-labelledby="dropdownManual">
+            <button class="dropdown-item">Action - 1</button>
+            <button class="dropdown-item">Another Action</button>
+            <button class="dropdown-item">Something else is here</button>
+          </div>
+        </div>
+
+        <span class="iconmenu">
+          <i class="fas fa-sliders-h"></i>
+        </span>
+
+        <span class="iconmenu" (click)="confirmLogout()">
+          <i class="fas fa-power-off"></i>
+        </span>
+
+        <!-- <span class="iconmenu" (click)="logout()">
+          <i class="fas fa-power-off"></i>
+        </span> -->
+    </div>
+
+    <!-- Render the confirmation Dialog -->
+    <ejs-dialog #confirmDialogHeader [buttons]='confirmDlgButtons' [visible]='hidden' [header]='confirmHeader'
+        [animationSettings]='animationSettings' [showCloseIcon]='confirmCloseIcon' [isModal]='isModal' [position]="position"
+        [target]='target' [width]='confirmWidth'>
+      <ng-template #content>
+          <span>{{dialogContent}}</span>
+      </ng-template>
+    </ejs-dialog>
+
+  </header>
+  

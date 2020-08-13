@@ -1,0 +1,18 @@
+
+<div *ngIf="appService.config" class="h-100">
+  <hene-header [titel]="appService.config.titelHeader" [icon]="appService.config.iconModule" (openModulesMenu)="openModulesMenu($event)"></hene-header>
+
+  <hene-modules-menu #modulesMenu [url]="appService.config.urlModules" [usernaam]="getName()" (signOut)="signOut($event)"></hene-modules-menu>
+
+  <!-- <hene-navigator #navi [navTitel]="'test'" [url]="appService.config.urlNavigator" (notifyParent)="getNotification($event)"></hene-navigator> -->
+  <hene-navigator-test #navi2 [navTitel]="'test'" [url]="appService.config.urlNavigator" (notifyParent)="getNotification($event)"></hene-navigator-test>
+
+  <section class="main-container h-100">
+    <router-outlet></router-outlet>
+  </section>
+
+  <hene-right-sidebaar></hene-right-sidebaar>
+
+  <hene-edit-bericht></hene-edit-bericht>
+  <hene-edit-klantcontact></hene-edit-klantcontact>
+</div>

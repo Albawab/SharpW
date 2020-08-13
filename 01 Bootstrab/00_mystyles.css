@@ -1,0 +1,38 @@
+.text-danger{
+    font-family: 'Princess Sofia';
+    color: #e5904d!important;
+}
+
+#s1_header{
+    background: url(img/interface-imgs/s1-header-lg-center.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.myGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 5px;
+}
+.mySubGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 10px;
+}
+
+.my-thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 10px;
+    justify-items:center;
+}
+
+.my-thumbs img{
+    display: block;
+    box-shadow: 1px 1px 5px rgba(0,0,0,5);
+    
+}

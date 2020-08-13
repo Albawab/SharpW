@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Grid_EmptyRecord" xml:space="preserve">
+    <value>No hay registros que mostrar</value>
+  </data>
+  <data name="Grid_True" xml:space="preserve">
+    <value>cierto</value>
+  </data>
+  <data name="Grid_False" xml:space="preserve">
+    <value>falso</value>
+  </data>
+  <data name="Grid_InvalidFilterMessage" xml:space="preserve">
+    <value>Datos de filtro no válidos</value>
+  </data>
+  <data name="Grid_GroupDropArea" xml:space="preserve">
+    <value>Arrastre el encabezado de una columna aquí para agrupar su columna</value>
+  </data>
+  <data name="Grid_UnGroupButton" xml:space="preserve">
+    <value>Haga clic aquí para desagrupar</value>
+  </data>
+  <data name="Grid_GroupDisable" xml:space="preserve">
+    <value>La agrupación está deshabilitada para esta columna</value>
+  </data>
+  <data name="Grid_FilterbarTitle" xml:space="preserve">
+    <value>celda de barra de filtro</value>
+  </data>
+  <data name="Grid_EmptyDataSourceError" xml:space="preserve">
+    <value>DataSource no debe estar vacío en la carga inicial ya que las columnas se generan a partir de dataSource en AutoGenerate Column Grid</value>
+  </data>
+  <data name="Grid_Add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="Grid_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Grid_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Grid_Update" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="Grid_Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="Grid_Print" xml:space="preserve">
+    <value>Impresión</value>
+  </data>
+  <data name="Grid_Pdfexport" xml:space="preserve">
+    <value>Exportar PDF</value>
+  </data>
+  <data name="Grid_Excelexport" xml:space="preserve">
+    <value>Exportación Excel</value>
+  </data>
+  <data name="Grid_Wordexport" xml:space="preserve">
+    <value>Exportación de palabras</value>
+  </data>
+  <data name="Grid_Csvexport" xml:space="preserve">
+    <value>Exportación CSV</value>
+  </data>
+  <data name="Grid_Search" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="Grid_Columnchooser" xml:space="preserve">
+    <value>Columnas</value>
+  </data>
+  <data name="Grid_Save" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Grid_Item" xml:space="preserve">
+    <value>articulo</value>
+  </data>
+  <data name="Grid_Items" xml:space="preserve">
+    <value>artículos</value>
+  </data>
+  <data name="Grid_EditOperationAlert" xml:space="preserve">
+    <value>No hay registros seleccionados para la operación de edición</value>
+  </data>
+  <data name="Grid_DeleteOperationAlert" xml:space="preserve">
+    <value>No hay registros seleccionados para la operación de eliminación</value>
+  </data>
+  <data name="Grid_SaveButton" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Grid_OKButton" xml:space="preserve">
+    <value>Okay</value>
+  </data>
+  <data name="Grid_CancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Grid_EditFormTitle" xml:space="preserve">
+    <value>Detalles de</value>
+  </data>
+  <data name="Grid_AddFormTitle" xml:space="preserve">
+    <value>Añadir nuevo récord</value>
+  </data>
+  <data name="Grid_BatchSaveConfirm" xml:space="preserve">
+    <value>¿Seguro que quieres guardar los cambios?</value>
+  </data>
+  <data name="Grid_BatchSaveLostChanges" xml:space="preserve">
+    <value>Los cambios no guardados se perderán. Estás seguro de que quieres continuar?</value>
+  </data>
+  <data name="Grid_ConfirmDelete" xml:space="preserve">
+    <value>¿Estás seguro de que deseas eliminar el registro?</value>
+  </data>
+  <data name="Grid_CancelEdit" xml:space="preserve">
+    <value>¿Estás seguro de que deseas cancelar los cambios?</value>
+  </data>
+  <data name="Grid_ChooseColumns" xml:space="preserve">
+    <value>Elegir columna</value>
+  </data>
+  <data name="Grid_SearchColumns" xml:space="preserve">
+    <value>columnas de búsqueda</value>
+  </data>
+  <data name="Grid_Matchs" xml:space="preserve">
+    <value>No se encontraron coincidencias</value>
+  </data>
+  <data name="Grid_FilterButton" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+  <data name="Grid_ClearButton" xml:space="preserve">
+    <value>Claro</value>
+  </data>
+  <data name="Grid_StartsWith" xml:space="preserve">
+    <value>Comienza con</value>
+  </data>
+  <data name="Grid_EndsWith" xml:space="preserve">
+    <value>Termina con</value>
+  </data>
+  <data name="Grid_Contains" xml:space="preserve">
+    <value>Contiene</value>
+  </data>
+  <data name="Grid_Equal" xml:space="preserve">
+    <value>Igual</value>
+  </data>
+  <data name="Grid_NotEqual" xml:space="preserve">
+    <value>No es igual</value>
+  </data>
+  <data name="Grid_LessThan" xml:space="preserve">
+    <value>Menos que</value>
+  </data>
+  <data name="Grid_LessThanOrEqual" xml:space="preserve">
+    <value>Menor o igual</value>
+  </data>
+  <data name="Grid_GreaterThan" xml:space="preserve">
+    <value>Mas grande que</value>
+  </data>
+  <data name="Grid_GreaterThanOrEqual" xml:space="preserve">
+    <value>Mayor que o igual</value>
+  </data>
+  <data name="Grid_ChooseDate" xml:space="preserve">
+    <value>Elige una fecha</value>
+  </data>
+  <data name="Grid_EnterValue" xml:space="preserve">
+    <value>Ingrese el valor</value>
+  </data>
+  <data name="Grid_Copy" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="Grid_Group" xml:space="preserve">
+    <value>Agrupar por esta columna</value>
+  </data>
+  <data name="Grid_Ungroup" xml:space="preserve">
+    <value>Desagrupar por esta columna</value>
+  </data>
+  <data name="Grid_AutoFitAll" xml:space="preserve">
+    <value>Ajuste automático de todas las columnas</value>
+  </data>
+  <data name="Grid_AutoFit" xml:space="preserve">
+    <value>Ajustar automáticamente esta columna</value>
+  </data>
+  <data name="Grid_Export" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="Grid_FirstPage" xml:space="preserve">
+    <value>Primera página</value>
+  </data>
+  <data name="Grid_LastPage" xml:space="preserve">
+    <value>Última página</value>
+  </data>
+  <data name="Grid_PreviousPage" xml:space="preserve">
+    <value>Pagina anterior</value>
+  </data>
+  <data name="Grid_NextPage" xml:space="preserve">
+    <value>Siguiente página</value>
+  </data>
+  <data name="Grid_SortAscending" xml:space="preserve">
+    <value>Orden ascendente</value>
+  </data>
+  <data name="Grid_SortDescending" xml:space="preserve">
+    <value>Orden descendiente</value>
+  </data>
+  <data name="Grid_EditRecord" xml:space="preserve">
+    <value>Editar registro</value>
+  </data>
+  <data name="Grid_DeleteRecord" xml:space="preserve">
+    <value>Eliminar el registro</value>
+  </data>
+  <data name="Grid_FilterMenu" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+  <data name="Grid_SelectAll" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="Grid_Blanks" xml:space="preserve">
+    <value>Espacios en blanco</value>
+  </data>
+  <data name="Grid_FilterTrue" xml:space="preserve">
+    <value>Cierto</value>
+  </data>
+  <data name="Grid_FilterFalse" xml:space="preserve">
+    <value>Falso</value>
+  </data>
+  <data name="Grid_NoResult" xml:space="preserve">
+    <value>No se encontraron coincidencias</value>
+  </data>
+  <data name="Grid_ClearFilter" xml:space="preserve">
+    <value>Filtro claro</value>
+  </data>
+  <data name="Grid_NumberFilter" xml:space="preserve">
+    <value>Filtros de número</value>
+  </data>
+  <data name="Grid_TextFilter" xml:space="preserve">
+    <value>Filtros de texto</value>
+  </data>
+  <data name="Grid_DateFilter" xml:space="preserve">
+    <value>Filtros de fecha</value>
+  </data>
+  <data name="Grid_DateTimeFilter" xml:space="preserve">
+    <value>Filtros de fecha y hora</value>
+  </data>
+  <data name="Grid_MatchCase" xml:space="preserve">
+    <value>Match Case</value>
+  </data>
+  <data name="Grid_Between" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="Grid_CustomFilter" xml:space="preserve">
+    <value>Filtro personalizado</value>
+  </data>
+  <data name="Grid_CustomFilterPlaceHolder" xml:space="preserve">
+    <value>Ingrese el valor</value>
+  </data>
+  <data name="Grid_CustomFilterDatePlaceHolder" xml:space="preserve">
+    <value>Elige una fecha</value>
+  </data>
+  <data name="Grid_AND" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="Grid_OR" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="Grid_ShowRowsWhere" xml:space="preserve">
+    <value>Mostrar filas donde:</value>
+  </data>
+  <data name="Pager_CurrentPageInfo" xml:space="preserve">
+    <value>{0} de {1} páginas</value>
+  </data>
+  <data name="Pager_TotalItemsInfo" xml:space="preserve">
+    <value>({0} artículos)</value>
+  </data>
+  <data name="Pager_FirstPageTooltip" xml:space="preserve">
+    <value>Ir a la primera página</value>
+  </data>
+  <data name="Pager_LastPageTooltip" xml:space="preserve">
+    <value>Ir a la última página</value>
+  </data>
+  <data name="Pager_NextPageTooltip" xml:space="preserve">
+    <value>Ir a la página siguiente</value>
+  </data>
+  <data name="Pager_PreviousPageTooltip" xml:space="preserve">
+    <value>Regresar a la pagina anterior</value>
+  </data>
+  <data name="Pager_NextPagerTooltip" xml:space="preserve">
+    <value>Ir al siguiente localizador</value>
+  </data>
+  <data name="Pager_PreviousPagerTooltip" xml:space="preserve">
+    <value>Ir al localizador anterior</value>
+  </data>
+  <data name="Pager_PagerDropDown" xml:space="preserve">
+    <value>Artículos por página</value>
+  </data>
+  <data name="Pager_PagerAllDropDown" xml:space="preserve">
+    <value>Artículos</value>
+  </data>
+  <data name="Pager_All" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+</root>

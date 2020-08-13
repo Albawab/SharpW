@@ -1,0 +1,118 @@
+﻿@page "/inPlaceEditor"
+<h1>InPlaceEditor</h1>
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Calendars
+@using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.InPlaceEditor
+@using Syncfusion.Blazor.RichTextEditor
+
+
+<div>
+    <h2 style="color:red">popup</h2>
+    <SfInPlaceEditor Mode="RenderMode.Popup" Type="InputType.AutoComplete" Value="@AutoValue" >
+    </SfInPlaceEditor>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">DropDownList</h2>
+    <SfInPlaceEditor Mode="RenderMode.Inline" Type="InputType.DropDownList" Value="@DropdownValue"  />
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Buttons</h2>
+    <SfInPlaceEditor Mode="RenderMode.Inline" Type="InputType.Text" Value="AutoValue" SaveButton="SaveBtn" CancelButton="CancelBtn">
+    </SfInPlaceEditor>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Server</h2>
+    <table class="table-section">
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                <SfInPlaceEditor Name="Skill" Url="https://ej2services.syncfusion.com/development/web-services/api/Editor/UpdateData" PrimaryKey="FrameWork" Adaptor="AdaptorType.UrlAdaptor" Mode="RenderMode.Inline" EnableEditMode="true" Type="InputType.MultiSelect" Value="MultiSelectValue" SubmitOnEnter="true" Model="MultiSelectData">
+                    <InPlaceEditorEvents OnActionSuccess="OnSuccess" TValue="string"></InPlaceEditorEvents>
+                </SfInPlaceEditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Validation</h2>
+    <table class="table-section">
+        <tr>
+            <td> Default Error Message </td>
+            <td>
+                <SfInPlaceEditor Mode="RenderMode.Inline" EmptyText="dd/mm/yyyy" Name="Today" ValidationRules="Validate" Type="InputType.Date" Model="DateModel" TValue="string">
+                </SfInPlaceEditor>
+            </td>
+        </tr>
+        <tr>
+            <td> Customized Error Message </td>
+            <td>
+                <SfInPlaceEditor Mode="RenderMode.Inline" EmptyText="dd/mm/yyyy" Name="TodayCustom" ValidationRules="Validation" Type="InputType.Date" Model="DateModel" TValue="string">
+                    <InPlaceEditorEvents Validating="OnValidation" TValue="string"></InPlaceEditorEvents>
+                </SfInPlaceEditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+@code {
+    public string AutoValue = "Australia";
+    public string DropdownValue = "Australia";
+    public string[] MultiSelectValue = new string[] { "JavaScript", "jQuery" };
+
+
+    public ButtonModel SaveBtn = new ButtonModel()
+    {
+        Content = "OK",
+        CssClass = "e-outline"
+    };
+
+    public MultiSelectModel<string> MultiSelectData = new MultiSelectModel<string>()
+    {
+        Placeholder = "Select skill",
+        Mode = VisualMode.Box,
+        DataSource = new string[] { "Android", "JavaScript", "jQuery", "TypeScript", "Angular", "React", "Vue", "Ionic" }
+    };
+    public ButtonModel CancelBtn = new ButtonModel()
+    {
+        Content = "Cancel",
+        CssClass = "e-outline"
+    };
+
+    public void OnSuccess(ActionEventArgs args)
+    {
+        Console.WriteLine("Event is triggered");
+    }
+
+
+    public DatePickerModel DateModel = new DatePickerModel()
+    {
+        Placeholder = "Select date"
+    };
+    public object Validate = new
+    {
+        Today = new { required = true }
+    };
+    public object Validation = new
+    {
+        TodayCustom = new { required = true }
+    };
+    private void OnValidation(ValidateEventArgs args)
+    {
+        args.ErrorMessage = "Field should not be empty";
+    }
+
+}

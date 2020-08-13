@@ -1,0 +1,14 @@
+﻿@using Send_data_from_body_to_navigatie.Models
+<br />
+<div>
+    <div class="navigator-omschrijving-header">
+        <h5><strong>Omschrijving:</strong></h5>
+    </div>
+    <h6><strong>Naam:</strong> @OmschrijvingNavigatorItem.Omschrijving</h6>
+    <h6><strong> Omschrijving:</strong>  @OmschrijvingNavigatorItem.Omschrijving</h6>
+
+</div>
+@code {
+    [Parameter]
+    public OmschrijvingNavigatorModel OmschrijvingNavigatorItem { get; set; }
+}

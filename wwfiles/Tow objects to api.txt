@@ -1,0 +1,9 @@
+string jsonObjectA = JsonConvert.SerializeObject(objectA);
+string jsonObjectB = JsonConvert.SerializeObject(objectB);
+string jSoNToPost = string.Format("\"content\": {0},\"config\":\"{1}\"",jsonObjectA , jsonObjectB );
+//wrap it around in object container notation
+jSoNToPost = string.Concat("{", jSoNToPost , "}"); 
+//convert it to JSON acceptible content
+HttpContent content = new StringContent(jSoNToPost , Encoding.UTF8, "application/json"); 
+
+var response = httpClient.PutAsync("api/process/StartProcessiong", content);Async($"http://localhost:60098/Navigatorapi", navigatorItem);

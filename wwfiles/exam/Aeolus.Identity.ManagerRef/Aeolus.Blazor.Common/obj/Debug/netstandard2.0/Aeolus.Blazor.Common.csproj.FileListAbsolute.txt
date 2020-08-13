@@ -1,0 +1,12 @@
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.RazorComponent.input.cache
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Body\Component\BaseBodyComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Body\Component\Grid\ODataGridComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Body\Component\Toolbar\ToolbarBodyComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Body\Component\Toolbar\ToolMenuGroupComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Body\Component\Toolbar\ToolMenuLinkComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Header\Components\MainHeaderComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatieGroepComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatieItemComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatorComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\source\repos\HenE.Aeolus.Overzichten.Blazor\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\_Imports.razor.g.cs

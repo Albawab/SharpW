@@ -1,0 +1,75 @@
+import {JsonObject, JsonProperty, JsonConverter, JsonCustomConvert, JsonConvert} from 'json2typescript';
+
+@JsonConverter
+class ActieConverter implements JsonCustomConvert<BaseActieDto[]> {
+
+  // We receive the instance and just serialize it with the standard json2typescript method.
+  serialize(actie: BaseActieDto[]): any {
+    const jsonConvert: JsonConvert = new JsonConvert();
+    return jsonConvert.serialize(actie);
+  }
+
+  // We receive a json object (not string) and decide
+  // based on the given properties whether we want to
+  // create an instance of Computer or Mobile.
+  deserialize(actiesInput: any): BaseActieDto[] {
+
+    const jsonConvert: JsonConvert = new JsonConvert();
+
+
+    const acties: Array<BaseActieDto> = new Array<BaseActieDto>();
+    for (const actie of actiesInput) {
+      if (actie['type'] === 'openActie') {
+        const temp: OpenActieDto = jsonConvert.deserialize(actie, OpenActieDto);
+        acties.push(temp);
+      } else if (actie['type'] === 'confirmActie') {
+        acties.push(jsonConvert.deserialize(actie, ConfirmActieDto));
+      }
+    }
+    return acties;
+  }
+
+
+}
+
+// @JsonObject
+export class ActiesDto {
+  // @JsonProperty('acties', ActieConverter)
+  acties: BaseActieDto[] = [];
+}
+
+
+@JsonObject
+export class BaseActieDto {
+  @JsonProperty('type', String)
+  type: string = undefined;
+  @JsonProperty('voerUitOpAlleItems', Boolean)
+  voerUitOpAlleItems: string = undefined;
+  @JsonProperty('soort', String)
+  soort: string = undefined;
+  @JsonProperty('returnFailedResult', String)
+  returnFailedResult: string = undefined;
+  @JsonProperty('returnSuccesResult', String)
+  returnSuccesResult: string = undefined;
+}
+
+@JsonObject
+export class OpenActieDto extends BaseActieDto {
+  @JsonProperty('url', String)
+  url: string = undefined;
+
+  @JsonProperty('target', String)
+  target: string = undefined;
+}
+
+@JsonObject
+export class ConfirmActieDto extends BaseActieDto {
+  @JsonProperty('vraag', String)
+  vraag: string = undefined;
+}
+
+@JsonObject
+export class ApiCallDto extends BaseActieDto {
+  @JsonProperty('version', String)
+  version: string = undefined;
+}

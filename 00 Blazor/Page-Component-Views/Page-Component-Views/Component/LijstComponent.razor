@@ -1,0 +1,25 @@
+﻿@page "/studentComponent"
+@using Page_Component_Views.Model
+@using Page_Component_Views.Controllers
+
+
+@foreach (Student student in Students)
+{
+    <ul>
+        <li>@student.id</li>
+        <li>@student.name</li>
+        <li>@student.Birthday</li>
+    </ul><br /><hr />
+}
+
+
+
+@code {
+    List<Student> Students;
+    StudentControllerComponent StudentController = new StudentControllerComponent();
+
+    protected override void OnInitialized()
+    {
+        Students = StudentController.GetStudents();
+    }
+}

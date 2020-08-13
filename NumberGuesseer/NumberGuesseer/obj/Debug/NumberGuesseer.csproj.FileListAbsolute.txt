@@ -1,0 +1,6 @@
+C:\Users\Abdul\Desktop\Sharp\NumberGuesseer\NumberGuesseer\bin\Debug\NumberGuesseer.exe.config
+C:\Users\Abdul\Desktop\Sharp\NumberGuesseer\NumberGuesseer\bin\Debug\NumberGuesseer.exe
+C:\Users\Abdul\Desktop\Sharp\NumberGuesseer\NumberGuesseer\bin\Debug\NumberGuesseer.pdb
+C:\Users\Abdul\Desktop\Sharp\NumberGuesseer\NumberGuesseer\obj\Debug\NumberGuesseer.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Sharp\NumberGuesseer\NumberGuesseer\obj\Debug\NumberGuesseer.exe
+C:\Users\Abdul\Desktop\Sharp\NumberGuesseer\NumberGuesseer\obj\Debug\NumberGuesseer.pdb

@@ -1,0 +1,93 @@
+﻿@page "/Grid/GridLines"
+
+@using Syncfusion.EJ2.Blazor.Grids
+@using Syncfusion.EJ2.Blazor.DropDowns
+
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@using ej2_blazor_griddata
+@{
+    SampleBrowser.CurrentSampleName = "Grid Lines";
+    SampleBrowser.CurrentControlName = "DataGrid";
+    SampleBrowser.CurrentControlCategory = "DataGrid";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.DataGrid;
+    SampleBrowser.ActionDescription = new string[] {
+        @"<p>This sample demonstrates visibility of the grid lines that separates the rows and columns.</p>"
+    };
+    SampleBrowser.Description = new string[]{
+        @"<p>The <code><a target='_blank' class='code' href='https://help.syncfusion.com/cr/aspnetcore-blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.Grids.GridModel%601~GridLines.html'>GridLines</a></code> property is used to control the line visibility that separates the rows and columns. The following grid lines can be displayed in the grid,</p>
+        <ul>
+            <li><code>Default</code> - Shows the Horizontal line.</li>
+            <li><code>None</code> - Shows no line.</li>
+            <li><code>Both</code> - Shows both Horizontal and Vertical lines.</li>
+            <li><code>Horizontal</code> - Shows the Horizontal line.</li>
+            <li><code>Vertical</code> - Shows the Vertical line.</li>
+        </ul>
+        <p> In this demo, we have set the GridLines value as Both.</p>
+        <p>More information on the GridLines configuration can be found in this<a target='_blank' href='https://ej2.syncfusion.com/blazor/documentation/grid/cell/#grid-lines'>documentation section</a>.</p>"
+    };
+}
+@*End:Hidden*@
+
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <div class="row">
+            <EjsGrid DataSource="@GridData" AllowPaging="true" GridLines="GridLine.Both">
+                <GridColumns>
+                    <GridColumn Field=@nameof(OrdersDetails.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Right"  Width="120"></GridColumn>
+                    <GridColumn Field=@nameof(OrdersDetails.CustomerID) HeaderText="Customer ID" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(OrdersDetails.Freight) HeaderText="Freight" TextAlign="TextAlign.Right"  Width="120" Format="C2"></GridColumn>
+                    <GridColumn Field=@nameof(OrdersDetails.ShipCity) HeaderText="Ship City" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(OrdersDetails.ShipCountry) HeaderText="Ship Country" Width="150"></GridColumn>
+                </GridColumns>
+            </EjsGrid>
+
+        </div>
+    </div>
+</div>
+
+@*<div class="col-lg-3 property-section">
+    <h4 style="margin-top:28px;">Properties</h4>
+
+    <table id="property" style="width: 73%; height: 58px;">
+        <tr>
+            <td class="left-side" style="padding-right:15px;">GridLines</td>
+            <td>
+                <EjsDropDownList ID="games" Index="2" PopupWidth="110px" DataSource="@lines" Change="@OnChange">
+                    <DropDownListFieldSettings text="id" value="text"></DropDownListFieldSettings>
+                </EjsDropDownList>
+            </td>
+        </tr>
+    </table>
+</div>*@
+
+@code{
+
+    public List<OrdersDetails> GridData { get; set; }
+
+    public class Lines
+    {
+        public string id { get; set; }
+
+        public string text { get; set; }
+    }
+
+    private List<Lines> lines = new List<Lines>()
+    {
+        new Lines(){ id= "Default", text= "Default" },
+        new Lines(){ id= "Horizontal", text= "Horizontal" },
+        new Lines(){ id= "Vertical", text= "Vertical" },
+        new Lines(){ id= "Both", text= "Both" },
+        new Lines(){ id= "None", text= "None" },
+    };
+
+    public void OnChange(object args)
+    {
+        
+    }
+
+    protected override void OnInitialized()
+    {
+        GridData = OrdersDetails.GetAllRecords();
+    }
+}

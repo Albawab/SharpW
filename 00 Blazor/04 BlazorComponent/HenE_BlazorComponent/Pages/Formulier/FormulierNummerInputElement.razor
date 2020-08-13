@@ -1,0 +1,14 @@
+﻿<label class="col-@Antwoord.Columns offset-@Antwoord.Column">
+    <SfNumericTextBox TValue="double?" Format="€ ###.00" Value=100 Step="200"></SfNumericTextBox>
+</label>
+@code {
+    [Parameter]
+    public FormulierAntwoord Antwoord { get; set; }
+        [Inject]
+    protected IJSRuntime JsRuntime { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+       // this.JsRuntime.Ejs().LoadLocaleData("wwwroot/ej2-locale/src/nl.json").SetCulture("nl").LoadCldrData(new string[] { "wwwroot/cldr-data/main/nl/currencies.json", "wwwroot/cldr-data/main/nl/numbers.json" });
+    }
+}

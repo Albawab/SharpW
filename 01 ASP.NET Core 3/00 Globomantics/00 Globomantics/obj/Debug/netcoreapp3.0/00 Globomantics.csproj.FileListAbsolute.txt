@@ -1,0 +1,20 @@
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\00 Globomantics.exe
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\00 Globomantics.deps.json
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\00 Globomantics.runtimeconfig.json
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\00 Globomantics.runtimeconfig.dev.json
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\00 Globomantics.dll
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\00 Globomantics.pdb
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\00 Globomantics.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\staticwebassets\00 Globomantics.StaticWebAssets.Manifest.cache
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\staticwebassets\00 Globomantics.StaticWebAssets.xml
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\00 Globomantics.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\00 Globomantics.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\00 Globomantics.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\00 Globomantics.RazorTargetAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\00 Globomantics.dll
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\obj\Debug\netcoreapp3.0\00 Globomantics.pdb
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\package.json
+C:\Users\Abdul\Desktop\Sharp\01 ASP.NET Core 3\00 Globomantics\00 Globomantics\bin\Debug\netcoreapp3.0\libman.json

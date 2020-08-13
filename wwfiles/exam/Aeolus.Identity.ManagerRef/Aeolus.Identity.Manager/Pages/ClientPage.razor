@@ -1,0 +1,31 @@
+﻿@page "/clientPage"
+
+@using HenE.Aeolus.Identity.Manager.Client.Models
+@using HenE.Aeolus.Identity.Manager.Client.Services
+
+@{
+    RenderFragment renderFragment = builder =>
+    {
+        builder.OpenComponent<ListAndItemsComponent>(0);
+        builder.AddAttribute(1, "TypeObject", model);
+        builder.AddAttribute(2, "Service", Service);
+        builder.AddAttribute(3, "ToolsMenuSevice", toolsMenuSevice);
+        builder.CloseComponent();
+    };
+
+    @renderFragment
+
+}
+
+@code {
+    IAppService Service;
+    IToolsMenuSevice toolsMenuSevice;
+    ClientModel model;
+
+    protected override void OnInitialized()
+    {
+        Service = new InternalClientsService();
+        toolsMenuSevice = new InternalToolsMenuClientsService();
+        model = new ClientModel();
+    }
+}

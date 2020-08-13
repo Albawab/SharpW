@@ -1,0 +1,58 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "navigator": [
+        "dist/navigator"
+      ],
+      "navigator/*": [
+        "dist/navigator/*"
+      ],
+      "modulesMenu": [
+        "dist/modules-menu"
+      ],
+      "modulesMenu/*": [
+        "dist/modules-menu/*"
+      ],
+      "MainLijst": [
+        "dist/main-lijst"
+      ],
+      "MainLijst/*": [
+        "dist/main-lijst/*"
+      ],
+      "header": [
+        "dist/header"
+      ],
+      "header/*": [
+        "dist/header/*"
+      ],
+      "navigatorMap": [
+        "dist/navigator-map"
+      ],
+      "navigatorMap/*": [
+        "dist/navigator-map/*"
+      ],
+      "rightSidebaar": [
+        "dist/right-sidebaar"
+      ],
+      "rightSidebaar/*": [
+        "dist/right-sidebaar/*"
+      ]
+    }
+  }
+}

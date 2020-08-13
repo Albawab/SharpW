@@ -1,0 +1,37 @@
+﻿@page "/"
+@using System.IO;
+@using Syncfusion.XlsIO;
+@using Syncfusion.Drawing;
+@inject Microsoft.JSInterop.IJSRuntime JS
+
+
+
+@code {
+    protected override void OnInitialized()
+    {
+        //Create an instance of ExcelEngine
+        using (ExcelEngine excelEngine = new ExcelEngine())
+        {
+            //Instantiate the Excel application object
+            IApplication application = excelEngine.Excel;
+
+            //Set the default application version
+            application.DefaultVersion = ExcelVersion.Excel2016;
+
+            //Load the existing Excel workbook into IWorkbook
+            FileStream inputStream = new FileStream(@"C:\Users\AbdulAbdulbawab\Desktop\GetXls.xlsx", FileMode.Open);
+            IWorkbook workbook = application.Workbooks.Open(inputStream);
+
+            //Get the first worksheet in the workbook into IWorksheet
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            string a = worksheet.Range["A2"].Value;
+            //Assign some text in a cell
+            worksheet.Range["B2"].Text = "Hello World";
+
+            inputStream.Dispose();
+            inputStream.Close();
+        }
+    }
+
+}

@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Calendar-Today" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Datepicker-placeholder" xml:space="preserve">
+    <value>sfasdf</value>
+  </data>
+<data name="Grid_EmptyRecord" xml:space="preserve">
+    <value>No records to display</value>
+  </data>
+  <data name="Grid_True" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="Grid_False" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="Grid_InvalidFilterMessage" xml:space="preserve">
+    <value>Invalid Filter Data</value>
+  </data>
+  <data name="Grid_GroupDropArea" xml:space="preserve">
+    <value>Common Drag a column header here to group its column</value>
+  </data>
+  <data name="Grid_UnGroup" xml:space="preserve">
+    <value>Click here to ungroup</value>
+  </data>
+  <data name="Grid_GroupDisable" xml:space="preserve">
+    <value>Grouping is disabled for this column</value>
+  </data>
+  <data name="Grid_FilterbarTitle" xml:space="preserve">
+    <value>\'s filter bar cell</value>
+  </data>
+  <data name="Grid_EmptyDataSourceError" xml:space="preserve">
+    <value>DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid</value>
+  </data>
+  <data name="Grid_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Grid_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Grid_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Grid_Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Grid_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Grid_Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Grid_Pdfexport" xml:space="preserve">
+    <value>PDF Export</value>
+  </data>
+  <data name="Grid_Excelexport" xml:space="preserve">
+    <value>Excel Export</value>
+  </data>
+  <data name="Grid_Wordexport" xml:space="preserve">
+    <value>Word Export</value>
+  </data>
+  <data name="Grid_Csvexport" xml:space="preserve">
+    <value>CSV Export</value>
+  </data>
+  <data name="Grid_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Grid_Columnchooser" xml:space="preserve">
+    <value>Columns</value>
+  </data>
+  <data name="Grid_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Grid_Item" xml:space="preserve">
+    <value>item</value>
+  </data>
+  <data name="Grid_Items" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="Grid_EditOperationAlert" xml:space="preserve">
+    <value>No records selected for edit operation</value>
+  </data>
+  <data name="Grid_DeleteOperationAlert" xml:space="preserve">
+    <value>No records selected for delete operation</value>
+  </data>
+  <data name="Grid_SaveButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Grid_OKButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Grid_CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Grid_EditFormTitle" xml:space="preserve">
+    <value>Details of </value>
+  </data>
+  <data name="Grid_AddFormTitle" xml:space="preserve">
+    <value>Add New Record</value>
+  </data>
+  <data name="Grid_BatchSaveConfirm" xml:space="preserve">
+    <value>Are you sure you want to save changes?</value>
+  </data>
+  <data name="Grid_BatchSaveLostChanges" xml:space="preserve">
+    <value>Unsaved changes will be lost. Are you sure you want to continue?</value>
+  </data>
+  <data name="Grid_ConfirmDelete" xml:space="preserve">
+    <value>Are you sure you want to Delete Record?</value>
+  </data>
+  <data name="Grid_CancelEdit" xml:space="preserve">
+    <value>Are you sure you want to Cancel the changes?</value>
+  </data>
+  <data name="Grid_ChooseColumns" xml:space="preserve">
+    <value>Choose Column</value>
+  </data>
+  <data name="Grid_SearchColumns" xml:space="preserve">
+    <value>search columns</value>
+  </data>
+  <data name="Grid_Matchs" xml:space="preserve">
+    <value>No Matches Found</value>
+  </data>
+  <data name="Grid_FilterButton" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Grid_ClearButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Grid_StartsWith" xml:space="preserve">
+    <value>Starts With</value>
+  </data>
+  <data name="Grid_EndsWith" xml:space="preserve">
+    <value>Ends With</value>
+  </data>
+  <data name="Grid_Contains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="Grid_Equal" xml:space="preserve">
+    <value>Equal</value>
+  </data>
+  <data name="Grid_NotEqual" xml:space="preserve">
+    <value>Not Equal</value>
+  </data>
+  <data name="Grid_LessThan" xml:space="preserve">
+    <value>Less Than</value>
+  </data>
+  <data name="Grid_LessThanOrEqual" xml:space="preserve">
+    <value>Less Than Or Equal</value>
+  </data>
+  <data name="Grid_GreaterThan" xml:space="preserve">
+    <value>Greater Than</value>
+  </data>
+  <data name="Grid_GreaterThanOrEqual" xml:space="preserve">
+    <value>Greater Than Or Equal</value>
+  </data>
+  <data name="Grid_ChooseDate" xml:space="preserve">
+    <value>Choose a Date</value>
+  </data>
+  <data name="Grid_EnterValue" xml:space="preserve">
+    <value>Enter the value</value>
+  </data>
+  <data name="Grid_Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Grid_Group" xml:space="preserve">
+    <value>Group by this column</value>
+  </data>
+  <data name="Grid_Ungrouping" xml:space="preserve">
+    <value>Ungroup by this column</value>
+  </data>
+  <data name="Grid_autoFitAll" xml:space="preserve">
+    <value>Autofit all columns</value>
+  </data>
+  <data name="Grid_autoFit" xml:space="preserve">
+    <value>Autofit this column</value>
+  </data>
+  <data name="Grid_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Grid_FirstPage" xml:space="preserve">
+    <value>First Page</value>
+  </data>
+  <data name="Grid_LastPage" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+  <data name="Grid_PreviousPage" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="Grid_NextPage" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="Grid_SortAscending" xml:space="preserve">
+    <value>Sort Ascending</value>
+  </data>
+  <data name="Grid_SortDescending" xml:space="preserve">
+    <value>Sort Descending</value>
+  </data>
+  <data name="Grid_EditRecord" xml:space="preserve">
+    <value>Edit Record</value>
+  </data>
+  <data name="Grid_DeleteRecord" xml:space="preserve">
+    <value>Delete Record</value>
+  </data>
+  <data name="Grid_FilterMenu" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Grid_SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Grid_Blanks" xml:space="preserve">
+    <value>Blanks</value>
+  </data>
+  <data name="Grid_FilterTrue" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="Grid_FilterFalse" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="Grid_NoResult" xml:space="preserve">
+    <value>No Matches Found</value>
+  </data>
+  <data name="Grid_ClearFilter" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="Grid_NumberFilter" xml:space="preserve">
+    <value>Number Filters</value>
+  </data>
+  <data name="Grid_TextFilter" xml:space="preserve">
+    <value>Text Filters</value>
+  </data>
+  <data name="Grid_DateFilter" xml:space="preserve">
+    <value>Date Filters</value>
+  </data>
+  <data name="Grid_DateTimeFilter" xml:space="preserve">
+    <value>DateTime Filters</value>
+  </data>
+  <data name="Grid_MatchCase" xml:space="preserve">
+    <value>Match Case</value>
+  </data>
+  <data name="Grid_Between" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="Grid_CustomFilter" xml:space="preserve">
+    <value>Custom Filter</value>
+  </data>
+  <data name="Grid_CustomFilterPlaceHolder" xml:space="preserve">
+    <value>Enter the value</value>
+  </data>
+  <data name="Grid_CustomFilterDatePlaceHolder" xml:space="preserve">
+    <value>Choose a date</value>
+  </data>
+  <data name="Grid_AND" xml:space="preserve">
+    <value>AND</value>
+  </data>
+  <data name="Grid_OR" xml:space="preserve">
+    <value>OR</value>
+  </data>
+  <data name="Grid_ShowRowsWhere" xml:space="preserve">
+    <value>Show rows where:</value>
+  </data>
+  <data name="Grid_FilterMenuDialogARIA" xml:space="preserve">
+    <value>Filter menu dialog</value>
+  </data>
+  <data name="Grid_ExcelFilterDialogARIA" xml:space="preserve">
+    <value>Excel filter dialog</value>
+  </data>
+  <data name="Grid_DialogEditARIA" xml:space="preserve">
+    <value>Edit dialog</value>
+  </data>
+  <data name="Grid_ColumnChooserDialogARIA" xml:space="preserve">
+    <value>Column chooser dialog</value>
+  </data>
+  <data name="Grid_ColumnMenuDialogARIA" xml:space="preserve">
+    <value>Column menu dialog</value>
+  </data>
+  <data name="Grid_CustomFilterDialogARIA" xml:space="preserve">
+    <value>Customer filter dialog</value>
+  </data>
+</root>

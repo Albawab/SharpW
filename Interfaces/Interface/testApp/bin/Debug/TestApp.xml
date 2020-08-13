@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestApp</name>
+    </assembly>
+    <members>
+        <member name="T:HenE.TestApp.Bord">
+            <summary>
+            Kijken of de set geldig is of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.TestApp.Bord.IsMoveBetweenBoundaries(System.Int32)">
+            <summary>
+            Deze method check of het geldig set of niet.
+            </summary>
+            <param name="move">De zet.</param>
+            <returns>true als het geldig is. false als het niet geldig is.</returns>
+        </member>
+        <member name="M:HenE.TestApp.Bord.Log(System.DateTime)">
+            <summary>
+            Packt de informatie van de project.
+            </summary>
+            <param name="time">Tijd.</param>
+        </member>
+        <member name="M:HenE.TestApp.Bord.GetLocalIPAddress">
+            <summary>
+            Get the IPAddress.
+            </summary>
+            <returns>IpAddress.</returns>
+        </member>
+        <member name="M:HenE.TestApp.ConsoleLogger.Log(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HenE.TestApp.FileLogger.Log(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:HenE.TestApp.GameController">
+            <summary>
+            Control of de set goed is of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.TestApp.GameController.#ctor(HenE.InterfaceCommunicate.Interfaces.IBordController)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.TestApp.GameController"/> class.
+            </summary>
+            <param name="bordController">Bord Controller.</param>
+        </member>
+        <member name="M:HenE.TestApp.GameController.Start">
+            <summary>
+            Start om de zet te controleren.
+            </summary>
+        </member>
+        <member name="M:HenE.TestApp.GameController.Log(System.DateTime)">
+            <summary>
+            Packt de informatie van de project.
+            </summary>
+            <param name="time">Tijd.</param>
+        </member>
+        <member name="T:HenE.TestApp.Persoon">
+            <summary>
+            Contact met de speler.
+            </summary>
+        </member>
+        <member name="M:HenE.TestApp.Persoon.#ctor(HenE.Communicator.Interfaces.ICanCommunicate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.TestApp.Persoon"/> class.
+            </summary>
+            <param name="communicator">Communicator.</param>
+        </member>
+        <member name="M:HenE.TestApp.Persoon.PreferredMove">
+            <summary>
+            welke set zou de persoon willen doen.
+            </summary>
+            <returns>Het nummer als string.</returns>
+        </member>
+        <member name="M:HenE.TestApp.Persoon.Tell(System.String)">
+            <summary>
+            Een bericht naar de persoon sturen.
+            </summary>
+            <param name="message">De bericht die naar de speler moet sturn.</param>
+        </member>
+        <member name="T:HenE.TestApp.Program">
+            <summary>
+            Program.
+            </summary>
+        </member>
+        <member name="T:HenE.TestApp.WriteTextFile">
+            <summary>
+            Schrijf de txt op.
+            </summary>
+        </member>
+        <member name="M:HenE.TestApp.WriteTextFile.WriteText(System.String)">
+            <summary>
+            Write de text .
+            </summary>
+            <param name="text">De text.</param>
+        </member>
+    </members>
+</doc>

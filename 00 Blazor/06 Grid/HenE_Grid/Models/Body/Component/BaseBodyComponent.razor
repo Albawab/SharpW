@@ -1,0 +1,56 @@
+﻿@typeparam TItem
+    <div class="toolsHeader">
+        <ToolbarBodyComponent ExcelExportEventCallback="@ExcelExport" PdfExportEventCallback="@PdfExport" ToolMenuItems="toolMenuItem"></ToolbarBodyComponent>
+        </div>
+    <div>
+        <ODataGrid Route="@Route" TItem="TItem" Callback="GetData"></ODataGrid>
+    </div>
+
+        @code {
+            [Parameter]
+            public string Route { get; set; }
+            [Parameter]
+            public string link { get; set; }
+
+            ToolsMenuServer ToolsMenuServer = null;
+            dynamic toolMenuItem = null;
+
+            public SfGrid<TItem> DefaultGrid { get; set; }
+
+            protected override void OnInitialized()
+            {
+                ToolsMenuServer = new ToolsMenuServer();
+                toolMenuItem = ToolsMenuServer.ToolMenuItem;
+            }
+
+            private void GetData(SfGrid<TItem> data)
+            {
+                DefaultGrid = data;
+            }
+            public void ExcelExport()
+            {
+                ExcelExportProperties ExcelProperties = new ExcelExportProperties();
+                ExcelTheme Theme = new ExcelTheme();
+
+                ExcelStyle ThemeStyle = new ExcelStyle()
+                {
+                    FontName = "Segoe UI",
+                    FontColor = "#666666",
+                    FontSize = 12
+                };
+
+                Theme.Header = ThemeStyle;
+                Theme.Record = ThemeStyle;
+                Theme.Caption = ThemeStyle;
+                ExcelProperties.Theme = Theme;
+                ExcelProperties.FileName = $"Excel file_{DateTime.Now}.xlsx";
+                // ExcelProperties.ExportType = Syncfusion.Blazor.Grids.ExportType.CurrentPage;
+                this.DefaultGrid.ExcelExport(ExcelProperties);
+            }
+            public void PdfExport()
+            {
+                PdfExportProperties ExportProperties = new PdfExportProperties();
+                ExportProperties.FileName = $"Pdf file_{DateTime.Now}.pdf";
+                this.DefaultGrid.PdfExport(ExportProperties);
+            }
+        }

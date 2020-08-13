@@ -1,0 +1,16 @@
+Empty
+lenght > 0 Mag niet minder dan 0.
+
+lenght > int mogelijkheid.
+
+leeg vled mag niet.
+
+Mag geen letters gebruiken als ik een nummer nodig heb.
+
+Mag geen nummer gebruiken als ik een letters nodig heb.
+
+string.Lenght > 20 letters.
+
+Client => Ip adres andere computer.
+
+De server is niet altijd uit.

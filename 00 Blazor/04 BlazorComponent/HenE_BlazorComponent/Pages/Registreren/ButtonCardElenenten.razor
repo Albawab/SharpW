@@ -1,0 +1,29 @@
+﻿
+<label class="col-@CardButtonElement.Columns offset-@CardButtonElement.Column">
+    <SfProgressButton  Content="Registreren">
+        <ProgressButtonSpinSettings Position=Position></ProgressButtonSpinSettings>
+    </SfProgressButton>
+</label>
+@code {
+    [Parameter]
+    public CardButtonElement CardButtonElement { get; set; }
+    public SpinPosition Position
+    {
+        get
+        {
+            switch (CardButtonElement.ButtonSpinPosition)
+            {
+                case ButtonSpinPosition.Right:
+                    return SpinPosition.Right;
+                case ButtonSpinPosition.Top:
+                    return SpinPosition.Top;
+                case ButtonSpinPosition.Bottom:
+                    return SpinPosition.Bottom;
+                case ButtonSpinPosition.Center:
+                    return SpinPosition.Center;
+                default:
+                    return SpinPosition.Center;
+            };
+        }
+    }
+}

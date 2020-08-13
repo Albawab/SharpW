@@ -1,0 +1,98 @@
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.exe
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.deps.json
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.runtimeconfig.json
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.runtimeconfig.dev.json
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.pdb
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.pdb
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Abdul\Desktop\Werk\BlazorComponent-Grid-Syncfusion\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.csproj.CopyComplete
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.exe
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.deps.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.runtimeconfig.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.runtimeconfig.dev.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Editity Framework.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.AssemblyInfoInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.AssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.csproj.CopyComplete
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\04 BlazorComponent\Editity Framework\obj\Debug\netcoreapp3.1\Editity Framework.genruntimeconfig.cache

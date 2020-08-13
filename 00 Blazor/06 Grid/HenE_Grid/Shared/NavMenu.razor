@@ -1,0 +1,31 @@
+﻿@inject Aeolus.Blazor.Common.Navigatie.Interfaces.INavigatieService service
+
+ 
+<div class="top-row pl-4">
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="container" @onclick="ToggleNavMenu">
+    <div class="row">
+        <NavigatorComponent navigatieService="@service" ></NavigatorComponent>
+    </div>
+    <div class="navFooter">
+        <a href="https://www.google.com/"><span style="color:black" target="_blank">Ga naar Google</span></a>
+    </div>
+</div>
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    protected override void OnInitialized()
+    {
+    }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

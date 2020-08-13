@@ -1,0 +1,30 @@
+﻿@using Aeolus.Blazor.Common.Navigatie.Interfaces
+
+@foreach (var item in items)
+{
+    if (item != null)
+    {
+        <NavigatieGroepComponent navigatieItems="item"></NavigatieGroepComponent>
+    }
+}
+
+@code {
+
+    private dynamic navigatieItemsFavoriet { get; set; }
+    private dynamic navigatieItemsNotFavoriet { get; set; }
+
+    [Parameter]
+    public INavigatieService navigatieService { get; set; }
+
+
+    List<dynamic> items = null;
+
+    protected override void OnInitialized()
+    {
+         this.navigatieItemsFavoriet = navigatieService.GetItems();
+         //this.navigatieItemsNotFavoriet = navigatieService.GetAlleMappenNavigatieItems();
+
+        items = new List<dynamic>() { navigatieItemsFavoriet, navigatieItemsNotFavoriet };
+    }
+}
+

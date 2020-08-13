@@ -1,0 +1,114 @@
+[
+  {
+<<<<<<< HEAD
+    "Titel": "vwaangepastewoningen",
+=======
+    "Titel": "Woningen 1",
+>>>>>>> e0256beea21d03e4af9b5abb70c45493b0236ba7
+    "IsFavoriet": false,
+    "SubItems": [
+      {
+        "Page": "vwaangepastewoningen",
+        "Titel": "Vwaangepastewoningen",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 1
+      },
+      {
+        "Page": "order",
+        "Titel": "Order",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 2
+      },
+      {
+        "Page": "vw..",
+        "Titel": "Items 4",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 3
+      }
+<<<<<<< HEAD
+    ]
+  },
+  {
+
+    "Titel": "Order",
+    "IsFavoriet": false,
+    "SubItems": [
+      {
+        "Page": "vwaangepastewoningen",
+        "Titel": "Vwaangepastewoningen",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 1
+      },
+      {
+        "Page": "order",
+        "Titel": "Order",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 2
+      },
+      {
+        "Page": "vw..",
+        "Titel": "Items 4",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 3
+      }
+    ]
+  },
+  {
+
+    "Titel": "Index",
+=======
+    ],
+  },
+  {
+
+    "Titel": "Woningen 2",
+>>>>>>> e0256beea21d03e4af9b5abb70c45493b0236ba7
+    "IsFavoriet": true,
+    "SubItems": [
+      {
+        "Page": "vwaangepastewoningen",
+        "Titel": "Vwaangepastewoningen",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 1
+      },
+      {
+        "Page": "order",
+        "Titel": "Order",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 2
+      },
+      {
+        "Page": "vw..",
+        "Titel": "Items 4",
+        "IsFavoriet": false,
+        "SubItems": null,
+        "NavigatieType": 1,
+        "Id": 3
+      }
+    ]
+<<<<<<< HEAD
+  },
+  {
+
+    "Titel": "Index",
+    "IsFavoriet": true,
+=======
+>>>>>>> e0256beea21d03e4af9b5abb70c45493b0236ba7
+  }
+]

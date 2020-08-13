@@ -1,0 +1,49 @@
+﻿@page "/"
+@using Impott.Interfaces
+@using Impott.Data
+@inject INavigation vav
+
+Welcome to your new app.
+<br />
+
+<button type="button" @onclick="Update">Click</button>
+@render
+@code{
+
+    RenderFragment render;
+
+    protected override void OnInitialized()
+    {
+
+    }
+
+
+    private void Update()
+    {
+        render = builder =>
+        {
+            builder.OpenComponent(0, typeof(OmschrijvingNavigatorComponent));
+            builder.AddAttribute(1, "OmschrijvingI", GetMenubarItems());
+            builder.CloseComponent();
+        };
+        vav.UpdateNav(render);
+        StateHasChanged();
+    }
+
+
+    public string GetData()
+    {
+        return "";
+    }
+
+    private OmschrijvingItem GetMenubarItems()
+    {
+        return new OmschrijvingItem()
+        {
+            Titel = "New",
+            Omschrijving = "Hallo Impott.Data",
+        };
+    }
+
+
+}

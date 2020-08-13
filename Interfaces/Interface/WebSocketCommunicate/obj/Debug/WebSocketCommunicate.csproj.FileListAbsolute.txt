@@ -1,0 +1,10 @@
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\obj\Debug\WebSocketCommunicate.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\obj\Debug\WebSocketCommunicate.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\bin\Debug\WebSocketCommunicate.dll
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\bin\Debug\WebSocketCommunicate.pdb
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\bin\Debug\InterfaceCommunicate.dll
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\bin\Debug\InterfaceCommunicate.pdb
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\bin\Debug\InterfaceCommunicate.xml
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\obj\Debug\WebSocketCommunicate.csproj.CopyComplete
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\obj\Debug\WebSocketCommunicate.dll
+C:\Users\Abdul\Desktop\Sharp\Interface\WebSocketCommunicate\obj\Debug\WebSocketCommunicate.pdb

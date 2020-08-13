@@ -1,0 +1,42 @@
+$background-color: #339cd1;
+$border-color: #ccc;
+$color: #fff;
+$headerColor: #575756;
+
+#rightSidebaar {
+  position: fixed;
+  // z-index: -1;
+  top: 48px;
+  right: 260px;
+  width: 260px;
+  margin-right: -260px;
+  border: none;
+  overflow: hidden;
+  background-color: $background-color;
+  // bottom: 300px;
+  // padding-bottom: 40px;
+  // height: calc(100% - 400px);
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+#werkwijze {
+  height: calc(100% - 400px);
+  overflow: hidden;
+}
+
+.contentWrap {
+  padding: 10px 10px 30px;
+  color: $color;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h4 {
+  font-size: 14px;
+  color: $color;
+  background: $headerColor;
+  padding: 8px;
+  margin: 0;
+}

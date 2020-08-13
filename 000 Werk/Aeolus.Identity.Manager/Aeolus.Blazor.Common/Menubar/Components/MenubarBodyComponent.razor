@@ -1,0 +1,25 @@
+﻿@using HenE.Aeolus.Blazor.Common.Menubar.Interfaces
+@inject IMenubarSevice toolService
+
+
+@if (MenubarItems != null)
+{
+    @foreach (var item in MenubarItems)
+    {
+        if (item is MenubarLinkModel linkTool)
+        {
+            <MenubarLinkComponent MenubarCallBack="MenubarCallBack" MenubarLink="linkTool" />
+        }
+        else if (item is MenubarDialogModel uploadFile)
+        {
+            <MenubarDialogComponent Dialog="uploadFile" Callback="MenubarCallBack"></MenubarDialogComponent>
+        }
+    }
+}
+
+@code {
+    [Parameter]
+    public EventCallback<dynamic> MenubarCallBack { get; set; }
+    [Parameter]
+    public dynamic MenubarItems { get; set; }
+}

@@ -1,0 +1,8 @@
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\bin\Debug\netstandard2.0\EFGrid.Shared.deps.json
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\bin\Debug\netstandard2.0\EFGrid.Shared.dll
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\obj\Debug\netstandard2.0\EFGrid.Shared.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\obj\Debug\netstandard2.0\EFGrid.Shared.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\obj\Debug\netstandard2.0\EFGrid.Shared.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\bin\Debug\netstandard2.0\EFGrid.Shared.pdb
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\obj\Debug\netstandard2.0\EFGrid.Shared.dll
+C:\Users\Abdul\Desktop\EntityFramework\EFGrid - CRUD - P6\EFGrid.Shared\obj\Debug\netstandard2.0\EFGrid.Shared.pdb

@@ -1,0 +1,8 @@
+﻿@inherits AutofacWebMvcFive.CustomPages.CustomBasePage
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>@DataRepository.GetData() @DataRepository.Count</h1>
+</div>

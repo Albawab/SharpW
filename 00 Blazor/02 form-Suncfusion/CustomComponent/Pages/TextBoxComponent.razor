@@ -1,0 +1,14 @@
+﻿<h3>TextBoxComponent</h3>
+@using Syncfusion.EJ2.Blazor.Inputs
+@using System.Linq.Expressions
+
+<EjsTextBox Value="@Value" ValueChanged="@ValueChanged" ValueExpression="@ValueExpression"></EjsTextBox>
+
+@code {
+
+    [Parameter] public string Value { get; set; }
+
+    [Parameter] public EventCallback<string> ValueChanged { get; set; }
+    [Parameter] public Expression<Func<string>> ValueExpression { get; set; }
+
+}

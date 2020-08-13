@@ -1,0 +1,38 @@
+﻿<label>
+    <i class="fas fa-print pl-2" />
+    <span @onclick="()=>CallBack(ToolMenuLink.Titel)">@ToolMenuLink.Titel</span>
+</label>
+
+@code {
+    [Parameter]
+    public ToolMenuLinkModel ToolMenuLink { get; set; }
+
+    [Parameter]
+    public EventCallback ExcelExportEventCallback { get; set; }
+    [Parameter]
+    public EventCallback PdfExportEventCallback { get; set; }
+
+    [Parameter]
+    public EventCallback<string> ToolbarCallBack { get; set; }
+
+    private EventCallback Exporteren
+    {
+        get
+        {
+            switch (ToolMenuLink.Titel)
+            {
+                case "Excel Exporteren":
+                    return ExcelExportEventCallback;
+                case "Pdf Exporteren":
+                    return PdfExportEventCallback;
+                default:
+                    return EventCallback.Empty;
+            }
+        }
+    }
+
+    private void CallBack(string callBack)
+    {
+        ToolbarCallBack.InvokeAsync(callBack);
+    }
+}

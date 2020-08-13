@@ -1,0 +1,33 @@
+﻿@page "/fetchdata"
+@using _00_Bootstrap.Data
+@inject WeatherForecastService forecastService
+
+
+    <EditForm Model="@weatherForecast" OnValidSubmit="@SaveName">
+        <DataAnnotationsValidator />
+
+        <InputText @bind-Value="weatherForecast.Name"></InputText>
+        <div class="col-12 row">
+            <span class="col-2"></span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Save" />
+            <span>&nbsp;</span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Clear" />
+        </div>
+    </EditForm>
+
+@code{
+    public WeatherForecast weatherForecast { get; set; }
+    public WeatherForecast li { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        weatherForecast = new WeatherForecast();
+        li = forecastService.GetAuthor(weatherForecast);
+    }
+
+    private void SaveName()
+    {
+        forecastService.GetAuthor(weatherForecast);
+        weatherForecast = new WeatherForecast();
+    }
+}

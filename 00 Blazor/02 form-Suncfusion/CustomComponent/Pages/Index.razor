@@ -1,0 +1,15 @@
+﻿@page "/"
+@using CustomComponent.Data;
+@using Syncfusion.EJ2.Blazor.Buttons;
+
+<span>Input Value : @Model.Value</span>
+<EditForm Model="@Model">
+    <DataAnnotationsValidator />
+    <TextBoxComponent @bind-Value="@Model.Value"></TextBoxComponent>
+    <ValidationMessage For="@(()=> Model.Value)" />
+    <EjsButton>POST</EjsButton>
+</EditForm>
+
+@code {
+    private CustomModel Model = new CustomModel();
+}

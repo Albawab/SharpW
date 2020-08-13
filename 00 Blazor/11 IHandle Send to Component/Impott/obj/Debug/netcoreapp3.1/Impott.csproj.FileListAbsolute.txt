@@ -1,0 +1,141 @@
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.exe
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.deps.json
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.runtimeconfig.json
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.runtimeconfig.dev.json
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.dll
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.pdb
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.Views.dll
+C:\Users\albaw\Desktop\Impott\Impott\bin\Debug\netcoreapp3.1\Impott.Views.pdb
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.csprojAssemblyReference.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.AssemblyInfoInputs.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.AssemblyInfo.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.csproj.CoreCompileInputs.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.RazorComponent.input.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Impott.dll
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.TagHelpers.input.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.TagHelpers.output.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.RazorCoreGenerate.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.RazorAssemblyInfo.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.RazorAssemblyInfo.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.RazorTargetAssemblyInfo.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.RazorTargetAssemblyInfo.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.Views.pdb
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\staticwebassets\Impott.StaticWebAssets.Manifest.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\staticwebassets\Impott.StaticWebAssets.xml
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.dll
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.pdb
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.genruntimeconfig.cache
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Impott.csproj.CopyComplete
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\OmschrijvingNavigatorComponent.razor.g.cs
+C:\Users\albaw\Desktop\Impott\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\OmschrijvingNavigatorComponent.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.exe
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.deps.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.runtimeconfig.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.runtimeconfig.dev.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.Views.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\bin\Debug\netcoreapp3.1\Impott.Views.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.csprojAssemblyReference.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.AssemblyInfoInputs.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.AssemblyInfo.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.csproj.CoreCompileInputs.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.RazorComponent.input.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\OmschrijvingNavigatorComponent.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Impott.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.TagHelpers.input.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.TagHelpers.output.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.RazorCoreGenerate.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\OmschrijvingNavigatorComponent.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.RazorAssemblyInfo.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.RazorAssemblyInfo.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.RazorTargetAssemblyInfo.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.RazorTargetAssemblyInfo.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.Views.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\staticwebassets\Impott.StaticWebAssets.Manifest.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\staticwebassets\Impott.StaticWebAssets.xml
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.genruntimeconfig.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\10 Data to Navigation send\Impott\obj\Debug\netcoreapp3.1\Impott.csproj.CopyComplete
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.csprojAssemblyReference.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.AssemblyInfoInputs.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.AssemblyInfo.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.csproj.CoreCompileInputs.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.RazorComponent.input.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\OmschrijvingNavigatorComponent.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.exe
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.deps.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.runtimeconfig.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.runtimeconfig.dev.json
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.Views.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\bin\Debug\netcoreapp3.1\Impott.Views.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\RazorDeclaration\Impott.dll
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.TagHelpers.input.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.TagHelpers.output.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.RazorCoreGenerate.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\Shared\OmschrijvingNavigatorComponent.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.RazorAssemblyInfo.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.RazorAssemblyInfo.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.RazorTargetAssemblyInfo.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.RazorTargetAssemblyInfo.cs
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.Views.pdb
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\staticwebassets\Impott.StaticWebAssets.Manifest.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\staticwebassets\Impott.StaticWebAssets.xml
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.genruntimeconfig.cache
+C:\Users\albaw\Desktop\ICT\SharpW\00 Blazor\11 IHandle Snde to Component\Impott\obj\Debug\netcoreapp3.1\Impott.csproj.CopyComplete

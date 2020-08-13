@@ -1,0 +1,72 @@
+﻿<li class="elementList">
+    <label @onclick="ToggleLists">
+        <i class="fas fa-angle-double-@symbolList"></i>
+        <a href="@Url">
+            <label>
+                <span> @subItem.Titel </span>
+            </label>
+        </a>
+    </label>
+    @if (subItem.SubItems != null)
+    {
+        <ul class="list-unstyled elementsList" style="display:@hideElements">
+            @foreach (var item in subItem.SubItems)
+            {
+                <NavigatieItemComponent subItem="item"></NavigatieItemComponent>
+            }
+        </ul>
+    }
+</li>
+
+@code {
+    [Parameter]
+    public NavigatieItemModel subItem { get; set; }
+    string symbolList = "";
+    private string hideElements = "none";
+
+    protected override void OnInitialized()
+    {
+        if (subItem.SubItems != null)
+        {
+            if (subItem.SubItems.Count != 0)
+            {
+                symbolList = "right";
+            }
+
+        }
+    }
+
+    private string Url
+    {
+        get
+        {
+            if (subItem is PageNavigatieItemModel)
+            {
+                PageNavigatieItemModel page = (PageNavigatieItemModel)subItem;
+                return page.Page;
+            }
+            return string.Empty;
+        }
+    }
+
+
+    private void ToggleLists()
+    {
+        if (symbolList == "right")
+        {
+            symbolList = "down";
+            hideElements = "";
+
+        }
+        else if (subItem.SubItems == null)
+        {
+            symbolList = "";
+        }
+        else
+        {
+            symbolList = "right";
+            hideElements = "none";
+            StateHasChanged();
+        }
+    }
+}

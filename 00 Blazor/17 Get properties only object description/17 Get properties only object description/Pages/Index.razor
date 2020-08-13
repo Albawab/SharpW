@@ -1,0 +1,57 @@
+﻿@page "/"
+@using _17_Get_properties_only_object_description.Data
+@using System.ComponentModel
+@using System.Reflection
+
+<h1>Get proberties</h1>
+@foreach (dynamic prop in type.GetProperties())
+{
+    <label>@prop.Name</label>
+    <br />
+    <label>Description: <label>@GetDescription(prop)</label></label>
+}
+
+
+<h1>Get Only property van een object</h1>
+
+@foreach (dynamic item in GetEigenProp())
+{
+    <label>@item.Name</label>
+}
+
+<h1>Get Description van een property </h1>
+@GetDescriptionVanProperty(student.name)
+
+
+@code{
+    Persoon persoon;
+    Student student;
+    private Type type;
+
+    protected override void OnInitialized()
+    {
+        type = typeof(Student);
+    }
+
+
+    private string GetDescription(dynamic property)
+    {
+        AttributeCollection attributes = TypeDescriptor.GetProperties(typeof(Student))[$"{property.Name}"].Attributes;
+        DescriptionAttribute myAttribute = (DescriptionAttribute)attributes[typeof(DescriptionAttribute)];
+        return myAttribute.Description != "" ? myAttribute.Description : property.Name;
+    }
+
+    private PropertyInfo[] GetEigenProp()
+    {
+        return typeof(Student).GetProperties(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.Instance);
+    }
+
+
+    private string GetDescriptionVanProperty(string name)
+    {
+        AttributeCollection attributes = TypeDescriptor.GetProperties(student)[name].Attributes;
+        DescriptionAttribute myAttribute = (DescriptionAttribute)attributes[typeof(DescriptionAttribute)];
+
+        return myAttribute.Description;
+    }
+}

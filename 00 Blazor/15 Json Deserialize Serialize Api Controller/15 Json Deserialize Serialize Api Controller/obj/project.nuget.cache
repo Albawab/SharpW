@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WS3MVYPXqoAxYztVB0s4oF14yej5d0Oj1Fb5fB7v62D25sQ+vkOsp6l/L5H8VsYV0+hw6jtlCYOPV6j7AlpRCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\repos\\15 Json Deserialize Serialize Api Controller\\15 Json Deserialize Serialize Api Controller\\15 Json Deserialize Serialize Api Controller.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

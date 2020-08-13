@@ -1,0 +1,35 @@
+﻿@using HenE.Aeolus.Blazor.Common.Body.Interfaces
+@inject IToolsMenuSevice toolService
+@implements IAmMenubar
+@if (ToolMenuItems != null)
+{
+    @foreach (var tool in ToolMenuItems)
+    {
+        if (tool is ToolMenuLinkModel)
+        {
+            <ToolMenuLinkComponent ToolMenuLink="@((ToolMenuLinkModel)tool)"/>
+        }
+        else if (tool is ToolMenuButtonModel)
+        {
+
+        }
+        else if (tool is ToolMenuSearchModel)
+        {
+
+        }
+        else if (tool is ToolMenuGroupModel)
+        {
+            <ToolMenuGroupComponent Tool="@((ToolMenuGroupModel)tool)" />
+        }
+    }
+}
+
+@code {
+
+    public dynamic ToolMenuItems { get; set; }
+
+    public void Update(IHandleMenubar handle)
+    {
+        ToolMenuItems = handle.GetMenubarItems();
+    }
+}

@@ -1,0 +1,15 @@
+﻿@page "/"
+
+
+<p hidden="@IsShow">I am Blazor</p>
+
+<button @onclick="@Show">Show/Hide</button>
+
+@code{
+    private bool IsShow { get; set; } = false;
+    private void Show()
+    {
+        IsShow = !IsShow;
+    }
+
+}

@@ -1,0 +1,112 @@
+@import "../../node_modules/@syncfusion/ej2-ng-grids/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-ng-buttons/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-ng-splitbuttons/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-ng-navigations/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-ng-notifications/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-ng-calendars/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-ng-dropdowns/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-ng-richtexteditor/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-base/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-inputs/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-lists/styles/fabric.css";
+@import "../../node_modules/@syncfusion/ej2-popups/styles/fabric.css";
+
+  .ajs-input {
+    width: 100%;
+  }
+
+  #lijstOnderdelen .e-list-header {
+    display: none !important;
+  }
+
+  .ejsSplitButtonMarginTop {
+    margin-top: 2px;
+  }
+
+  /**** start - AS - Override font-family from fabric.css ! common core ****/
+.e-control,
+.e-css {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.e-error {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/*! button layout */
+.e-btn,
+.e-css.e-btn {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.e-toolbar .e-tbar-btn {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif";
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.e-toolbar .e-tbar-btn .e-tbar-btn-text {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif";
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.e-tab .e-tab-header .e-toolbar-item .e-tab-text {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input.e-input,
+.e-input-group input.e-input,
+.e-input-group.e-control-wrapper input.e-input,
+textarea.e-input,
+.e-input-group textarea.e-input,
+.e-input-group.e-control-wrapper textarea.e-input {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.e-float-input input,
+.e-float-input textarea,
+.e-float-input.e-control-wrapper input,
+.e-float-input.e-control-wrapper textarea {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+label.e-float-text,
+.e-float-input label.e-float-text,
+.e-float-input.e-control-wrapper label.e-float-text {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.e-checkbox-wrapper .e-label,
+.e-css.e-checkbox-wrapper .e-label {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.e-treeview.e-drag-item {
+  // font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+ /**** end - AS - Override font-family from fabric.css ! common core ****/

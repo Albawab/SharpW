@@ -1,0 +1,46 @@
+﻿@using HenE.Aeolus.Blazor.Common.Body.Interfaces
+@using HenE.Aeolus.Blazor.Common.Body.Components.LijstItems
+@using HenE.Aeolus.Blazor.Common.Body.Components.Toolbars
+@using HenE.Aeolus.Blazor.Common.Body.Models
+
+<div class="body-of-page">
+    <div class="toolsHeader">
+        <ToolbarBodyComponent/>
+    </div>
+    <div class=" list-body-element">
+        <div class=" list-items-block">
+            <LijstItemsComponent Service="lijstItems" Callback="CallBack" />
+        </div>
+        <div class="body-of-component">
+            <SubBodyComponent Service="@((IAppService)Service)" Key="Key"/>
+        </div>        
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public object TypeObject { get; set; }
+    [Parameter]
+    public IAppService Service { get; set; }
+    [Parameter]
+    public IToolsMenuSevice ToolsMenuSevice { get; set; }
+
+    private ILijstItemsService lijstItems;
+    int Key = 0;
+    object huidigeObject = null;
+    RenderFragment renderFragmentaa;
+
+    String messageFromToolbarToBody = "";
+
+
+    protected override void OnInitialized()
+    {
+        lijstItems = (ILijstItemsService)Service;
+    }
+
+    private void CallBack(LijstItemModel listItem)
+    {
+        huidigeObject = listItem;
+        Key = listItem.Id;
+    }
+}

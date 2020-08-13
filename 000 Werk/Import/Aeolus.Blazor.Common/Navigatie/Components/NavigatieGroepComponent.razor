@@ -1,0 +1,63 @@
+﻿<label class="titleGroupList" @onclick="ToggleLists">
+    <i class="fas fa-angle-double-@symbolList"></i>
+    <a class="m-3">@MapTitel</a>
+</label>
+<ul class="list-unstyled elementsList "  style="display:@hideElements">
+    @foreach (var NavigatieItem in navigatieItems)
+    {
+        <NavigatieItemComponent subItem="NavigatieItem" />
+    }
+</ul>
+
+
+
+@code {
+    [Parameter]
+    public List<NavigatieItemModel> navigatieItems { get; set; }
+    NavigatieItemModel EersteElement;
+
+    protected override void OnInitialized()
+    {
+        if (navigatieItems.Count != 0)
+        {
+            EersteElement = navigatieItems[0];
+        }
+
+    }
+
+    private string MapTitel
+    {
+        get
+        {
+            if (EersteElement != null)
+            {
+                switch (EersteElement.IsFavoriet)
+                {
+
+                    case true:
+                        return "Favorieten";
+                    case false:
+                        return "Alle mappen";
+                }
+            }
+            return "";
+        }
+    }
+
+    string symbolList = "right";
+    private string hideElements = "none";
+    private void ToggleLists()
+    {
+        if (symbolList == "right")
+        {
+            symbolList = "down";
+            hideElements = "";
+
+        }
+        else
+        {
+            symbolList = "right";
+            hideElements = "none";
+        }
+    }
+}

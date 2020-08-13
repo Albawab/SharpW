@@ -1,0 +1,26 @@
+﻿<div class="col-lg-9 control-section offset-2">
+    <div class="content-wrapper">
+        <div class="row">
+            <SfGrid DataSource="@GridData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" AllowPaging="true">
+                <GridEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true"></GridEditSettings>
+                <GridColumns>
+                    @foreach (dynamic prop in typeElement.GetProperties())
+                    {
+                        <GridColumn Field="@prop.Name" AllowEditing="@prop.CanWrite"></GridColumn>
+                    }
+                </GridColumns>
+            </SfGrid>
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public FormulierSpecificatie Elementen { get; set; }
+    dynamic typeElement;
+    List<KinderFormulier> GridData = new List<KinderFormulier>();
+    protected override void OnInitialized()
+    {
+        typeElement = Elementen.Kinder.GetType();
+    }
+}
+

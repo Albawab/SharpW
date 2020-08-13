@@ -1,0 +1,190 @@
+﻿@page "/base"
+@using HenE_BlazorComponent.Data
+@using System.Threading;
+
+<div class="container-fluid">
+    @foreach (var cardElements in CardElentsGrouping)
+    {
+        <div class="row">
+            @foreach (CardElement cardElement in cardElements)
+            {
+                @switch (cardElement.Soort)
+                {
+                    case SoortCardElementen.CircularGauge:
+                        <CircularGaugeElement CardCircularGaugeElement=(CardCircularGaugeElement)cardElement></CircularGaugeElement>
+                        break;
+                    case SoortCardElementen.Chart:
+                        <ChartElement CardChartElement=(CardChartElement)cardElement></ChartElement>
+                        break;
+                    case SoortCardElementen.Label:
+                        <LabelCardElement CardElement=(CardLabelElement)cardElement></LabelCardElement>
+                        break;
+                    case SoortCardElementen.Text:
+                        <TextCardElement CardElement=(CardTextElement)cardElement></TextCardElement>
+                        break;
+                    case SoortCardElementen.Date:
+                        <DateCardElement dateCardElement=(CardDateElement)cardElement></DateCardElement>
+                        break;
+                    case SoortCardElementen.Button:
+                        <ButtonCardElementen cardButtonElement=(CardButtonElement)cardElement MouseClicked="@ChangeValue"></ButtonCardElementen>
+                        break;
+                }
+            }
+        </div>
+    }
+</div>
+
+
+@code{
+    private List<CardElement> cardElements;
+    private List<CardElement> cardElementsOrderBy;
+    int CircularGauge { get; set; }
+
+    dynamic CardElentsGrouping;
+
+    protected override void OnInitialized()
+    {
+        cardElements = new List<CardElement>()
+{
+            new CardLabelElement {
+                Row = 3,
+                Column = 1,
+                Rows = 1,
+                Columns = 2,
+                Title = "Hallo",
+                Type = CardLabelSoorten.Nadruk,
+                HorizontalAlign = HorizontalAlign.Right,
+                VerticalAlign = VerticalAlign.Bottom,
+            },
+              new CardLabelElement {
+                Row = 4,
+                Column = 1,
+                Rows = 1,
+                Columns = 2,
+                Title = "Dag",
+                Type = CardLabelSoorten.Kop,
+
+            },
+              new CardLabelElement {
+                Row = 3,
+                Column = 1,
+                Rows = 5,
+                Columns = 2,
+                Title = "Abdul",
+            },
+              new CardTextElement
+              {
+                  Row = 5,
+                  Column = 2,
+                  Columns = 4,
+                  Rows = 4,
+                  MaxLength = 20,
+                  Type = TextBoxTypes.Password,
+                  Placeholder = "Password",
+                  Soort = SoortCardElementen.Text,
+                  HorizontalAlign = HorizontalAlign.Left,
+                  VerticalAlign = VerticalAlign.Center,
+             },
+             new CardTextElement
+              {
+                  Row = 6,
+                  Column = 2,
+                  Columns = 4,
+                  Rows = 4,
+                  MaxLength = 20,
+                  Type = TextBoxTypes.Email,
+                  Placeholder = "Email",
+                  Soort = SoortCardElementen.Text,
+                  HorizontalAlign = HorizontalAlign.Left,
+                  VerticalAlign = VerticalAlign.Center,
+        },
+             new CardDateElement
+             {
+                 Row =7,
+                 Column =2,
+                 Columns= 4,
+                 Rows=5,
+                 Soort = SoortCardElementen.Date,
+                 HorizontalAlign = HorizontalAlign.Right,
+                 VerticalAlign = VerticalAlign.Bottom,
+                 MinDate = new DateTime(2000, 01, 01,00,00,00),
+                 MaxDate = new DateTime(DateTime.Now.Year + 10, 12, 31,23,59,59),
+                 Date = DateTime.Now
+             },
+             new CardButtonElement
+             {
+                 Row =8,
+                 Column =2,
+                 Columns= 12,
+                 Rows=5,
+                 Soort = SoortCardElementen.Button,
+                 ButtonSpinPosition = ButtonSpinPosition.Top,
+                 ButtonAnimationEffect = ButtonAnimationEffect.SlideLeft,
+             },
+             new CardCircularGaugeElement
+             {
+                 Row =0,
+                 Column=0,
+                 Columns = 6,
+                 Rows =4,
+                 StartAngle = 230,
+                 EndAngle = 130,
+                 Soort = SoortCardElementen.CircularGauge,
+                 HorizontalAlign = HorizontalAlign.Center,
+                 VerticalAlign = VerticalAlign.Center,
+                 Value = CircularGauge,
+             },
+             new CardCircularGaugeElement
+             {
+                 Row =0,
+                 Column=0,
+                 Columns = 6,
+                 Rows =4,
+                 StartAngle = 230,
+                 EndAngle = 130,
+                 Soort = SoortCardElementen.CircularGauge,
+                 HorizontalAlign = HorizontalAlign.Center,
+                 VerticalAlign = VerticalAlign.Center,
+                 Value = CircularGauge,
+             },
+            new CardButtonElement
+             {
+                 Row =1,
+                 Column =2,
+                 Columns= 12,
+                 Rows=5,
+                 HorizontalAlign = HorizontalAlign.Center,
+                 VerticalAlign = VerticalAlign.Center,
+                 Soort = SoortCardElementen.Button,
+                 ButtonSpinPosition = ButtonSpinPosition.Top,
+                 ButtonAnimationEffect = ButtonAnimationEffect.SlideLeft,
+             },
+             new CardChartElement
+             {
+                 Row = 2,
+                 Column = 0,
+                 Columns=12,
+                 Rows = 1,
+                 Soort = SoortCardElementen.Chart,
+        }
+    };
+        cardElementsOrderBy = cardElements.OrderBy(O => O.Row).ToList();
+
+        CardElentsGrouping = cardElementsOrderBy.GroupBy(G => G.Row);
+
+
+    }
+
+
+    private void ChangeValue()
+    {
+        Thread.Sleep(2000);
+        Random random = new Random();
+        CircularGauge = random.Next(0, 100);
+        OnInitialized();
+        cardElementsOrderBy = cardElements.OrderBy(O => O.Row).ToList();
+        CardElentsGrouping = cardElementsOrderBy.GroupBy(G => G.Row);
+
+    }
+
+}

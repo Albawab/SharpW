@@ -1,0 +1,132 @@
+﻿@page "/"
+@using System.ComponentModel.DataAnnotations;
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Data
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.DropDowns
+@using Newtonsoft.Json
+@using Syncfusion.Blazor.Buttons
+
+@inject IJSRuntime JsRuntime
+
+<SfButton OnClick="ExcelExport" Content="Excel Export"></SfButton>
+<SfGrid @ref="DefaultGrid" TValue="Order" AllowExcelExport="true"AllowFiltering="true" ShowColumnMenu="true" AllowSelection="true" AllowPaging="true" Toolbar="@( new List<string> { "Add","Edit","Delete","Update","Cancel" })" Locale="es" Query="@Query">
+    <GridEvents OnActionBegin="Begin" TValue="Order"></GridEvents>
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true"></GridEditSettings>
+    <SfDataManager Url="http://localhost:64956/odata/books" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
+    <GridColumns>
+        <GridColumn Field=@nameof(Order.Id) HeaderText="ID" IsPrimaryKey="true" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Order.Title) HeaderText="Title Name" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(Order.Price) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+
+
+@code{
+    private SfGrid<Order> DefaultGrid;
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        //this.JsRuntime.Sf().LoadLocaleData("wwwroot/ej2-locale/src/es.json").SetCulture("es");
+    }
+    public void ExcelExport()
+    {
+        this.DefaultGrid.ExcelExport();
+    }
+
+    public int BranchSelected, RegionSelected;
+    protected string SelectedOrder;
+    List<Dropdown> Dropdown1 = EnumHelper.ConvertEnumToBindingSource<BranchType>();
+    List<Dropdown> Dropdown2 = EnumHelper.ConvertEnumToBindingSource<Region>();
+    protected Query Query = new Query().Expand(new List<string> { "RelatedOrder" });
+
+    private Query GetDefaultQuery() => new Query().Expand(new List<string> { "RelatedOrder" });
+
+    public class EnumHelper
+    {
+        public static List<Dropdown> ConvertEnumToBindingSource<T>()
+        {
+            var ret = new List<Dropdown>();
+            var values = Enum.GetValues(typeof(T)).Cast<T>().ToList();
+
+            for (var i = 0; i < Enum.GetNames(typeof(T)).Length; i++)
+            {
+                ret.Add(new Dropdown()
+                {
+                    Name = Enum.GetNames(typeof(T))[i],
+                    Value = i,
+                });
+            }
+
+            return ret;
+        }
+    }
+    public class Dropdown
+    {
+        public string Name { get; set; }
+        public int Value { get; set; }
+    }
+    public class Order
+    {
+        public Guid guid { get; set; }
+        public int? Id { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public double? Price { get; set; }
+        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
+        public BranchType Branch { get; set; }
+        [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
+        public Region Regime { get; set; }
+        [Required(ErrorMessage = "Select a related order")]
+        public Guid? RelatedOrderId { get; set; }
+        public Order RelatedOrder { get; set; }
+    }
+    public void Change(ChangeEventArgs<int> Args, string ID)
+    {
+        if (ID == "Branch")
+        {
+            BranchSelected = Args.Value;
+        }
+        else if (ID == "Regime")
+        {
+            RegionSelected = Args.Value;
+        }
+    }
+    public void Begin(ActionEventArgs<Order> Args)
+    {
+        if (Args.RequestType == Syncfusion.Blazor.Grids.Action.Save)
+        {
+            var text = (BranchType)Enum.Parse(typeof(BranchType), "Modulo");
+            Args.Data.Branch = (BranchType)Enum.Parse(typeof(BranchType), Dropdown1.Find(x => x.Value == BranchSelected).Name);
+            Args.Data.Regime = (Region)Enum.Parse(typeof(Region), Dropdown2.Find(x => x.Value == RegionSelected).Name);
+        }
+    }
+    public enum BranchType
+    {
+        //[EnumMember(Value ="Dirección")]
+        [Display(Name = "Dirección")]
+        Direccion,
+        //[EnumMember(Value = "Representación")]
+        [Display(Name = "Representación")]
+        Representacion,
+        //[EnumMember(Value = "Modulo")]
+        [Display(Name = "Modulo")]
+        Modulo
+    }
+    public enum Region
+    {
+        //[EnumMember(Value = "Centro")]
+        [Display(Name = "Centro")]
+        Centro,
+        //[EnumMember(Value ="Sur")]
+        [Display(Name = "Sur")]
+        Sur,
+        //[EnumMember(Value = "Norte")]
+        [Display(Name = "Norte")]
+        Norte,
+        //[EnumMember(Value = "Occidente")]
+        [Display(Name = "Occidente")]
+        Occidente,
+    }
+}

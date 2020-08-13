@@ -1,0 +1,100 @@
+﻿@page "/fetchdata"
+
+@using HenE_Application.Data
+@using System.Net.Http
+@inject HttpClient Http
+@*inject WeatherForecastService ForecastService*@
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (forecasts == null)
+{
+<p><em>Loading...</em></p>
+}
+else
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+            <th>Event</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var forecast in forecasts)
+            {
+        <tr>
+            <td>@forecast.Id</td>
+            <td>@forecast.Date.ToShortDateString()</td>
+            <td>@forecast.TemperatureC</td>
+            <td>@forecast.TemperatureF</td>
+            <td>@forecast.Summary</td>
+            <td><a type="button" @onclick="(()=>Delete(forecast.Id))">Delete</a></td>
+            <td><a type="button" @onclick="(()=>Save(forecast))">Save</a></td>
+        </tr>
+            }
+    </tbody>
+</table>
+}
+
+@code {
+    private WeatherForecast[] forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Read
+        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("https://localhost:45001/weatherforecast");
+
+
+        // Create
+        //Http.PostJsonAsync<WeatherForecast>("https://localhost:45001/weatherforecast", forecasts[0]);
+
+        // Update
+
+        //Http.PutJsonAsync("https://localhost:45001/weatherforecast", forecasts[0]);
+
+
+
+        //Http.SendJsonAsync(HttpMethod.Put, "https://localhost:45001/weatherforecast", forecasts[0].TemperatureC = 3);
+    }
+
+    /// <summary>
+    /// Verwijdert een items.
+    /// </summary>
+    private async Task Delete(int forecast)
+    {
+        //Delete
+        await Http.DeleteAsync($"https://localhost:45001/weatherforecast/{forecast}");
+        Array.Clear(forecasts,0,forecasts.Length);
+        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("https://localhost:45001/weatherforecast");
+        this.StateHasChanged();
+    }
+
+    /// <summary>
+    /// Update een items.
+    /// </summary>
+    private async Task Save(WeatherForecast forecast)
+    {
+        //Update
+        Http.PostJsonAsync<WeatherForecast>("https://localhost:45001/weatherforecast", forecast);
+
+        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("https://localhost:45001/weatherforecast");
+
+        // hoe doe ik nu een refersh?
+    }
+
+    /*        //forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+
+            *//*dynamic httpContent = new StringContent(forecasts.Length.ToString());
+            var httpResponce = await Http.PostAsync("https://localhost:45001/weatherforecast", null);
+            Http.SendJsonAsync<WeatherForecast[]>(HttpMethod.Post, "https://localhost:45001/weatherforecast", null);*//*
+
+            //await Http.SendJsonAsync(HttpMethod.Post,"https://localhost:45001/weatherforecast", new WeatherForecast());
+           Http.PutJsonAsync("https://localhost:45001/weatherforecast",forecasts[0].TemperatureC = 4);*/
+}

@@ -1,0 +1,87 @@
+﻿<#@ template hostspecific="true" language="C#" debug="true" 
+#><#@ Assembly Name="System.Data" 
+#><#@ import namespace="System.Data" 
+#><#@ import namespace="System.Data.SqlClient" 
+#><#@ import namespace="System.IO" 
+#><#@ import namespace="System.Text" 
+#><#@ import namespace="System.Text.RegularExpressions" 
+#><#@ output extension=".razor" 
+#><#
+
+
+    var Common = "Common";
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////// Instructies voor gebruik: //////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // 1)
+    // Kopieer deze file naar het project waarin je de controllers wilt aanmaken.
+    //
+    // 2)
+    // Geef hier de gewenste domeinnaam mee aan de variabele "GewensteDomeinNaam" voor het bepalen van:
+    // - De complete naam van de using "HenE.Aeolus.Overzichten.DbContext.DomeinNaam"
+    // - De complete naam van de using "HenE.Aeolus.Overzichten.Domain.DomeinNaam"
+    // - Het wel of niet toevoegen van de using "HenE.Aeolus.Overzichten.OData.Common" (indien "Common gebruikt wordt, is deze using niet nodig")
+    // - De juiste "DomeinNaamDbContext" die gebruikt wordt in de controller
+
+    var GewensteDomeinNaam = "GemeenteAbdul"; // Default is "Common" en wordt gebruikt voor de algemene OData controllers. Gebruik voor de Gemeenten de gewenste naam
+
+    // 3)
+    // Geef hier de juiste connection string op voor het uitlezen van de tabelnamen uit de juiste Database (kan letterlijk gekopieerd worden uit de appsettings.json file):
+    
+    var connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=AeolusBackDataWarehouse;Trusted_Connection=True";
+
+    // 4)
+    // Bewaar het bestand, laat het Template zijn werk doen en controleer of de controllers gegenereerd zijn
+    //
+    // 5)
+    // Verwijder het gekopieerde bestand weer uit het project waarnaar je het gekopieerd had
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+    using (SqlConnection connection = new SqlConnection(connectionString))
+    using (SqlCommand command = new SqlCommand("SELECT TABLE_NAME FROM AeolusBackDataWarehouse.INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME LIKE 'VW%'", connection))
+    {
+        connection.Open();  
+        using (SqlDataReader reader = command.ExecuteReader())
+        {
+            while(reader.Read())
+            {
+                var tableName = reader.GetString(0);
+
+                var entityNameBuilder = new StringBuilder("");
+
+                foreach (var tableNamePart in tableName.Split('_')) {
+                    var entityNamePart = tableNamePart.Substring(0, 1) + tableNamePart.Substring(1).ToLower();
+                    entityNameBuilder.Append(entityNamePart);
+                }
+
+                var entityName = entityNameBuilder.ToString();
+
+
+
+
+#>@page "/<#=entityName#>" 
+@inject IHaveSettings Settings
+<div>
+    <ODataGrid TItem="<#=entityName#>" Route="<#=entityName#>"></ODataGrid>
+</div><#
+
+                SaveOutput(entityName + "Component.razor");
+            }
+        }
+    }
+
+
+
+#><#+
+private void SaveOutput(string outputFileName) {
+  string templateDirectory = Path.GetDirectoryName(Host.TemplateFile);
+  string outputFilePath = Path.Combine(templateDirectory, "RazorComponents", outputFileName);
+  File.WriteAllText(outputFilePath, this.GenerationEnvironment.ToString()); 
+  this.GenerationEnvironment.Remove(0, this.GenerationEnvironment.Length);
+}#>

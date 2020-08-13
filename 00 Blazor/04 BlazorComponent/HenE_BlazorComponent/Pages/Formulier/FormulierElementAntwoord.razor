@@ -1,0 +1,33 @@
+﻿
+@switch (formulierAntwoord.SoortAntwoord)
+{
+    case SoortAntwoord.Text:
+        <FormulierTextInputElement AntwoordElement="@formulierAntwoord"></FormulierTextInputElement>
+        break;
+    case SoortAntwoord.Nummer:
+        <FormulierNummerInputElement Antwoord="formulierAntwoord"></FormulierNummerInputElement>
+        break;
+    case SoortAntwoord.Date:
+        <FormulierDateInputElement Antwoord="formulierAntwoord"></FormulierDateInputElement>
+        break;
+    case SoortAntwoord.CheckBox:
+        <FormulierCheckBoxElement Antwoord="formulierAntwoord"></FormulierCheckBoxElement>
+        break;
+    case SoortAntwoord.Textarea:
+        <FormulierInTextArea Antwoord="formulierAntwoord"></FormulierInTextArea>
+        break;
+    case SoortAntwoord.Tijd:
+        <FormulierTijdElement Antwoord="formulierAntwoord"></FormulierTijdElement>
+        break;
+    case SoortAntwoord.RadioButton:
+        <FormulierRadioButtonElement Antwoord="formulierAntwoord"></FormulierRadioButtonElement>
+        break;
+    default:
+        break;
+}
+
+
+@code{
+    [Parameter]
+    public FormulierAntwoord formulierAntwoord { get; set; }
+}

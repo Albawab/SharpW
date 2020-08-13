@@ -1,0 +1,71 @@
+﻿@page "/StockChart/CandlestickandVolume"
+@using Syncfusion.EJ2.Blazor.Charts
+@using Newtonsoft.Json
+@{
+    SampleBrowser.CurrentSampleName = "CandleStick and Volume";
+    SampleBrowser.CurrentControlName = "StockChart";
+    SampleBrowser.CurrentControlCategory = "StockChart";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.StockChart;
+    SampleBrowser.ActionDescription = new string[] {
+         @"<p>
+        This sample visualizes stock chart with multiple pan.
+    </p>"
+    };
+    SampleBrowser.Description = new string[] {
+         @"<p>
+        In this example, you can see how to render and configure the Stock chart with volume. CandleSeries is used to represent selected data value and ColumnSeries is used to represent the volume.
+    </p>"
+    };
+}
+
+@if (dataSource == null)
+{
+    <div class="stockchartloader"></div>
+}
+else
+{
+    <EjsStockChart Title="AAPL Historical">
+        <StockChartChartArea>
+            <StockChartChartAreaBorder Width="0"></StockChartChartAreaBorder>
+        </StockChartChartArea>
+        <StockChartPrimaryXAxis>
+            <StockChartAxisMajorGridLines Width="0"></StockChartAxisMajorGridLines>
+            <StockChartAxisCrosshairTooltip Enable="true"></StockChartAxisCrosshairTooltip>
+        </StockChartPrimaryXAxis>
+        <StockChartPrimaryYAxis LabelFormat="n0">
+            <StockChartAxisLineStyle Width="0"></StockChartAxisLineStyle>
+        </StockChartPrimaryYAxis>
+        <StockChartTooltipSettings Enable="true"></StockChartTooltipSettings>
+        <StockChartCrosshairSettings Enable="true"></StockChartCrosshairSettings>
+        <StockChartAxes>
+            <StockChartAxis RowIndex=1 Name="yAxis1" OpposedPosition="true">
+            </StockChartAxis>
+        </StockChartAxes>
+        <StockChartRows>
+            <StockChartRow Height="30%"></StockChartRow>
+            <StockChartRow Height="70%"></StockChartRow>
+        </StockChartRows>
+        <StockChartSeriesCollection>
+            <StockChartSeries DataSource="@dataSource" Type="ChartSeriesType.Candle" XName="date" YName="high" YAxisName="yAxis1" High="high" Low="low"></StockChartSeries>
+            <StockChartSeries DataSource="@dataSource" Type="ChartSeriesType.Column" XName="date" YName="volume" High="high" Low="low" Name="Apple Inc"></StockChartSeries>
+        </StockChartSeriesCollection>
+
+    </EjsStockChart>
+}
+@code{
+    private ChartData[] dataSource;
+    protected override async Task OnInitializedAsync()
+    {
+        dataSource = JsonConvert.DeserializeObject<ChartData[]>(System.IO.File.ReadAllText("./wwwroot/scripts/StockChartData/chartdata.json"));
+    }
+    public class ChartData
+    {
+        public DateTime date { get; set; }
+        public double open { get; set; }
+        public double low { get; set; }
+        public double close { get; set; }
+        public double high { get; set; }
+        public double volume { get; set; }
+    }
+
+}

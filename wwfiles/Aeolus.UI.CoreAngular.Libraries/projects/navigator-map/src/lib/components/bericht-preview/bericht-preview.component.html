@@ -1,0 +1,30 @@
+<div *ngIf="itemPreview">
+    <ejs-accordion #accordion *ngIf="itemPreview" id="acDetails" expandMode='Single' (expanded)="expandedAccordion($event)">
+      <e-accordionitems>
+          <e-accordionitem id="regels" header='Regels'>
+              <ng-template #content let-data>
+
+                <!-- <div class="filter">
+                  <ejs-checkbox label="Familie" cssClass="e-small"></ejs-checkbox>
+                  <ejs-checkbox label="Vrienden" cssClass="e-small"></ejs-checkbox>
+                </div> -->
+
+                <ejs-grid id='GridRegels' #gridRegels [dataSource]='regelsData' [locale]="'nl'"
+                  [enableVirtualization]='true' [enableColumnVirtualization]='true'
+                  [allowFiltering]='true' [allowSorting]='true' [allowScrolling]='true' [allowPaging]='false' [filterSettings]='filterOption'
+                  [toolbar]='toolbarOptions' [pageSettings]='options' [allowExcelExport]='true' (toolbarClick)='toolbarClick($event)'
+                  height='400px' locale='nl-NL'>
+                  <e-columns>
+                    <e-column field='ProductID' headerText='Product Id'></e-column>
+                    <e-column field='ProductName' headerText='Product Name'></e-column>
+                    <e-column field='CustomerName' headerText='Customer Name'></e-column>
+                  </e-columns>
+                </ejs-grid>
+
+              </ng-template>
+            </e-accordionitem>
+      </e-accordionitems>
+    </ejs-accordion>
+
+    <ejs-toast #toast [position]="positionToast" [showCloseButton]="true" [timeOut]="0"></ejs-toast>
+  </div>

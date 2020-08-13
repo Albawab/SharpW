@@ -1,0 +1,35 @@
+﻿@using Aeolus.Blazor.Common.ListAndItemsBody.Interfaces
+
+@if (item != null)
+{
+    <label class="header">
+        <HeaderLijstItemComponent Title="@item.Title" />
+    </label>
+    <br />
+    @if (item.Kinderen.Count != 0)
+    {
+
+        <label class="list-items">
+            <BodyLijstItemComponent Kinderen="item.Kinderen" Callback="Callback" />
+        </label>
+
+    }
+}
+
+
+
+@code {
+    [Parameter]
+    public ILijstItemsService Service { get; set; }
+
+    [Parameter]
+    public EventCallback<LijstItemModel> Callback { get; set; }
+
+    public LijstItemsModel item;
+
+    protected override void OnInitialized()
+    {
+            item = Service.GetListItems();
+    }
+
+}

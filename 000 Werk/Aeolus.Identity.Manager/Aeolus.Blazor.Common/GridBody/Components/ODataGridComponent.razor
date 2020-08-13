@@ -1,0 +1,150 @@
+﻿@using Syncfusion.Blazor.Data
+@using System
+@using System.ComponentModel
+@typeparam TItem
+
+
+<div class="control-section">
+    <div class="content-wrapper">
+        <SfGrid @ref="@DefaultGrid" Locale="nl" Height="100%" Width="100%" TValue="@TItem" AllowFiltering="true" AllowPdfExport="true" AllowExcelExport="true" AllowPaging="true">
+            <SfDataManager Adaptor="Adaptors.ODataV4Adaptor" Url="@Url"></SfDataManager>
+            <GridColumns>
+                @foreach (dynamic prop in type.GetProperties())
+                {
+                    <GridColumn Field="@prop.Name" HeaderText="@(GetDescription(prop))" Format="@(GetFormat(prop))" TextAlign="TextAlign.Center" CustomAttributes="@(new { @class = "e-attr" })"></GridColumn>
+                }
+            </GridColumns>
+        </SfGrid>
+    </div>
+</div>
+@code{
+    /// <summary>
+    /// Gets or sets de url van een site.
+    /// </summary>
+    [Parameter]
+    public string Url { get; set; }
+
+
+    [Parameter]
+    public string Route { get; set; }
+
+    /// <summary>
+    /// De type van een element.
+    /// </summary>
+    private Type type;
+
+    /// <summary>
+    /// Gets or sets de Refrence van de gird.
+    /// </summary>
+    public SfGrid<TItem> DefaultGrid { get; set; }
+
+    /// <summary>
+    /// Geeft de Grid terug aan de basis component
+    /// </summary>
+    [Parameter]
+    public EventCallback<SfGrid<TItem>> Callback { get; set; }
+
+    /// <summary>
+    /// Deze functie start wanneer deze component start.
+    /// Set een type value aan de type item.
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        type = typeof(TItem);
+    }
+
+    /// <summary>
+    /// Deze functie start wanneer deze component klaar zijn.
+    /// Voeg de grid in bij de backclall om bij de basis component te kunnen gebruiken.
+    /// </summary>
+    /// <param name="firstRender"></param>
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Callback.InvokeAsync(this.DefaultGrid);
+        }
+    }
+
+    /// <summary>
+    /// Get de description van een property om bij de grid te kunnen zien.
+    /// </summary>
+    /// <param name="propertie">De property die haalt de discriptio vanuit.</param>
+    /// <returns></returns>
+    private string GetDescription(dynamic propertie)
+    {
+        AttributeCollection attributes = TypeDescriptor.GetProperties(typeof(TItem))[$"{propertie.Name}"].Attributes;
+        DescriptionAttribute myAttribute = (DescriptionAttribute)attributes[typeof(DescriptionAttribute)];
+        return myAttribute.Description != "" ? myAttribute.Description : propertie.Name;
+    }
+
+    private string GetFormat(dynamic item)
+    {
+        if (item.PropertyType == typeof(string))
+        {
+            return "";
+        }
+        else if (item.PropertyType == typeof(DateTime))
+        {
+            return "dd-MM-yyy";
+        }
+        else if (item.PropertyType == typeof(decimal))
+        {
+            return "d";
+        }
+        return "";
+    }
+}
+
+
+<style>
+    .e-grid .e-gridheader {
+        border: none;
+    }
+    .e-grid {
+        border: none;
+    }
+    div .control-section .content-wrapper{
+        border: none;
+    }
+    .e-columnheader .e-attr {
+        background-color: rgb(87, 87, 86);
+        color: white;
+        height: 30px;
+    }
+
+    #gridshtrawg0kjn3 {
+        width: 100%;
+    }
+
+    .e-pagercontainer .e-currentitem {
+        background-color: rgb(118, 183, 41);
+    }
+
+        .e-pagercontainer .e-currentitem:hover {
+            background-color: rgb(51, 156, 209);
+        }
+    .e-filtered {
+        color: black;
+        padding-top: 0px;
+    }
+
+
+    .e-filterbarcell .e-fltrinputdiv span .e-input {
+        height: 15px;
+        padding-top: 0px;
+
+    }
+
+    .e-filterbarcell .e-fltrinputdiv span {
+        height: 20px;
+        padding-top: 0px;
+        border: none;
+        border-bottom: 2px solid;
+    }
+
+   @* .e-grid .e-table {
+        height: 78vh;
+    } *@
+
+</style>

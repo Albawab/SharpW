@@ -1,0 +1,21 @@
+﻿@if (Vraag.Tooltip is FormulierTooltip)
+{
+<SfTooltip Content="Vraag.Tooltip.Content" Position="Position" ShowTipPointer="Vraag.Tooltip.ShowTipPointer">
+    <FormulierElementVraag ElementVraag=Vraag></FormulierElementVraag>
+</SfTooltip>
+}
+@code {
+    [Parameter]
+    public FormulierVraag Vraag{ get; set; }
+    Syncfusion.Blazor.Popups.Position TipPosition = Syncfusion.Blazor.Popups.Position.BottomCenter;
+
+ 
+
+    private Syncfusion.Blazor.Popups.Position Position
+    {
+        get
+        {
+            return Extensions.ToPositionTooltip(Vraag.Tooltip.Position.ToString());
+        }
+    }
+}

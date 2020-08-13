@@ -1,0 +1,12 @@
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\bin\Debug\netstandard2.0\Werkers.deps.json
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\bin\Debug\netstandard2.0\Werkers.dll
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\bin\Debug\netstandard2.0\Werkers.pdb
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\bin\Debug\netstandard2.0\Interface.dll
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\bin\Debug\netstandard2.0\Interface.pdb
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\obj\Debug\netstandard2.0\Werkers.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\obj\Debug\netstandard2.0\Werkers.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\obj\Debug\netstandard2.0\Werkers.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\obj\Debug\netstandard2.0\Werkers.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\obj\Debug\netstandard2.0\Werkers.csproj.CopyComplete
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\obj\Debug\netstandard2.0\Werkers.dll
+C:\Users\Abdul\Desktop\ConsoleApp1\Werkers\obj\Debug\netstandard2.0\Werkers.pdb

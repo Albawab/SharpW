@@ -1,0 +1,55 @@
+﻿@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Interfaces
+@implements IAmMenubar 
+@inject IToolsMenuSevice toolService
+@if (menubarItems != null)
+{
+    @foreach (var tool in menubarItems)
+    {
+        if (tool is ToolMenuLinkModel menubarLinik)
+        {
+            <ToolMenuLinkComponent ToolMenuLink="@menubarLinik" ToolbarCallBack="ToolbarCallBack"/>
+        }
+        else if (tool is ToolMenuButtonModel menubarButton)
+        {
+
+        }
+        else if (tool is ToolMenuSearchModel menubarSearch)
+        {
+
+        }
+        else if (tool is ToolMenuGroupModel menubarGroup)
+        {
+            <ToolMenuGroupComponent Tool="@menubarGroup" />
+        }
+    }
+}
+
+@code {
+    [Parameter]
+    public EventCallback<string> ToolbarCallBack { get; set; }
+
+    public dynamic ToolMenuItems { get; set; }
+
+    public dynamic menubar { get; set; }
+
+    private List<ToolMenuItemModel> menubarItems;
+    IHandleMenubar handel;
+
+    [Parameter]
+    public IToolsMenuSevice Service { get; set; }
+
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+        }
+        public void Update(IHandleMenubar handleMenubar)
+    {
+        handel = handleMenubar;
+        menubarItems = new List<ToolMenuItemModel>();
+        if (handleMenubar != null)
+        {
+            menubarItems = handleMenubar.GetMenubarItems();
+        }
+        //StateHasChanged();
+    }
+}

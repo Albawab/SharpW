@@ -1,0 +1,17 @@
+﻿@using HenE_BlazorComponent.Data
+
+        <label class="col-@CardElement.Columns offset-@CardElement.Column">
+            <SfTextBox CssClass="e-outline" Type="@CardElement.Type.ToString()" Placeholder="@CardElement.Placeholder" FloatLabelType="@FloatLabelType.Auto" HtmlAttributes="@maxLenght"></SfTextBox>
+        </label>
+
+@code {
+    [Parameter]
+    public CardTextElement CardElement { get; set; }
+
+
+    /*    HtmlAttributes="@height"*/
+    private Dictionary<string, object> maxLenght = new Dictionary<string, object>()
+         {
+            { "maxlength", "10"}
+        };
+}

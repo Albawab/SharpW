@@ -1,0 +1,50 @@
+﻿@page "/apiFormulier"
+@inject HttpClient Http
+@using Newtonsoft.Json
+@if (APIformulierElementenGroup != null)
+{
+
+    <div style="text-align:center">
+        <h1>@formulier.Titel</h1>
+
+    </div>
+
+    <div class="container-fluid">
+        @foreach (var formulierElenent in APIformulierElementenGroup)
+        {
+            <div>
+                @foreach (var element in formulierElenent)
+                {
+                    if (element is FormulierSectie)
+                    {
+                        <FormulierElement Section=element GridData="GridData"></FormulierElement>
+                    }
+                }
+
+            </div>
+        }
+    </div>
+}
+else
+{
+    <h2>Loading...</h2>
+}
+
+
+@code {
+    /* https://www.iot-now.com/iot-projects-fail/
+     https://www.iotworldtoday.com/webinar/smart-iot-solutions-for-manufacturing-and-energy-management/ */
+
+    List<KinderFormulier> GridData = new List<KinderFormulier>();
+    Formulier formulier;
+    dynamic APIformulierElementenGroup;
+    dynamic formulierstring;
+
+    protected override async void OnInitialized()
+    {
+        formulierstring = await Http.GetStringAsync("https://localhost:44382/Formulier");
+        formulier = JsonConvert.DeserializeObject<AangifteDividendBelasting>(formulierstring);
+        APIformulierElementenGroup = formulier.Kinderen.GroupBy(G => G.Row).OrderBy(O => O.Key).ToArray();
+        StateHasChanged();
+    }
+}

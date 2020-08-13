@@ -1,0 +1,5 @@
+C:\Users\Abdul\Desktop\Sharp\Interface\ClassLibrary1\bin\Debug\Interface.dll
+C:\Users\Abdul\Desktop\Sharp\Interface\ClassLibrary1\bin\Debug\Interface.pdb
+C:\Users\Abdul\Desktop\Sharp\Interface\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\Sharp\Interface\ClassLibrary1\obj\Debug\Interface.dll
+C:\Users\Abdul\Desktop\Sharp\Interface\ClassLibrary1\obj\Debug\Interface.pdb

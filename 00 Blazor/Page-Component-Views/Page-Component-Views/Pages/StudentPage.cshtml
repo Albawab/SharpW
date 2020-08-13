@@ -1,0 +1,21 @@
+﻿@page "/studentPage"
+@model Page_Component_Views.Pages.StudentPageModel
+
+
+@{
+    ViewData["Title"] = "StudentPage";
+}
+
+@foreach (Page_Component_Views.Model.Student student in Model.Students)
+{
+    <ul>
+        <li>@student.id</li>
+        <li>@student.name</li>
+        <li>@student.Birthday</li>
+    </ul>
+    <br /><hr />
+}
+<h1>StudentPage</h1>
+
+@Html.ActionLink("Lijst van studenten", "GetList", "Student");
+

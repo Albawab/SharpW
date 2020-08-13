@@ -1,0 +1,28 @@
+﻿@page "/"
+@page "/{Id:int}"
+@inject NavigationManager NavigationManager
+@inherits BaseControllerFormulierBlazor
+
+@if (FormulierElementenGroup != null)
+{
+
+    <div style="text-align:center">
+        <h1>@EenFormulier.Titel</h1>
+    </div>
+    <div class="container-fluid">
+        @foreach (var formulierElenent in FormulierElementenGroup)
+        {
+            <div>
+                @foreach (var element in formulierElenent)
+                {
+                    <FormulierSectionMain Section=element></FormulierSectionMain>
+                }
+
+            </div>
+        }
+    </div>
+}
+else
+{
+    <h2>Loading...</h2>
+}

@@ -1,0 +1,77 @@
+﻿@using Syncfusion.EJ2.Blazor.Inputs;
+@using Microsoft.AspNetCore.Components.Forms;
+@using System.ComponentModel.DataAnnotations;
+@using Newtonsoft.Json;
+@using WebApplication1.Data
+@inject WeatherForecastService ForecastService
+
+
+@if (IsLoading)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <EditForm Model="@employee" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+        <DataAnnotationsValidator />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label for="employee-id">Employee ID</label>
+            <EjsTextBox id="employee-id" Placeholder='Provide employee ID' @bind-Value="@employee.EmpID"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.EmpID)" />
+        </div>
+        <div class="form-group">
+            <label for="employee-name">Employee Name</label>
+            <EjsTextBox id="employee-name" Placeholder='Provide employee name' @bind-Value="@employee.Name"></EjsTextBox>
+            <ValidationMessage For="@(() => employee.Name)" />
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <h4>@FormValidateState</h4>
+    </EditForm>
+}
+
+@code {
+
+    WeatherForecast[] forecasts;
+    public Boolean IsLoading;
+
+    public string FormValidateState = "Click Register button to validate and submit the form.";
+    public Employee employee = new Employee();
+
+    public void HandleValidSubmit()
+    {
+        FormValidateState = "Submitted form is valid.";
+
+    }
+    // Form Validation State : @FormValidationState
+    public void HandleInvalidSubmit()
+    {
+        FormValidateState = "Submitted form is invalid.";
+
+    }
+
+    public class Employee
+    {
+        [Required(ErrorMessage = "Employee ID is required")]
+
+        public string EmpID { get; set; }
+
+        [Required(ErrorMessage = "Name is required")]
+        public string Name { get; set; }
+    }
+
+    protected override async Task OnInitAsync()
+    {
+
+        await ForecastService.GetForecastAsync(DateTime.Now);
+        await ForecastService.GetForecastAsync(DateTime.Now);
+        await ForecastService.GetForecastAsync(DateTime.Now);
+
+        IsLoading = false;
+
+        StateHasChanged();
+
+    }
+
+
+}

@@ -1,0 +1,29 @@
+Kaarten Schudden
+shuffle mix mingle
+Extensions
+Initialiseer het spel
+Retrieve
+Communicate
+VerzoekOmStartenSpel
+categoryMenue
+BaseController
+ConvertAlignToBootstrapString
+ToBootstrap
+Specificatie //list
+Repository
+Seed
+ComplexiteitLevel
+
+
+Er is iets misgegaan.\
+------------------------------------------------------------
+Sidebar
+LijstNavItems-
+             -Id
+             -URL
+             -Type -Group
+                   -List
+             -SubItem
+             -Favorit
+--------------------------------------------------------------
+          

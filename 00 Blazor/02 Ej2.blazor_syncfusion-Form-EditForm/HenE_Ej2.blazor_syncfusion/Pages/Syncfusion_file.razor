@@ -1,0 +1,85 @@
+﻿@page "/syncfusion_file"
+@using System.Text.RegularExpressions
+    <h3>Syncfusion</h3>
+<hr />
+<br />
+
+<form @onsubmit="Check">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 shadow-lg p-3 mb-5 bg-white rounded">
+                <EjsTextBox CssClass="@myClassOutlineNaam" Placeholder="First Name" FloatLabelType="@FloatLabelType.Auto" @bind-Value="@naam"></EjsTextBox>
+            </div>
+            <div class="col-6 shadow-lg p-3 mb-5 bg-white rounded">
+                <EjsTextBox CssClass="@myClassOutlineAchteName" Placeholder="Second Name" FloatLabelType="@FloatLabelType.Auto" @bind-Value="@AchterNaam"></EjsTextBox>
+            </div>
+        </div>
+    </div>
+    <EjsButton>POST</EjsButton>
+</form>
+
+
+
+@code{
+            // de css class van de textbox naam.
+            private string myClassOutlineNaam { get; set; } = "e-float-input e-control-wrapper e-outline e-valid-input";
+
+            // De naam van de persoon.
+           private string naam { get; set; }
+
+            // De achter naam van de persoon.
+            private string AchterNaam { get; set; }
+
+            // De css klas van de textbox achternaam. 
+            private string myClassOutlineAchteName { get; set; }
+
+            //
+            EjsTextBox TextBoxObj;
+
+            /// <summary>
+            /// controleert of de gegevens bestaat goed of niet.
+            /// </summary>
+            private void Check()
+            {
+                try
+                {
+            // mag alleen de letters met - en _ doorlopen.
+            if (Regex.IsMatch(naam, "^[a-zA-Z-_ ]"))
+            {
+                // controleert de eerst naam.
+                if (naam == "Arno")
+                {
+                    // Als de naam bestaat wel dan verandert de CSS class.
+                    myClassOutlineNaam = "e-float-input form-control e-success is-valid";
+                }
+                else
+                {
+                    // Als de naam bestaat niet dan geef de CSS class deze classes.
+                    myClassOutlineNaam = "e-float-input e-error e-outline form-control is-invalid";
+                }
+
+                // Controleert de achternaam van de persoon.
+                if (AchterNaam == "Horlings")
+                {
+                    myClassOutlineAchteName = "e-float-input form-control e-success is-valid";
+                }
+                else
+                {
+                    myClassOutlineAchteName = "e-float-input e-error e-outline form-control is-invalid";
+                }
+            }
+            else
+            {
+                // Als de data niet correct dan zet deze classes.
+                myClassOutlineNaam = "e-float-input e-error e-outline form-control is-invalid";
+                myClassOutlineAchteName = "e-float-input e-error e-outline form-control is-invalid";
+            }
+        }
+        catch (Exception)
+        {
+            myClassOutlineNaam = "e-float-input e-error e-outline form-control is-invalid";
+            myClassOutlineAchteName = "e-float-input e-error e-outline form-control is-invalid";
+        }
+
+    }
+}

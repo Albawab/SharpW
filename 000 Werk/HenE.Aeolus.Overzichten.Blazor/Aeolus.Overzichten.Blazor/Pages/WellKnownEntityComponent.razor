@@ -1,0 +1,17 @@
+@page "/wellKnownEntity" 
+
+@using HenE.Aeolus.Overzichten.Domain.GemeenteIJsseldijk;
+@inject IConfiguration configuration
+
+<div>
+    <BaseBodyComponent TItem="WellKnownEntity" Url="@Url"></BaseBodyComponent>
+</div>
+@code{
+        string Url;
+
+    protected override void OnInitialized()
+    {
+        Url = configuration["Api:Adresses:Overzichten"];
+    }
+}
+

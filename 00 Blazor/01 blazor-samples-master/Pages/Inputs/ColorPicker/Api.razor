@@ -1,0 +1,211 @@
+﻿@page "/ColorPicker/Api"
+
+@using Syncfusion.EJ2.Blazor.Inputs
+
+@using Syncfusion.EJ2.Blazor.DropDowns
+@using Syncfusion.EJ2.Blazor.Buttons
+@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@{
+    SampleBrowser.CurrentSampleName = "API";
+    SampleBrowser.CurrentControlName = "ColorPicker";
+    SampleBrowser.CurrentControlCategory = "ColorPicker";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.ColorPicker;
+    SampleBrowser.ActionDescription = new string[] {
+       @"<p>This sample demonstrates customization of the ColorPicker component by using its properties from the property pane. Select
+        any combination of properties from the property pane to customize the ColorPicker component.</p>"
+    };
+    SampleBrowser.Description = new string[]{
+        @" <p>
+        The ColorPicker is a user interface to select and adjust color values. This supports various color specifications like RGB
+        (Red Green Blue), HSV (Hue Saturation Value), and Hex codes.
+    </p>
+    <p>
+        In this sample, ColorPicker is rendered with default configuration.
+    </p>
+    <p>
+        This sample can be customized further with the combination of ColorPicker properties from the property pane. For example,
+    </p>
+    <ul>
+        <li>Control (apply/cancel) buttons can be enabled or disabled using
+            <i>Show Buttons</i> checkbox from the property pane.</li>
+        <li>You can select the color by entering the color value in the property pane
+            <i>Value</i> textbox.</li>
+        <li>You can switch to ""Picker"" and ""Palette"" modes by clicking and selecting the mode from
+            <i>Select Mode</i> dropdownlist.</li>
+        <li>you can enable or disable the ColorPicker using
+            <i>Disabled</i> checkbox from property pane.</li>
+        <li>you can enable or disable the mode switcher using
+            <i>Mode Switcher</i> checkbox from property pane.</li>
+    </ul>
+    <p>
+        More information about ColorPicker can be found in this
+        <a target=""_blank"" href=""https://ej2.syncfusion.com/aspnet-core-blazor/documentation/color-picker/getting-started/"">
+            documentation section</a>.
+    </p>"
+    };
+}
+@*End:Hidden*@
+
+<div class="col-lg-8 control-section">
+    <div id="colorpicker-control">
+        <h4>Choose a color</h4>
+        <EjsColorPicker @ref="colorPicker" @bind-Value="@InputValue" ValueChange="OnChange" Mode="@PickerMode" ModeSwitcher="@ModeChange" ShowButtons="@ShowButtonChange" Disabled="@Disable"></EjsColorPicker>
+    </div>
+</div>
+<div class="col-lg-4 property-section">
+    <table id="property" title="Properties" style="width: 100%">
+        <tbody>
+            <tr>
+                <td style="width: 50%">
+                    <div>Value</div>
+                </td>
+                <td style="width: 50%">
+                    <div style="max-width: 200px">
+                        <EjsTextBox ID="firstname" @bind-Value="@InputValue" ValueChange="TextboxChange"></EjsTextBox>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;padding-top:10px">
+                    <div>Mode</div>
+                </td>
+                <td style="width: 50%;padding-top:10px">
+                    <div style="max-width: 200px">
+                        <EjsDropDownList DataSource="@Data" PopupHeight="200px" @bind-Value="@Picker" TValue="string">
+                            <DropDownListEvents ValueChange="ValueChanged" TValue="string"></DropDownListEvents>
+                            <DropDownListFieldSettings Text="Mode" Value="Id"></DropDownListFieldSettings>
+                        </EjsDropDownList>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;padding-top:15px">
+                    <div>Disable</div>
+                </td>
+                <td style="width: 50%;padding-top:15px">
+                    <EjsCheckBox @bind-Checked="Disable" ValueChange="DisabledOnChange"></EjsCheckBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;padding-top:15px">
+                    <div>Show Buttons</div>
+                </td>
+                <td style="width: 50%;padding-top:15px">
+                    <EjsCheckBox @bind-Checked="ShowButtonChange" ValueChange="ButtonOnChange"></EjsCheckBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;padding-top:15px">
+                    <div>Mode Switcher</div>
+                </td>
+                <td style="width: 50%;padding-top:15px">
+                    <EjsCheckBox @bind-Checked="ModeChange" ValueChange="ModeOnChange"></EjsCheckBox>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@code{
+
+    EjsColorPicker colorPicker;
+    public string InputValue = "#0db1e7";
+    public string StyleValue = "background-color:#008000";
+    public GetCurrentValue ColorValue { get; set; }
+    public bool Disable = false;
+    public bool ModeChange = true;
+    public bool ShowButtonChange = true;
+    public string Picker = "Picker";
+    ColorPickerMode PickerMode { get; set; }
+
+    private void OnChange(ColorPickerEventArgs args)
+    {
+        this.ColorValue = ((JObject)args.CurrentValue).ToObject<GetCurrentValue>();
+        this.StyleValue = "background-color:" + this.ColorValue.hex;
+        this.InputValue = this.ColorValue.hex;
+        this.StateHasChanged();
+    }
+
+    public class GetCurrentValue
+    {
+        public string hex { get; set; }
+        public string rgba { get; set; }
+    }
+
+    protected override void OnInitialized()
+    {
+        this.PickerMode = ColorPickerMode.Picker;
+    }
+
+    private void TextboxChange(Syncfusion.EJ2.Blazor.Inputs.ChangedEventArgs args)
+    {
+        if (args.Value != null && args.Value.Length > 2)
+        {
+            if (!args.Value.StartsWith("#"))
+            {
+                args.Value = "#" + args.Value;
+            }
+        }
+        else
+        {
+            args.Value = "#008000";
+        }
+        this.InputValue = args.Value;
+    }
+
+    private void ValueChanged(Syncfusion.EJ2.Blazor.DropDowns.ChangeEventArgs<string> args)
+    {
+        if (args.Value.ToString() == "Palette")
+        {
+            this.PickerMode = ColorPickerMode.Palette;
+        }
+        else
+        {
+            this.PickerMode = ColorPickerMode.Picker;
+        }
+    }
+    private void ModeOnChange(Syncfusion.EJ2.Blazor.Buttons.ChangeEventArgs args)
+    {
+        this.ModeChange = args.Checked;
+    }
+    private void ButtonOnChange(Syncfusion.EJ2.Blazor.Buttons.ChangeEventArgs args)
+    {
+        this.ShowButtonChange = args.Checked;
+    }
+    private void DisabledOnChange(Syncfusion.EJ2.Blazor.Buttons.ChangeEventArgs args)
+    {
+        this.Disable = args.Checked;
+    }
+
+    public List<object> Data = new List<object> {
+       new { Id = "Picker", Mode = "Picker" },
+       new  { Id = "Palette", Mode = "Palette" }
+           };
+
+
+}
+<style>
+
+    .property-panel-content {
+        padding: 0 10px 10px 0;
+        overflow: auto;
+    }
+
+    #colorpicker-control {
+        margin: 30px auto;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+        #colorpicker-control h4 {
+            margin-bottom: 20px;
+        }
+
+    .e-bigger #colorpicker-control h4 {
+        font-size: 20px;
+    }
+</style>
+

@@ -1,0 +1,10 @@
+{
+  "Name": "Abdul",
+  "ID": 43434,
+  "Courses": [ "AI", "CG", "CS" ],
+  "Car": {
+    "Brand": "KIA",
+    "Model": 2017
+  }
+
+}

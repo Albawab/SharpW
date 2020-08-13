@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "bVJ9/SbikU6nAdPEJAS4p5rku+Rw36XOrr7zNDkkXe5zSYrHYDdJsPyWNki0muuFQvDSsuHx4cmdf3Fy0kbsJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\02 form-Suncfusion\\CustomComponent\\CustomComponent.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\syncfusion.ej2.blazor\\17.3.0.17-beta\\syncfusion.ej2.blazor.17.3.0.17-beta.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

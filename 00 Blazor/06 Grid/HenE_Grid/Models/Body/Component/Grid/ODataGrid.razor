@@ -1,0 +1,126 @@
+﻿@typeparam TItem
+@inject IHaveSettings Settings
+@using System
+@using System.ComponentModel
+
+<div class="control-section">
+    <div class="content-wrapper">
+        <SfGrid @ref="@DefaultGrid" Locale="nl" Height="100%" Width="100%" TValue="@TItem" AllowFiltering="true" AllowPdfExport="true" AllowExcelExport="true" AllowPaging="true">
+            <SfDataManager Adaptor="Adaptors.ODataV4Adaptor" Url="@Url"></SfDataManager>
+            <GridColumns>
+                @foreach (dynamic prop in tp.GetProperties())
+                {
+                    <GridColumn Field="@prop.Name" HeaderText="@(GetDescription(prop))" Format="@(GetFormat(prop))" TextAlign="TextAlign.Center" CustomAttributes="@(new { @class = "e-attr" })"></GridColumn>
+                }
+            </GridColumns>
+        </SfGrid>
+    </div>
+</div>
+@code{
+    [Parameter]
+    public string Route { get; set; }
+    private Type tp;
+
+    [Parameter]
+    public SfGrid<TItem> DefaultGrid { get; set; }
+    [Parameter]
+    public EventCallback<SfGrid<TItem>> Callback { get; set; }
+
+    [CascadingParameter]
+    public EventCallback<SfGrid<TItem>> DefaultGridChanged { get; set; }
+
+    protected override void OnInitialized()
+    {
+        tp = typeof(TItem);
+    }
+
+    protected string Url
+    {
+        get { return Settings.GetInstellingen().OdatabaseUrl + this.Route; }
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Callback.InvokeAsync(this.DefaultGrid);
+        }
+    }
+
+    private string GetDescription(dynamic propertie)
+    {
+        AttributeCollection attributes = TypeDescriptor.GetProperties(typeof(TItem))[$"{propertie.Name}"].Attributes;
+        DescriptionAttribute myAttribute = (DescriptionAttribute)attributes[typeof(DescriptionAttribute)];
+        return myAttribute.Description != "" ? myAttribute.Description : propertie.Name;
+    }
+
+    private string GetFormat(dynamic item)
+    {
+        if (item.PropertyType == typeof(string))
+        {
+            return "";
+        }
+        else if (item.PropertyType == typeof(DateTime))
+        {
+            return "dd-MM-yyy";
+        }
+        else if (item.PropertyType == typeof(decimal))
+        {
+            return "d";
+        }
+        return "";
+    }
+}
+
+
+<style>
+    .e-grid .e-gridheader {
+        border: none;
+    }
+    .e-grid {
+        border: none;
+    }
+    div .control-section .content-wrapper{
+        border: none;
+    }
+    .e-columnheader .e-attr {
+        background-color: rgb(87, 87, 86);
+        color: white;
+        height: 30px;
+    }
+
+    #gridshtrawg0kjn3 {
+        width: 100%;
+    }
+
+    .e-pagercontainer .e-currentitem {
+        background-color: rgb(118, 183, 41);
+    }
+
+        .e-pagercontainer .e-currentitem:hover {
+            background-color: rgb(51, 156, 209);
+        }
+    .e-filtered {
+        color: black;
+        padding-top: 0px;
+    }
+
+
+    .e-filterbarcell .e-fltrinputdiv span .e-input {
+        height: 15px;
+        padding-top: 0px;
+
+    }
+
+    .e-filterbarcell .e-fltrinputdiv span {
+        height: 20px;
+        padding-top: 0px;
+        border: none;
+        border-bottom: 2px solid;
+    }
+
+   @* .e-grid .e-table {
+        height: 78vh;
+    } *@
+
+</style>

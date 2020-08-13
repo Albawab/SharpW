@@ -1,0 +1,216 @@
+﻿@page "/in-place-editor"
+
+@using HenE_Application.Container
+@using Syncfusion.EJ2.Blazor
+@using Syncfusion.EJ2.Blazor.Data
+@inject HttpClient Http
+
+<div class="col-lg-8 control-section inplace-editor-control-section form-layout" id='inplace-editor-control'>
+    <div class="content-wrapper" style="margin-bottom: 25px">
+        <div id="confirmation">
+            <div id="submitDialog"></div>
+            <form id="formId" class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-6 control-label" style="text-align: left;font-size: 14px;">
+                        Title
+                    </label>
+                    <EjsInPlaceEditor Mode="@Mode" EmptyText="Enter your question title" Name="Title" ValidationRules="@TitleValidation" Value="@TitleValue" Model="@TitleData">
+                    </EjsInPlaceEditor>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-6 control-label" style="text-align: left;font-size: 14px;">
+                        Comments
+                    </label>
+                    <EjsInPlaceEditor Mode="@Mode" Type="InputType.RTE" EditableOn="EditableType.EditIconClick" SubmitOnEnter="false" EmptyText="Enter your comment" Name="RTE" ValidationRules="@CommentValidation" Value="@CommentValue" Model="@CommentData">
+                    </EjsInPlaceEditor>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-6 control-label" style="text-align: left;font-size: 14px;">
+                        Tags
+                    </label>
+                    <EjsInPlaceEditor Url="https://localhost:45001/InPlaceEditor" Adaptor="AdaptorType.WebApiAdaptor" PrimaryKey=1 SubmitOnEnter="true" Mode="@Mode" Type="InputType.MultiSelect" EmptyText="Enter your tags" Name="Tag" ValidationRules="@TagValidation" Value="@TagValue" Model="@TagData">
+                    </EjsInPlaceEditor>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+    public InPlaceEditor inPlaceEditor ;
+    private string TitleValue;
+    private string[] TagValue;
+    private string CommentValue;
+    private static string[] Data;
+    private static string[] RteItems;
+
+    //placeholder
+    private object TitleData;
+    private object TagData;
+    private object CommentData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        inPlaceEditor = await Http.GetJsonAsync<InPlaceEditor>("https://localhost:45001/InPlaceEditor");
+        TitleValue = inPlaceEditor.Title;
+        Data = inPlaceEditor.Tags;
+        TagValue = new string[] { "TypeScript", "JavaScript" };
+        CommentValue = "The extensive adoption of JavaScript for application development, and the ability to use HTML and JavaScript to create Windows Store apps, has made JavaScript a vital part of the Windows development ecosystem. Microsoft has done extensive work to make JavaScript easier to use.";
+        RteItems = new string[] { "Bold", "Italic", "Underline", "FontColor", "BackgroundColor", "LowerCase", "UpperCase", "|", "OrderedList", "UnorderedList" };
+
+
+        TagData = new
+        {
+            mode = "Box",
+            placeholder = "Enter your tags",
+            dataSource = Data
+        };
+        CommentData = new
+        {
+            toolbarSettings = new
+            {
+                enableFloating = false,
+                items = RteItems
+            }
+        };
+
+        TitleData = new { placeholder = "Enter your question title" };
+
+    }
+
+
+
+    //Mode
+    private RenderMode Mode = RenderMode.Inline;
+
+
+    // Validation
+    private object TitleValidation = new { Title = new { required = Validation1 } };
+    private object CommentValidation = new { RTE = new { required = Validation2 } };
+    private object TagValidation = new { Tag = new { required = Validation3 } };
+    private static string[] Validation1 = new string[] { "true", "Enter valid title" };
+    private static string[] Validation2 = new string[] { "true", "Enter valid comments" };
+    private static string[] Validation3 = new string[] { "true", "Enter valid tags" };
+
+
+
+
+    public TextBoxModel TModel = new TextBoxModel()
+    {
+        Placeholder = "Enter your value"
+    };
+
+    public async Task OnSuccess(ActionEventArgs args)
+    {
+        //MultiSelectValue.Value = args.Value;
+        //await Http.PutJsonAsync("https://localhost:45001/InPlaceEditor",MultiSelectValue);
+        //MultiSelectValue = await Http.GetJsonAsync<InPlaceEditor>("https://localhost:45001/InPlaceEditor");
+    }
+
+    public void OnFailure(ActionEventArgs args)
+    {
+        Console.WriteLine();
+    }
+
+    /*<table class="table-section">
+    <tr>
+        <td class="sample-td"> Enter your name: </td>
+        <td class="sample-td">
+            <EjsInPlaceEditor Url="https://localhost:45001/InPlaceEditor/UpdateData" Adaptor="AdaptorType.UrlAdaptor"
+                              Mode="RenderMode.Inline" EnableEditMode="true" Type="InputType.Text" PrimaryKey="val"
+                              Value="value" SubmitOnEnter="true" Model="MultiSelectValue">
+                <InPlaceEditorEvents OnActionFailure="OnFailure" OnActionSuccess="OnSuccess" TValue="string"></InPlaceEditorEvents>
+            </EjsInPlaceEditor>
+        </td>
+    </tr>
+</table>*/
+}
+
+<style>
+
+    .inplace-editor-control-section.form-layout .e-inplaceeditor .e-editable-component .e-clear-icon-hide,
+    .e-inplaceeditor-tip .e-editable-component .e-input-group .e-clear-icon.e-clear-icon-hide {
+        display: block;
+        visibility: hidden;
+    }
+    /* custom code start */
+    .inplace-editor-control-section.form-layout #confirmation {
+        max-width: 500px;
+        margin: auto;
+    }
+    /* custom code end */
+    .inplace-editor-control-section.form-layout #formId {
+        padding-top: 20px;
+        margin-bottom: 45px;
+        border: 1px solid #ccc;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+        border-radius: 5px;
+    }
+
+    .inplace-editor-control-section.form-layout .form-horizontal .form-group {
+        margin: 0 20px;
+    }
+
+        .inplace-editor-control-section.form-layout .form-horizontal .form-group > * {
+            width: 100%;
+        }
+
+        .inplace-editor-control-section.form-layout .form-horizontal .form-group:last-child {
+            padding-bottom: 40px;
+        }
+
+    .inplace-editor-control-section.form-layout .form-title {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.70);
+    }
+
+    .inplace-editor-control-section.form-layout .submit {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .inplace-editor-control-section.form-layout .form-horizontal .control-label {
+        padding: 15px 15px 15px 0;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    @@media (max-width: 768px) {
+        .inplace-editor-control-section.form-layout .form-horizontal .control-label {
+            padding-top: 7px;
+            margin-bottom: 0;
+        }
+    }
+
+    #editorProperty table td {
+        width: 50%;
+    }
+
+    #editorProperty table div {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+</style>

@@ -1,0 +1,166 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+
+  <div style="height: 25px; background: #1476ad"></div>
+
+  <div id='treeparent'>
+
+    <ejs-treeview id='tvNav' #tvNav [fields]='field' [allowDragAndDrop]='allowDragAndDrop'
+    (nodeSelected)="onNodeSelected($event)" (nodeDropped)="onNodeDropped($event)">
+      <ng-template #nodeTemplate let-data>
+          <div class="treeviewdiv">
+            <div style="float:left">
+              <span class="treeName">
+                <i *ngIf="data.status === 1" class="fas fa-lock fa-sm red"></i>
+                <i *ngIf="data.status === 2" class="fas fa-unlock fa-sm green"></i>
+                {{data.titel}}
+              </span>
+            </div>
+
+            <div *ngIf="data.actions" ngbDropdown placement="bottom-right" class="d-inline-block settingsMenu">
+
+              <button *ngIf="data.favorite" class="btnSettingsMenu" (click)="toogleFav(data)">
+                  <i class="fas fa-star"></i>
+              </button>
+
+              <button *ngIf="!data.favorite"  class="btnSettingsMenu favorite" (click)="toogleFav(data)">
+                  <i class="fal fa-star"></i>
+              </button>
+
+              <button class="btnSettingsMenu" (click)="openContextMenu($event)">
+                  <i class="far fa-cog"></i>
+              </button>
+
+              <!-- <button class="btnSettingsMenu" ngbDropdownToggle title="{{data.titel}}">
+                <i class="far fa-cog"></i>
+              </button>
+              <div ngbDropdownMenu>
+                <a *ngFor="let action of data.actions" class="dropdown-item" (click)="doAction(action, data)">{{action.naam}}</a>
+              </div> -->
+
+              <!-- <button class="btnSettingsMenu" (click)="showActiesMenu(data.titel)" title="{{data.titel}}">
+                <i class="far fa-cog"></i>
+              </button>
+              <div [id]="data.titel" style="display:none;background:#FFF;z-index:99999;width:200px;height:200px;position:absolute;top:0;right:0;border:1px solid #CCC;">
+                <a style="display:block;" *ngFor="let action of data.actions" class="dropdown-item" (click)="doAction(action, data)">{{action.naam}}</a>
+              </div> -->
+
+            </div>
+          </div>
+
+      </ng-template>
+    </ejs-treeview>
+
+    <ejs-contextmenu #contentmenutree id='contentmenutree' [items]="menuItems" (beforeOpen)='beforeopen($event)' (select)='menuclick($event)'></ejs-contextmenu>
+
+
+    <!-- <ejs-treeview id='tvFav' #tvFav [fields]='fieldFav' [allowDragAndDrop]='allowDragAndDrop'
+      (nodeSelected)="onNodeSelected($event)" (nodeDropped)="onNodeDropped($event)">
+      <ng-template #nodeTemplate let-data>
+          <div class="treeviewdiv">
+            <div style="float:left">
+              <span class="treeName">
+                <i *ngIf="data.status === 1" class="fas fa-lock fa-sm red"></i>
+                <i *ngIf="data.status === 2" class="fas fa-unlock fa-sm green"></i>
+                {{data.titel}}
+              </span>
+            </div>
+
+            <div *ngIf="data.actions" ngbDropdown placement="bottom-right" class="d-inline-block settingsMenu">
+
+              <button *ngIf="data.favorite" class="btnSettingsMenu" (click)="toogleFav(data)">
+                  <i class="fas fa-star"></i>
+              </button>
+
+              <button *ngIf="!data.favorite"  class="btnSettingsMenu" (click)="toogleFav(data)">
+                  <i class="fal fa-star"></i>
+              </button>
+
+              <button class="btnSettingsMenu" ngbDropdownToggle title="{{data.titel}}">
+                <i class="far fa-cog"></i>
+              </button>
+              <div ngbDropdownMenu>
+                <a *ngFor="let action of data.actions" class="dropdown-item" (click)="doAction(action, data)">{{action.naam}}</a>
+              </div>
+            </div>
+          </div>
+
+      </ng-template>
+    </ejs-treeview> -->
+
+
+
+    <!-- <div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' [allowEditing]='true' (nodeEdited)='onNodeEdited($event)'></ejs-treeview></div> -->
+
+
+
+    <!-- <ejs-contextmenu id='contentmenutree' target='#tree' [items]='menuItems' (beforeOpen)='beforeopen($event)' (select)='menuclick($event)'></ejs-contextmenu> -->
+
+      <!-- <ejs-accordion>
+          <e-accordionitems>
+            <e-accordionitem expanded='true' header='Favorieten'>
+                <ng-template #content let-data>
+                <ejs-treeview id='tvNav' #tvNav [fields]='field' [allowDragAndDrop]='allowDragAndDrop'
+                (nodeSelected)="onNodeSelected($event)" (nodeDropped)="onNodeDropped($event)">
+
+                <ng-template #nodeTemplate let-data>
+                    <div class="treeviewdiv">
+                      <div style="float:left">
+                        <span class="treeName">
+                          <i *ngIf="data.status === 1" class="fas fa-lock fa-sm red"></i>
+                          <i *ngIf="data.status === 2" class="fas fa-unlock fa-sm green"></i>
+                          {{data.titel}}
+                        </span>
+                      </div>
+
+                      <div *ngIf="data.actions" ngbDropdown placement="bottom-right" class="d-inline-block settingsMenu">
+                          <button class="btnSettingsMenu" ngbDropdownToggle title="{{data.titel}}">
+                          <i class="fas fa-sliders-h"></i>
+                        </button>
+                        <div ngbDropdownMenu>
+                          <a *ngFor="let action of data.actions" class="dropdown-item" (click)="doAction(action, data)">{{action.naam}}</a>
+                        </div>
+                      </div>
+                    </div>
+
+                </ng-template>
+            </ejs-treeview>
+
+            </ng-template>
+            </e-accordionitem>
+
+            <e-accordionitem header='Alle mappen'>
+                <ng-template #content let-data>
+            <ejs-treeview id='tvNav' #tvNav [fields]='field' [allowDragAndDrop]='allowDragAndDrop'
+            (nodeSelected)="onNodeSelected($event)" (nodeDropped)="onNodeDropped($event)">
+
+            <ng-template #nodeTemplate let-data>
+                <div class="treeviewdiv">
+                  <div style="float:left">
+                    <span class="treeName">
+                      <i *ngIf="data.status === 1" class="fas fa-lock fa-sm red"></i>
+                      <i *ngIf="data.status === 2" class="fas fa-unlock fa-sm green"></i>
+                      {{data.titel}}
+                    </span>
+                  </div>
+
+                  <div *ngIf="data.actions" ngbDropdown placement="bottom-right" class="d-inline-block settingsMenu">
+                      <button class="btnSettingsMenu" ngbDropdownToggle title="{{data.titel}}">
+                      <i class="fas fa-sliders-h"></i>
+                    </button>
+                    <div ngbDropdownMenu>
+                      <a *ngFor="let action of data.actions" class="dropdown-item" (click)="doAction(action, data)">{{action.naam}}</a>
+                    </div>
+                  </div>
+                </div>
+
+            </ng-template>
+        </ejs-treeview>
+</ng-template>
+        </e-accordionitem>
+          </e-accordionitems>
+        </ejs-accordion> -->
+
+
+  </div>
+
+</nav>

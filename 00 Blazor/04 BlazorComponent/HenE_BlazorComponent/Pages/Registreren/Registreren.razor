@@ -1,0 +1,133 @@
+﻿@page "/registreren"
+@using HenE_BlazorComponent.Data
+
+<div style="text-align:center">
+    <h3 class="h3">Een nieuw account maken</h3>
+    <h6 class="h6">Je kunt dit heel snel en eenvoudig doen.</h6>
+</div><br />
+<EditForm Model="@persoon" OnValidSubmit="@SaveData">
+    <div class="container-fluid">
+
+        @foreach (var cardGroup in cardElementsGroup)
+        {
+            <div class="row m-4">
+                @foreach (var card in cardGroup)
+                {
+                    switch (card.Soort)
+                    {
+                        case SoortCardElementen.Label:
+                            <LebelCardRegistreren CardLabelElement=(CardLabelElement)card></LebelCardRegistreren>
+                            break;
+                        case SoortCardElementen.Text:
+                            <TextCardRegistreren CardTextElement=(CardTextElement)card Persoon="persoon"></TextCardRegistreren>
+                            break;
+                        case SoortCardElementen.Button:
+                            <ButtonCardElenenten CardButtonElement=(CardButtonElement)card></ButtonCardElenenten>
+                            break;
+                    }
+                }
+            </div>
+        }
+    </div>
+    <InputText Placeholder='First Name' @bind-Value=@MyProperty ></InputText>
+    <h1>@MyProperty</h1>
+</EditForm>
+@code {
+    dynamic cardElementsGroup;
+    Persoon persoon;
+    List<Persoon> persoons = new List<Persoon>();
+    public string MyProperty { get; set; }= "ee";
+
+    List<CardElement> cardElements = new List<CardElement>
+{
+        new CardLabelElement
+        {
+            Row=1,
+            Rows =1,
+            Column=2,
+            Columns =1,
+            Type = CardLabelSoorten.Nadruk,
+            Soort = SoortCardElementen.Label,
+            HorizontalAlign = HorizontalAlign.Right,
+            VerticalAlign = VerticalAlign.Center,
+            Title = "VoorNaam",
+        },
+        new CardTextElement
+        {
+            Row = 1,
+            Rows=1,
+            Column = 0,
+            Columns= 3,
+            Type= TextBoxTypes.Text,
+            Placeholder= "VoorNaam",
+            MaxLength = 20,
+            Soort = SoortCardElementen.Text,
+        },
+         new CardLabelElement
+        {
+            Row=1,
+            Rows =1,
+            Column=0,
+            Columns =1,
+            Type = CardLabelSoorten.Nadruk,
+            HorizontalAlign = HorizontalAlign.Right,
+            VerticalAlign = VerticalAlign.Center,
+            Title = "AchterNaam",
+        },
+         new CardTextElement
+        {
+            Row = 1,
+            Rows=1,
+            Column = 0,
+            Columns= 3,
+            Type= TextBoxTypes.Text,
+            Placeholder= "AchterNaam",
+            MaxLength = 20,
+            Soort = SoortCardElementen.Text,
+        },
+         new CardTextElement
+         {
+             Row = 2,
+             Rows =1,
+             Column = 3,
+             Columns = 7,
+             Soort = SoortCardElementen.Text,
+             Type = TextBoxTypes.Email,
+             Placeholder= "Email",
+             MaxLength = 30,
+         },
+         new CardTextElement
+         {
+             Row = 3,
+             Rows =1,
+             Column = 3,
+             Columns = 7,
+             Soort = SoortCardElementen.Text,
+             Type = TextBoxTypes.Password,
+             Placeholder= "Wachtwoord",
+         },
+         new CardButtonElement
+         {
+             Row=4,
+             Rows =1,
+             Column=3,
+             Columns=1,
+             Soort = SoortCardElementen.Button,
+             ButtonAnimationEffect = ButtonAnimationEffect.SlideRight,
+             ButtonSpinPosition = ButtonSpinPosition.Right,
+         }
+
+    };
+    protected override void OnInitialized()
+    {
+                persoon = new Persoon();
+        cardElementsGroup = cardElements.GroupBy(G => G.Row);
+    }
+
+    private void SaveData()
+    {
+
+        persoons.Add(persoon);
+        this.StateHasChanged();
+    }
+}

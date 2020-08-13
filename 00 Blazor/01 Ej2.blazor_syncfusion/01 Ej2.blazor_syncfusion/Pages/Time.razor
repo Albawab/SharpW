@@ -1,0 +1,62 @@
+﻿@page  "/time"
+<h3>Second</h3>
+
+@using EJ2Inputs = Syncfusion.EJ2.Blazor.Inputs
+<p>second: @second</p>
+
+<button @onclick="@ChangeSeconds">Change seconds</button>
+<br />
+<hr />
+<p>Minute: @Minuten</p>
+
+<button @onclick="@ChangeMinuten">Change minuten</button>
+<br />
+<hr />
+<p>Uur: @Uur</p>
+
+<button @onclick="@ChangeUren">Change uren</button>
+
+<br />
+<hr />
+<label>Default Slider</label>
+<EjsSlider Enabled="@disabled" Min="1" Max="60" Value=@value Step="1">
+    <SliderTicksData Placement="@TicksPlacement"
+                     ShowSmallTicks="true"
+                     LargeStep="1"
+                     SmallStep="2">
+
+    </SliderTicksData>
+</EjsSlider>
+
+<button @onclick="ChangeSlider">Change slider</button>
+
+@code{
+    EJ2Inputs.Placement TicksPlacement;
+    int value = 0;
+    private int second { get; set; }
+    private int Minuten { get; set; }
+    private int Uur { get; set; }
+    bool disabled = true;
+    private void ChangeSeconds()
+    {
+        DateTime date = DateTime.Now;
+        second = date.Second;
+    }
+
+    private void ChangeMinuten()
+    {
+        DateTime date = DateTime.Now;
+        Minuten = date.Minute;
+    }
+
+    private void ChangeUren()
+    {
+        DateTime date = DateTime.Now;
+        Uur = date.Hour;
+    }
+
+    private void ChangeSlider()
+    {
+        value++;
+    }
+}

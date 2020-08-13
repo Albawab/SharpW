@@ -1,0 +1,16 @@
+﻿@page "/"
+@inject IConfiguration configuration
+@using HenE.Aeolus.Overzichten.Domain.GemeenteIJsseldijk;
+
+<div>
+    <BaseBodyComponent TItem="Vwaangepastewoningen" Url="@Url"></BaseBodyComponent>
+</div>
+@code{
+    string Url;
+
+    protected override void OnInitialized()
+    {
+        Url = configuration["Api:Adresses:Overzichten"];
+    }
+
+}

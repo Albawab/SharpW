@@ -1,0 +1,21 @@
+﻿@using HenE.Aeolus.Blazor.Common.ShowFileInGrid.Model
+<div class="toolsHeader">
+    <MenubarBodyComponent MenubarItems="MenubarItems" MenubarCallBack="Callback" />
+</div>
+<div>
+    <ExcelGridComponent FileName="@fileName" TItem="ExcelCelModel"/>
+</div>
+
+@code
+ {
+
+    string fileName;
+    [Parameter]
+    public List<MenubarItemModel> MenubarItems { get; set; }
+
+    public void Callback(dynamic huidigeFileName)
+    {
+        this.fileName = $"{huidigeFileName}";
+    }
+
+}

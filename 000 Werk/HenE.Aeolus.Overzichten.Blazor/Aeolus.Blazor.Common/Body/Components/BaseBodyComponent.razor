@@ -1,0 +1,49 @@
+﻿@typeparam TItem
+<div class="toolsHeader">
+        <ToolbarBodyComponent ExcelExportEventCallback="@ExcelExport" PdfExportEventCallback="@PdfExport" ></ToolbarBodyComponent>
+    </div>
+
+<div>
+        <ODataGridComponent Url="@Url" TItem="TItem" Callback="GetData"/>
+    </div>
+
+
+@code {
+    [Parameter]
+    public string Url { get; set; }
+    [Parameter]
+    public string link { get; set; }
+
+    public SfGrid<TItem> DefaultGrid { get; set; }
+
+    private void GetData(SfGrid<TItem> data)
+    {
+        DefaultGrid = data;
+    }
+    public void ExcelExport()
+    {
+        ExcelExportProperties ExcelProperties = new ExcelExportProperties();
+        ExcelTheme Theme = new ExcelTheme();
+
+        ExcelStyle ThemeStyle = new ExcelStyle()
+        {
+            FontName = "Segoe UI",
+            FontColor = "#666666",
+            FontSize = 12
+        };
+
+        Theme.Header = ThemeStyle;
+        Theme.Record = ThemeStyle;
+        Theme.Caption = ThemeStyle;
+        ExcelProperties.Theme = Theme;
+        ExcelProperties.FileName = $"Excel file_{DateTime.Now}.xlsx";
+        // ExcelProperties.ExportType = Syncfusion.Blazor.Grids.ExportType.CurrentPage;
+        this.DefaultGrid.ExcelExport(ExcelProperties);
+    }
+    public void PdfExport()
+    {
+        PdfExportProperties ExportProperties = new PdfExportProperties();
+        ExportProperties.FileName = $"Pdf file_{DateTime.Now}.pdf";
+        this.DefaultGrid.PdfExport(ExportProperties);
+    }
+}

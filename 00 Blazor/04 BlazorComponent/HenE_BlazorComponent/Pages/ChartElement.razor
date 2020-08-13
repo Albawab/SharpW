@@ -1,0 +1,26 @@
+﻿@using HenE_BlazorComponent.Data
+
+<label class="mb-4 col-@CardChartElement.Columns">
+    <Syncfusion.Blazor.NavigationsChart Title="Chart Data">
+        <ChartArea><ChartAreaBorder Width="0"></ChartAreaBorder></ChartArea>
+        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.DateTime" LabelFormat="y" IntervalType="IntervalType.Years" EdgeLabelPlacement="EdgeLabelPlacement.Shift">
+            <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
+        </ChartPrimaryXAxis>
+        <ChartPrimaryYAxis Title="Revenue in Millions" Interval="1" LabelFormat="{value}M">
+            <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+            <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
+        </ChartPrimaryYAxis>
+        <ChartSeriesCollection>
+            <ChartSeries DataSource="@CardChartElement.ChartData" Name="Product A" XName="XValueDate" Width="2"
+                         Opacity="0.5" YName="YValueData" Type="ChartSeriesType.Area" Fill="blue">
+            </ChartSeries>
+            <ChartSeries DataSource="@CardChartElement.ChartData" Name="Product B" XName="XValueDate" Width="2"
+                         Opacity="0.5" YName="YValueData1" Type="ChartSeriesType.Area" Fill="red">
+            </ChartSeries>
+        </ChartSeriesCollection>
+    </Syncfusion.Blazor.NavigationsChart>
+</label>
+@code {
+    [Parameter]
+    public CardChartElement CardChartElement { get; set; } 
+}

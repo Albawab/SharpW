@@ -1,0 +1,33 @@
+﻿@using System
+@using System.ComponentModel
+@using HenE.Aeolus.Blazor.Common.ShowFileInGrid.Model
+@typeparam TItem
+
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <div class="row">
+            <SfGrid DataSource="@ShowFileInGridData" AllowPaging="true">
+                <GridColumns>
+                    @foreach (dynamic prop in type.GetProperties())
+                    {
+                        <GridColumn Field="@prop.Name" HeaderText="@prop.Name" TextAlign="TextAlign.Center" CustomAttributes="@(new { @class = "e-attr" })"></GridColumn>
+                    }
+                </GridColumns>
+            </SfGrid>
+        </div>
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public List<ExcelCelModel> ShowFileInGridData { get; set; }
+    Type type;
+
+
+    protected override void OnInitialized()
+    {
+
+        type = typeof(TItem);
+
+    }
+}

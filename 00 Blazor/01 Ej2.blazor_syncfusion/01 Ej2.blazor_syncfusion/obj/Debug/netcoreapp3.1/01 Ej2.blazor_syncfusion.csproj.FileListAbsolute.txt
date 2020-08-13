@@ -1,0 +1,314 @@
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.exe
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\staticwebassets\01 Ej2.blazor_syncfusion.StaticWebAssets.Manifest.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\staticwebassets\01 Ej2.blazor_syncfusion.StaticWebAssets.xml
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorComponent.input.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorAssemblyInfo.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.TagHelpers.input.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.TagHelpers.output.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorCoreGenerate.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorTargetAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorTargetAssemblyInfo.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.deps.json
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.runtimeconfig.json
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.runtimeconfig.dev.json
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.pdb
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.pdb
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Syncfusion.EJ2.Blazor.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.pdb
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csproj.CopyComplete
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.pdb
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.dll
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.pdb
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.exe
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.deps.json
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.runtimeconfig.json
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.runtimeconfig.dev.json
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.dll
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.pdb
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.dll
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.pdb
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Syncfusion.EJ2.Blazor.dll
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\staticwebassets\01 Ej2.blazor_syncfusion.StaticWebAssets.Manifest.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\staticwebassets\01 Ej2.blazor_syncfusion.StaticWebAssets.xml
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorComponent.input.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\01 Ej2.blazor_syncfusion.dll
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.TagHelpers.input.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.TagHelpers.output.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorCoreGenerate.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorAssemblyInfo.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.AssemblyInfoInputs.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.AssemblyInfo.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorTargetAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorTargetAssemblyInfo.cs
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.pdb
+C:\Users\Abdul\Desktop\Werk\Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csproj.CopyComplete
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\01 Ej2.blazor_syncfusion.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Time.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Time.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Data.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Data.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\GetData.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\GetData.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Interop.MMC20.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Interop.CrystalDocMgmtUndoManagerLib.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csproj.ResolveComReference.cache
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CPU_Temperature.razor.g.cs
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Interop.MMC20.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Interop.CrystalDocMgmtUndoManagerLib.dll
+C:\Users\Abdul\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\CPU_Temperature.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Interop.MMC20.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csproj.ResolveComReference.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\staticwebassets\01 Ej2.blazor_syncfusion.StaticWebAssets.Manifest.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\staticwebassets\01 Ej2.blazor_syncfusion.StaticWebAssets.xml
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorComponent.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CPU_Temperature.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Data.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\GetData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Time.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\RazorDeclaration\01 Ej2.blazor_syncfusion.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.TagHelpers.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.TagHelpers.output.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.exe
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.deps.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.runtimeconfig.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.runtimeconfig.dev.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Syncfusion.EJ2.Blazor.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Interop.MMC20.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorCoreGenerate.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\CPU_Temperature.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Data.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\GetData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\Time.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.AssemblyInfoInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.AssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorTargetAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.RazorTargetAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\01 Ej2.blazor_syncfusion\01 Ej2.blazor_syncfusion\obj\Debug\netcoreapp3.1\01 Ej2.blazor_syncfusion.csproj.CopyComplete

@@ -1,0 +1,86 @@
+﻿@page "/tooltip"
+<h3>Tooltip</h3>
+
+<div>
+    <h2 style="color:red">Tooltip</h2>
+    <SfTooltip ID="Tooltip" Content="@Content" Target="#btn">
+        <SfButton ID="btn" Content="Show Tooltip"></SfButton>
+    </SfTooltip>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Scroll mode</h2>
+    <SfTooltip ID="tooltip" Height="60px" Width="200px" IsSticky="true" Target="#target" Content="@ContentScroll">
+        <div id='container'>
+            <p>
+                A green home is a type of house designed to be
+                <a id="target">
+                    <u>environmentally friendly</u>
+                </a> and sustainable. And also focuses on the efficient use of "energy, water, and building materials." As green homes
+                have become more prevalent we have also seen the emergence of green affordable housing.
+            </p>
+        </div>
+    </SfTooltip>
+</div>
+
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Position Right</h2>
+
+    <SfTooltip Target="#target" Content="@Content" Position="@Syncfusion.Blazor.Popups.Position.RightCenter">
+        <SfButton ID="target" Content="Show Tooltip"></SfButton>
+    </SfTooltip>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Mouse trailing</h2>
+    <SfTooltip MouseTrail=true Content="@Content" Target="#target">
+     <SfButton ID="target" Content="Show Tooltip"></SfButton>
+</SfTooltip>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Focus</h2>
+    <SfTooltip ID="tooltipfocus" Target=".e-info" Content="@Content" OpensOn="Focus">
+        <e-content-template>
+            <div class="blocks"><span><input class="e-info" type="text" placeholder="Focus and blur" /></span></div>
+        </e-content-template>
+    </SfTooltip>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Open or Close tooltip with delay</h2>
+    <SfTooltip Target="#target" Content="@Content" OpenDelay="1000" CloseDelay="1000">
+        <SfButton ID="target" Content="Show Tooltip"></SfButton>
+    </SfTooltip>
+</div>
+
+@code {
+    object Content = "Lets go green & Save Earth !!";
+      object ContentScroll = "<div><b>Environmentally friendly</b> or environment-friendly, (also referred to as eco-friendly, nature-friendly, and green) are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</div>";
+}
+
+<style>
+    #tooltip {
+        left: calc( 50% - 60px);
+        top: 38%;
+    }
+    #target{
+       background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 80px auto;
+        padding: 20px;
+        width: 200px;
+}
+</style>

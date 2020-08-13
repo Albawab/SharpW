@@ -1,0 +1,76 @@
+#logo {
+  position: relative;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+}
+
+#logo span {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#aeolus-menu {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 250px;
+  width: 250px;
+  margin-left: -250px;
+  border: none;
+  overflow-y: hidden;
+  // background-color: rgb(68, 172, 233);
+  // border-right: 1px solid #ccc;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+  transition: all .2s ease-in-out;
+  // background: -webkit-linear-gradient(top, blue, white);
+  // background: linear-gradient(to bottom, rgb(68, 172, 233), black);
+
+  // background: linear-gradient(to bottom, #008bd2 0%,#2989d8 40%,#207cca 70%, #000000 100%);
+  // background: linear-gradient(to bottom, #008bd2 0%, #124166 70%, #000000 100%);
+  background: linear-gradient(to bottom, #008bd2 0%,#185C8E 40%,#124369 70%, #000000 100%);
+  // background: linear-gradient(#008bd2, #000000);
+}
+
+#menuWrap {
+  height: calc(100% - 80px);
+  overflow-y: auto;
+}
+
+#menuBottomFixed {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
+.closeMenu {
+  left: 0 !important;
+}
+
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-link:hover, .nav-link:focus, li#logout a:hover {
+  color: #76b729;
+}
+
+.separator {
+  margin: 15px;
+  border: 1px inset rgba(235, 235, 235, 0.2);
+}
+
+li#logout {
+  color: #FFF;
+}
+
+li#logout > span {
+  padding: 0.5rem 1rem;
+}

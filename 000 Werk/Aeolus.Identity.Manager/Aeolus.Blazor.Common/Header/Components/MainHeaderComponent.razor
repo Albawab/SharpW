@@ -1,0 +1,14 @@
+﻿@using HenE.Aeolus.Blazor.Common.Header.Interface
+@inject IHeader header
+
+<h3>@Titel</h3>
+
+@code {
+    [Parameter]
+    public string Titel { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Titel = header.GetHeaderItems().Titel;
+    }
+}

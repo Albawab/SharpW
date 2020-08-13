@@ -1,0 +1,38 @@
+﻿
+@if (Kinderen != null)
+{
+    @foreach (LijstItemModel kind in Kinderen)
+    {
+    <div class="list-item" style="background-color:@onActive(kind)"  @onclick="(() =>CallbackItems(kind))">
+        <label class="list-item-title">@kind.Title</label>
+        <div class="list-item-body">@kind.Omschrijving</div>
+    </div>
+    }
+}
+
+@code {
+    [Parameter]
+    public List<LijstItemsModel> Kinderen { get; set; }
+    [Parameter]
+    public EventCallback<LijstItemModel> Callback{ get; set; }
+    LijstItemModel activeItem;
+
+    private void CallbackItems(LijstItemModel itemModel)
+    {
+        activeItem = itemModel;
+        Callback.InvokeAsync(itemModel);
+    }
+
+    private string onActive(LijstItemModel item)
+    {
+        if (activeItem == item)
+        {
+            return "rgb(135,206,250)";
+        }
+        else
+        {
+            return "";
+        }
+
+    }
+}

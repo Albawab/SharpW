@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "o2aqGnnc9zP6T/mb+5od21Xs9Ou283o64EG0uw2P3Zlw/lNQMhYfrriJmVNWMtWs4jmhfSzBHzOt7w14WJH8IA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\00-GetStart\\00-GetStart\\00-GetStart.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

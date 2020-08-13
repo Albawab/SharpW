@@ -1,0 +1,123 @@
+$groen: #76b729;
+$rood: #c80101;
+$orange: #c86d01;
+$donkergrijs: #575756;
+$lichtgrijs: #626260;
+$donkerblauw: #1476ad;
+$blauw : #008bd2;
+$lichtBlauw: #339cd1;
+
+.empty {
+  margin-top: 27%;
+  text-align: center;
+  color: $donkergrijs;
+}
+
+#itemContainer {
+  padding: 10px;
+  color: $donkergrijs;
+}
+
+#itemContainer h2 {
+  font-size: 1.6em;
+}
+
+#icon {
+  vertical-align: middle;
+}
+
+#acDetails .e-acrdn-header {
+  line-height: 29px;
+  height: 30px;
+  min-height: 30px;
+  border: 0;
+  color: #fff;
+  background: #575756;
+}
+
+#acDetails .e-toggle-icon {
+  height: 30px;
+  min-height: 30px;
+}
+
+#acDetails .e-acrdn-header-content, #acDetails .e-toggle-icon {
+  color: #fff;
+}
+
+.titeDetail {
+  font-size: 14px;
+  background: $blauw;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 0px;
+}
+
+.top-level-menu, .second-level-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  z-index: 1;
+}
+
+.second-level-menu {
+  position: absolute;
+  top: 0px;
+  left: 95%;
+  z-index: 2;
+  display: none;
+
+}
+
+/* Acties */
+.actiesWrap {
+  float: right;
+  position: relative;
+  padding:  0 10px;
+  height: 26px;
+}
+
+#btnActies {
+  cursor: pointer;
+  background-color: inherit;
+  color: $lichtgrijs;
+  border: none;
+  float: right;
+  font-size: 14px;
+  outline: none;
+  padding-right: 0;
+  height: 26px;
+}
+
+#actiesMenu {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  z-index: 9999;
+}
+.top-level-menu > li, .second-level-menu > li {
+  position: relative;
+  width: auto;
+  padding: 2px 20px;
+  white-space: nowrap;
+}
+.top-level-menu > li:hover, .second-level-menu > li:hover,
+.top-level-menu > li:hover, .second-level-menu > li:hover > a { background: $blauw; color: #ffffff; }
+
+.top-level-menu li:hover > ul {
+  display: inline;
+}
+
+.top-level-menu a, .second-level-menu a {
+  color: $donkergrijs;
+  text-decoration: none;
+  display: block;
+  line-height: 30px;
+}
+.top-level-menu a:hover, .second-level-menu a:hover { color: #ffffff; }
+
+.topBorder {
+border-top: 1px solid #cccccc;
+}

@@ -1,0 +1,53 @@
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.exe
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.deps.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.runtimeconfig.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.runtimeconfig.dev.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.Views.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\bin\Debug\netcoreapp3.1\07 T4TextTemplate.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.RazorComponent.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.TagHelpers.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.TagHelpers.output.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.RazorCoreGenerate.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.RazorAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.RazorAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.AssemblyInfoInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.AssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.RazorTargetAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.RazorTargetAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\staticwebassets\07 T4TextTemplate.StaticWebAssets.Manifest.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\staticwebassets\07 T4TextTemplate.StaticWebAssets.xml
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.pdb
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.genruntimeconfig.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.csproj.CopyComplete
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\EntityClassGenerator.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\07 T4TextTemplate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\RazorDeclaration\07 T4TextTemplate.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\EntityClassGenerator.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\07 T4TextTemplate\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs

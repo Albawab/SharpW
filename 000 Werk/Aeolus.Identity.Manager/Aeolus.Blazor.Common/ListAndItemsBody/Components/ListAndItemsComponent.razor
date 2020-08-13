@@ -1,0 +1,68 @@
+﻿@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Components.LijstItems
+@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Models
+@using HenE.Aeolus.Blazor.Common.Menubar.Interfaces
+@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Components.FullPageComponents
+@using HenE.Aeolus.Blazor.Common.Menubar.Models
+@using HenE.Aeolus.Blazor.Common.ListAndItemsBody.Interfaces
+@inject IMenubarSevice MenubarService
+
+<div class="body-of-page">
+    <div class="toolsHeader">
+        @ToolbarrenderFragmenta
+    </div>
+    <div class=" list-body-element">
+        <div class=" list-items-block">
+            <LijstItemsComponent Service="lijstItems" Callback="CallBack" />
+        </div>
+        <div class="body-of-component">
+            <SubBodyComponent Service="@((IAppService)Service)" Key="Key" />
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public object TypeObject { get; set; }
+    [Parameter]
+    public IAppService Service { get; set; }
+    [Parameter]
+    public IMenubarSevice ToolsMenuSevice { get; set; }
+    List<MenubarItemModel> menubarItems;
+    RenderFragment ToolbarrenderFragmenta;
+    private ILijstItemsService lijstItems;
+    int Key = 0;
+    object huidigeObject = null;
+
+    protected override void OnInitialized()
+    {
+        lijstItems = (ILijstItemsService)Service;
+        ToolbarrenderFragmenta = builder =>
+        {
+            builder.OpenComponent<MenubarBodyComponent>(0);
+            builder.AddAttribute(1, "MenubarItems", GetMenubarItems());
+            builder.CloseComponent();
+        };
+    }
+
+    private List<MenubarItemModel> GetMenubarItems()
+    {
+
+        menubarItems = new List<MenubarItemModel>();
+        foreach (MenubarItemModel menubarItem in MenubarService.GetMenubarItems())
+        {
+            if (Service.GetItemAppModel(Key).Id == menubarItem.Id)
+            {
+                menubarItems.Add(menubarItem);
+            }
+        }
+        return menubarItems;
+
+    }
+
+    private void CallBack(LijstItemModel listItem)
+    {
+        huidigeObject = listItem;
+        Key = listItem.Id;
+    }
+
+}

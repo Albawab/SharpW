@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "I+ajJlf+ds/1PxlWEQOJCPbwiEkQA1DFjFcxXyGVVNjgd0E5KJfteK/sodjNBvaIiMUddw8yrLXevKzbPNNAiw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\albaw\\Desktop\\ICT\\SharpW\\00 Blazor\\11 IHandle Snde to Component\\Impott\\Impott.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\albaw\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

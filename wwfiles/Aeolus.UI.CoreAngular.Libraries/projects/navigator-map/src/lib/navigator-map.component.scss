@@ -1,0 +1,188 @@
+$groen: #76b729;
+$rood: #c80101;
+$orange: #c86d01;
+$donkergrijs: #575756;
+$lichtgrijs: #626260;
+$donkerblauw: #1476ad;
+$blauw : #008bd2;
+$lichtBlauw: #339cd1;
+$background: #FBFBFB;
+
+.main {
+  padding: 0px;
+  background: #FBFBFB;
+  box-shadow: 5px 0px 10px -8px #333;
+  -webkit-box-shadow: 5px 0px 10px -8px #333;
+  -moz-box-shadow: 5px 0px 10px -8px #333;
+}
+
+.detail {
+  padding-left: 0px;
+}
+
+.filterWrap {
+  padding:  0 10px;
+  background: rgb(230, 230, 230);
+  color: #fff;
+  height: 26px;
+}
+
+#btnFilter {
+  background-color: inherit;
+  color: $lichtgrijs;
+  border: none;
+  float: right;
+  font-size: 12px;
+  outline: none;
+  padding-right: 0;
+}
+
+.he-content-container {
+  width: 100%;
+  height: 100%;
+}
+
+.onderdelen {
+  padding-left: 10px;
+}
+
+.onderdelen-height {
+  height:calc(100% - 65px);
+}
+
+.sort-descending::before {
+  content: '\e721';
+}
+
+.sort-ascending::before {
+  content: '\e77b';
+}
+
+.titel {
+  font-size: 14px;
+  background: $donkergrijs;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 0px;
+}
+
+#lijstOnderdelen {
+  overflow-y: auto;
+  height: 100%;
+  padding-right: 5px;
+}
+
+#lijstOnderdelen .e-list-group-ite {
+  background-color: $background !important;
+}
+
+/* Custom Sync styles */
+#lijstOnderdelen .e-list-item {
+  height: auto;
+  padding: 0;
+}
+
+.e-checkbox-wrapper .e-frame, .e-css.e-checkbox-wrapper .e-frame {
+  height: 14px;
+  line-height: 10px;
+  width: 14px;
+  font-size: 8px;
+  margin-top: 4px;
+}
+
+.itemHeader {
+  font-size: 18px;
+  font-weight: bold;
+  color: $donkergrijs;
+}
+
+.itemDescription {
+  line-height: 1.4em;
+}
+
+.itemContainer {
+  cursor: pointer;
+  font-size: 14px;
+  display:block;
+  position: relative;
+  padding: 5px 12px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.itemContainer .fas {
+    padding: 2px;
+}
+
+.itemContainer .hidden {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  display: none;
+  color: $lichtgrijs;
+}
+
+.itemContainer:hover {
+  text-decoration: none !important;
+}
+.itemContainer:hover .hidden {
+  display: block !important;
+}
+
+.itemContainer .svg-inline--fa {
+  margin-left: 5px;
+}
+
+.itemContainer .e-checkbox-wrapper {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+.itemContent {
+  padding-left: 6px;
+}
+
+#edit:hover {
+ color: $blauw;
+}
+
+#delete:hover {
+ color: $rood;
+}
+
+#lijstOnderdelen .e-list-group-item {
+  color: $lichtgrijs;
+  border-bottom: 1px solid $blauw;
+}
+
+.e-contextmenu-wrapper ul .e-menu-item .e-menu-icon {
+  height: 36px;
+  line-height: 36px;
+}
+
+.e-contextmenu-wrapper ul .e-blankicon {
+    padding-left: 26px;
+}
+
+.status-0 {
+  border-right: 5px solid transparent;
+}
+
+.status-1 {
+  border-right: 5px solid $groen ;
+}
+
+.status-2 {
+  border-right: 5px solid $rood;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.loading {
+  position: absolute;
+  top: 50px;
+  left: 45%;
+  width: 40px;
+}

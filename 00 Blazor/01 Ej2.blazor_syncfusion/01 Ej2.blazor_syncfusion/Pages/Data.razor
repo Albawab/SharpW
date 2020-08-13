@@ -1,0 +1,91 @@
+﻿@page "/data"
+
+@using  _01_Ej2.blazor_syncfusion.Data
+@inject DataBase database
+
+<h1>Data</h1>
+<br />
+<hr />
+<form >
+    <div class="row">
+        <div class="col-6">
+            <EjsTextBox @bind-Value="@Text" Placeholder="Naam"></EjsTextBox>
+            <div class="@Huidigeclass">
+                @Text
+            </div>
+        </div>
+            <button type="button" class="btn btn-success ">Success</button>
+            <div class="col-1">
+                <EjsTextBox @bind-Value="@Text"  Placeholder="Naam"></EjsTextBox>
+            </div>
+        </div>
+</form>
+
+<EjsButton IsPrimary="true" @onclick="Opslaan">Opslaan Je Naam</EjsButton>
+
+<EjsToast @ref="ToastObj" ID="toast_type">
+    <ToastPosition X="@ToastPosition"></ToastPosition>
+</EjsToast>
+
+<style>
+    .e-control-wrapper{
+        font-size:10px;
+    }
+</style>
+
+@code {
+    /// <summary>
+    /// Gets or sets de data van de veld.
+    /// </summary>
+    string Text { get; set; }
+
+    // de nieuwe klas van de element.
+    string Huidigeclass = "";
+
+    // de position van de boxMessage.
+    private string ToastPosition = "Right";
+    EjsToast ToastObj;
+
+    // Als ik meer dan boxes wil tone.
+    List<ToastModel> Toast = new List<ToastModel>
+{
+        new ToastModel{ Title = "Success!", Content="Your name has been save successfully.", CssClass="e-toast-success", Icon="e-success toast-icons" },
+        new ToastModel{ Title = "Error!", Content="Ongeldige naam.", CssClass="e-toast-danger", Icon="e-error toast-icons" },
+    };
+
+    /// <summary>
+    /// Als de naam is opgeslaan dan laat de klant dat weten.
+    /// </summary>
+    private void SuccessBtnOnClick()
+    {
+        this.ToastObj.Show(Toast[0]);
+    }
+
+    private void failBtnOnClick()
+    {
+        this.ToastObj.Show(Toast[1]);
+    }
+
+
+    /// <summary>
+    /// Slaat de naam in de prop op.
+    /// </summary>
+    void Opslaan()
+    {
+        // Als de naam is Arno dan sla de naam op.
+        // En ook laat hem dat weten.
+        if (Text == "Arno")
+        {
+            Huidigeclass = "form-control is-valid";
+            SuccessBtnOnClick();
+            database.Save(Text);
+
+        }
+        else
+        {
+            Huidigeclass = "e-error e-small";
+            Text = "Ongeldig Naam";
+            failBtnOnClick();
+        }
+    }
+}

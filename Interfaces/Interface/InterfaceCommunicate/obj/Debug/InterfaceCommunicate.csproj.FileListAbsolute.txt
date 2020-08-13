@@ -1,0 +1,6 @@
+C:\Users\Abdul\Desktop\Sharp\Interface\InterfaceCommunicate\bin\Debug\InterfaceCommunicate.dll
+C:\Users\Abdul\Desktop\Sharp\Interface\InterfaceCommunicate\bin\Debug\InterfaceCommunicate.pdb
+C:\Users\Abdul\Desktop\Sharp\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.csprojAssemblyReference.cache
+C:\Users\Abdul\Desktop\Sharp\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.csproj.CoreCompileInputs.cache
+C:\Users\Abdul\Desktop\Sharp\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.dll
+C:\Users\Abdul\Desktop\Sharp\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.pdb

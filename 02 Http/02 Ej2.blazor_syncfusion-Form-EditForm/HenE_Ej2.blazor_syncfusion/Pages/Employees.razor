@@ -1,0 +1,51 @@
+﻿@page "/employees"
+
+@using HenE_Application.Container
+@inject HttpClient HttpClient
+<h3 class="h3">Employees:</h3>
+
+<EditForm Model="employees" OnSubmit="@OntvangGegevens" OnInvalidSubmit="@SendFoutMessage">
+
+
+</EditForm>
+
+<table class="table ">
+    <tr>
+        <th>Id</th>
+        <th>Achter naam</th>
+        <th>Voor naam</th>
+        <th>E-mail</th>
+        <th>Huisnr</th>
+    </tr>
+    <tr>
+        @foreach (var employee in employees)
+        {
+            <td>@employee.Id</td>
+            <td>@employee.VoorNaam</td>
+            <td>@employee.AchterNaam</td>
+            <td>@employee.Email</td>
+            <td>@employee.HuisNummer</td>
+        }
+
+    </tr>
+</table>
+
+
+@code {
+    Medewerker[] employees;
+
+
+    private async void OntvangGegevens()
+    {
+
+        //await HttpClient.PostAsync<Medewerker>("https://localhost:45001/Employees", );
+    }
+
+
+
+    private void SendFoutMessage()
+    {
+
+    }
+
+}

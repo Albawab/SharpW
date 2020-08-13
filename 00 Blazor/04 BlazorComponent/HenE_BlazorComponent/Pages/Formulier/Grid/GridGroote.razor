@@ -1,0 +1,41 @@
+﻿@if (magCheck)
+{
+    @switch (Specificatie.SpecificatieSize)
+    {
+        case SpecificatieSize.Small:
+            GridSize = 3;
+            break;
+        case SpecificatieSize.Medium:
+            GridSize = 5;
+            break;
+        case SpecificatieSize.Big:
+            GridSize = 10;
+            break;
+    }
+
+}
+@for (int i = 0; i < GridSize; i++)
+{
+    foreach (var kind in Specificatie.Elements)
+    {
+        <FormulierElementVraagManager ElementVraag=(FormulierVraag)kind></FormulierElementVraagManager>
+    }
+}
+<label class="offset-2 col-3">
+    <MeerElement Onclick="VoegElementIn"></MeerElement>
+</label>
+
+
+@code {
+
+    int GridSize = 0;
+    bool magCheck = true;
+    [Parameter]
+    public FormulierSpecificatie Specificatie { get; set; }
+
+    private void VoegElementIn()
+    {
+        GridSize++;
+        magCheck = false;
+    }
+}

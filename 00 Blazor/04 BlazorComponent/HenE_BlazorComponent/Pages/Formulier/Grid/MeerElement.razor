@@ -1,0 +1,9 @@
+﻿
+<label class="text-primary" @onclick="Onclick">
+    meer...
+</label>
+@code {
+        [Parameter]
+        public EventCallback<MouseEventArgs> Onclick{get;set;}
+
+}

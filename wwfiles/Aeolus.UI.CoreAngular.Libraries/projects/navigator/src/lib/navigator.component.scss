@@ -1,0 +1,198 @@
+$topnav-background-color: #fff;
+$border-color: #d7d7d7;
+$groen: #76b729;
+
+#zoekForm {
+  height: 40px;
+  min-height: 40px;
+  padding: 5px 15px;
+  background-color: #1476ad ;
+  position: relative;
+}
+
+#zoek > span {
+  background: transparent;
+  border-color: white;
+  color: #fff;
+  border-radius: 5px;
+}
+#zoek > span > input {
+  background: transparent;
+  color: #fff;
+}
+
+#searchBtn {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+#zoek .e-clear-icon {
+  color: #fff;
+  margin-right: 20px;
+}
+
+#searchBtn button, #searchBtn button:focus {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.main-nav {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#titel-nav {
+  margin: 0;
+  // color: #fff;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+// /* treeViewItems customize */
+#tvNav .e-list-parent {
+  padding: 0;
+  margin: 0;
+}
+
+#tvNav .e-list-parent ul {
+  padding-left: 10px;
+}
+
+#tvNav ul li .e-hover {
+  border: 0 !important;
+  border-color: transparent !important;
+}
+
+#treeparent {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+// #treeparent, #tvNav, #tvNav ul {
+//   height: 100%;
+// }
+
+#tvNav .settingsMenu  {
+  right: 0px;
+  position: absolute;
+}
+
+#tvNav .btnSettingsMenu {
+  color: #575756;
+  cursor: pointer;
+  box-shadow: 0 0;
+  background: transparent;
+  border: transparent;
+  // display: block;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+#tvNav .dropdown-toggle::after {
+  display:none;
+}
+
+#tvNav .e-list-item.e-hover > .e-text-content .treeviewdiv .settingsMenu > .btnSettingsMenu,
+#tvNav .e-list-item.e-active > .e-text-content .treeviewdiv .settingsMenu > .btnSettingsMenu  {
+  // display: block;
+  visibility: visible;
+}
+
+.e-treeview.e-fullrow-wrap .e-text-content {
+  pointer-events: all;
+}
+
+.e-level-1 > div.e-text-content.e-icon-wrapper {
+  background-color: $groen;
+}
+
+.e-treeview .e-list-item {
+  padding: 0;
+}
+
+// .e-treeview .e-fullrow {
+//   height: 39px;
+// }
+
+.e-treeview .e-list-item.e-active > .e-fullrow {
+  // background-color: $groen;
+  // border-color: $groen;
+  background-color: transparent;
+  border-color: transparent;
+  border-right: 3px solid $groen;
+}
+
+.e-treeview .e-list-item.e-active.e-hover > .e-fullrow {
+  // background-color: $groen;
+  // border-color: $groen;
+  background-color: transparent;
+  border-color: transparent;
+  border-right: 3px solid $groen;
+}
+
+// #tvNav .e-text-content {
+//   border-bottom: 1px solid #d7d7dd;
+// }
+
+#tvNav .e-level-1 {
+  border-bottom: 1px solid #d7d7dd;
+  line-height: 25px;
+}
+
+.e-level-1 .e-list-text {
+  font-size: 16px;
+  font-weight: bold;
+  // color: #fff;
+}
+
+.e-level-1 > div.e-text-content.e-icon-wrapper > span > div > div > span {
+  color: #fff;
+}
+
+.e-treeview .e-list-item.e-active > .e-level-1 > .e-text-content.e-icon-wrapper .e-list-text,
+.e-treeview .e-list-item.e-active > .e-level-1.e-hover > .e-text-content.e-icon-wrapper .e-list-text {
+  color: #fff;
+}
+
+.e-level-1 > .e-icon-wrapper > .e-icon-collapsible, .e-level-1 > .e-icon-wrapper > .e-icon-expandable {
+  color: #fff;
+}
+
+.e-level-2 .e-list-text, .e-level-3 .e-list-text, .e-level-4 .e-list-text {
+  font-size: 14px;
+  color: #626260;
+}
+
+.sidebar {
+    border-radius: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 48px;
+    left: 250px;
+    width: 250px;
+    margin-left: -250px;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: $topnav-background-color;
+    // border-right: 1px solid $border-color;
+    bottom: 0;
+    padding-bottom: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 5px 0px 10px -8px #333;
+    -webkit-box-shadow: 5px 0px 10px -8px #333;
+    -moz-box-shadow: 5px 0px 10px -8px #333;
+}

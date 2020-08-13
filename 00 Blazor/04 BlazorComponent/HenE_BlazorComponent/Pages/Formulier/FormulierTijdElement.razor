@@ -1,0 +1,10 @@
+﻿
+    <label class="control-section col-@Antwoord.Columns">
+        <SfTimePicker TValue="DateTime?" Placeholder="Select a time"></SfTimePicker>
+    </label>
+
+@code {
+    [Parameter]
+    public FormulierAntwoord Antwoord { get; set; }
+     public DateTime TimeValue { get; set; } = DateTime.Now;
+}

@@ -1,0 +1,50 @@
+﻿@using HenE_BlazorComponent.Data
+<h3>Edit Item</h3>
+
+@if (Gegevens == null)
+{
+
+}
+else
+{
+<div class="col-lg-10">
+    <form>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                ID
+            </label>
+            <SfInPlaceEditor Mode="Mode" Name="ID" Value="Gegevens.Id" Model="@IdData" ValidationRules="@IdValidation">
+            </SfInPlaceEditor>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                Naam
+            </label>
+            <SfInPlaceEditor Mode="Mode" Name="Naam" Value="Gegevens.Naam" Model="@NaamData" ValidationRules="@NaamValidation">
+            </SfInPlaceEditor>
+        </div>
+
+
+    </form>
+</div>
+}
+
+
+@code {
+
+        public Persoon Gegevens { get; set; }
+    private object IdData;
+    private object NaamData = null;
+    private object IdValidation = new { ID = new { required = ValidationId } };
+    private object NaamValidation = new { ID = new { required = ValidationNaam } };
+    private RenderMode Mode = RenderMode.Inline;
+
+    private static string[] ValidationId = new string[] { "true", "Voeg een geldig waarde." };
+    private static string[] ValidationNaam = new string[] { "true", "Voeg een geldig waarde." };
+
+    protected override void OnInitialized()
+    {
+        IdData = new { placeholder = "Voeg je id in." };
+    }
+
+}

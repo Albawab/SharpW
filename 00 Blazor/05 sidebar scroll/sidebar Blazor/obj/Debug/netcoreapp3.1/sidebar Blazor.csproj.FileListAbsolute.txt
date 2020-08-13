@@ -1,0 +1,47 @@
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.exe
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.deps.json
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.runtimeconfig.json
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.runtimeconfig.dev.json
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.dll
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.pdb
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.Views.dll
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\bin\Debug\netcoreapp3.1\sidebar Blazor.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\staticwebassets\sidebar Blazor.StaticWebAssets.Manifest.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\staticwebassets\sidebar Blazor.StaticWebAssets.xml
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.RazorComponent.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\sidebar Blazor.dll
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.TagHelpers.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.TagHelpers.output.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.RazorCoreGenerate.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.RazorAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.RazorAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.AssemblyInfoInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.AssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.RazorTargetAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.RazorTargetAssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.Views.pdb
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.dll
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.pdb
+C:\Users\AbdulAbdulbawab\Desktop\sidebar Blazor\sidebar Blazor\obj\Debug\netcoreapp3.1\sidebar Blazor.csproj.CopyComplete

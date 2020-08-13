@@ -1,0 +1,130 @@
+<div *ngIf="bericht">
+
+  <ejs-dialog id="editBericht" #Dialog [visible]='false' [header]='header' [animationSettings]='animationSettings'
+    [showCloseIcon]='showCloseIcon' [isModal]='isModal' [target]='target' [width]='width' [height]='height'>
+      <!-- <ng-template #content>
+          <div>{{ bericht | json }}</div>
+      </ng-template> -->
+
+      <ng-template #header>
+          <h2>
+            <i style="float:left;width: 28px;margin-right: 8px;" class="far fa-paper-plane"></i>
+             Bericht verwerken
+          </h2>
+      </ng-template>
+
+      <ng-template #content>
+          <!-- <div>
+            {{bericht | json}}
+          </div>
+          <br /> -->
+          <div class="dialogContent">
+              <span class="dialogText">{{bericht.Volgnr}}</span>
+          </div>
+
+          <form id="berichtForm" [formGroup]="berichtForm" (ngSubmit)="onSubmit()">
+
+              <div class="form-group template">
+
+                <!-- !-- <div class="e-float-input" [ngClass]="{'error': berichtForm.get('volgnr').errors &&
+                                            berichtForm.get('volgnr').touched || berichtForm.get('volgnr').dirty}"> --
+                <div class="e-float-input" [ngClass]="{'error': isFieldValid('volgnr')}">
+                    <input type="text" id="volgnr" name="volgnr" class="required" formControlName="volgnr" required>
+                    <span class="e-float-line"></span>
+                    <label class="e-float-text" for="volgnr">Volgnummer</label>
+                </div>
+                !-- <app-field-error-display [displayError]="isFieldValid('volgnr')" errorMsg="* Volgnummer kan niet leeg zijn">
+                </app-field-error-display> --
+
+                <div *ngIf="isFieldValid('volgnr')">
+                  <span *ngIf="berichtForm.get('volgnr').errors.required" class="error">Volgnummer kan niet leeg zijn</span>
+                  <span *ngIf="berichtForm.get('volgnr').errors.minlength || berichtForm.get('volgnr').errors.maxlength"
+                        class="error">Volgnummer moet min 3 en max 5 karakters bevatten</span>
+                </div> -->
+
+                <div class="row">
+                  <div class="col-sm-3 col-md-3">
+                    <label for="volgnr">Volgnummer</label>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <input type="text" id="volgnr" name="volgnr" placeholder="Volgnummer" [ngClass]="{'error': formErrors.volgnr}"
+                      formControlName="volgnr" (blur)="logValidationErrors()">
+                    <div *ngIf="formErrors.volgnr">
+                      <span class="error">{{formErrors.volgnr}}</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <label for="kenmerk">Kenmerk</label>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <input type="text" id="kenmerk" name="kenmerk" placeholder="Kenmerk" [ngClass]="{'error': formErrors.kenmerk}"
+                      formControlName="kenmerk" (blur)="logValidationErrors()">
+                    <div *ngIf="formErrors.kenmerk">
+                      <span class="error">{{formErrors.kenmerk}}</span>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-sm-3 col-md-3">
+                    <label for="datumAangemaakt">Datum Aangemaakt</label>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                      <input type="text" id="datumAangemaakt" name="datumAangemaakt" placeholder="Datum Aangemaakt"
+                      formControlName="datumAangemaakt">
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <label for="uitgaand">Uitgaand</label>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <input type="text" id="uitgaand" name="uitgaand" placeholder="Uitgaand"
+                      formControlName="uitgaand">
+                  </div>
+              </div>
+
+            </div>
+          </form>
+
+          <!-- <div #textControlContainer id="textControlContainer"></div> -->
+
+          <!-- <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">FormGroup</th>
+                <th scope="col">FormControl (volgnr)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  touched: {{berichtForm.touched}} <br/>
+                  dirty: {{berichtForm.dirty}} <br/>
+                  valid: {{berichtForm.valid}} <br/>
+                  Form values: {{berichtForm.value | json}}
+                </td>
+                <td>
+                  Vognr touched: {{berichtForm.get('volgnr').touched}} <br/>
+                  Vognr dirty: {{berichtForm.get('volgnr').dirty}} <br/>
+                  Vognr valid: {{berichtForm.get('volgnr').valid}} <br/>
+                  Vognr value: {{berichtForm.get('volgnr').value | json}} <br/>
+                  <span>----------------------------------------</span><br/>
+                  <strong>Kenmerk</strong>
+                  Kenmerk touched: {{berichtForm.get('kenmerk').touched}} <br/>
+                  Kenmerk dirty: {{berichtForm.get('kenmerk').dirty}} <br/>
+                  Kenmerk valid: {{berichtForm.get('kenmerk').valid}} <br/>
+                  Kenmerk value: {{berichtForm.get('kenmerk').value | json}}
+                </td>
+              </tr>
+            </tbody>
+          </table> -->
+
+      </ng-template>
+
+      <ng-template #footerTemplate>
+          <button id="sendButton" type="submit" class="e-control e-btn e-primary sendButton"
+            form="berichtForm" data-ripple="true" [disabled]="!berichtForm.valid">Send</button>
+      </ng-template>
+
+  </ejs-dialog>
+
+</div>

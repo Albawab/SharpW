@@ -1,0 +1,39 @@
+﻿@using Aeolus.Blazor.Common.Navigatie.Interfaces
+@inject HenE.Aeolus.Blazor.Common.Navigatie.Interfaces.INavigatieService service
+
+@foreach (List<NavigatieItemModel> NavigatieItems in NavigatieGroupItem)
+{
+    if (NavigatieItems.Count >= 0)
+    {
+        <NavigatieGroepComponent navigatieItems="NavigatieItems"></NavigatieGroepComponent>
+    }
+}
+
+@code {
+        List<List<NavigatieItemModel>> NavigatieGroupItem = null;
+
+    protected override void OnInitialized()
+    {
+        List<NavigatieItemModel> Favoriet = new List<NavigatieItemModel>();
+        List<NavigatieItemModel> AllMappen = new List<NavigatieItemModel>();
+
+        foreach (NavigatieItemModel item in service.GetItems())
+        {
+            if (item.IsFavoriet == true)
+            {
+                Favoriet.Add(item);
+            }
+            else
+            {
+                AllMappen.Add(item);
+            }
+        }
+
+        var navigatieItemsFavoriet = service.GetItems().Where(W => W.IsFavoriet == true).Select(S => S.Id);
+        var navigatieItemsNotFavoriet = service.GetItems().Where(W => W.IsFavoriet != true).Select(S => S.Id);
+        NavigatieGroupItem = new List<List<NavigatieItemModel>>();
+        NavigatieGroupItem.Add(Favoriet);
+        NavigatieGroupItem.Add(AllMappen);
+    }
+}
+

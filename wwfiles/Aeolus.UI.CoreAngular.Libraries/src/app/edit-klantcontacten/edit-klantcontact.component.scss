@@ -1,0 +1,32 @@
+#editKlantcontact .e-dlg-header-content {
+  background-color: #1476ad;
+  color: #ffffff
+}
+
+#editKlantcontact .e-dlg-header, #editKlantcontact .e-dlg-header * {
+  color: #ffffff !important;
+}
+
+#editKlantcontact .e-icon-dlg-close {
+  color: #ffffff;
+}
+
+label {
+  color: #333;
+}
+
+.error {
+  color: red;
+}
+
+.error > input, .error > .error input:hover {
+  border: 1px solid red;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.e-radio-wrapper {
+  margin-right: 20px;
+}

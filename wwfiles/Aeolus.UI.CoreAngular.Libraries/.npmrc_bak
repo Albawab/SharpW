@@ -1,0 +1,2 @@
+registry=https://horlings.pkgs.visualstudio.com/_packaging/Rabbit/npm/registry/
+always-auth=true

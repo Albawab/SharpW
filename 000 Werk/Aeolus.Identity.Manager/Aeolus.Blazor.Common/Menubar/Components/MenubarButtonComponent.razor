@@ -1,0 +1,10 @@
+﻿    <div class="col-1 offset-3" data-dismiss="modal" @onclick="@EventCallback">
+        <button type="button" class="btn" name="uploadbutton" >Bestand lezen</button>
+    </div>
+
+@code {
+    [Parameter]
+    public EventCallback<MouseEventArgs> EventCallback { get; set; }
+
+
+}

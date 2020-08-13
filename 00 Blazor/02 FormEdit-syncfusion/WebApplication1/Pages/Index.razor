@@ -1,0 +1,33 @@
+﻿@page "/"
+
+@using Syncfusion.EJ2.Blazor.Navigations;
+
+
+<h1>Tab</h1>
+
+
+<EjsTab @ref="IncidentReportTabStrip">
+    <TabItems>
+        <TabItem Header="@GeneralHeader">
+            <ContentTemplate>
+                <IncidentGeneralInfo></IncidentGeneralInfo>
+            </ContentTemplate>
+        </TabItem>
+        <TabItem Header="@DateHeader">
+            <ContentTemplate>
+                <fetchdata/>
+            </ContentTemplate>
+        </TabItem>
+
+    </TabItems>
+</EjsTab>
+
+@code {
+
+
+    public TabHeader GeneralHeader = new TabHeader() { Text = "Tab1" };
+    public TabHeader DateHeader = new TabHeader() { Text = "Tab2" };
+
+    EjsTab IncidentReportTabStrip;
+
+}

@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "TO+XZYB0lPPB3RbS9eKBJiJhsy+gCPFR4U9mwW8Hk5UR4ds5vojlnYItIQCH2CJIOuCRZsB5zoKWL2h/MtW8oA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\06 Grid\\Aeolus.Blazor.Common\\Aeolus.Blazor.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.0-preview.3.20215.14\\microsoft.aspnetcore.authorization.5.0.0-preview.3.20215.14.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.0-preview.3.20215.14\\microsoft.aspnetcore.components.5.0.0-preview.3.20215.14.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.0-preview.3.20215.14\\microsoft.aspnetcore.components.analyzers.5.0.0-preview.3.20215.14.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\5.0.0-preview.3.20215.14\\microsoft.aspnetcore.components.forms.5.0.0-preview.3.20215.14.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.components.web\\5.0.0-preview.3.20215.14\\microsoft.aspnetcore.components.web.5.0.0-preview.3.20215.14.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.0-preview.3.20215.14\\microsoft.aspnetcore.metadata.5.0.0-preview.3.20215.14.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0-preview.3.20215.2\\microsoft.extensions.dependencyinjection.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0-preview.3.20215.2\\microsoft.extensions.dependencyinjection.abstractions.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0-preview.3.20215.2\\microsoft.extensions.logging.abstractions.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.extensions.options\\5.0.0-preview.3.20215.2\\microsoft.extensions.options.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0-preview.3.20215.2\\microsoft.extensions.primitives.5.0.0-preview.3.20215.2.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.jsinterop\\5.0.0-preview.3.20215.14\\microsoft.jsinterop.5.0.0-preview.3.20215.14.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.3.20214.6\\system.componentmodel.annotations.5.0.0-preview.3.20214.6.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0-preview.3.20214.6\\system.runtime.compilerservices.unsafe.5.0.0-preview.3.20214.6.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.text.encodings.web\\5.0.0-preview.3.20214.6\\system.text.encodings.web.5.0.0-preview.3.20214.6.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.text.json\\5.0.0-preview.3.20214.6\\system.text.json.5.0.0-preview.3.20214.6.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

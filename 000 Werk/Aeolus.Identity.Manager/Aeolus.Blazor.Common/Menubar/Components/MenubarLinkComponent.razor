@@ -1,0 +1,20 @@
+﻿<label>
+    <i class="fas fa-print pl-2" />
+    <span @onclick="()=>Callback(MenubarLink)">@MenubarLink.Titel</span>
+</label>
+
+@code {
+    [Parameter]
+    public MenubarItemModel MenubarLink { get; set; }
+
+    [Parameter]
+    public EventCallback<dynamic> EventCallback { get; set; }
+
+    [Parameter]
+    public EventCallback<dynamic> MenubarCallBack { get; set; }
+
+    private void Callback(dynamic callBack)
+    {
+        MenubarCallBack.InvokeAsync(callBack);
+    }
+}

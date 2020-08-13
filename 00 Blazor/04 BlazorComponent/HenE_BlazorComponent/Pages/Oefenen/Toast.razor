@@ -1,0 +1,90 @@
+﻿@page "/toast"
+<h3>Toast</h3>
+<h2 style="color:red">Show Hide</h2>
+<SfToast @ref="ToastObj" Title="Adaptive Tiles Meeting" TimeOut=5000 Icon="e-meeting" Content="@ToastContent">
+    <ToastPosition X="Right"></ToastPosition>
+</SfToast>
+<div class="col-lg-12 col-sm-12 col-md-12 center">
+    <div id="toastBtnDefault" style="margin: auto;text-align: center">
+        <SfButton Content="Show Toasts" @onclick="@ShowOnClick"></SfButton>
+        <SfButton Content="Hide All" @onclick="@HideOnClick"></SfButton>
+    </div>
+</div>
+
+<br />
+<hr />
+<h2 style="color:red">Title and content template</h2>
+<div>
+    <SfToast ID="toast_default" @ref="ToastObj" Title="Adaptive Tiles Meeting" Content="@ToastContent">
+        <ToastPosition X="Center"></ToastPosition>
+    </SfToast>
+    <div class="col-lg-12 col-sm-12 col-md-12 center">
+        <div id="toastBtnDefault" style="margin: auto;text-align: center">
+            <EjsButton @onclick="@ShowOnClick"> Show Toast </EjsButton>
+        </div>
+    </div>
+</div>
+
+<br />
+<hr />
+<h2 style="color:red">Action Buttons</h2>
+<div>
+    <SfToast @ref="ToastObj" Title="Anjolie Stokes" Width="280" Height="120" Content="@ToastContent" Icon="e-laura">
+        <ToastPosition X="Right" Y="Bottom"></ToastPosition>
+        <ToastButtonModelProps>
+            <ToastButtonModelProp Model="@IgnoreBtnObj" Clicked="@OnIgnore"></ToastButtonModelProp>
+            <ToastButtonModelProp Model="@ReplyBtnObj" Clicked="@OnIgnore"></ToastButtonModelProp>
+        </ToastButtonModelProps>
+    </SfToast>
+    <div class="col-lg-12 col-sm-12 col-md-12 center">
+        <div id="toastBtnDefault" style="margin: auto; text-align: center">
+            <EjsButton @onclick="@ShowOnClick"> Show Toast </EjsButton>
+        </div>
+    </div>
+</div>
+
+@code {
+        SfToast ToastObj;
+
+    public string ToastContent { get; set;} = "Conference Room 01 / Building 135 10:00 AM-10:30 AM";
+    private void ShowOnClick()
+    {
+        this.ToastObj.Show();
+    }
+    private void HideOnClick()
+    {
+        this.ToastObj.Hide("All");
+    }
+        private ButtonModel IgnoreBtnObj = new ButtonModel
+    {
+        Content = "Ignore"
+    };
+    private ButtonModel ReplyBtnObj = new ButtonModel
+    {
+        Content = "reply"
+    };
+        private void OnIgnore()
+    {
+        this.ToastObj.Hide();
+    }
+
+
+}
+<style>
+    #toast_default .e-meeting::before {
+        content: "\e705";
+        font-size: 17px;
+    }
+        .e-toast-icon.e-laura.e-icons {
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://ej2.syncfusion.com/vue/demos/src/toast/resource/laura.png);
+        height: 44px !important;
+        margin: 0;
+        width: 60px;
+    }
+    #elementToastTime .e-toast-message {
+        padding: 10px;
+    }
+</style>

@@ -1,0 +1,108 @@
+$blauw: #008bd2;
+$groen: #76b729;
+
+// Zoek
+#zoekForm {
+  height: 40px;
+  min-height: 40px;
+  padding: 5px 15px;
+  background-color: $blauw ;
+  position: relative;
+  display: inline-block;
+  top: -4px;
+}
+
+#zoek > span {
+  background: transparent;
+  border-color: white;
+  color: #fff;
+  border-radius: 5px;
+}
+#zoek > span > input {
+  background: transparent;
+  color: #fff;
+}
+
+#zoek input.e-input, .e-input-group input.e-input, .e-input-group.e-control-wrapper input.e-input {
+  color: #fff;
+}
+
+#searchBtn {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+#zoek .e-clear-icon {
+  color: #fff;
+  margin-right: 20px;
+}
+
+#searchBtn button, #searchBtn button:focus {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+// end zoek
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $blauw;
+  height: 48px;
+  width: 100%;
+}
+
+h2 {
+  position: relative;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+}
+
+h2 span {
+  position: absolute;
+  top: 15px;
+  left: 222px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#rightMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+}
+
+#rightMenu span.iconmenu {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0px 14px;
+  line-height: 48px;
+}
+
+.fa-layers-counter {
+  top: -5px;
+  right: -5px;
+}
+
+.counter {
+  background:  $blauw;
+  border: 2px solid $groen;
+  color: $groen;
+  font-weight: bold;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu.show {
+  z-index: 9999;
+  top: 45px !important;
+  left: -85px !important;
+}

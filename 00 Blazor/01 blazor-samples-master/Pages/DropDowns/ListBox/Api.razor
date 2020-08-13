@@ -1,0 +1,145 @@
+﻿@page "/ListBox/Api"
+
+@using Syncfusion.EJ2.Blazor.DropDowns
+
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@{
+    SampleBrowser.CurrentSampleName = "API";
+    SampleBrowser.CurrentControlName = "ListBox";
+    SampleBrowser.CurrentControlCategory = "ListBox";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.ListBox;
+    SampleBrowser.ActionDescription = new string[] {
+        @"<p>This sample demonstrates the API functionalities of the ListBox component by using its properties from the property pane. Select any combination of properties from the property pane to achieve desired functionalities in ListBox.</p>"
+    };
+    SampleBrowser.Description = new string[] {
+        @"<p>
+            In this demo, a ListBox is rendered with grouping feature by setting the <a target='_blank' href='https://help.syncfusion.com/cr/aspnetcore-blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.DropDowns.ListBoxFieldSettings~GroupBy.html'><code>GroupBy</code></a> property
+            in <a target='_blank' href='https://help.syncfusion.com/cr/aspnetcore-blazor/Syncfusion.EJ2.Blazor~Syncfusion.EJ2.Blazor.DropDowns.EjsListBox~Fields.html'><code>ListBoxFieldSettings</code></a> property. This sample has been showcased with following set of properties,
+        </p>
+   <ul>
+            <li>You can switch to <code>Single</code> or <code>Multiple</code> selection mode by selecting the mode from the selection mode dropdown list.</li>
+            <li>You can switch to <code>None</code>, <code>Ascending</code>, or <code>Descending</code> sort orders by selecting the sort order from the sort order dropdown list.</li>
+        </ul>
+        <p>In this sample, by default, grouping is enabled and vegetableData is grouped based on its category. The user can change the sort order and selection type using dropdownlist.</p>"
+    };
+}
+@*End:Hidden*@
+
+<div class="col-lg-8 control-section">
+    <div id="listbox-control1">
+        <EjsListBox @ref="listBox" DataSource="@VegetableData" TValue="string[]" SortOrder="@OrderValue">
+            <ListBoxFieldSettings GroupBy="Category" Text="Vegetable" Value="Id"></ListBoxFieldSettings>
+            <ListBoxSelectionSettings Mode="@Mode"></ListBoxSelectionSettings>
+        </EjsListBox>
+    </div>
+</div>
+<div class="col-lg-4 property-section">
+    <table id="property" title="Properties" style="width: 100%">
+        <tbody>
+            <tr>
+                <td style="width: 50%;padding-top:10px">
+                    <div>Sort order</div>
+                </td>
+                <td style="width: 50%;padding-top:10px">
+                    <div style="max-width: 200px">
+                        <EjsDropDownList PopupHeight="200px" DataSource="@SortItems" @bind-Value="@OrderValue" TValue="string">
+                            <DropDownListEvents ValueChange="OrderChange" TValue="string"></DropDownListEvents>
+                            <DropDownListFieldSettings Text="Text"></DropDownListFieldSettings>
+                        </EjsDropDownList>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;padding-top:10px">
+                    <div>Selection Mode</div>
+                </td>
+                <td style="width: 50%;padding-top:10px">
+                    <div style="max-width: 200px">
+                        <EjsDropDownList PopupHeight="200px" DataSource="@SelectionType" @bind-Value="@SortOrderValue" TValue="string">
+                            <DropDownListEvents ValueChange="ModeChange" TValue="string"></DropDownListEvents>
+                            <DropDownListFieldSettings Text="Text"></DropDownListFieldSettings>
+                        </EjsDropDownList>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+
+    #listbox-control {
+        width: 49%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    @@media screen and (max-width: 590px) {
+        #listbox-control {
+            width: 100%;
+        }
+    }
+</style>
+
+
+@code{
+
+    EjsListBox<string[]> listBox;
+    SelectionMode Mode = SelectionMode.Single;
+
+    public string OrderValue { get; set; }
+     public string SortOrderValue { get; set; }
+    private void OrderChange(ChangeEventArgs<string> args)
+    {
+        this.OrderValue = args.Value;
+    }
+
+    private void ModeChange(ChangeEventArgs<string> args)
+    {
+        if (args.Value.ToString() == "Single")
+        {
+            this.Mode = SelectionMode.Single;
+        }
+        else
+        {
+            this.Mode = SelectionMode.Multiple;
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        this.OrderValue = "None";
+        this.SortOrderValue = "Single";
+    }
+
+    public List<object> SortItems = new List<object>
+{
+        new { Text = "None" },
+        new { Text = "Ascending" },
+        new { Text = "Descending" }
+
+        };
+
+    public List<object> SelectionType = new List<object>
+{
+        new { Text = "Single" },
+        new { Text = "Multiple" }
+        };
+
+    public List<object> VegetableData = new List<object>
+{
+        new { Vegetable = "Cabbage", Category= "Leafy and Salad", Id= "item1" },
+        new { Vegetable = "Chickpea", Category= "Beans", Id= "item2" },
+        new { Vegetable = "Garlic", Category= "Bulb and Stem", Id= "item3"  },
+        new { Vegetable = "Green bean", Category= "Beans", Id= "item4" },
+        new { Vegetable = "Horse gram", Category= "Beans", Id= "item5"},
+        new { Vegetable = "Nopal", Category= "Bulb and Stem", Id= "item6" },
+        new { Vegetable = "Onion", Category= "Bulb and Stem", Id= "item7" },
+        new { Vegetable = "Pumpkins", Category= "Leafy and Salad", Id= "item8" },
+        new { Vegetable = "Spinach", Category= "Leafy and Salad", Id= "item9" },
+        new { Vegetable = "Wheat grass", Category= "Leafy and Salad", Id= "item10" },
+        new { Vegetable = "Yarrow", Category = "Leafy and Salad", Id = "item11" }
+
+        };
+}

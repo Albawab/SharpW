@@ -1,0 +1,27 @@
+﻿@foreach (var tool in ToolMenuItems)
+{
+    if (tool is ToolMenuLink)
+    {
+        <ToolMenuLinkComponent ToolMenuLink="@((ToolMenuLink)tool)" ExcelExportEventCallback="@ExcelExportEventCallback" PdfExportEventCallback="@PdfExportEventCallback" />
+    }
+    else if (tool is ToolMenuButton)
+    {
+
+    }
+    else if (tool is ToolMenuSearch)
+    {
+
+    }
+    else if (tool is ToolMenuGroup)
+    {
+        <ToolMenuGroupComponent Tool="@((ToolMenuGroup)tool)" />
+    }
+}
+@code {
+    [Parameter]
+    public EventCallback ExcelExportEventCallback { get; set; }
+    [Parameter]
+    public EventCallback PdfExportEventCallback { get; set; }
+    [Parameter]
+    public dynamic ToolMenuItems { get; set; }
+}

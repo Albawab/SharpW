@@ -1,0 +1,51 @@
+﻿@using System.Threading
+@using HenE_BlazorComponent.Interface
+@inject IHaveSettings Settings
+
+
+<label class="col-@Antwoord.Columns offset-@Antwoord.Column">
+    <SfTextBox @bind-Value="@Value" FloatLabelType="@FloatLabelType.Auto" Multiline="true" @onfocusin="TimeStartTeOpslaan" @onfocusout="Opgeslagen"></SfTextBox>
+</label>
+@code {
+    [Parameter]
+    public FormulierAntwoord Antwoord { get; set; }
+
+    private static Timer _timer;
+    public string Value { get; set; }
+    private int timeSaveData;
+
+    /// <summary>
+    /// Deze functie gaat de timer starten.
+    /// </summary>
+    public void TimeStartTeOpslaan()
+    {
+        var gelezenInstellingen = Settings.GetInstellingen();
+
+        if (Int32.TryParse(Settings.GetInstellingen().TimerTextAreaDataOpslaanMS, out timeSaveData))
+        {
+            _timer = new Timer(OpslaanData, null, 0, timeSaveData);
+        }
+        else
+        {
+            throw new IndexOutOfRangeException("De TimerTextAreaDataOpslaanMS in de appsettings.json mag allen nummer zijn.");
+        }
+    }
+
+    /// <summary>
+    /// Deze functie gaat de timer stoppen.
+    /// </summary>
+    public void Opgeslagen()
+    {
+        Antwoord.AntwoordToelichting = Value;
+        _timer.Dispose();
+    }
+
+    /// <summary>
+    /// Deze functie slaat de data op.
+    /// </summary>
+    /// <param name="obj">.</param>
+    public void OpslaanData(Object obj)
+    {
+        Antwoord.AntwoordToelichting = Value;
+    }
+}

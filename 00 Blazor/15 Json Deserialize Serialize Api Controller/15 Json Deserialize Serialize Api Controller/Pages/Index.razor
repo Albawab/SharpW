@@ -1,0 +1,23 @@
+﻿@page "/"
+@using PersoonLibrary.Interface
+@inject IControlPerson controlePersoon
+@using _15_Json_Deserialize_Serialize_Api_Controller.Controllers
+
+@if (persoons != null)
+{
+    @foreach (var item in persoons)
+    {
+        <h1>Type of item is:</h1><h3>@(item.GetType().ToString())</h3>
+    }
+}
+
+
+
+@code{
+    List<PersoonLibrary.Persoon> persoons;
+    protected override void OnInitialized()
+    {
+        persoons = controlePersoon.GetPersoons();
+    }
+
+}

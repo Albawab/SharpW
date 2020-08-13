@@ -1,0 +1,49 @@
+﻿@page "/bootstrap"
+@using Syncfusion.Blazor.Calendars
+<h3 class="text-danger">Bootstrap</h3>
+
+<section class="container-fluid">
+    <div class="row">
+        <label class="col-2">Naam:</label>
+        <div class="col-8 offset-2">
+            <SfInPlaceEditor Value="@Naam"></SfInPlaceEditor>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <SfCheckBox CssClass="offset-4" Label="Zou je deze box checken?"></SfCheckBox>
+    </div>
+    <br />
+    <div class="row">
+        <label class="col-1">Start:</label>
+        <SfDateTimePicker CssClass="col-2" Value="StartTime"></SfDateTimePicker>
+        <label class="col-1 offset-md-2">End:</label>
+        <SfDateTimePicker CssClass="col-2" Value="EndTime"></SfDateTimePicker>
+    </div>
+    <br />
+    <div>Toelichting </div>
+    <br />
+    <div class="row">
+        <SfTextBox Value="Text" FloatLabelType="@FloatLabelType.Auto" Multiline="true"></SfTextBox>
+    </div>
+    <div>
+        <SfRichTextEditor></SfRichTextEditor>
+    </div>
+</section>
+<h1>@Naam</h1>
+@code{
+    [Inject]
+    protected IJSRuntime JsRuntime { get; set; }
+    public string Naam { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        //this.JsRuntime.Sf().LoadLocaleData("wwwroot/ej2-locale/src/de.json").SetCulture("de").LoadCldrData(new string[] { "wwwroot/cldr-data/main/de/ca-gregorian.json", "wwwroot/cldr-data/main/de/timeZoneNames.json", "wwwroot/cldr-data/main/de/numbers.json" });
+        // this.JsRuntime.Sf().LoadLocaleData("wwwroot/ej2-locale/src/nl.json").SetCulture("nl").LoadCldrData(new string[] { "wwwroot/cldr-data/main/nl/ca-gregorian.json", "wwwroot/cldr-data/main/nl/timeZoneNames.json", "wwwroot/cldr-data/main/nl/numbers.json" });
+        // this.JsRuntime.Ejs().LoadLocaleData("wwwroot/ej2-locale/src/ar.json").SetCulture("ar").LoadCldrData(new string[] { "wwwroot/cldr-data/main/ar/ca-gregorian.json", "wwwroot/cldr-data/main/ar/timeZoneNames.json", "wwwroot/cldr-data/main/ar/numbers.json" });
+    }
+
+
+}

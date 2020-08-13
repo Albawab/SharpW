@@ -1,0 +1,73 @@
+$background-color: #D7D7D7;
+$eventHeight: 48px;
+$color: #fff;
+$headerColor: #575756;
+
+#events {
+  // position: fixed;
+  // z-index: 1000;
+  // top: calc(100% - 300px);
+  // right: 300px;
+  // width: 300px;
+  // margin-right: -300px;
+  border: none;
+  background-color: $background-color;
+  // bottom: 0px;
+  height: 331px;
+  padding-bottom: 27px;
+  // overflow-x: hidden;
+  // overflow-y: auto;
+}
+
+.eventsContent {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.event {
+  position: relative;
+  background: $color;;
+  margin: 20px;
+  padding: 5px 10px;
+  height: $eventHeight;
+}
+
+.event h6 {
+  color: rgb(110, 110, 110);
+  margin: 0;
+}
+
+.event p {
+  margin: 0;
+}
+
+.event .buttons {
+  float: right;
+  margin: -5px -10px -5px 0px;
+}
+
+.event .buttons button {
+  cursor: pointer;
+  color: $color;
+  border: 0;
+  height: $eventHeight;
+}
+
+button.ban {
+  background: #c80101
+}
+
+button.check {
+  background: #76b729
+}
+
+h4 {
+  font-size: 16px;
+  color: $color;
+  background: $headerColor;
+  padding: 5px;
+  margin: 0;
+}
+

@@ -1,0 +1,202 @@
+﻿@page "/TreeView/CheckBox"
+
+@using Syncfusion.EJ2.Blazor.Navigations
+
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@{
+    SampleBrowser.CurrentSampleName = "CheckBox";
+    SampleBrowser.CurrentControlName = "TreeView";
+    SampleBrowser.CurrentControlCategory = "Navigations";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.TreeView;
+    SampleBrowser.ActionDescription = new string[] {
+        @"<p>
+        This sample demonstrates the CheckBox functionalities of the TreeView. Click on any parent node's CheckBox to check/uncheck the node and its child nodes. The parent node's checked state will be determined by its child nodes checked state.
+    </p>"
+    };
+    SampleBrowser.Description = new string[] {
+        @" <p>The <code>TreeView</code> component can be rendered with checkbox on the left side of each tree node. This allows the user to check more than one nodes, and this can be enabled by the <code>ShowCheckBox</code> property.</p>
+    <p>In this demo, the TreeView is populated with checkbox enabled.</p>
+    <p>For more information, you can refer to the <a href='https://ej2.syncfusion.com/aspnet-core-blazor/documentation/treeview/getting-started/' target='_blank'>Checkboxes</a> section from the documentation.</p>"
+    };
+}
+@*End:Hidden*@
+
+<div class="control-section">
+    <div class="control_wrapper">
+        <EjsTreeView TValue="TreeItem" ShowCheckBox="true">
+            <TreeViewFieldsSettings DataSource="@TreeItems" Id="Id" Text="Name" Expanded="Expanded" Child="@("Child")"></TreeViewFieldsSettings>
+        </EjsTreeView>
+    </div>
+</div>
+
+@code{
+    List<TreeItem> TreeItems = new List<TreeItem>();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        TreeItems.Add(new TreeItem
+        {
+            Id = 1,
+            Name = "Australia",
+            Expanded = true,
+            Child = new List<TreeItem>()
+            {
+                new TreeItem
+                {
+                    Id = 2,
+                    Name = "New South Wales",
+
+                },
+                        new TreeItem
+                {
+                    Id = 3,
+                    Name = "Victoria"
+                },
+                        new TreeItem
+                {
+                    Id = 4,
+                    Name = "South Australia"
+                },
+                        new TreeItem
+                {
+                    Id = 6,
+                    Name = "Western Australia",
+
+                }
+            }
+        });
+
+        TreeItems.Add(new TreeItem
+        {
+            Id = 7,
+            Name = "Brazil",
+            Child = new List<TreeItem>()
+            {
+                new TreeItem
+                {
+                    Id = 8,
+                    Name = "Paraná"
+                },
+                new TreeItem
+                {
+                    Id = 9,
+                    Name = "Ceará"
+                },
+                new TreeItem
+                {
+                    Id = 10,
+                    Name = "Acre"
+                }
+            }
+        });
+        TreeItems.Add(new TreeItem
+        {
+            Id = 11,
+            Name = "China",
+            Child = new List<TreeItem>()
+            {
+                new TreeItem
+                {
+                    Id = 12,
+                    Name = "Guangzhou"
+                },
+                        new TreeItem
+                {
+                    Id = 13,
+                    Name = "Shanghai"
+                },
+                        new TreeItem
+                {
+                    Id = 14,
+                    Name = "Beijing"
+                },
+                        new TreeItem
+                {
+                    Id = 15,
+                    Name = "Shantou"
+
+                }
+            }
+        });
+        TreeItems.Add(new TreeItem
+        {
+            Id = 16,
+            Name = "France",
+            Child = new List<TreeItem>()
+            {
+                    new TreeItem
+                {
+                    Id = 17,
+                    Name = "Pays de la Loire"
+
+                },
+                        new TreeItem
+                {
+                    Id = 18,
+                    Name = "Aquitaine"
+
+                },
+                        new TreeItem
+                {
+                    Id = 19,
+                    Name = "Brittany"
+
+                },
+                        new TreeItem
+                {
+                    Id = 20,
+                    Name = "Lorraine"
+                }
+            }
+
+        });
+        TreeItems.Add(new TreeItem
+        {
+            Id = 21,
+            Name = "India",
+            Child = new List<TreeItem>()
+            {
+                new TreeItem
+                {
+                    Id = 22,
+                    Name = "Assam"
+
+                },
+                        new TreeItem
+                {
+                    Id = 23,
+                    Name = "Bihar"
+                },
+                        new TreeItem
+                {
+                    Id = 24,
+                    Name = "Tamil Nadu"
+
+                }
+            }
+
+        });
+
+    }
+
+    class TreeItem
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool HasChild { get; set; }
+        public bool Expanded { get; set; }
+        public List<TreeItem> Child;
+
+    }
+}
+
+<style>
+    .control_wrapper {
+        max-width: 500px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

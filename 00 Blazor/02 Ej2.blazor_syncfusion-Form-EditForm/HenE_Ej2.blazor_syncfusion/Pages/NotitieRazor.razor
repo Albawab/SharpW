@@ -1,0 +1,64 @@
+﻿@page "/notitieRazor"
+
+@using HenE_Application.Model
+@using System.Reflection
+@inject HttpClient Http
+
+<h3>Notitie</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Titel</th>
+            <th>Body</th>
+            <th>Event</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (notities != null)
+        {
+            @foreach (Notitie notitie in notities)
+            {
+                <tr>
+                    <td>@notitie.Id</td>
+                    <td>@notitie.Datum.ToShortDateString()</td>
+                    <td>@notitie.Title</td>
+                    <td>@notitie.Body</td>
+                    <td>
+                        <a type="button" @onclick="(()=>Save(notitie))">Save</a>
+                        <a type="button" @onclick="(()=>Delete(notitie.Id))">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+
+
+
+
+@code {
+    private List<Notitie> notities;
+
+    protected override async Task OnInitializedAsync()
+    {
+        notities = await Http.GetJsonAsync<List<Notitie>>("https://localhost:45001/Notitie");
+    }
+
+    private async Task Update(Notitie notitie)
+    {
+        await Http.PutJsonAsync("https://localhost:45001/Notitie", notitie);
+    }
+
+    private async Task Save(Notitie notitie)
+    {
+        await Http.PostJsonAsync("https://localhost:45001/Notitie", notitie);
+    }
+    private async Task Delete(int id)
+    {
+        await Http.DeleteAsync($"https://localhost:45001/Notitie/{id}");
+    }
+}

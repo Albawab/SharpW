@@ -1,0 +1,65 @@
+﻿@page "/dialog"
+<h3>Dialog</h3>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Modal dialog</h2>
+    <SfButton @onclick="@OnClicked">Open Modal Dialog</SfButton>
+    <SfDialog @bind-Visible="@isVisible" Width="250px" IsModal="true">
+        <DialogEvents OnOverlayClick="OnOverlayclick">
+        </DialogEvents>
+        <DialogTemplates>
+            <Content> This is a modal dialog</Content>
+        </DialogTemplates>
+    </SfDialog>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red">Enable header</h2>
+    <SfButton @onclick="@OnClicked">Open Dialog</SfButton>
+    <SfDialog @bind-Visible="@isVisible" Width="250px" ShowCloseIcon="true" IsModal="true">
+        <DialogTemplates>
+            <Header>Dialog</Header>
+            <Content>Dit is een dialog met hoof</Content>
+        </DialogTemplates>
+        <DialogButtons>
+            <DialogButton OnClick="@OkClick">
+                <DialogButtonModel Content="Ok" IsPrimary="true"></DialogButtonModel>
+            </DialogButton>
+            <DialogButton OnClick="@OnClicked">
+                <DialogButtonModel Content="Cancel"></DialogButtonModel>
+            </DialogButton>
+        </DialogButtons>
+        <DialogPositionData X="center" Y="right"></DialogPositionData>
+    </SfDialog>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red"></h2>
+</div>
+
+<br />
+<hr />
+<div>
+    <h2 style="color:red"></h2>
+</div>
+@code {
+        private bool isVisible { get; set; } = true;
+    private void OnClicked()
+    {
+        this.isVisible = true;
+    }
+    private void OnOverlayclick(object arg)
+    {
+        this.isVisible = false;
+    }
+        private void OkClick()
+    {
+        this.isVisible = false;
+    }
+}

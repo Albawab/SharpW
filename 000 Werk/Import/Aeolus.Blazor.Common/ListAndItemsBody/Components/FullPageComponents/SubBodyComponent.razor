@@ -1,0 +1,105 @@
+﻿@using System.ComponentModel
+@using Aeolus.Blazor.Common.ListAndItemsBody.Interfaces
+@implements IUpdateComponent
+
+<div class="body-component-header">
+    @bodyModel.Titel
+</div>
+@foreach (dynamic property in GetProperties())
+{
+    dynamic value = GetValueOfProperty(property);
+
+    if (value != null && MagTonen(property))
+    {
+        <div class="body-component-sub-body">
+            <label style="font-size:1.2em">@GetDescription(property) :</label>
+            <label>@value</label>
+        </div>
+    }
+}
+
+    @code{
+        [Parameter]
+        public IAppService Service { get; set; }
+        [Parameter]
+        public int Key { get; set; }
+
+        BodyModel bodyModel;
+
+        [Parameter]
+        public EventCallback<RenderFragment> CallbackToolbarBodyComponent { get; set; }
+
+        protected override void OnInitialized()
+        {
+            bodyModel = UpdateComponent(Key);
+        }
+
+
+
+        protected override void OnParametersSet()
+        {
+            bodyModel = UpdateComponent(Key);
+        }
+
+        public BodyModel UpdateComponent(int key)
+        {
+            return this.Service.GetItemAppModel(key);
+        }
+
+        /// <summary>
+        /// Haalt de description van een property.
+        /// </summary>
+        /// <param name="propertie">De properties van een object.</param>
+        /// <returns>De description als tekst.</returns>
+        private string GetDescription(dynamic property)
+        {
+            AttributeCollection attributes = TypeDescriptor.GetProperties(this.bodyModel.GetType())[$"{property.Name}"].Attributes;
+            DescriptionAttribute myAttribute = (DescriptionAttribute)attributes[typeof(DescriptionAttribute)];
+            return myAttribute.Description != string.Empty ? myAttribute.Description : property.Name;
+        }
+        private dynamic GetProperties()
+        {
+            dynamic huidigeProperties = bodyModel.GetType().GetProperties().ToList();
+            dynamic[] Properties = new dynamic[huidigeProperties.Count];
+
+            foreach (dynamic property in huidigeProperties)
+            {
+                AttributeCollection attributes = TypeDescriptor.GetProperties(this.bodyModel.GetType())[$"{property.Name}"].Attributes;
+                ModelAttributen eigenAttribute = (ModelAttributen)attributes[typeof(ModelAttributen)];
+                if (eigenAttribute != null)
+                {
+                    Properties[eigenAttribute.Order] = property;
+                }
+
+            }
+            return Properties;
+        }
+
+
+        private dynamic GetValueOfProperty(dynamic property)
+        {
+            if (property != null)
+            {
+                return bodyModel.GetType().GetProperty(property.Name).GetValue(bodyModel, null);
+            }
+            return null;
+
+        }
+
+        private bool MagTonen(dynamic property)
+        {
+            AttributeCollection attributes = TypeDescriptor.GetProperties(this.bodyModel.GetType())[$"{property.Name}"].Attributes;
+            ModelAttributen eigenAttribute = (ModelAttributen)attributes[typeof(ModelAttributen)];
+
+            if (eigenAttribute != null)
+            {
+                if (eigenAttribute.MagTonen)
+                {
+                    return true;
+                }
+                return false;
+            }
+            return true;
+
+        }
+    }

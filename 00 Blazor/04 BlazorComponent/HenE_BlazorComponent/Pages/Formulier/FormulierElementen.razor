@@ -1,0 +1,24 @@
+﻿    @if (element != null)
+    {
+        if (element.GetType() == typeof(FormulierVraag))
+        {
+            <FormulierElementVraagManager ElementVraag=(FormulierVraag)element></FormulierElementVraagManager>
+        }
+        else if (element.GetType() == typeof(FormulierAntwoord))
+        {
+            <FormulierElementAntwoord formulierAntwoord="@(element as FormulierAntwoord)"></FormulierElementAntwoord>
+        }
+        else if (element.GetType() == typeof(FormulierSpecificatie))
+        {
+            <FormulierElementSpicifecatie Specificatie="@(element as FormulierSpecificatie)"></FormulierElementSpicifecatie>
+        }
+        else if (element.GetType() == typeof(FormulierToast))
+        {
+            <FormulierToastElement Toast="@(element as FormulierToast)"></FormulierToastElement>
+        }
+    }
+
+@code {
+    [Parameter]
+    public FormulierElement element { get; set; }
+}

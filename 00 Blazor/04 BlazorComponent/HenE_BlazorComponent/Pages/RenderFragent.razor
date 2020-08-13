@@ -1,0 +1,43 @@
+﻿@using HenE_BlazorComponent.Data
+
+<h3>RenderFragent</h3>
+@if (Personen == null)
+{
+    <h1>Loading....</h1>
+}
+else if (Personen.Count == 0)
+{
+    <h4>Er zijn nog geen gegevens beschikbaar.</h4>
+}
+else
+{
+    <div>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Naam</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var persoon in Personen)
+                {
+                <tr scope="row">
+                    <td>@persoon.Id</td>
+                    <td>@persoon.Naam</td>
+                </tr>
+                        }
+
+                </tbody>
+        </table>
+    </div>
+}
+
+
+
+@code {
+
+    [Parameter]
+    public List<Persoon> Personen { get; set; }
+}

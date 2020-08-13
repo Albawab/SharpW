@@ -1,0 +1,31 @@
+﻿
+<label class="d-flex @VAlign @HAlign col-@CardTextElement.Columns offset-@CardTextElement.Column">
+    <SfTextBox Placeholder="@CardTextElement.Placeholder" Value="" FloatLabelType="FloatLabelType.Auto" Type="password"></SfTextBox>
+</label>
+
+
+@code {
+    [Parameter]
+    public CardTextElement CardTextElement { get; set; }
+
+    [Parameter]
+    public Persoon Persoon { get; set; }
+
+
+
+    public string VAlign
+    {
+        get
+        {
+            return $"justify-content-{CardTextElement.VerticalAlign.ToBootstrap()}";
+        }
+    }
+    public string HAlign
+    {
+        get
+        {
+            return $"align-items-{CardTextElement.HorizontalAlign.ToBootstrap()}";
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+#acties {
+  overflow: hidden;
+  background: #1476ad;
+  color: #FFF;
+}
+
+.acties-height {
+  height: 25px;
+  max-height: 25px;
+}
+
+#toolbar, #toolbar .e-toolbar-items {
+  background: inherit;
+  color: inherit;
+  border: 0;
+  position: relative;
+}
+
+.e-toolbar .e-toolbar-items:not(.e-tbar-pos) .e-toolbar-item:first-child {
+  margin-left: 0px;
+}
+
+.e-toolbar .e-toolbar-item .e-btn-icon {
+  color: #FFF;
+}
+
+.actie-item {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.actie-item .svg-inline--fa {
+  width: 10px;
+}
+
+#toolbar button {
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  background: transparent;
+  border: 0;
+  color: #FFF;
+}
+
+#acties .e-toolbar .e-toolbar-items .e-toolbar-item button.e-btn,
+#acties .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn {
+  height: 25px !important;
+  max-height: 25px !important;
+}
+
+#acties .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
+  color: #FFF !important;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#acties svg {
+  width: 25px;
+}

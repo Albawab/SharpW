@@ -1,0 +1,16 @@
+﻿@using HenE_BlazorComponent.Pages.Formulier.Grid
+@switch (Specificatie.SpecificatieSoort)
+{
+    case SpecificatieSoort.Normaal:
+        <GridGroote Specificatie=@Specificatie></GridGroote>
+        break;
+    case SpecificatieSoort.InlineEditing:
+         <InlineEditing Elementen=Specificatie></InlineEditing>
+        break;
+    default:
+        break;
+}
+@code {
+    [Parameter]
+    public FormulierSpecificatie Specificatie { get; set; }
+}

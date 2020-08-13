@@ -1,0 +1,3 @@
+https://localhost:44350/weatherforecast
+
+https://localhost:45001

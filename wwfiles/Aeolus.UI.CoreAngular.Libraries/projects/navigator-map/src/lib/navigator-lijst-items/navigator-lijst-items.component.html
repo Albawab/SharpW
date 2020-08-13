@@ -1,0 +1,80 @@
+<!-- AS dit is alleen voor test -->
+<!-- <div style="width:400px;height:400px;overflow:auto;position:fixed;bottom:0;right:0;z-index:9999;background:yellow;border:1px solid green;">
+  {{filterMenuItems | json}}
+</div> -->
+<!-- end test div -->
+
+<div *ngIf="loading" class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+
+<div *ngIf="mainItems?.length === 0" class="titelHeader">
+  <h4 class="titel">Selecteer een map</h4>
+</div>
+
+<div *ngIf="mainItems?.length > 0" class="titelHeader">
+  <h4 class="titel">{{navigatorMap?.titel}}</h4>
+  <div class="filterWrap">
+    <ejs-checkbox cssClass="e-small" (change)="showChecboxes($event)"></ejs-checkbox>
+
+    <!-- <button ejs-button id='btnFilter' (click)="btnFilterClick()" iconCss='fal fa-angle-down' cssClass='btn-shadow-hide'></button> -->
+    <!-- <span style="font-size: 14px; color: #626260; float: right; line-height: 1.8em">Filter </span> -->
+
+    <button id="btnFilter" (click)="showFilterMenu()">
+      Filter <i class="fas fa-angle-down"></i>
+    </button>
+
+    <div id="filterMenu" *ngIf="showFilter">
+
+        <ul class="top-level-menu">
+            <li *ngFor="let item of filterMenuItems" [class.topBorder]="item?.items?.length > 0" ><a href="#" (click)="filterAction($event, item)"><i [ngClass]="{ 'fal': item.selected, 'fa-check': item.selected }"></i> {{item.text}}</a>
+              <ul *ngIf="item.items && item.items?.length > 0" class="second-level-menu">
+                  <li *ngFor="let subItem of item.items"><a href="#" (click)="filterAction($event, subItem)"><i [ngClass]="{ 'fal': subItem.selected, 'fa-check': subItem.selected }"></i> {{subItem.text}}</a></li>
+              </ul>
+            </li>
+        </ul>
+
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="mainItems" class="onderdelen onderdelen-height">
+
+  <div *ngIf="mainItems?.length > 0" class="onderdelen-height ">
+
+    <ejs-listview #listView id="lijstOnderdelen" [dataSource]="mainItems" [fields]="fields" [showCheckBox]='showCheckBox'
+      [showHeader]="false" (select)="getCheckedItems()">
+      <ng-template #template let-data="">
+        <div class="itemContainer status-{{data?.status}}">
+          <div class="itemContent" (click)="onRecordClick(data)" (dblclick)="onRecordDoubleClick(data)">
+            <h4 class="itemHeader" title="{{data?.titel}}">{{(data?.titel?.length > 24) ? (data?.titel | slice:0:24) +
+              '...' : (data?.titel)}}</h4>
+            <div class="itemDescription">
+              <span *ngIf="data.datum">{{data?.datum | date:'dd-MM-yyyy'}}</span>
+              <div *ngFor="let extra of data.extras">
+                <strong>{{extra?.key}}: </strong> {{extra?.value}}
+              </div>
+            </div>
+            <div class="itemDescription">
+              {{data?.omschrijving}}
+            </div>
+          </div>
+
+          <div class="hidden">
+            <a id="edit" (click)="edit(data)"><span class='fas fa-pencil'></span></a>
+            <a id="delete" (click)="delete(data)"><span class='fas fa-trash-alt'></span></a>
+          </div>
+        </div>
+      </ng-template>
+      <!-- <ng-template #groupTemplate let-data="">
+        test {{data.titel}}
+    </ng-template> -->
+    </ejs-listview>
+  </div>
+
+  <!-- <ejs-contextmenu id='filterContextMenu' #filterContextMenu [items]='filterMenuItems' (select)='filterMenuSelect($event)'></ejs-contextmenu> -->
+  <ejs-toast #toast [position]="positionToast" [showCloseButton]="true" [timeOut]=0 ></ejs-toast>
+</div>

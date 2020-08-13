@@ -1,0 +1,30 @@
+﻿<label>
+    <i class="fas fa-print pl-2" />
+    <a href=""><span @onclick="@Exporteren">@ToolMenuLink.Titel</span></a>
+</label>
+
+@code {
+    [Parameter]
+    public ToolMenuLinkModel ToolMenuLink { get; set; }
+
+    [Parameter]
+    public EventCallback ExcelExportEventCallback { get; set; }
+    [Parameter]
+    public EventCallback PdfExportEventCallback { get; set; }
+
+    private EventCallback Exporteren
+    {
+        get
+        {
+            switch (ToolMenuLink.Titel)
+            {
+                case "Excel Exporteren":
+                    return ExcelExportEventCallback;
+                case "Pdf Exporteren":
+                    return PdfExportEventCallback;
+                default:
+                    return EventCallback.Empty;
+            }
+        }
+    }
+}

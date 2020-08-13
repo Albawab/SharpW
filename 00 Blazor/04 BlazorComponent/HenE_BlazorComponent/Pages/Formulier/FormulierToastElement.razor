@@ -1,0 +1,52 @@
+﻿@using HenE_BlazorComponent.Interface
+@using System.Threading
+@inject IHaveSettings instellen
+<span class="col-lg-12 control-section toast-default-section">
+    <SfToast Content="@Toast.Content" Title="@Toast.Title" @ref="ToastObj">
+        <ToastPosition X="@XAlign" Y="@Toast.YPosition.ToString()"></ToastPosition>
+    </SfToast>
+</span>
+@code {
+    [Parameter]
+    public FormulierToast Toast { get; set; }
+    private static Timer timer;
+    SfToast ToastObj;
+    int TimeShowToast;
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await ShowToast(TimeShowToast, firstRender);
+         
+    }
+
+    private async Task ShowToast(int time,bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (int.TryParse(instellen.GetInstellingen().TimerToastTonen, out TimeShowToast))
+            {
+                Thread.Sleep(TimeShowToast);
+                await this.ToastObj.Show();
+            }
+        }
+
+    }
+
+    private string XAlign
+    {
+        get
+        {
+            return Toast.XPosition.ToString();
+        }
+    }
+
+    private string YAlign
+    {
+        get
+        {
+            return Toast.YPosition.ToString();
+        }
+    }
+}
+

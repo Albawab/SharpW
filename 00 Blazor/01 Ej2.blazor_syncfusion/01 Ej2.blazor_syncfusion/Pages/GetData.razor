@@ -1,0 +1,37 @@
+﻿@page "/getData"
+
+@using _01_Ej2.blazor_syncfusion.Data
+@inject DataBase Getdata
+
+<h3>GetData</h3>
+
+<p>@getD</p>
+
+
+<EjsToast @ref="ToastObj" ID="toast_type">
+    <ToastPosition X="Center"></ToastPosition>
+</EjsToast>
+
+<button @onclick="Get">Get Naam</button>
+
+@code {
+
+    static string getD { get; set; }
+    EjsToast ToastObj;
+
+    /// <summary>
+    /// Toont een box waarin de greoten staat.
+    /// </summary>
+    private void ShowMessage() {
+            ToastModel Toast = new ToastModel { Title = $"Hallo {getD}", Content = "Leuk dat je komt hier.", CssClass = "e-toast-success", Icon = "e-success toast-icons" };
+        this.ToastObj.Show(Toast);
+    }
+    /// <summary>
+    /// Gets de naam van de persoon.
+    /// </summary>
+    private void Get()
+    {
+        getD = Getdata.Get();
+        ShowMessage();
+    }
+}

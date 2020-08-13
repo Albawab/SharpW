@@ -1,0 +1,22 @@
+{
+  "Id": 1,
+  "Date": "1001-10-01",
+  "TemperatureC": 33,
+  "Summary": "Koud",
+  "Firstname": "C",
+  "Email": "A@g.com",
+  "IsNiceWeather": true,
+  "Skills": [ "Html", "Css", "C#" ],
+  "Germany": {
+    "TemperatureC": 40,
+    "Summary": "warm"
+  },
+  "Syria": {
+    "TemperatureC": 40,
+    "Summary": "warm"
+  },
+  "USA": {
+    "TemperatureC": 40,
+    "Summary": "warm"
+  }
+}

@@ -1,0 +1,105 @@
+﻿@page "/LinearGauge/Annotation"
+
+@using Syncfusion.EJ2.Blazor.LinearGauge
+
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@{
+    SampleBrowser.CurrentSampleName = "Annotation";
+    SampleBrowser.CurrentControlName = "LinearGauge";
+    SampleBrowser.CurrentControlCategory = "LinearGauge";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.LinearGauge;
+    SampleBrowser.ActionDescription = new string[] {
+        @" <p>
+            This sample illustrates the CPU Utilization of a resource by using annotation feature.
+        </p>"
+    };
+    SampleBrowser.Description = new string[] {
+        @"<p>
+            In this sample we have used annotations to indicate low, moderate and high ranges. Annotations are used to place the texts, shapes or images anywhere in the gauge. You can use <code>content, x, y, zIndex</code> properties to customize the annotations. And you can specify the id of the element that needs to be displayed, in the content property.
+        </p>
+        <br>
+        <p>
+            More information about linear gauge can be found in this
+            <a target=""_blank"" href=""https://ej2.syncfusion.com/blazor/documentation"">documentation section</a>.
+        </p>"
+    };
+}
+@*End:Hidden*@
+
+<div class="control-section">
+    <EjsLinearGauge Orientation="Orientation.Horizontal" RangePalettes="@paletteColors">
+        <LinearGaugeAxes>
+            <LinearGaugeAxis Maximum="90">
+                <LinearGaugeLine Width="0"></LinearGaugeLine>
+                <LinearGaugeAxisLabelStyle>
+                    <LinearGaugeAxisLabelFont Size="0"></LinearGaugeAxisLabelFont>
+                </LinearGaugeAxisLabelStyle>
+                <LinearGaugeMajorTicks Height="0">
+                </LinearGaugeMajorTicks>
+                <LinearGaugeMinorTicks Height="0">
+                </LinearGaugeMinorTicks>
+                <LinearGaugeRanges>
+                    <LinearGaugeRange Start="0.1" End="30" StartWidth="50" EndWidth="50"></LinearGaugeRange>
+                    <LinearGaugeRange Start="30" End="60" StartWidth="50" EndWidth="50"></LinearGaugeRange>
+                    <LinearGaugeRange Start="60" End="90" StartWidth="50" EndWidth="50"></LinearGaugeRange>
+                </LinearGaugeRanges>
+                
+                <LinearGaugePointers>
+                    <LinearGaugePointer Value="35" Height="15" Width="15" Placement="Placement.Near" Offset="-50" MarkerType="MarkerType.Triangle" Color="#757575">
+                    </LinearGaugePointer>
+                </LinearGaugePointers>
+            </LinearGaugeAxis>
+        </LinearGaugeAxes>
+        <LinearGaugeAnnotations>
+                    <LinearGaugeAnnotation HorizontalAlignment="Placement.Center" X="35" Y="50" ZIndex="1">
+                        <ContentTemplate>
+                            <div style='width:200px;margin-left:-150px;margin-top:-10px;'><p style='font-size:18px;'>CPU Utilization</p></div>
+                        </ContentTemplate>
+                    </LinearGaugeAnnotation>
+                    <LinearGaugeAnnotation AxisIndex="0" AxisValue="15" Y="-25" ZIndex="1">
+                        <ContentTemplate>
+                            <div style="margin-top:-15px"><img style='height:25px;width:25px;' src='styles/images/lineargauge/Low.png' /></div>
+                        </ContentTemplate>
+                    </LinearGaugeAnnotation>
+                    <LinearGaugeAnnotation AxisIndex="0" AxisValue="45" Y="-25" ZIndex="1">
+                        <ContentTemplate>
+                            <div style="margin-top:-15px">
+                                <img style='height:25px;width:25px;' src="styles/images/lineargauge/Moderate.png" />
+                            </div>
+                        </ContentTemplate>
+                    </LinearGaugeAnnotation>
+                    <LinearGaugeAnnotation AxisIndex="0" AxisValue="75" Y="-25" ZIndex="1">
+                        <ContentTemplate>
+                            <div style="margin-top:-15px">
+                                <img style='height:25px;width:25px;' src="styles/images/lineargauge/Low.png" />
+                            </div>
+                        </ContentTemplate>
+                    </LinearGaugeAnnotation>
+                    <LinearGaugeAnnotation AxisIndex="0" AxisValue="15" Y="20" ZIndex="1">
+                        <ContentTemplate>
+                            <div><p style='font-size:15px;color:#248622;'>Low</p></div>
+                        </ContentTemplate>
+                    </LinearGaugeAnnotation>
+                    <LinearGaugeAnnotation AxisIndex="0" AxisValue="45" Y="20" ZIndex="1">
+                        <ContentTemplate>
+                            <div><p style='font-size:15px;color:#ba9e2a;'>Moderate</p></div>
+                        </ContentTemplate>
+                    </LinearGaugeAnnotation>
+                    <LinearGaugeAnnotation AxisIndex="0" AxisValue="75" Y="20" ZIndex="1">
+                        <ContentTemplate>
+                            <div><p style='font-size:15px;color:#b42f2f;'>High</p></div>
+                        </ContentTemplate>
+                    </LinearGaugeAnnotation>
+                </LinearGaugeAnnotations>
+    </EjsLinearGauge>
+</div>
+<style>
+    #control-section {
+        padding: 0px !important;
+    }
+</style>
+
+@code {
+    private String[] paletteColors = new String[] { "#30b32d", "#ffdd00", "#f03e3e" };
+}

@@ -1,0 +1,67 @@
+﻿@page "/HeatMapChart/LargeData"
+
+@using Syncfusion.EJ2.Blazor.HeatMap
+@using EJ2HeatMap = Syncfusion.EJ2.Blazor.HeatMap
+
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@using ej2_blazor_heatmapdata
+@{
+    SampleBrowser.CurrentSampleName = "Large Data";
+    SampleBrowser.CurrentControlName = "HeatMapChart";
+    SampleBrowser.CurrentControlCategory = "HeatMapChart";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.HeatMapChart;
+    SampleBrowser.ActionDescription = new string[] {
+        @"<p>
+        This sample visualizes the summary of user activities in GitLab account such as merge requests, push events and comments across 52 weeks in a year.
+     </p>"
+    };
+    SampleBrowser.Description = new string[] {
+        @"<p>
+         In this example, you can see how to switch the Heatmap to canvas rendering mode.The rendering performance will be better in <code>Canvas</code> rendering mode, while loading large datasets. You can switch the rendering mode for Heatmap between <code>SVG</code> and <code>Canvas</code> using the <code>RenderingMode</code> property. When the <code>RenderingMode</code> property is set to <code>Auto</code> the rendering mode will be switched automatically based of the size of data source to improve the rendering performance.
+
+         Tooltip is enabled in this example, to see the tooltip in action, hover a point or tap on a point in touch enabled devices.
+    </p>"
+    };
+}
+@*End:Hidden*@
+<div class="control-section">
+    <div class="row">
+        <div class="col-md-12">
+            <EjsHeatMap DataSource="@DataSource">
+                <HeatMapTitle Text="Annual Flight Traffic Report" TextStyle="@TextStyle"></HeatMapTitle>
+                <HeatMapXAxis Minimum="@XMinimum"
+                              Maximum="@XMaximum"
+                              IntervalType="@EJ2HeatMap.IntervalType.Days"
+                              ValueType="@EJ2HeatMap.ValueType.DateTime"
+                              LabelFormat="MMM"
+                              ShowLabelOn="@EJ2HeatMap.LabelType.Months">
+                </HeatMapXAxis>
+                <HeatMapYAxis Labels="@YLabels"></HeatMapYAxis>
+                <HeatMapPaletteSettings Type="@EJ2HeatMap.PaletteType.Gradient">
+                    <HeatMapPalettes>
+                        <HeatMapPalette Value="150" Color="#A6DC7E"></HeatMapPalette>
+                        <HeatMapPalette Value="250" Color="#DCD57E"></HeatMapPalette>
+                        <HeatMapPalette Value="300" Color="#DC8D7E"></HeatMapPalette>
+                    </HeatMapPalettes>
+                </HeatMapPaletteSettings>
+                <HeatMapCellSettings ShowLabel="false" Border="@Border"></HeatMapCellSettings>
+                <HeatMapLegendSettings Visible="false"></HeatMapLegendSettings>
+            </EjsHeatMap>
+        </div>
+    </div>
+</div>
+
+@code{
+    string[] YLabels = new string[] { "1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "24:00" };
+
+    FontModel TextStyle = new FontModel() { Size = "15px", FontWeight = "500", FontStyle = "Normal" };
+
+    DateTime XMinimum = new DateTime(2017, 1, 1);
+
+    DateTime XMaximum = new DateTime(2017, 12, 31);
+
+    BorderModel Border = new BorderModel() { Width = 0 };
+
+    int[,] DataSource = HeatMapData.GetLargeData();
+}

@@ -1,0 +1,33 @@
+#editBericht .e-dlg-header-content {
+  background-color: #1476ad;
+  color: #ffffff
+}
+
+#editBericht .e-dlg-header, #editBericht .e-dlg-header * {
+  color: #ffffff !important;
+}
+
+#editBericht .e-icon-dlg-close {
+  color: #ffffff;
+}
+
+label {
+  color: #333;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.error > input, .error > .error input:hover {
+  border: 1px solid red;
+}
+
+#textControlContainer {
+  border: 1px solid #000000;
+	width: 800px;
+	height: 500px;
+	margin-bottom: 20px;
+}

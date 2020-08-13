@@ -1,0 +1,138 @@
+﻿@page "/Listview/NestedList"
+
+@using Syncfusion.EJ2.Blazor.Lists
+
+@*Hidden:Lines*@
+@using ej2_blazor_samples
+@{
+    SampleBrowser.CurrentSampleName = "Nested List";
+    SampleBrowser.CurrentControlName = "Listview";
+    SampleBrowser.CurrentControlCategory = "Listview";
+    SampleBrowser.CurrentControl = SampleBrowser.Config.Listview;
+    SampleBrowser.ActionDescription = new string[] {
+        @"<p>This sample demonstrates the nested list functionalities, which allows to navigate
+        to the sub list-items by clicking on any item and navigate back to list-item by using top left back icon.
+        </p>"
+    };
+    SampleBrowser.Description = new string[] {
+        @"<p>ListView component supports Nested list. To achieve list navigation, the <code>Child</code> property should be defined for the nested list in the array of JSON.</p>
+        <p>This sample have Nested folder with the sub folders/files.</p>"
+    };
+}
+@*End:Hidden*@
+<div class="control-section">
+    <EjsListView Id="nestedlist" DataSource="@Listdata" ShowHeader="true" HeaderTitle="Folder" ShowIcon="true">
+        <ListViewFieldSettings Id="Id" Text="Text" Child="Child" IconCss="Icon" Tooltip="Text"></ListViewFieldSettings>
+    </EjsListView>
+</div>
+
+@code{
+    List<DataModel> Listdata = new List<DataModel>();
+
+    class DataModel
+    {
+        public string Id { get; set; }
+        public string Text { get; set; }
+        public string Icon { get; set; }
+        public List<DataModel> Child { get; set; }
+    }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        Listdata.Add(new DataModel
+        {
+            Id = "01",
+            Text = "Music",
+            Icon = "folder",
+            Child = new List<DataModel>() { new DataModel { Id = "01-01", Text = "Gouttes.mp3", Icon = "file" } }
+
+        });
+        Listdata.Add(new DataModel
+        {
+
+            Id = "02",
+            Text = "Videos",
+            Icon = "folder",
+            Child = new List<DataModel>() {
+                    new DataModel { Id= "02-01", Text= "Naturals.mp4", Icon= "file" },
+                    new DataModel { Id= "02-02", Text= "Wild.mpeg", Icon= "file" },
+                }
+
+        });
+        Listdata.Add(new DataModel
+        {
+
+            Id = "03",
+            Text = "Documents",
+            Icon = "folder",
+            Child = new List<DataModel>() {
+                   new DataModel { Id= "03-01", Text= "Environment Pollution.docx", Icon= "file" },
+                   new DataModel { Id= "03-02", Text= "Global Water, Sanitation, & Hygiene.docx", Icon= "file" },
+                   new DataModel { Id= "03-03", Text= "Global Warming.ppt", Icon= "file" },
+                   new DataModel { Id= "03-04", Text= "Social Network.pdf", Icon= "file" },
+                   new DataModel { Id= "03-05", Text= "Youth Empowerment.pdf", Icon= "file" }
+                }
+        });
+
+        Listdata.Add(
+            new DataModel
+            {
+                Id = "04",
+                Text = "Pictures",
+                Icon = "folder",
+                Child = new List<DataModel>() {
+                new DataModel { Id= "04-01", Text= "Camera Roll", Icon= "folder", Child= new List<DataModel>() {
+                    new DataModel { Id= "04-01-01", Text= "WIN_20160726_094117.JPG", Icon= "file" },
+                    new DataModel { Id= "04-01-02", Text= "WIN_20160726_094118.JPG", Icon= "file" },
+                    new DataModel { Id= "04-01-03", Text= "WIN_20160726_094119.JPG", Icon= "file" } }
+                },
+                new  DataModel { Id= "04-02", Text= "Wind.jpg", Icon= "file" },
+                new DataModel { Id= "04-02", Text= "Stone.jpg", Icon= "file" },
+                new  DataModel { Id= "04-02", Text= "Home.jpg", Icon= "file" },
+                new DataModel { Id= "04-02", Text= "Bridge.png", Icon= "file" } }
+            });
+        Listdata.Add(
+            new DataModel
+            {
+                Id = "05",
+                Text = "Downloads",
+                Icon = "folder",
+                Child = new List<DataModel>() {
+                new DataModel { Id= "05-01", Text= "UI-Guide.pdf", Icon= "file" },
+                new DataModel { Id= "05-02", Text= "Tutorials.zip", Icon= "file" },
+                new DataModel { Id= "05-03", Text= "Game.exe", Icon= "file" },
+                new DataModel { Id= "05-04", Text= "TypeScript.7z", Icon= "file" }, }
+            });
+    }
+}
+
+
+<style>
+
+    .e-listview .e-list-icon {
+        height: 24px;
+        width: 30px;
+    }
+
+    .folder {
+        background-repeat: no-repeat;
+        background-image: url("css/listview/images/file_icons.png");
+        background-position: -5px -466px;
+        background-size: 302%;
+    }
+
+    .file {
+        background-repeat: no-repeat;
+        background-image: url("css/listview/images/file_icons.png");
+        background-position: -5px -151px;
+        background-size: 302%;
+    }
+
+    #nestedlist {
+        max-width: 500px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

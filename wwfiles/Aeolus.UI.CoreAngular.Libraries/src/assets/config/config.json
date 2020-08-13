@@ -1,0 +1,10 @@
+{
+  "titelHeader": "Berichten",
+  "iconModule": "far fa-paper-plane",
+  "urlNavigator": "http://localhost:51750/swagger/api/v1/navigator/",
+  "urlModules": "http://localhost:51750/swagger/api/v1/modules/",
+  "apiServer": {
+    "metadata": "https://metadata.demo.com/api/v1.0/",
+    "rules": "https://rules.demo.com/api/v1.0/"
+  }
+}

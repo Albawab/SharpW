@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Calendar-Today" xml:space="preserve">
+    <value>Standaard</value>
+  </data>
+  <data name="Datepicker-placeholder" xml:space="preserve">
+    <value>sfasdf</value>
+  </data>
+  <data name="Grid_Add" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="Grid_AddFormTitle" xml:space="preserve">
+    <value>Nieuw Record Toevoegen</value>
+  </data>
+  <data name="Grid_AND" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="Grid_autoFit" xml:space="preserve">
+    <value>Auto Fit deze kolom</value>
+  </data>
+  <data name="Grid_autoFitAll" xml:space="preserve">
+    <value>Deze kolommen automatisch aanpassen</value>
+  </data>
+  <data name="Grid_BatchSaveConfirm" xml:space="preserve">
+    <value>Weet u zeker dat u wijzigingen wilt opslaan?</value>
+  </data>
+  <data name="Grid_BatchSaveLostChanges" xml:space="preserve">
+    <value>Niet-opgeslagen wijzigingen gaan verloren. Weet je zeker dat je door wilt gaan?</value>
+  </data>
+  <data name="Grid_Between" xml:space="preserve">
+    <value>Tussen</value>
+  </data>
+  <data name="Grid_Blanks" xml:space="preserve">
+    <value>Spaties</value>
+  </data>
+  <data name="Grid_Cancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="Grid_CancelButton" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="Grid_CancelEdit" xml:space="preserve">
+    <value>Weet u zeker dat u de wijzigingen wilt annuleren?</value>
+  </data>
+  <data name="Grid_ChooseColumns" xml:space="preserve">
+    <value>Kies Kolom</value>
+  </data>
+  <data name="Grid_ChooseDate" xml:space="preserve">
+    <value>Kies een datum</value>
+  </data>
+  <data name="Grid_ClearButton" xml:space="preserve">
+    <value>Doorzichtig</value>
+  </data>
+  <data name="Grid_ClearFilter" xml:space="preserve">
+    <value>Filter wissen</value>
+  </data>
+  <data name="Grid_Columnchooser" xml:space="preserve">
+    <value>Kolommen</value>
+  </data>
+  <data name="Grid_ColumnChooserDialogARIA" xml:space="preserve">
+    <value>Kolomkiezer dialoogvenster</value>
+  </data>
+  <data name="Grid_ColumnMenuDialogARIA" xml:space="preserve">
+    <value>Dialoogvenster Kolommenu</value>
+  </data>
+  <data name="Grid_ConfirmDelete" xml:space="preserve">
+    <value>Weet u zeker dat u Record wilt verwijderen?</value>
+  </data>
+  <data name="Grid_Contains" xml:space="preserve">
+    <value>Bevat</value>
+  </data>
+  <data name="Grid_Copy" xml:space="preserve">
+    <value>Kopiëren</value>
+  </data>
+  <data name="Grid_Csvexport" xml:space="preserve">
+    <value>CSV-export</value>
+  </data>
+  <data name="Grid_CustomFilter" xml:space="preserve">
+    <value>Aangepast filter</value>
+  </data>
+  <data name="Grid_CustomFilterDatePlaceHolder" xml:space="preserve">
+    <value>Kies een datum</value>
+  </data>
+  <data name="Grid_CustomFilterDialogARIA" xml:space="preserve">
+    <value>Dialoogvenster met klantfilter</value>
+  </data>
+  <data name="Grid_CustomFilterPlaceHolder" xml:space="preserve">
+    <value>Voer de waarde in</value>
+  </data>
+  <data name="Grid_DateFilter" xml:space="preserve">
+    <value>Datumfilters</value>
+  </data>
+  <data name="Grid_DateTimeFilter" xml:space="preserve">
+    <value>DateTime-filters</value>
+  </data>
+  <data name="Grid_Delete" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="Grid_DeleteOperationAlert" xml:space="preserve">
+    <value>Geen records geselecteerd voor verwijderbewerking</value>
+  </data>
+  <data name="Grid_DeleteRecord" xml:space="preserve">
+    <value>Record verwijderen</value>
+  </data>
+  <data name="Grid_DialogEditARIA" xml:space="preserve">
+    <value>Dialoogvenster bewerken</value>
+  </data>
+  <data name="Grid_Edit" xml:space="preserve">
+    <value>Bewerk</value>
+  </data>
+  <data name="Grid_EditFormTitle" xml:space="preserve">
+    <value>Details van</value>
+  </data>
+  <data name="Grid_EditOperationAlert" xml:space="preserve">
+    <value>Geen records geselecteerd voor bewerking</value>
+  </data>
+  <data name="Grid_EditRecord" xml:space="preserve">
+    <value>Record Bewerken</value>
+  </data>
+  <data name="Grid_EmptyDataSourceError" xml:space="preserve">
+    <value>DataSource mag niet leeg zijn bij de eerste keer laden, aangezien kolommen worden gegenereerd op basis van dataSource in AutoGenerate Column Grid</value>
+  </data>
+  <data name="Grid_EmptyRecord" xml:space="preserve">
+    <value>Geen records om weer te geven</value>
+  </data>
+  <data name="Grid_EndsWith" xml:space="preserve">
+    <value>Eindigt Met</value>
+  </data>
+  <data name="Grid_EnterValue" xml:space="preserve">
+    <value>Voer de waarde in</value>
+  </data>
+  <data name="Grid_Equal" xml:space="preserve">
+    <value>Gelijk</value>
+  </data>
+  <data name="Grid_Excelexport" xml:space="preserve">
+    <value>Excel exporteren</value>
+  </data>
+  <data name="Grid_ExcelFilterDialogARIA" xml:space="preserve">
+    <value>Dialoogvenster Excel-filter</value>
+  </data>
+  <data name="Grid_Export" xml:space="preserve">
+    <value>Exporteren</value>
+  </data>
+  <data name="Grid_False" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="Grid_FilterbarTitle" xml:space="preserve">
+    <value>\'s filterbalkcel</value>
+  </data>
+  <data name="Grid_FilterButton" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Grid_FilterFalse" xml:space="preserve">
+    <value>Niet waar</value>
+  </data>
+  <data name="Grid_FilterMenu" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Grid_FilterMenuDialogARIA" xml:space="preserve">
+    <value>Dialoogvenster Filtermenu</value>
+  </data>
+  <data name="Grid_FilterTrue" xml:space="preserve">
+    <value>Klopt</value>
+  </data>
+  <data name="Grid_FirstPage" xml:space="preserve">
+    <value>Eerste Pagina</value>
+  </data>
+  <data name="Grid_GreaterThan" xml:space="preserve">
+    <value>Groter dan</value>
+  </data>
+  <data name="Grid_GreaterThanOrEqual" xml:space="preserve">
+    <value>Groter dan of gelijk aan</value>
+  </data>
+  <data name="Grid_Group" xml:space="preserve">
+    <value>Groepeer op deze kolom</value>
+  </data>
+  <data name="Grid_GroupDisable" xml:space="preserve">
+    <value>Groeperen is uitgeschakeld voor deze kolom</value>
+  </data>
+  <data name="Grid_GroupDropArea" xml:space="preserve">
+    <value>Algemeen Sleep een kolomkop hierheen om de kolom te groeperen</value>
+  </data>
+  <data name="Grid_InvalidFilterMessage" xml:space="preserve">
+    <value>Ongeldige filtergegevens</value>
+  </data>
+  <data name="Grid_Item" xml:space="preserve">
+    <value>item</value>
+  </data>
+  <data name="Grid_Items" xml:space="preserve">
+    <value>artikelen</value>
+  </data>
+  <data name="Grid_LastPage" xml:space="preserve">
+    <value>Laatste pagina</value>
+  </data>
+  <data name="Grid_LessThan" xml:space="preserve">
+    <value>Minder Dan</value>
+  </data>
+  <data name="Grid_LessThanOrEqual" xml:space="preserve">
+    <value>Minder Dan Of Gelijk</value>
+  </data>
+  <data name="Grid_MatchCase" xml:space="preserve">
+    <value>Match Case</value>
+  </data>
+  <data name="Grid_Matchs" xml:space="preserve">
+    <value>Geen overeenkomsten gevonden</value>
+  </data>
+  <data name="Grid_NextPage" xml:space="preserve">
+    <value>Volgende pagina</value>
+  </data>
+  <data name="Grid_NoResult" xml:space="preserve">
+    <value>Geen overeenkomsten gevonden</value>
+  </data>
+  <data name="Grid_NotEqual" xml:space="preserve">
+    <value>Niet gelijk</value>
+  </data>
+  <data name="Grid_NumberFilter" xml:space="preserve">
+    <value>Getalfilters</value>
+  </data>
+  <data name="Grid_OKButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Grid_OR" xml:space="preserve">
+    <value>OF</value>
+  </data>
+  <data name="Grid_Pdfexport" xml:space="preserve">
+    <value>PDF-export</value>
+  </data>
+  <data name="Grid_PreviousPage" xml:space="preserve">
+    <value>Vorige pagina</value>
+  </data>
+  <data name="Grid_Print" xml:space="preserve">
+    <value>Afdrukken</value>
+  </data>
+  <data name="Grid_Save" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="Grid_SaveButton" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="Grid_Search" xml:space="preserve">
+    <value>Zoeken</value>
+  </data>
+  <data name="Grid_SearchColumns" xml:space="preserve">
+    <value>zoek kolommen</value>
+  </data>
+  <data name="Grid_SelectAll" xml:space="preserve">
+    <value>Selecteer alles</value>
+  </data>
+  <data name="Grid_ShowRowsWhere" xml:space="preserve">
+    <value>Toon rijen waar:</value>
+  </data>
+  <data name="Grid_SortAscending" xml:space="preserve">
+    <value>Oplopend Sorteren</value>
+  </data>
+  <data name="Grid_SortDescending" xml:space="preserve">
+    <value>Aflopend sorteren</value>
+  </data>
+  <data name="Grid_StartsWith" xml:space="preserve">
+    <value>Begint Met</value>
+  </data>
+  <data name="Grid_TextFilter" xml:space="preserve">
+    <value>Tekstfilters</value>
+  </data>
+  <data name="Grid_True" xml:space="preserve">
+    <value>waar</value>
+  </data>
+  <data name="Grid_UnGroup" xml:space="preserve">
+    <value>Klik hier om de groep op te heffen</value>
+  </data>
+  <data name="Grid_Ungrouping" xml:space="preserve">
+    <value>Groeperen op basis van deze kolom</value>
+  </data>
+  <data name="Grid_Update" xml:space="preserve">
+    <value>Bijwerken</value>
+  </data>
+  <data name="Grid_Wordexport" xml:space="preserve">
+    <value>Word eExporteren</value>
+  </data>
+</root>

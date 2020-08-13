@@ -1,0 +1,9 @@
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\bin\Debug\netstandard2.0\PersoonLibrary.deps.json
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\bin\Debug\netstandard2.0\PersoonLibrary.dll
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\bin\Debug\netstandard2.0\PersoonLibrary.pdb
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\obj\Debug\netstandard2.0\PersoonLibrary.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\obj\Debug\netstandard2.0\PersoonLibrary.AssemblyInfoInputs.cache
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\obj\Debug\netstandard2.0\PersoonLibrary.AssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\obj\Debug\netstandard2.0\PersoonLibrary.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\obj\Debug\netstandard2.0\PersoonLibrary.dll
+C:\Users\AbdulAbdulbawab\Source\repos\15 Json Deserialize Serialize Api Controller\PersoonLibrary\obj\Debug\netstandard2.0\PersoonLibrary.pdb

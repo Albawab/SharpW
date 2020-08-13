@@ -1,0 +1,36 @@
+﻿<sectio>
+
+    @if (SectionKinderenGroup != null)
+    {
+            <label class="col-12 offset-@SectionChild.Column" id="@SectionChild.SectionNumber">
+                <label class="border border-dark bg-dark text-light m-1 col-1" style="height:30px">@SectionChild.SectionNumber</label>
+                <label class="border border-dark bg-dark text-light m-1 col-10" style="height:30px">@SectionChild.Title</label>
+            </label>
+
+        @foreach (dynamic elementGroup in SectionKinderenGroup)
+        {
+            <div class="row col-12">
+                @foreach (dynamic element in elementGroup)
+                {
+                    <FormulierElementen element="@(element as FormulierElement)"></FormulierElementen>
+                }
+            </div>
+        }
+    }
+</sectio>
+
+@code {
+    [Parameter]
+    public FormulierSectie SectionChild { get; set; }
+
+    dynamic SectionKinderenGroup;
+
+    protected override void OnInitialized()
+    {
+        if (SectionChild != null)
+        {
+            SectionKinderenGroup = SectionChild.SectionKinderen.GroupBy(G => G.Row);
+        }
+
+    }
+}

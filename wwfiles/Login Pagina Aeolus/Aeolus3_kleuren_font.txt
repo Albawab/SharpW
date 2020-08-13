@@ -1,0 +1,48 @@
+De link naar Aeolus (invision) is https://invis.io/P2MZSTE6N57
+
+De kleuren en fonts van de interface.
+
+Kleuren 
+
+Licht blauw
+#339cd1
+R51 G156 B209
+
+Blauw 
+#008bd2
+R0 G139 B210
+
+Donkerblauw
+#1476ad
+R20 G118 B173
+
+Donkergrijs
+#575756
+R87 G87 B86
+
+Lichtgrijs
+#626260
+R98 G98 B96
+
+Oranje
+#c86d01
+R200 G109 B1
+
+Groen
+#76b729
+R118 G183 B41
+
+Rood
+#c80101
+R200 G1 B1
+
+Gradient login scherm over afbeelding
+start #008bd2 eind #000000 dekking 90%
+
+Gradient navigatie menu
+start #008bd2 eind #000000 dekking 100%
+
+
+Fonts
+Montserrat Bold
+Montserrat Regular

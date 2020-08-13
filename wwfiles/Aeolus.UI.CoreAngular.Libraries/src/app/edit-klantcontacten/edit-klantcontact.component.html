@@ -1,0 +1,130 @@
+
+<div>
+
+  <ejs-dialog id="editKlantcontact" #dialogKlantContact [visible]='false' [header]='header' [animationSettings]='animationSettings'
+    [showCloseIcon]='showCloseIcon' [isModal]='isModal' [target]='target' [width]='width' [height]='height'>
+
+    <ng-template #header>
+        <h2>
+          <i style="float:left;width: 28px;margin-right: 8px;" class="far fa-paper-plane"></i>
+          Klantcontact verwerken
+        </h2>
+    </ng-template>
+
+    <ng-template #content>
+
+      <form id="klantcontactForm" [formGroup]="klantcontactForm" (ngSubmit)="onSubmit()">
+
+          <h3>{{klantcontact.SoortNaam}}</h3>
+
+          <div class="row">
+            <div class="col-md-6">
+              <ejs-dropdownlist id='subsoorten' name="subsoort" formControlName="subsoort" [dataSource]='subSoorten' [fields]='fields'></ejs-dropdownlist>
+            </div>
+            <div class="col-md-6">
+              <ejs-dropdownlist id='statussen' name="status" formControlName="status"  [dataSource]='statussen' [fields]='fields'></ejs-dropdownlist>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group template">
+                <div class="e-float-input">
+                    <input type="text" id="onderwerp" name="onderwerp" class="required" formControlName="onderwerp" placeholder="Onderwerp">
+                </div>
+                <div *ngIf="formErrors.onderwerp">
+                  <span class="error">{{formErrors.onderwerp}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group template">
+                <div class="e-float-input">
+                  <input type="text" id="locatie" name="locatie" formControlName="locatie" placeholder="Locatie">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb10">
+            <label for="prioriteit" class="col-md-2">Prioriteit</label>
+            <div class="col-md-2">
+              <ejs-dropdownlist id='prioriteit' name="prioriteit" formControlName="prioriteit" [dataSource]='prioriteiten' [fields]='fields'></ejs-dropdownlist>
+            </div>
+            <div class="col-md-2">
+              <ejs-checkbox label="Opnemen in verslag" cssClass="e-small" labelPosition="After" formControlName="meenemenInVerslag"></ejs-checkbox>
+            </div>
+            <label for="begindatum" class="col-md-4">Begindatum</label>
+            <div class="col-md-2">
+              <ejs-datepicker formControlName="begindatum" name="begindatum">
+              </ejs-datepicker>
+              <div *ngIf="formErrors.begindatum">
+                  <span class="error">{{formErrors.begindatum}}</span>
+                </div>
+            </div>
+          </div>
+
+          <div class="row mb10">
+            <label for="doenVoor" class="col-md-4">Doen voor</label>
+            <div class="col-md-2">
+              <ejs-datepicker formControlName="doenVoor" name="doenVoor">
+              </ejs-datepicker>
+            </div>
+
+            <label for="einddatum" class="col-md-4">Einddatum</label>
+            <div class="col-md-2">
+              <ejs-datepicker formControlName="einddatum" name="einddatum">
+              </ejs-datepicker>
+            </div>
+          </div>
+
+          <h3>Betrokkene</h3>
+          <div class="row mb10">
+            <label for="uitvoering" class="col-md-2">Uitvoering door</label>
+            <div class="col-md-4">
+                <ejs-multiselect id='uitvoering' formControlName="uitvoering" [dataSource]='uivoerders' mode='CheckBox'
+                [fields]='fields' showDropDownIcon='true' placeholder='Uitvoring door'></ejs-multiselect>
+            </div>
+            <label for="gemeldDoor" class="col-md-2">Gemeld door</label>
+            <div class="col-md-4">
+              <input class="e-input" type="text" id="gemeldDoor" name="gemeldDoor" formControlName="gemeldDoor" placeholder="Gemeld door">
+            </div>
+          </div>
+
+          <h3>Inhoud</h3>
+          <div class="row mb10">
+            <label for="privacySoort" class="col-md-4">Onderstaande tekst is zichtbaar voor</label>
+            <div class="col-md-8">
+                <ejs-radiobutton label="Iedereen" formControlName="privacySoort" name="privacySoort" value="1"></ejs-radiobutton><span> </span>
+                <ejs-radiobutton label="Alleen mezelf" formControlName="privacySoort" name="privacySoort" value="2"></ejs-radiobutton>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ejs-richtexteditor formControlName="inhoud" height="300px">
+              </ejs-richtexteditor>
+            </div>
+          </div>
+
+          <h3>Bijlagen</h3>
+          <div class="row">
+            <div class="col-md-8">
+
+            </div>
+            <div class="col-md-4">
+              <ejs-uploader #defaultupload id='defaultfileupload' [asyncSettings]='path' [dropArea]='dropElement' (removing)='onFileRemove($event)'></ejs-uploader>
+            </div>
+          </div>
+
+      </form>
+
+    </ng-template>
+
+    <ng-template #footerTemplate>
+      <button id="sendButton" type="submit" class="e-control e-btn e-primary sendButton"
+        form="klantcontactForm" data-ripple="true" [disabled]="!klantcontactForm.valid">Opslaan</button>
+    </ng-template>
+
+  </ejs-dialog>
+
+</div>

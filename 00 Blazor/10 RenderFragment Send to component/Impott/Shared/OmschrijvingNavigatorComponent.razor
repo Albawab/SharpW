@@ -1,0 +1,16 @@
+﻿@using Impott.Interfaces
+@using Impott.Data
+
+<h1>Hallo</h1>
+@OmschrijvingI.Titel
+
+@code {
+
+    [Parameter]
+    public OmschrijvingItem OmschrijvingI { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        StateHasChanged();
+    }
+}

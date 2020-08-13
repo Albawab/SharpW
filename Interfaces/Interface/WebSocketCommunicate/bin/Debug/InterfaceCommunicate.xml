@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterfaceCommunicate</name>
+    </assembly>
+    <members>
+        <member name="T:HenE.InterfaceCommunicate.Interfaces.IBordController">
+            <summary>
+            interface die gebruikt wordt voor het controller, tussen grenzen.
+            </summary>
+        </member>
+        <member name="M:HenE.InterfaceCommunicate.Interfaces.IBordController.IsMoveBetweenBoundaries(System.Int32)">
+            <summary>
+            Check of deze set tussen grenzen.
+            </summary>
+            <param name="move">De set die heeft gekozen.</param>
+            <returns>True als het geldig is. False als het niet geldig is.</returns>
+        </member>
+        <member name="T:HenE.InterfaceCommunicate.Interfaces.ILogger">
+            <summary>
+            Interface die gebruikt worden voor het informatie. Informatie van de project.
+            </summary>
+        </member>
+        <member name="M:HenE.InterfaceCommunicate.Interfaces.ILogger.Log(System.String)">
+            <summary>
+            Packt de informatie van de project.
+            </summary>
+            <param name="time">Tijd.</param>
+        </member>
+        <member name="T:HenE.Communicator.Interfaces.ICanCommunicate">
+            <summary>
+            interface die gebruikt wordt voor het communiceren, tussen partijen.
+            </summary>
+        </member>
+        <member name="M:HenE.Communicator.Interfaces.ICanCommunicate.Ask(System.String)">
+            <summary>
+            Functie om een vraag te stellen en een antwoord te krijgen.
+            </summary>
+            <param name="question">de vraag dit gesteld gaat worden.</param>
+            <returns>Het antwoord van de vraag.</returns>
+        </member>
+        <member name="M:HenE.Communicator.Interfaces.ICanCommunicate.Tell(System.String)">
+            <summary>
+            Functie om een partij een melding te geven.
+            </summary>
+            <param name="message">de melding die verstuurt gaat worden.</param>
+        </member>
+    </members>
+</doc>

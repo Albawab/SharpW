@@ -1,0 +1,16 @@
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.RazorComponent.input.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatieGroupComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatieItem.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatorComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatieGroepComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\RazorDeclaration\Navigatie\Components\NavigatieItemComponent.razor.g.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\bin\Debug\netstandard2.0\Aeolus.Blazor.Common.deps.json
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\bin\Debug\netstandard2.0\Aeolus.Blazor.Common.dll
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.AssemblyInfoInputs.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.AssemblyInfo.cs
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\Aeolus.Blazor.Common.RazorTargetAssemblyInfo.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\staticwebassets\Aeolus.Blazor.Common.StaticWebAssets.Manifest.cache
+C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\06 Grid\Aeolus.Blazor.Common\obj\Debug\netstandard2.0\staticwebassets\Aeolus.Blazor.Common.StaticWebAssets.xml

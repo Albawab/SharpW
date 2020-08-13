@@ -1,0 +1,11 @@
+﻿@page "/"
+@inject Send_data_from_body_to_navigatie.Interfaces.IHandleNavigator handel
+
+<button type="button" @onclick="Send">Send data</button>
+
+@code{
+    private void Send()
+    {
+        handel.InvokeOmschrijvigNavigatorItem();
+    }
+}

@@ -1,0 +1,15 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration configuration
+From Component
+<h1>@configuration["Localhost"]</h1>
+
+@GetString();
+
+@code {
+    ConfigurationInstellingen configurationInstellingen = new ConfigurationInstellingen();
+
+
+    private string GetString()
+    {
+        return configurationInstellingen.GetInstelling("Localhost");
+    }
+}

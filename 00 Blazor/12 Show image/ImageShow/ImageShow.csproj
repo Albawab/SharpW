@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\download.jpg" />
+    <None Include="wwwroot\images\download.png" />
+    <None Include="wwwroot\images\images %281%29.png" />
+    <None Include="wwwroot\images\images.png" />
+  </ItemGroup>
+
+</Project>

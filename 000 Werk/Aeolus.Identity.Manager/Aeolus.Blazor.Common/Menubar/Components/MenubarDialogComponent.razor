@@ -1,0 +1,61 @@
+﻿@using Syncfusion.Blazor.Inputs.Internal
+<label data-toggle="modal" data-target="#exampleModalCenter">
+    @Dialog.Titel
+</label>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="frame">
+            <div class="modal-content">
+                @foreach (MenubarItemModel item in Dialog.Kinderen)
+                {
+                    <div class="row">
+                        @if (item is MenubarUploadFileModel menubarUpload)
+                        {
+                            <MenubarUploadFileComponent Callback="SetFileName" />
+                        }
+                        @if (item is MenubarButtonModel buttonModel)
+                        {
+                        <MenubarButtonComponent EventCallback="itemHasChanged" />
+                        }
+                    </div>
+                }
+            </div>
+            </div>
+        </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public MenubarDialogModel Dialog { get; set; }
+
+    [Parameter]
+    public EventCallback<dynamic> Callback { get; set; }
+    string fileName;
+
+    public void itemHasChanged()
+    {
+        Callback.InvokeAsync(fileName);
+    }
+
+    private void SetFileName(dynamic huidigeFileName)
+    {
+        this.fileName = huidigeFileName;
+    }
+
+
+}
+<style>
+    .frame {
+        top: 50%;
+        left: 50%;
+        width: 337px;
+        height: 305px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: rgb(20,118,173);
+        color: #333;
+    }
+</style>

@@ -1,0 +1,30 @@
+<div id="events">
+    <h4>Signaleringen</h4>
+    <div class="eventsContent">
+
+      <div class="event" *ngFor="let item of events" [@fadeAnimation]="'in'">
+        <div class="buttons">
+          <button class="ban" (click)="confirmBtnClick(item)">
+            <i class="fas fa-ban"></i>
+          </button>
+          <button class="check" (click)="checkClick(item)">
+            <i class="far fa-check-circle"></i>
+          </button>
+        </div>
+        <h6>{{item.titel}}</h6>
+        <p>{{item.omschrijving}}</p>
+      </div>
+
+    </div>
+
+    <!-- Render the confirmation Dialog -->
+    <ejs-dialog #confirmEventDialog [buttons]='confirmDlgButtons' [visible]='hidden' [header]='confirmHeader' [animationSettings]='animationSettings'
+      [showCloseIcon]='confirmCloseIcon' [isModal]='isModal' [position]="position" [target]='target' [width]='confirmWidth'>
+      <ng-template #content>
+        <span>{{dialogContent}}</span>
+      </ng-template>
+    </ejs-dialog>
+
+    <ejs-toast #toast [position]="positionToast" [animation]="toastAnimation" [showCloseButton]="toastShowCloseBtn" [showProgressBar]="toastShowProgresBar"></ejs-toast>
+
+  </div>

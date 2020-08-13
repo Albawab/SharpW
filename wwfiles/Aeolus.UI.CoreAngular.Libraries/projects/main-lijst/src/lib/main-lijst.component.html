@@ -1,0 +1,62 @@
+
+<div *ngIf="mainItems.length === 0" class="titelHeader">
+  <h4 class="titel">Selecteer een map</h4>
+</div>
+
+<div *ngIf="mainItems.length > 0" class="titelHeader">
+<h4 class="titel">{{headerTitel}}
+  <!-- <div style='position:absolute; top:10px; right:5px;'>
+      <span style='font-size: 16px; color: #0078D7'>Filter</span>
+      <button ejs-button id='btnFilter' (click)="btnFilterClick()"
+        style='color: #0078D7' iconCss='fal fa-angle-down' cssClass='btn-shadow-hide'></button>
+  </div> -->
+</h4>
+<div class="filterWrap">
+      <ejs-checkbox cssClass="e-small" (change)="showChecboxes($event)"></ejs-checkbox>
+
+      <!-- <button id="soortBtn"></button> -->
+      <!-- <button ejs-button #soortBtn id='soortBtn' (click)="btnSoortClick()"  isToggle="true" iconCss="far fa-sort-alpha-up" cssClass='btn-shadow-hide'></button> -->
+      <!-- <button ejs-button #soortBtn id='soortBtn' (click)="btnSoortClick()" [isToggle]="true" iconCss="e-icons sort-ascending" cssClass='btn-shadow-hide small'></button> -->
+
+      <!-- <ejs-checkbox label="Status 1" cssClass="e-small" (change)="getStatus1($event)"></ejs-checkbox> -->
+
+      <button id="btnFilter" ejs-dropdownbutton [items]='filterItems' content="Filteren"></button>
+</div>
+</div>
+
+<div class="onderdelen onderdelen-height ">
+
+  <div *ngIf="mainItems.length > 0" class="onderdelen-height ">
+
+    <ejs-listview #listView id="lijstOnderdelen" [dataSource]="mainItems" [fields]="fields" [showCheckBox]='showCheckBox'
+      [enableVirtualization]=true [showHeader]="false">
+      <ng-template #template let-data="">
+        <div class="itemContainer status-{{data?.status}}">
+          <div class="itemContent" (click)="onRecordClick(data)" (dblclick)="onRecordDoubleClick(data)">
+            <h4 class="itemHeader" title="{{data?.titel}}">{{(data?.titel?.length > 24) ? (data?.titel | slice:0:24) + '...' : (data?.titel)}}</h4>
+            <div class="itemDescription">
+              <span *ngIf="data.datum">{{data?.datum | date:'dd-MM-yyyy'}}</span>
+              <div  *ngFor="let extra of data.extras">
+                <strong>{{extra.key}}: </strong> {{extra.value}}
+              </div>
+            </div>
+            <div class="itemDescription">
+              {{data?.omschrijving}}
+            </div>
+          </div>
+
+          <div class="hidden">
+              <a id="edit" (click)="edit(data)"><span class='fas fa-pencil'></span></a>
+              <a id="delete" (click)="delete(data)"><span class='fas fa-trash-alt'></span></a>
+          </div>
+        </div>
+      </ng-template>
+      <!-- <ng-template #groupTemplate let-data="">
+        test {{data.titel}}
+    </ng-template> -->
+    </ejs-listview>
+  </div>
+
+  <!-- <ejs-contextmenu id='filterContextMenu' #filterContextMenu [items]='filterMenuItems' (select)='filterMenuSelect($event)' >
+    </ejs-contextmenu> -->
+</div>
