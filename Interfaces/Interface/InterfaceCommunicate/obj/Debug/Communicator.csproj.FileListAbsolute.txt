@@ -12,3 +12,10 @@ C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug\Communicator.csproj.CoreCompileInputs.cache
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.dll
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\InterfaceCommunicate\bin\Debug\InterfaceCommunicate.xml
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\InterfaceCommunicate\bin\Debug\InterfaceCommunicate.dll
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\InterfaceCommunicate\bin\Debug\InterfaceCommunicate.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug\Communicator.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug\Communicator.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.dll
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\InterfaceCommunicate\obj\Debug\InterfaceCommunicate.pdb

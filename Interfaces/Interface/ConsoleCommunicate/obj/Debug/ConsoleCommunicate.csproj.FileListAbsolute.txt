@@ -18,3 +18,13 @@ C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\C
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.csproj.CopyComplete
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.dll
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\bin\Debug\ConsoleCommunicate.dll
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\bin\Debug\ConsoleCommunicate.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\bin\Debug\InterfaceCommunicate.dll
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\bin\Debug\InterfaceCommunicate.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\bin\Debug\InterfaceCommunicate.xml
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.csproj.CopyComplete
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.dll
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\ConsoleCommunicate\obj\Debug\ConsoleCommunicate.pdb

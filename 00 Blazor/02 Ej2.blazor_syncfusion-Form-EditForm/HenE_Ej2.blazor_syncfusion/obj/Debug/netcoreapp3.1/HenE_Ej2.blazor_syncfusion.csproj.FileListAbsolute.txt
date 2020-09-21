@@ -318,14 +318,6 @@ C:\Users\AbdulAbdulbawab\Desktop\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-E
 C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop1.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop2.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop3.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop4.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop5.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop6.json
-C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\stylecop7.json
 C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Pages\GegevensBodyHttpWeatherForecast.json
 C:\Users\AbdulAbdulbawab\Source\Sharp\00 Blazor\02 Ej2.blazor_syncfusion-Form-EditForm\HenE_Ej2.blazor_syncfusion\bin\Debug\netcoreapp3.1\Application.exe

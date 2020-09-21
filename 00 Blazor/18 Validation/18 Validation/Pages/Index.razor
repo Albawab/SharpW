@@ -1,0 +1,87 @@
+﻿@page "/"
+
+@using _18_Validation.Data
+
+
+<EditForm OnValidSubmit="VoegItemToe" EditContext="editContext">
+    <DataAnnotationsValidator />
+    <ValidationSummary></ValidationSummary>
+    <label>Id</label>
+    <InputText @bind-Value="Student.Id"></InputText>
+    <ValidationMessage For="(()=>Student.Id)" />
+    <br />
+    <label>Naam</label>
+    <InputText @bind-Value="Student.Naam"></InputText>
+    <ValidationMessage For="(()=>Student.Naam)" />
+    <br />
+    <label>Email</label>
+    <InputText @bind-Value="Student.Email"></InputText>
+    <ValidationMessage For="(()=>Student.Email)" />
+    <br />
+
+    <button type="submit" disabled="@submitDisabled" class="@cssKnop">Opslaan</button>
+</EditForm>
+
+<br />
+<br />
+<br />
+
+@foreach (var studen in students)
+{
+    <div>Name:</div>
+    <div>@studen.Naam</div>
+}
+
+@code{
+    Student Student;
+
+    List<Student> students;
+    private EditContext editContext;
+    private string cssKnop = "formulier-knop-disabled";
+
+    private bool submitDisabled = true;
+
+    protected override void OnInitialized()
+    {
+        Student = new Student();
+        students = new List<Student>();
+        editContext = new EditContext(Student);
+        this.editContext.OnFieldChanged += (sender, e) =>
+        {
+            submitDisabled = !editContext.Validate();
+            if (editContext.Validate())
+            {
+                cssKnop = "formulier-knop-enabled";
+            }
+        };
+    }
+
+    private void VoegItemToe()
+    {
+        students.Add(Student);
+    }
+
+    private void FoutMelding()
+    {
+
+    }
+
+
+}
+
+
+<style>
+    .formulier-knop-disabled {
+        margin-top: 15px;
+        color: rgb(215,215,215);
+        background-color: white;
+        border: 1px solid rgb(215,215,215);
+    }
+
+    .formulier-knop-enabled {
+        margin-top: 15px;
+        color: black;
+        background-color: white;
+        border: 1px solid double;
+    }
+</style>

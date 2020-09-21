@@ -1,0 +1,39 @@
+﻿@page "/"
+
+@using System.Net.Mail
+
+<button @onclick="@SendMail">Send Message</button>
+
+<h1>@Message</h1>
+@code{
+    private string Message { get; set; } = "";
+
+    private void SendMail()
+    {
+        try
+        {
+            using (MailMessage mail = new MailMessage())
+            {
+                mail.From = new MailAddress("Albawab94@gmail.com");
+                mail.To.Add("aabdulbawab@horlingseneerbeek.nl");
+                mail.Subject = "Wachtwoord";
+                mail.Body="Hallo";
+                mail.IsBodyHtml = true;
+
+                using (SmtpClient smtp= new SmtpClient("smtp.gmail.com", 587))
+                {
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new System.Net.NetworkCredential("Albawab94@gmail.com", "61501987");
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                    Message = "Mail Sent";
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+
+            throw;
+        }
+    }
+}

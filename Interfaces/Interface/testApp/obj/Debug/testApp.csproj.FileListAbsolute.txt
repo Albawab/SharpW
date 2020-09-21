@@ -26,3 +26,17 @@ C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\testApp\obj\Debug\testApp.cspr
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\testApp\obj\Debug\testApp.csproj.CopyComplete
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\testApp\obj\Debug\TestApp.exe
 C:\Users\Abdul\Desktop\Sharp\Interfaces\Interface\testApp\obj\Debug\TestApp.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\TestApp.exe.config
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\TestApp.xml
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\TestApp.exe
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\TestApp.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\ConsoleCommunicate.dll
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\InterfaceCommunicate.dll
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\ConsoleCommunicate.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\InterfaceCommunicate.pdb
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\bin\Debug\InterfaceCommunicate.xml
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\obj\Debug\testApp.csprojAssemblyReference.cache
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\obj\Debug\testApp.csproj.CoreCompileInputs.cache
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\obj\Debug\testApp.csproj.CopyComplete
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\obj\Debug\TestApp.exe
+C:\Users\AbdulAbdulbawab\Source\Sharp\Interfaces\Interface\testApp\obj\Debug\TestApp.pdb

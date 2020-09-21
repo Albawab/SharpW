@@ -16,7 +16,7 @@ namespace HenE.TestApp
         {
             ILogger logger = new FileLogger();
 
-            logger?.Log("Iets");
+           // logger?.Log("Iets");
 
             Console.ReadLine();
 

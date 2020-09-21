@@ -1,0 +1,49 @@
+﻿@page "/"
+
+@using _20_dependency_injection_DI.Interfaces
+@using Microsoft.Extensions.Configuration
+@using _20_dependency_injection_DI.Helper
+@inject IConfiguration configuration
+@inject IAppController appcontroller
+    1-a- @emailBlazor1 From appsettings Blazor
+
+    <br />
+    <br />
+    1-c- @emailBlazor2 From appsettings Blazor 2
+
+    <br />
+    <br />
+
+    2- @emailCSharp From C# class
+    <br />
+    <br />
+
+    3- @emailStartup From Startup/ from Controller
+
+    <br />
+    <br />
+
+
+    @code{
+        string emailBlazor1;
+        string emailBlazor2;
+        string emailCSharp;
+        string emailStartup;
+        HelperConfiguration HelperConfiguration;
+
+
+        protected override void OnInitialized()
+        {
+            HelperConfiguration = new HelperConfiguration(configuration);
+
+            //1 blazor
+            emailBlazor1 = configuration.GetSection("Email").Value;
+
+            // 2 blazor
+            emailBlazor2 = configuration["Email"];
+
+
+            emailCSharp = this.HelperConfiguration.Email;
+            emailStartup = appcontroller.Email;
+        }
+    }

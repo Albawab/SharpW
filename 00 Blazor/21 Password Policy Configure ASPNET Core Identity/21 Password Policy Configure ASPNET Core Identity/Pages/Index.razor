@@ -1,0 +1,35 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+
+
+<input @bind-value="wachtwoord" />
+<button @onclick="CheckWachtwoord" value="Wachtwoord">Wachtwoord</button>
+
+@code{
+    private string wachtwoord { get; set; }
+
+    protected override void OnInitialized()
+    {
+
+    }
+
+    private async Task CheckWachtwoord()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+@*        if (user.Identity.IsAuthenticated)
+        {
+            _authMessage = $"{user.Identity.Name} is authenticated.";
+            _claims = user.Claims;
+            _surnameMessage =
+                $"Surname: {user.FindFirst(c => c.Type == ClaimTypes.Surname)?.Value}";
+        }
+        else
+        {
+            _authMessage = "The user is NOT authenticated.";
+        }*@
+    }
+}
