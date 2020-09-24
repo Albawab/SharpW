@@ -22,11 +22,13 @@ namespace _01_AddSingleton_AddTransient_AddScoped
         {
             services.AddControllers();
             services.AddScoped<ICanSayHallo,SayHallo>();
-            services.AddScoped<ICanSayHallo2,SayHallo2>();
+            services.AddTransient<ICanSayHallo2,SayHallo2>();
             services.AddScoped<ICanSayHallo3,SayHallo3>();
+            services.AddTransient<ISayHallo4, SayHallo4>();
 
             services.AddTransient<IKanMeten, ConvertToCM>();
             services.AddScoped<IKanMeten2, ConvertToCM2>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -36,6 +36,7 @@ namespace _21_Password_Policy_Configure_ASPNET_Core_Identity
                 options.Password.RequiredLength = 6;
                 options.Password.RequiredUniqueChars = 1;
             });
+            services.AddSingleton<IdentityOptions>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

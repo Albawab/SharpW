@@ -1,35 +1,86 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Identity;
+@using _21_Password_Policy_Configure_ASPNET_Core_Identity.Data
+@using System.ComponentModel.DataAnnotations;
+@using System.Text.RegularExpressions;
 @inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IdentityOptions option
+
+<EditForm EditContext="editContext" OnValidSubmit="@DoeActie">
+    <DataAnnotationsValidator />
+    <InputText @bind-Value="student.Wachtwoord" class="col-12 lolo" @oninput="CheckWachtwoord" />
+
+    <ValidationMessage For="@(() => student.Wachtwoord)" />
+    <input type="submit" value="Click" style="display:block"/>
+</EditForm>
 
 
-
-<input @bind-value="wachtwoord" />
-<button @onclick="CheckWachtwoord" value="Wachtwoord">Wachtwoord</button>
+<input @bind-value="wachtwoord" class="cssKnop"/>
+<button style="display:block">Hallo</button>
 
 @code{
     private string wachtwoord { get; set; }
+    string cssWachtwoordSterkte = "text-success";
+    string wachtwoordSterkte;
+    private EditContext editContext;
+    private bool submitDisabled = false;
+    private string disabled = "disabled";
 
+    // this is validation no policy. <=======================================================
+    Student student;
     protected override void OnInitialized()
+    {
+        student = new Student();
+        editContext = new EditContext(student);
+        this.editContext.OnFieldChanged += (sender, e) =>
+        {
+            submitDisabled = !editContext.Validate();
+            if (editContext.Validate())
+            {
+                disabled = "";
+            }
+        };
+
+
+
+        // this is policy.<==================================================================
+        if (option.Password.RequireLowercase)
+        {
+
+        }
+    }
+    private void DoeActie()
     {
 
     }
 
-    private async Task CheckWachtwoord()
+    private void CheckWachtwoord(ChangeEventArgs eventArgs)
     {
-        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        var user = authState.User;
+        Regex low = new Regex(@"^(?=.*?[0-9]).{4,}$");
+        Regex normal = new Regex(@"^(?=.*?[a-z])(?=.*?[0-9]).{8,}$");
+        Regex high = new Regex(@"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$");
 
-@*        if (user.Identity.IsAuthenticated)
+        if (high.IsMatch(eventArgs.Value.ToString()))
         {
-            _authMessage = $"{user.Identity.Name} is authenticated.";
-            _claims = user.Claims;
-            _surnameMessage =
-                $"Surname: {user.FindFirst(c => c.Type == ClaimTypes.Surname)?.Value}";
+            cssWachtwoordSterkte = "text-success";
+            wachtwoordSterkte = "Sterk";
+        }
+        else if (normal.IsMatch(eventArgs.Value.ToString()))
+        {
+            cssWachtwoordSterkte = "text-warning";
+            wachtwoordSterkte = "Goed";
+        }
+        else if (low.IsMatch(eventArgs.Value.ToString()))
+        {
+            cssWachtwoordSterkte = "text-danger";
+            wachtwoordSterkte = "Zwak";
         }
         else
         {
-            _authMessage = "The user is NOT authenticated.";
-        }*@
+            cssWachtwoordSterkte = "text-danger";
+            wachtwoordSterkte = "Zwak";
+        }
+
     }
 }
