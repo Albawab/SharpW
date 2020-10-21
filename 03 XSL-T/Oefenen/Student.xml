@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="StyleXSL-T.xsl"?>
+<class name="12">
+    <student id="1">
+        <name>Abdul</name>
+        <number>0</number>
+        <phone>065</phone>
+    </student >
+        <student id="2">
+        <name>Kees</name>
+        <number>1</number>
+        <phone>055</phone>
+    </student>
+        <student id="3">
+        <name>Jan</name>
+        <number>2</number>
+        <phone>022</phone>
+    </student>
+        <student id="4">
+        <name>Aty</name>
+        <number>3</number>
+        <phone>033</phone>
+    </student>
+    <teacher>
+        <name>Jos</name>
+        <phone>000</phone>        
+    </teacher>
+        <teacher>
+        <name>Lieke1</name>
+        <phone>1</phone>        
+    </teacher>
+        <teacher>
+        <name>Lieke2</name>
+        <phone>2</phone>        
+    </teacher>
+</class>

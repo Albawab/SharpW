@@ -1,0 +1,11 @@
+Save file
+"StyleXSL-T.xsl" tussen "" in de input save te oplsaan als xsl 
+
+
+Chrome not read file
+C:\Program Files\Google\Chrome\Application\chrome.exe
+--allow-file-access-from-files 
+
+1- Open Command Prompt  cd.. back<- cd\name forward->
+2- Find the Chrome executable folder. On Windows, search for the file chrome.exe in a Navigator windows. 
+3- In the command prompt terminal, start the Chrome executable with a command line flag: path_to_chrome/chrome --allow-file-access-from-files 

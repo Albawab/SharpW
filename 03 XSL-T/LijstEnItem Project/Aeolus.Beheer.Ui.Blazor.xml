@@ -1,0 +1,1706 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="Aeolus.Beheer.Ui.Blazor.xsl"?>
+<doc>
+    <assembly>
+        <name>Aeolus.Beheer.Ui.Blazor</name>
+    </assembly>
+    <members>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.HeaderController">
+            <summary>
+            De control van de header.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.HeaderController.GetHeader">
+            <summary>Get het header.</summary>
+            <returns>Het header.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController">
+            <summary>
+            Klas van de lijst en items controller.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.#ctor(HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController"/> class.
+            </summary>
+            <param name="beveiligingService">The beveiliging service.</param>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.LijstEnItemsSummaryHeader">
+            <summary>
+            Gets or sets de tekst van de header.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.GetLijstEnItemModels(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort)">
+            <summary>Gets de samenvattingen van de het lijst en element project.</summary>
+            <param name="lijstEnItemSoort">De soort van lijst en item.</param>
+            <returns>Een lijst van de elementen.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.GetLijstEnItemModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            Geeft een lijst en item model terug.
+            </summary>
+            <param name="lijstEnItemSoort">De soort van lijstEnItem.</param>
+            <param name="key">De key van lijst en item.</param>
+            <returns>Een lijst en item.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.AddLijstEnItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            functie om een LijstEnItemModel toe te voegen.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="lijstEnItemModel"> apireource die toegevoegd moet worden.</param>
+            <returns>LijstEnItemModel.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.UpdateItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Update een lijst en item.
+            </summary>
+            <param name="lijstEnItemSoort">De soort van lijstEnItem die wordt geupdate.</param>
+            <param name="lijstEnItemModel">De lijstEnModel die moet updaten.</param>
+            <returns>Is de item geupdate of niet.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.IcoonMaker(System.String,System.String,System.String)">
+            <summary>
+            Maakt een icoon klaar.
+            </summary>
+            <param name="source">De source van een icoon.</param>
+            <param name="alt">De alternative text.</param>
+            <param name="iconClass">De css klas van een icoon.</param>
+            <returns>Een icoon.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.VerwijderenItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            Verwijdert  een lijstEnItem.
+            </summary>
+            <param name="lijstEnItemSoort">De soort van de lijstEnItem.</param>
+            <param name="key">De key van lijstEnItem model die moet verwijderen.</param>
+            <returns>De text of de lijstEnItem verwijderd of niet.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.GetLijstEnItemModelsForApiResources">
+            <summary>
+            Geeft de lijst van lijst en items api terug.
+            </summary>
+            <returns>De lijst van de items.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.GetLijstEnItemModelsForAspNetRoles">
+            <summary>
+            Geeft de lijst van lijst en items asp net roles terug.
+            </summary>
+            <returns>De lijst van de items.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.GetLijstEnItemModelsForAspNetUsers">
+            <summary>
+            Get Gebruiker van de api service.
+            </summary>
+            <returns>Een lijst van lijstEnItems AspNetUser.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.GetLijstEnItemModelsForApplicaties">
+            <summary>
+            Geeft de lijst van lijst en items api terug.
+            </summary>
+            <returns>De lijst van de items.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.SendApiResourceToBeveiliging(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            stuur ApiResource naar service.
+            </summary>
+            <param name="lijstEnItemModel">De api resource die naar api wordt gestuurd.</param>
+            <returns>Een api resource.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.SendAspNetRoleToBeveiliging(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Stuurt een Asp net role naar service.
+            </summary>
+            <param name="lijstEnItemModel">De asp net role die naar service moet sturen.</param>
+            <returns>Een asp net role.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.SendAspNetUserToBeveiliging(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Stuurt een gebruiker naar de service.
+            </summary>
+            <param name="lijstEnItemModel">De gebruiker die naar service moet sturen.</param>
+            <returns>Een gebruiker.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.SendApplicatieToBeveiliging(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Stuurt een applicatie naar de service.
+            </summary>
+            <param name="lijstEnItemModel">De applicatie die naar de service moet sturen.</param>
+            <returns>Een applicatie.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.LijstEnItemController.VerwijderenLijstEnItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            verwijdert een lijst en item.
+            </summary>
+            <param name="lijstEnItemSoort">De soort (Applicatie, gebruiker, Role of Api Resource) van lijst en item.</param>
+            <param name="key">De key van lijst en item.</param>
+            <returns>De tekst of de item verwijderd of niet.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.MenubalkController">
+            <summary>
+            De menubalk controller.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.MenubalkController.GetMenubalk(System.Int32)">
+            <summary>
+            Geeft de menubalk terug.
+            </summary>
+            <returns>Een menubalk.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.MenubalkController.GetMenubalk">
+            <summary>
+            Get een menubalk.
+            </summary>
+            <returns>Menubalk.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController">
+            <summary>
+            De controller van de navigator.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController"/> class.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.GetNavigatieItems(System.Boolean)">
+            <summary>
+            Geeft de navigatie items terug.
+            </summary>
+            <param name="forceUpdate">force Update.</param>
+            <returns>Lijst van navigator items.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.DoAction(HenE.Aeolus.Shared.Ui.Navigator.Models.NavigatieActie)">
+            <summary>
+            Doet een actie.
+            </summary>
+            <param name="uitTeVoerenActie">De actie.</param>
+            <returns>
+            Is het actie uitgevoerd of niet.
+            </returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.UpdateNavigatieItem(HenE.Aeolus.Shared.Ui.Navigator.Models.NavigatieItem)">
+            <summary>
+            Updates the navigatie item.
+            </summary>
+            <param name="navigatieItem">The navigatie item.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.GetNavigatieItemsVanApi">
+            <summary>
+            Geeft de navigatoe items van de Api terug.
+            </summary>
+            <returns>Een lijst met de navigator items.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.AddFavorieteNavigatieItemsToList(System.Collections.Generic.IList{HenE.Aeolus.Shared.Ui.Navigator.Models.NavigatieItem},System.Collections.Generic.List{HenE.Aeolus.Shared.Ui.Navigator.Models.NavigatieItem}@)">
+            <summary>
+            Voegt een favoriet navigator item in favorieteNavigatieItems toe.
+            </summary>
+            <param name="navigatieItems">Een lijst van navigatie items.</param>
+            <param name="favorieteNavigatieItems">Reference een lijst met de favoriet navigatie items.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.FindNavigatieItemByGuid(System.Guid)">
+            <summary>
+            Deze functie zoekt naar een navigator item via de id.
+            </summary>
+            <param name="idNavigatieItem">De id van een navigatie item.</param>
+            <returns>De navigator item.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.NavigatorController.VerwijderenNavigatorItem(System.Collections.Generic.IList{HenE.Aeolus.Shared.Ui.Navigator.Models.NavigatieItem},HenE.Aeolus.Shared.Ui.Navigator.Models.NavigatieItem)">
+            <summary>
+            Verwijdert een navigatie item.
+            </summary>
+            <param name="huidigeNavigatieItems">De lijst van de navigatie items.</param>
+            <param name="huidigeNavigatieItem">Het item die wordt verwijderd.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController"/> class.
+            constructor.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController.LijstEnItemsSummaryHeader">
+            <summary>
+            Gets or sets de tekst van de header.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController.AddLijstEnItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Toevoegen een item aan het lijst.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="lijstEnItemModel">Het item die zal in de lijst moet toevoegen.</param>
+            <returns>Een lijst en item model.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController.GetLijstEnItemModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            Gets een api resource.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="key">De key van de API resource die wordt opgehaald.</param>
+            <returns>
+            Een API resource.
+            </returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController.GetLijstEnItemModels(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort)">
+            <summary>
+            Get de lijst en item modellen van de data om in de lijst te zetten.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <returns>
+            Een lijst en item moddelen van de applicatie.
+            </returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController.UpdateItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Create een nieuwe lijst en item model.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="lijstEnItemModel">De nieuwe lijstEnItemModel.</param>
+            <returns>Is deze item is geupdate worden of niet.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Controllers.ProjectController.VerwijderenItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            Verwijderen een item.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="key">De key van item die moet verwijderen worden.</param>
+            <returns>
+            Message terug ontvangen of de item verwijderd worden of niet.
+            </returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.ClassConverterHelper">
+            <summary>
+            Deze klas helpt hetproject om te converten een opbject die van de service komt tot een klas die in deze project staat.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.ClassConverterHelper.ConvertToLijstEnItemApiResourceModel(IO.Swagger.Model.ApiResourceFullDto)">
+            <summary>
+            Convert ApiResourceFullDto tot  LijstEnItemApiResourceModel.
+            </summary>
+            <param name="apiResource">ApiResourceFullDto from service.</param>
+            <returns>Een LijstEnItemApiResourceModel.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.ClassConverterHelper.ConvertToLijstEnItemAspNetRoleModel(IO.Swagger.Model.AspNetRoleFullDto)">
+            <summary>
+            Convert AspNetRoleFullDto tot LijstEnItemAspNetRoleModel.
+            </summary>
+            <param name="profiel">AspNetRoleFullDto form service.</param>
+            <returns>Een  asp net role.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.ClassConverterHelper.ConvertToLijstEnItemAspNetUserModel(IO.Swagger.Model.AspNetUserFullDto)">
+            <summary>
+            Convert AspNetUserFullDto tot LijstEnItemGebruikerModel.
+            </summary>
+            <param name="gebruiker">AspNetUserFullDto.</param>
+            <returns>Een nieuwe gebruiker.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.ClassConverterHelper.ConvertToLijstEnItemApplicatieModel(IO.Swagger.Model.ClientFullDto)">
+            <summary>
+            Convert ApplicatieFullDto tot applicatie.
+            </summary>
+            <param name="applicatie">ApplicatieFullDto.</param>
+            <returns>Een nieuwe applicatie.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.CssHelper">
+            <summary>
+            Deze klas geet de style helpen om nieuwe waarde aan een element van de style.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.CssHelper.HaalBreedeVanComponentOp(System.Boolean)">
+            <summary>
+            Geeft de breede van een component terug.
+            </summary>
+            <param name="isComponentZichtbaar">Is deze component zichtbaar.</param>
+            <returns>Hoe groot is de component.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.CssHelper.GetWachtwoordCssKlas(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.WachtwoordComplexiteitLevel,System.String@,System.Int32@)">
+            <summary>
+            Haalt de css van het wachtwoord op.
+            </summary>
+            <param name="wachtwoordComplexiteitLevel">Op welke level staat dit wachtwoord.</param>
+            <param name="textKleur">De kleur van de text die geeft de rode kleur als het zwak is stc..</param>
+            <param name="wachtwoordSterkPercentage">Die geeft op welke precntage staat de sterkte van deze wachtwoord.</param>
+            <returns>Css klas van dit wachtwoord.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.EmailSender">
+            <summary>
+            Helpt het project om een email te sturen.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.EmailSender.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.EmailSender"/> class.
+            </summary>
+            <param name="configuration">configuration.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.EmailSender.Send(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Stuur een email.
+            </summary>
+            <param name="to">Naar.</param>
+            <param name="cc">CC.</param>
+            <param name="bcc">BCC.</param>
+            <param name="subject">Subject van deze mail.</param>
+            <param name="body">De tekst van deze email.</param>
+            <returns>Is deze email gestuurd of niet.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.IcoonHelper">
+            <summary>
+            De helper van de icon.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.IcoonHelper.GetFilePathForIcon(System.String,System.String)">
+            <summary>
+            Get de file path van een icoon.
+            </summary>
+            <param name="fileName">De naam van icon.</param>
+            <param name="specificIconFilePath">De specifiek naam van de icon.</param>
+            <returns>De hele path van een icon.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper">
+            <summary>
+            Klas om deze project met wachtwoord te helpen.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper.GeneratePassword(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generate een wachtwoord.
+            </summary>
+            <param name="lowercase">Aantel kleine letters.</param>
+            <param name="uppercase">Aantel hoofdletter.</param>
+            <param name="numerics">Aantel nummers.</param>
+            <param name="symbole">Aantel symbools.</param>
+            <returns>Het wachtwoord.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper.HeeftHoofdletter(System.String)">
+            <summary>
+            controleert of het wachtwoord heeftHoofdletter heeft.
+            </summary>
+            <param name="wachtwoord">Het wachtwoord die wordt gecontroleerd.</param>
+            <returns>Is geldig wachtwoord.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper.HeeftKleineLetter(System.String)">
+            <summary>
+            Controleert of het wachtwoord een KleineLetter heeft.
+            </summary>
+            <param name="wachtwoord">Het wachtwoord die wordt gecontroleerd.</param>
+            <returns>Is geldig wachtwoord.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper.HeeftEenCijfer(System.String)">
+            <summary>
+            Controleert of het wachtwoord een cijfer heeft.
+            </summary>
+            <param name="wachtwoord">Het wachtwoord die wordt gecontroleerd.</param>
+            <returns>Is geldig wachtwoord.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper.IsLengteMeerDanAchtLetters(System.String)">
+            <summary>
+            Controleert of het wachtwoord meer dan acht letters heeft..
+            </summary>
+            <param name="wachtwoord">Het wachtwoord die wordt gecontroleerd.</param>
+            <returns>Is geldig wachtwoord.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper.HeeftSymbool(System.String)">
+            <summary>
+            controleert of het wachtwoord een symbool.
+            </summary>
+            <param name="wachtwoord">Het wachtwoord die wordt gecontroleerd.</param>
+            <returns>Is geldig wachtwoord.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordHelper.CheckWachtwoord(System.String)">
+            <summary>
+            Controlleert het wachtwoord op welk niveau staat het.
+            </summary>
+            <param name="wachtwoord">Het wacht woord.</param>
+            <returns>De level van een wachtwoord.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Helpers.WachtwoordAttribute.IsValid(System.Object)">
+            <summary>
+            Controleert of de value is geldig.
+            </summary>
+            <param name="value">De value.</param>
+            <returns>Is valid of niet.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent">
+            <summary>
+            De C# code van de LijstEnItemBaseComponent.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.toastObj">
+            <summary>
+            De toest.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.KeyMenubalk">
+            <summary>
+            De key die van de menubalk komt terug.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.summaries">
+            <summary>
+            Lijst van de summaries van lijst en item modellen.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.LijstEnItemSoort">
+            <summary>
+            Ontvangt het soort van het huidige item.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.IsCreerenComponentZichtbaar">
+            <summary>
+            Ontvangt of mag het component CreerenComponent zichtbaar of niet.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.NavManager">
+            <summary>
+            De navigator manager van het project.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.LijstEnItemsController">
+            <summary>
+            Inject de controller van de lijst en item project.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.HuidigeLijstEnItemModel">
+            <summary>
+            De huidige lijst en item model.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.OnInitialized">
+            <summary>
+            OnInitialized method.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.SetKeyMenubalkWaarde">
+            <summary>
+            Set de waarde van de key die naar menubalk zal sturen.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.DoeActie(HenE.Aeolus.Shared.Ui.Menubalk.Models.MenubalkLink)">
+            <summary>
+            Doet een actie die van de menubalk komt terug.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.ChangeLijstEnItemModel(System.String)">
+            <summary>
+            Haalt een nieuw item van de controller op.
+            </summary>
+            <param name="id">De id van een item die zal ophalen worden.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.SetNieuweLijstEnItemModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Zet de nieuwe lijst en item model op om op scherm te laten zien.
+            </summary>
+            <param name="nieuweLijstEnItemModel">De nieuwe item.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.IsDataChanged(System.String,System.Boolean,HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.BerichtSoortvanHetItemActie)">
+            <summary>
+            Als de data zijn veranderd dan gaat de data van de controller ophalen.
+            </summary>
+            <param name="id">De id van een item.</param>
+            <param name="isChanged">Is data veranderd of niet.</param>
+            <param name="berichtSoortvanHetItemActie">Het bericht van de actie.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.ShowSuccessMessage(System.String)">
+            <summary>
+            Laat een melding dat er is iets gebeurd.
+            </summary>
+            <param name="message">De message die zichtbaar op het scherm wordt.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.UpdateLijstEnItemSummaries">
+            <summary>
+            Gaat de summaries van de controller ophalen.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.Getmessage(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.BerichtSoortvanHetItemActie)">
+            <summary>
+            Geeft de tekst van de melding.
+            </summary>
+            <param name="berichtSoortvanHetItemActie">Het soort van het message die op het scherm zichtbaar zal worden.</param>
+            <returns>Het message.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemBaseComponent.GetRoute">
+            <summary>
+            Geeft de uri van een page terug.
+            </summary>
+            <returns>Het uri.</returns>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemSummariesComponent.LijstEnItemSummaries">
+            <summary>
+            Ontvangt een lijst van de summaries.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemSummariesComponent.HeaderText">
+            <summary>
+            Ontvangt de titel van de lijst.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemSummariesComponent.EventCallbackId">
+            <summary>
+            Stuurt Id van een item terug.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemSummaryComponent.SummaryModel">
+            <summary>
+            Ontvangt een summary model.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemSummaryComponent.EventCallbackId">
+            <summary>
+            stuurt de id van een item terug.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemSummaryComponent.Controller">
+            <summary>
+            De controller van lijst en item.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.LijstEnItemSummaryComponent.ToTitleCase(System.String)">
+            <summary>
+            Maakt de eerst letter van de tekst hoofdletter.
+            </summary>
+            <param name="titel">De titel.</param>
+            <returns>De titel met hoofletter.</returns>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.UpdateProfielComponent.CallbackAnnuleren">
+            <summary>
+            Gets or sets de event van de annuleren knop.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.UpdateProfielComponent.Profiel">
+            <summary>
+            Gets or sets de profiel item.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.UpdateProfielComponent.HaalNieuweDataOp">
+            <summary>
+            Gets or sets de event die naar de parent component zal terug sturen of ontvangent.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.UpdateProfielComponent.OnInitialized">
+            <summary>
+            OnInitialized method.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.UpdateProfielComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is required of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.UpdateProfielComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name = "naamOfVeld" > De naam van een property.</param>
+            <param name = "veldText" > De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.UpdateProfielComponent.CheckIsValidation">
+            <summary>
+            Controleert of de context van de formulier is geldig.
+            Als het geldig is dan gaat het het submit knoop zichbaar worden.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.CreateProfielComponent.VoegItemToe">
+            <summary>
+            Voegt een nieuwe asp net role toe.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.CreateProfielComponent.Annuleren">
+            <summary>
+            functie om "Toevoegen item" te annuleren.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.CreateProfielComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is required of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.CreateProfielComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name="naamOfVeld">De naam van een property.</param>
+            <param name="VeldText">De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.ItemProfielComponent.HaalNieuweDataOp(System.Boolean)">
+            <summary>
+            Haalt de nieuwe data van server.
+            </summary>
+            <param name="MagDataOphalen">Mag de data ophalen.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.ItemProfielComponent.ToggeleVerwerkenComponent">
+            <summary>
+            Verbergt het verwerken component of toont het.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Profielen.ProfielComponent.SetNieuweAspNetRoleModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemProfielModel)">
+            <summary>
+            Zet de asp net role model in Action om naar de BaseComponent te terugsturen.
+            </summary>
+            <param name="profiel">aspNet role model.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.ApiResourceComponent.SetNieuweApiResourceModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel)">
+            <summary>
+            Invokt een api resource in de event callback.
+            </summary>
+            <param name="apiResource">api resource.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.CreateApiResourceComponent.VoegItemToe">
+            <summary>
+            Voegt een nieuwe api resource toe.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.CreateApiResourceComponent.Annuleren">
+            <summary>
+            functie om "Toevoegen item" te annuleren.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.CreateApiResourceComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is required of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.CreateApiResourceComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name="naamOfVeld">De naam van een property.</param>
+            <param name="VeldText">De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.ItemApiResourceComponent.HaalNieuweDataOp(System.Boolean)">
+            <summary>
+            Haalt de nieuwe data van server.
+            </summary>
+            <param name="MagDataOphalen">Mag de data ophalen.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.ItemApiResourceComponent.ToggleSchakelaar(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel)">
+            <summary>
+            Schakelt  de lijst en item in of uit.
+            </summary>
+            <param name="apiResource">De item die wordt geupdate.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.ItemApiResourceComponent.ToggeleVerwerkenComponent">
+            <summary>
+            Verbergt het verwerken component of toont het.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.UpdateApiResourceComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is required of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.ApiResources.UpdateApiResourceComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name="naamOfVeld">De naam van een property.</param>
+            <param name="VeldText">De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieComponent.LijstEnItemModel">
+            <summary>
+            Ontvangt item.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieComponent.IsDataChange">
+            <summary>
+            stuurt terug (id,bool, soort message) als de data zijn veranderd.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieComponent.IsCreerenComponentZichtbaar">
+            <summary>
+            Ontvang of de creeren component mag laten zien of niet.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieComponent.SetNieuweLijstEnItemModel">
+            <summary>
+            Stuurt een lijst en item model terug.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieComponent.SetNieuweApplicatietModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel)">
+            <summary>
+            Zet de applicatie model in Action om naar de BaseComponent te terugsturen.
+            </summary>
+            <param name="applicatie">applicatie.</param>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieMenubalkItemComponent.Titel">
+            <summary>
+            Ontvangt de titel van een menubalk item.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieMenubalkItemComponent.IsActive">
+            <summary>
+            Ontvangt of deze item active of niet.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieMenubalkItemComponent.Key">
+            <summary>
+            Ontvangt de key van een menubalk item.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatieMenubalkItemComponent.KeyCallback">
+            <summary>
+            Stuurt key van een item om te controleren of het active is of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ApplicatietItemAlgemeenComponent.ToggelenVerwerkenComponent">
+            <summary>
+            Verbergt het verwerken component of toont het.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.CreateApplicatieComponent.IsDataChange">
+            <summary>  
+            stuurt terug (id,bool, soort message) als de data zijn veranderd.  
+            </summary>  
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.CreateApplicatieComponent.VoegItemToe">
+            <summary>
+            Voegt een nieuwe applicatie toe.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.CreateApplicatieComponent.Annuleren">
+            <summary>
+            functie om "Toevoegen item" te annuleren.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.CreateApplicatieComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is required of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.CreateApplicatieComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name="naamOfVeld">De naam van een property.</param>
+            <param name="VeldText">De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ItemApplicatieComponent.LijstEnItemModel">
+            <summary>
+            Ontvangt de lijst en item model.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ItemApplicatieComponent.IsDataChange">
+            <summary> 
+            stuurt terug (id,bool, soort message) als de data zijn veranderd. 
+            </summary> 
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ItemApplicatieComponent.IsUpdateComponentZichtbaar">
+            <summary>
+            Ontvangt of update component zichtbaar of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ItemApplicatieComponent.HaalNieuweDataOp(System.Boolean)">
+            <summary>
+            Haalt de nieuwe data van server.
+            </summary>
+            <param name="MagDataOphalen">Mag de data ophalen.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ItemApplicatieComponent.ToggleSchakelaar(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel)">
+            <summary>
+            Schakelt  de lijst en item in of uit.
+            </summary>
+            <param name="applicatie">De item die wordt geupdate.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.ItemApplicatieComponent.ToggeleVerwerkenComponent">
+            <summary>
+            Verbergt het verwerken component of toont het.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.SubBodyApplicatieComponent.Key">
+            <summary>
+            De key van de menu balk om elke menubalk item eigen key te krijgen.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.SubBodyApplicatieComponent.LijstEnItemApplicatieModel">
+            <summary>
+            Ontvangt item.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.SubBodyApplicatieComponent.HaalNieuweDataOp">
+            <summary>
+            Als de data veranderd zijn dan stuurt boolean om nieuwe date te halen.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.SubBodyApplicatieComponent.SetKey(System.Int32)">
+            <summary>
+            Set de waarde van de key.
+            </summary>
+            <param name="key">De key die van menubalk van een item komt terug.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.SubBodyApplicatieComponent.IsActive(System.Int32)">
+            <summary>
+            Controleert of de menubalk item is active of niet.
+            </summary>
+            <param name="huidigeKey">De key van een menubalk item.</param>
+            <returns>Is active of niet.</returns>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.CallbackAnnuleren">
+            <summary>
+            Stuurt event dat het is annuleerde.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.Applicatie">
+            <summary>
+            Lijst en item model.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.CallbackClient">
+            <summary>
+            Stuurt de item terug.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.HaalNieuweDataOp">
+            <summary>
+            Stuurt event terug om nieuwe data te ophalen.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.nieuweClient">
+            <summary>
+            De nieuwe client.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is verplicht of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name="naamOfVeld">De naam van een property.</param>
+            <param name="VeldText">De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.CheckIsValidation">
+            <summary>
+            controleert of de velden van het formulier zijn geldig of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Applicaties.UpdateApplicatieComponent.SetClientIdWaarde">
+            <summary>
+            Zet de waarde van de nieuwe item.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.VulWachtwoordAutomatischIn">
+            <summary>
+                Als de gebruiker wil Automatisch het wachtwoord invullen dan gaat deze functie controlleren of de validatie geldig of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.VulWachtwoordZelfIn">
+            <summary>
+            Als de gebruiker wil zelf het wachtwoord invullen dan gaat deze functie controlleren of de validatie geldig of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.DoeActie">
+            <summary>
+            Doet een actie.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.Annuleren">
+            <summary>
+            functie om "Toevoegen item" te annuleren.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is required of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name="naamOfVeld">De naam van een property.</param>
+            <param name="VeldText">De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.CheckWachtwoord(Microsoft.AspNetCore.Components.ChangeEventArgs)">
+            <summary>
+            Controleer of het geldig wachtwoord of niet.
+            </summary>
+            <param name="eventArgs">ChangeEventArgs.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.SendEmail">
+            <summary>
+            Stuurt een email.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.ToggelMagEmailSturen">
+            <summary>
+            Verandert, of maf een email sturen of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.CreateGebruikerComponent.ToggleWachtwoord">
+            <summary>
+            verbergen het wachtwoord of laten het zien.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.GebruikerComponent.SetNieuweAspNetUserModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel)">
+            <summary>
+            Zet de gebruiker model in Action om naar de BaseComponent te terugsturen.
+            </summary>
+            <param name="gebruiker">gebruiker.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.ItemGebruikerComponent.HaalNieuweDataOp(System.Boolean)">
+            <summary>
+            Haalt de nieuwe data van server.
+            </summary>
+            <param name="MagDataOphalen">Mag de data ophalen.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.ItemGebruikerComponent.ToggeleVerwerkenComponent">
+            <summary>
+            Verbergt het verwerken component of toont het.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.VulWachtwoordAutomatischIn">
+            <summary>
+            Als de gebruiker wil Automatisch het wachtwoord invullen dan gaat deze functie controlleren of de validatie geldig of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.VulWachtwoordZelfIn">
+            <summary>
+            Als de gebruiker wil zelf het wachtwoord invullen dan gaat deze functie controlleren of de validatie geldig of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.HasPropertyRequiredAttribute(System.String)">
+            <returns>Is deze property required of niet.</returns>
+            <summary>
+            Check of de property is required of niet.
+            </summary>
+            <param name="propertyNaam">De naam van de property.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.GetTooltipContent(System.String,System.String)">
+            <summary>
+            Geeft de text van de tootip.
+            </summary>
+            <param name="naamOfVeld">De naam van een property.</param>
+            <param name="VeldText">De text van een property.</param>
+            <returns>De text van een tooptip.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.FoutMelding(Microsoft.AspNetCore.Components.Forms.EditContext)">
+            <summary>
+            Laat de tosat zien als er een fout bij de folmulier is.
+            </summary>
+            <param name="editContext">De context van de formulier.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.CheckWachtwoord(Microsoft.AspNetCore.Components.ChangeEventArgs)">
+            <summary>
+            Controleer of het geldig wachtwoord of niet.
+            </summary>
+            <param name="eventArgs">ChangeEventArgs.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.ToggleWachtwoord">
+            <summary>
+            Verandert, of maf een email sturen of niet.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Componenten.Gebruikers.UpdateGebruikerComponent.CheckIsValidation">
+            <summary>
+            verbergen het wachtwoord of laten het zien.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.BerichtSoortvanHetItemActie">
+            <summary>
+            De soort van een bericht die moet boven tonen als er een actie is geburt.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.BerichtSoortvanHetItemActie.IsDefined">
+            <summary>
+            Is defined.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.BerichtSoortvanHetItemActie.ItemOpgeslagen">
+            <summary>
+            Soort is geslaagd.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.BerichtSoortvanHetItemActie.ItemGeupdate">
+            <summary>
+            Soort is geupdaten.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.BerichtSoortvanHetItemActie.ItemVerwijderd">
+            <summary>
+            Soort is verwijderd.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort">
+            <summary>
+            De soorten van lijst en item model.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort.IsDefined">
+            <summary>
+            Is defined.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort.ApiResource">
+            <summary>
+            De soort van de lijst en item is API resource.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort.Profiel">
+            <summary>
+            De soort van de lijst en item is Asp Net Roles.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort.Gebruiker">
+            <summary>
+            De soort van de lijst en item is Gebruikers.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort.Applicatie">
+            <summary>
+            De soort van de lijst en item is Applicaties.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.WachtwoordComplexiteitLevel">
+            <summary>
+            De level van wachtenword.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.WachtwoordComplexiteitLevel.IsDefined">
+            <summary>
+            Is defined.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.WachtwoordComplexiteitLevel.High">
+            <summary>
+            Hoog level.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.WachtwoordComplexiteitLevel.Normal">
+            <summary>
+            Normaal level.
+            </summary>
+        </member>
+        <member name="F:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.WachtwoordComplexiteitLevel.Low">
+            <summary>
+            Laag level.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Interfaces.IControlLijstEnItems">
+            <summary>
+            De controller van de lijst en items.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Interfaces.IControlLijstEnItems.LijstEnItemsSummaryHeader">
+            <summary>
+            Gets or sets de tekst van de header.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Interfaces.IControlLijstEnItems.GetLijstEnItemModels(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort)">
+            <summary>
+            Get de lijst en item modellen van de data om in de lijst te zetten.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <returns>Een lijst en item modellen van de applicatie.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Interfaces.IControlLijstEnItems.GetLijstEnItemModel(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            Gets een api resource.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="key">De key van de API resource die wordt opgehaald.</param>
+            <returns>Een API resource.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Interfaces.IControlLijstEnItems.UpdateItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Create een nieuwe lijst en item model.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="lijstEnItemModel">De nieuwe lijstEnItemModel.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Interfaces.IControlLijstEnItems.AddLijstEnItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel)">
+            <summary>
+            Toevoegen een item aan het lijst.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="lijstEnItemModel">Het item die zal in de lijst moet toevoegen.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Interfaces.IControlLijstEnItems.VerwijderenItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            Verwijderen een item.
+            </summary>
+            <param name="lijstEnItemSoort">Het soort van de lijst items.</param>
+            <param name="key">De key van item die moet verwijderen worden.</param>
+            <returns>Message terug ontvangen.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel">
+            <summary>
+            Lijst en item api resource model.
+            </summary>
+            <seealso cref="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel" />
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.Enabled">
+            <summary>
+            Indicates if this resource is enabled and can be requested. Defaults to true.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.Name">
+            <summary>
+            The unique name of the API. This value is used for authentication with introspection and will be added to the audience of the outgoing access token.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.DisplayName">
+            <summary>
+            This value can be used e.g. on the consent screen.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.Description">
+            <summary>
+            This value can be used e.g. on the consent screen.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.Created">
+            <summary>
+            The DateTime on which the ApiResource was created.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.Updated">
+            <summary>
+            The DateTime on which the ApiResource was last updated.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.LastAccessed">
+            <summary>
+            The DateTime on which the ApiResource was last accessed.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApiResourceModel.NonEditable">
+            <summary>
+            Specifies if the ApiResource is currently non editable. If non editable, trying to update, delete or patch this Applicatie will result in a 423 (Locked).
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel">
+            <summary>
+            Klas waar in de properties van een applicatie staan.
+            </summary>
+            <seealso cref="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel" />
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.Enabled">
+            <summary>
+            Specifies if applicatie is enabled. Defaults to true.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.ApplicatieId">
+            <summary>
+            Unique ID of the applicatie.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.ProtocolType">
+            <summary>
+            The Protocol Type that is used for the applicatie. Defaults to \"oidc\" (OpenID Connect).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.RequireApplicatieSecret">
+            <summary>
+            Specifies whether this applicatie needs a secret to request tokens from the token endpoint (defaults to true).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.ApplicatieName">
+            <summary>
+            Applicatie display name (used for logging and consent screen).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.Description">
+            <summary>
+            A description for the Applicatie.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.ApplicatieUri">
+            <summary>
+            URI to further information about applicatie (used on consent screen).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.LogoUri">
+            <summary>
+            URI to applicatie logo (used on consent screen).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.RequireConsent">
+            <summary>
+            Specifies whether a consent screen is required. Defaults to true.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AllowRememberConsent">
+            <summary>
+            Specifies whether user can choose to store consent decisions. Defaults to true.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AlwaysIncludeUserClaimsInIdToken">
+            <summary>
+            When requesting both an id token and access token, should the user claims always be added to the id token instead of requring the applicatie to use the userinfo endpoint. Default is false.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.RequirePkce">
+            <summary>
+            Specifies whether applicaties using an authorization code based grant type must send a proof key.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AllowPlainTextPkce">
+            <summary>
+            Specifies whether applicaties using PKCE can use a plain text code challenge (not recommended - and default to false).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AllowAccessTokensViaBrowser">
+            <summary>
+            Specifies whether this applicatie is allowed to receive access tokens via the browser. This is useful to harden flows that allow multiple response types (e.g. by disallowing a hybrid flow applicatie that is supposed to use code id_token to add the token response type and thus leaking the token to the browser.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.FrontChannelLogoutUri">
+            <summary>
+            Specifies logout URI at applicatie for HTTP based front-channel logout. See the OIDC Front-Channel spec for more details.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.FrontChannelLogoutSessionRequired">
+            <summary>
+            Specifies if the user’s session id should be sent to the FrontChannelLogoutUri. Defaults to true.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.BackChannelLogoutUri">
+            <summary>
+            Specifies logout URI at applicatie for HTTP based back-channel logout. See the OIDC Back-Channel spec for more details.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.BackChannelLogoutSessionRequired">
+            <summary>
+            Specifies if the user’s session id should be sent in the request to the BackChannelLogoutUri. Defaults to true.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AllowOfflineAccess">
+            <summary>
+            Specifies whether this applicatie can request refresh tokens (by requesting the offline_access scope).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.IdentityTokenLifetime">
+            <summary>
+            Lifetime to identity token in seconds (defaults to 300 seconds / 5 minutes).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AccessTokenLifetime">
+            <summary>
+            Lifetime of access token in seconds (defaults to 3600 seconds / 1 hour).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AuthorizationCodeLifetime">
+            <summary>
+            Lifetime of authorization code in seconds (defaults to 300 seconds / 5 minutes).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.ConsentLifetime">
+            <summary>
+            Lifetime of a user consent in seconds. Defaults to null (no expiration).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AbsoluteRefreshTokenLifetime">
+            <summary>
+            Maximum lifetime of a refresh token in seconds. Defaults to 2592000 seconds / 30 days.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.SlidingRefreshTokenLifetime">
+            <summary>
+            Sliding lifetime of a refresh token in seconds. Defaults to 1296000 seconds / 15 days.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.RefreshTokenUsage">
+            <summary>
+            Describing which type of Refresh Token has been configured for this Applicatie; One of the following:  ReUse: the refresh token handle will stay the same when refreshing tokens.  OneTime: the refresh token handle will be updated when refreshing tokens. This is the default.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.UpdateAccessTokenClaimsOnRefresh">
+            <summary>
+            Gets or sets a value indicating whether the access token (and its claims) should be updated on a refresh token request.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.RefreshTokenExpiration">
+            <summary>
+            Describing which type of Refresh Token Expiration has been configured for this Applicatie; One of the following:  Absolute: the refresh token will expire on a fixed point in time (specified by the AbsoluteRefreshTokenLifetime).  Sliding: when refreshing the token, the lifetime of the refresh token will be renewed(by the amount specified in SlidingRefreshTokenLifetime).  The lifetime will not exceed AbsoluteRefreshTokenLifetime.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AccessTokenType">
+            <summary>
+            Specifies whether the access token is a reference token or a self contained JWT token (defaults to Jwt).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.EnableLocalLogin">
+            <summary>
+            Specifies if this applicatie can use local accounts, or external IdPs only. Defaults to true.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.IncludeJwtId">
+            <summary>
+            Specifies whether JWT access tokens should have an embedded unique ID (via the jti claim).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.AlwaysSendApplicatieClaims">
+            <summary>
+            If set, the applicatie claims will be sent for every flow. If not, only for applicatie credentials flow (default is false).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.ApplicatieClaimsPrefix">
+            <summary>
+            If set, the prefix applicatie claim types will be prefixed with. Defaults to \"client_\". The intent is to make sure they don’t accidentally collide with user claims.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.PairWiseSubjectSalt">
+            <summary>
+            Salt value used in pair-wise subjectId generation for users of this applicatie.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.Created">
+            <summary>
+            The DateTime on which the Applicatie was created.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.Updated">
+            <summary>
+            The DateTime on which the Applicatie was last updated.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.LastAccessed">
+            <summary>
+            The DateTime on which the Applicatie was last accessed.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.UserSsoLifetime">
+            <summary>
+            The maximum duration (in seconds) since the last time the user authenticated. Defaults to null.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.UserCodeType">
+            <summary>
+            Specifies the type of user code to use for the applicatie. Otherwise falls back to default.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.DeviceCodeLifetime">
+            <summary>
+            Lifetime to device code in seconds (defaults to 300 seconds / 5 minutes).
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemApplicatieModel.NonEditable">
+            <summary>
+            Specifies if the Applicatie is currently non editable. If non editable, trying to update, delete or patch this Applicatie will result in a 423 (Locked).
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel">
+            <summary>
+            Klas waar in de property van een gebruiker staan.
+            </summary>
+            <seealso cref="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel" />
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.UserName">
+            <summary>
+            The UserName of the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.AccessFailedCount">
+            <summary>
+            A value indicating how many times the Gebruiker has failed to gain access.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.ConcurrencyStamp">
+            <summary>
+            A ConcurrencyStamp for the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.Email">
+            <summary>
+            The email address of the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.EmailConfirmed">
+            <summary>
+            A value indicating whether the Email of the Gebruiker has been confirmed.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.Password">
+            <summary>
+            The PasswordHash of the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.LockoutEnabled">
+            <summary>
+            A value indicating whether the Gebruiker has been locked out.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.LockoutEnd">
+            <summary>
+            A DateTimeOffset indicating at what time the Gebruiker's locked out status will end. Optional.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.NormalizedEmail">
+            <summary>
+            The NormalizedEmail of the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.NormalizedUserName">
+            <summary>
+            The NormalizedUserName of the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.PhoneNumber">
+            <summary>
+            The phone number of the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.PhoneNumberConfirmed">
+            <summary>
+            A value indicating whether the phone number of the Gebruiker has been confirmed.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.SecurityStamp">
+            <summary>
+            A SecurityStamp for the Gebruiker.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemGebruikerModel.TwoFactorEnabled">
+            <summary>
+            A value indicating whether two factor authentication for the Gebruiker has been set.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel">
+            <summary>
+            Klas van lijst en item model waar in de properties van een lijst en item staan.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel"/> class.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel.Id">
+            <summary>
+            Gets or sets id nummer van een lijst en item.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel.LijstEnItemSoort">
+            <summary>
+            Gets or sets soort van lijst en item.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemProfielModel">
+            <summary>
+            Een klas waar in de properties van lijst en item er in staan.
+            </summary>
+            <seealso cref="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemModel" />
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemProfielModel.ConcurrencyStamp">
+            <summary>
+            A ConcurrencyStamp for the Profiel.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemProfielModel.Name">
+            <summary>
+            The Name of the Profiel.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemProfielModel.NormalizedName">
+            <summary>
+            The NormalizedName of the Profiel.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemSummaryModel">
+            <summary>
+            LijstEnItem Summary.
+            </summary>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemSummaryModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemSummaryModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemSummaryModel.Enabled">
+            <summary>
+            Gets or sets the enabled.
+            </summary>
+            <value>
+            The enabled.
+            </value>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Model.LijstEnItemSummaryModel.LijstEnItemSoort">
+            <summary>
+            Gets or sets soort van lijst en item.
+            </summary>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Program">
+            <summary>
+            the program class.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Creates the host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>IHostBuilder.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService">
+            <summary>
+            De service van deze applicatie.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService"/> class.
+            </summary>
+            <param name="httpApplicatie">De http applicatie.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.ApiResourcesSummariesDto">
+            <summary>
+            geeft een lijst van ApiResourcesSummariesDto terug.
+            </summary>
+            <returns>Een lijst van ApiResourcesSummariesDto.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.GetAspNetRolesSummariesDto">
+            <summary>
+            geeft een lijst van GetAspNetRolesSummariesDto terug.
+            </summary>
+            <returns>Een lijst van GetAspNetRolesSummariesDto.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.GetAspNetUsersSummariesDto">
+            <summary>
+            geeft een lijst van GetAspNetUsersSummariesDto terug.
+            </summary>
+            <returns>Een lijst van GetAspNetUsersSummariesDto.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.ApplicatiesSummariesDto">
+            <summary>
+            geeft een lijst van ApplicatiesSummariesDto terug.
+            </summary>
+            <returns>Een lijst van ApplicatiesSummariesDto.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.GetResponseFromServer(System.String)">
+            <summary>
+            Deze functie haalt de response van de server.
+            </summary>
+            <param name="uri">De uril.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.CreateApiResource(IO.Swagger.Model.ApiResourceCreateDto)">
+            <summary>
+            Create een nieuwe api resource.
+            </summary>
+            <param name="apiResourceCreateDto">Nieuwe api resource.</param>
+            <returns>ApiResource.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.CreateAspNetRole(IO.Swagger.Model.AspNetRoleCreateDto)">
+            <summary>
+            Create een nieuwe asp net role.
+            </summary>
+            <param name="aspNetRoleCreateDto">AspNetRoleCreateDto.</param>
+            <returns>Een asp net role.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.CreateAspNetUser(IO.Swagger.Model.AspNetUserCreateDto)">
+            <summary>
+            Create een nieuwe gebruiker.
+            </summary>
+            <param name="aspNetUserCreateDto">AspNetUserCreateDto.</param>
+            <returns>Een gebruiker.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.CreateApplicatie(IO.Swagger.Model.ClientCreateDto)">
+            <summary>
+            Create een nieuwe applicatie.
+            </summary>
+            <param name="clientCreateDto">clientCreateDto.</param>
+            <returns>Een nieuwe applicatie.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.Update(System.String,System.String)">
+            <summary>
+            Deze functie gaat de dat updaten.
+            </summary>
+            <param name="uri">Het uri van de servier.</param>
+            <param name="json">De data als json.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.VerwijderenLijstEnItem(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort,System.String)">
+            <summary>
+            Verwijderd een lijst en item.
+            </summary>
+            <param name="lijstEnItemSoort">De soort van de lijstEnItem.</param>
+            <param name="key">De key van lijstEnItem die moet verwijderen.</param>
+            <returns>Een tekst of de item verwijderd wordt of niet.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.Send(System.String,System.String)">
+            <summary>
+            Sender naar service.
+            </summary>
+            <param name="uri">De uri.</param>
+            <param name="jsonContent">De json die naar server moet sturen.</param>
+            <returns>De tekst die van de server komt terug.</returns>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Services.BeveiligingApiService.GetUriServer(HenE.Aeolus.Beheer.Ui.Blazor.LijstEnItem.Enum.LijstEnItemSoort)">
+            <summary>
+            Geeft uri terug.
+            </summary>
+            <param name="lijstEnItemSoort">De soort van lijst en item.</param>
+            <returns>De uri.</returns>
+        </member>
+        <member name="T:HenE.Aeolus.Beheer.Ui.Blazor.Startup">
+            <summary>
+            Start Up class.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HenE.Aeolus.Beheer.Ui.Blazor.Startup"/> class.
+            </summary>
+            <param name="configuration">configuration.</param>
+        </member>
+        <member name="P:HenE.Aeolus.Beheer.Ui.Blazor.Startup.Configuration">
+            <summary>
+            Gets Configuration van het project.
+            </summary>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">services van het project.</param>
+        </member>
+        <member name="M:HenE.Aeolus.Beheer.Ui.Blazor.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">ApplicationBuilder.</param>
+            <param name="env">WebHostEnvironment.</param>
+        </member>
+    </members>
+</doc>
