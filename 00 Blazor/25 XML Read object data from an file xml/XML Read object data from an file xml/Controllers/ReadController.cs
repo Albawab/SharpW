@@ -23,5 +23,17 @@ namespace XML_Read_object_data_from_an_file_xml.Controllers
             ClassSchool classSchool = (ClassSchool)serial.Deserialize(reader);
             return classSchool;
         }
+        
+        public Bericht ReadBerichtHeader()
+        {
+            XmlRootAttribute xRoot = new XmlRootAttribute();
+            xRoot.ElementName = "Bericht";
+            xRoot.Namespace = "http://www.istandaarden.nl/ijw/3_0jw323/schema";
+            xRoot.IsNullable = true;
+            XmlSerializer serial = new XmlSerializer(typeof(Bericht), xRoot);
+            StreamReader reader = new StreamReader(@"...\..\jw323.xml");
+            Bericht bericht = (Bericht)serial.Deserialize(reader);
+            return bericht;
+        }
     }
 }

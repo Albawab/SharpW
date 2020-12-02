@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<jw323:Bericht xmlns:ijw="http://www.istandaarden.nl/ijw/3_0/basisschema/schema" xmlns:jw323="http://www.istandaarden.nl/ijw/3_0jw323/schema">
+  <jw323:Header>
+    <jw323:BerichtCode>1</jw323:BerichtCode>
+  </jw323:Header>
+</jw323:Bericht>

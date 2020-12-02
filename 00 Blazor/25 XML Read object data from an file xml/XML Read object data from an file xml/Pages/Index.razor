@@ -4,6 +4,7 @@
 
 <button @onclick="Readxml">Read XML Student</button>
 <button @onclick="ReadClassSchool">Read XML Class School</button>
+<button @onclick="ReadBerichtHeader">Read XML Header</button>
 
 
 @if (student != null)
@@ -34,10 +35,23 @@
 
     }
 }
+
+@if (bericht != null)
+{
+    if (bericht.Header != null)
+    {
+<div>
+    Hallo Bericht Code: 
+    @bericht.Header.BerichtCode;
+</div>
+    }
+
+}
 @code {
     ReadController controller = new ReadController();
     Student student;
     ClassSchool classSchool;
+    Bericht bericht;
     private void Readxml()
     {
         student = controller.ReadXml();
@@ -47,5 +61,12 @@
     {
         classSchool = controller.ReadClassSchool();
     }
+
+    private void ReadBerichtHeader()
+    {
+        bericht = controller.ReadBerichtHeader();
+        StateHasChanged();
+    }
+
 
 }
