@@ -7,3 +7,7 @@
     <link href="https://cdn.syncfusion.com/ej2/17.3.29/material.css" rel="stylesheet" />
     <script src="https://cdn.syncfusion.com/ej2/17.3.29/dist/ej2.min.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/17.3.29/dist/ejs.interop.min.js"></script>
+
+
+Master Grid Twee grids
+https://www.syncfusion.com/blogs/post/creating-a-master-detail-view-is-easier-with-blazor-datagrid.aspx

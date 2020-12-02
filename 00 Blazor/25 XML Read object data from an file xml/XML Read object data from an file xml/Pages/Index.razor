@@ -1,0 +1,51 @@
+﻿@page "/"
+@using XML_Read_object_data_from_an_file_xml.Controllers
+@using XML_Read_object_data_from_an_file_xml.Data
+
+<button @onclick="Readxml">Read XML Student</button>
+<button @onclick="ReadClassSchool">Read XML Class School</button>
+
+
+@if (student != null)
+{
+    <div><label>Id: </label>@student.Id</div>
+    <div><label>Name: </label>@student.Naam</div>
+}
+
+
+@if (classSchool != null)
+{
+    <h4>Class School</h4>
+    <div><label>Name: </label>@classSchool.Naam</div>
+    <br />
+    <hr />
+    <h4>Studenten</h4>
+    @if (classSchool.Students != null)
+    {
+        @foreach (var huidigeStudent in classSchool.Students)
+        {
+            <h5>Student</h5>
+            <div><label>Id: </label>@huidigeStudent.Id</div>
+            <div><label>Name: </label>@huidigeStudent.Naam</div>
+            <br />
+            <hr />
+
+        }
+
+    }
+}
+@code {
+    ReadController controller = new ReadController();
+    Student student;
+    ClassSchool classSchool;
+    private void Readxml()
+    {
+        student = controller.ReadXml();
+    }
+
+    private void ReadClassSchool()
+    {
+        classSchool = controller.ReadClassSchool();
+    }
+
+}

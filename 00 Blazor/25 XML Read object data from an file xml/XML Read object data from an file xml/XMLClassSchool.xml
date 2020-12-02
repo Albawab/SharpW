@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ClassSchool>
+  <Naam>Mborijnland</Naam>
+  <Students>
+    <Student>
+      <Id>1</Id>
+      <Naam>Abdul</Naam>
+    </Student>
+    <Student>
+      <Id>2</Id>
+      <Naam>Sam</Naam>
+    </Student>
+    <Student>
+      <Id>3</Id>
+      <Naam>Rayan</Naam>
+    </Student>    
+  </Students>
+</ClassSchool>

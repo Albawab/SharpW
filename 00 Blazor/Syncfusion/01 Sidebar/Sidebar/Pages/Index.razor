@@ -1,0 +1,21 @@
+﻿@page "/"
+@page "/{Id:int}"
+@using Sidebar.Componenten
+<h1>Hallo</h1>
+
+@if (true)
+{
+    <CascadingValue Value="1">
+    <SideComponenten></SideComponenten>
+    </CascadingValue>
+}
+@code{
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        Id = 0;
+    }
+}
+

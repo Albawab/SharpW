@@ -1,0 +1,45 @@
+﻿@page "/gridLijst"
+
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.DropDowns
+
+<SfGrid DataSource="@Students" Toolbar="@(new List<string>() { "Add", "Delete", "Update", "Cancel" })">
+    <GridEvents OnActionBegin="ActionCompletedHandler" TValue="Student"></GridEvents>
+    <GridEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" Mode="EditMode.Dialog"></GridEditSettings>
+
+    <GridColumns>
+        <GridColumn Field=@nameof(Student.Id) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Student.Naam) HeaderText="Customer Name" Width="150"></GridColumn>
+            <GridColumn HeaderText="Employee Image" Width="100">
+        <EditTemplate>
+            <SfDropDownList Placeholder="Eenheid" DataSource="EnumValues" TValue="string" TItem="string" ValueChanged="@((e)=> h(e))" >
+                <DropDownListFieldSettings Value="Eenheid" Text="Eenheid"></DropDownListFieldSettings>
+            </SfDropDownList>
+        </EditTemplate>
+    </GridColumn>
+    </GridColumns>
+
+
+</SfGrid>
+
+@code {
+    public List<Student> Students { get; set; }
+    private string EnumEenheid;
+    public string[] EnumValues = new string[] { "H","L"};
+
+    protected override void OnInitialized()
+    {
+        Students = new List<Student>();
+    }
+
+
+    private void ActionCompletedHandler(ActionEventArgs<Student> args)
+    {
+
+    }
+
+    private void h(string eenheid)
+    {
+
+    }
+}
