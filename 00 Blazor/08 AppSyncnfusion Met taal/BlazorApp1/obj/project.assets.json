@@ -7537,23 +7537,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Abdul\\.nuget\\packages\\": {},
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abdul\\Desktop\\Werk\\00 Blazor\\08 AppSyncnfusion Met taal\\BlazorApp1\\BlazorApp1.csproj",
+      "projectUniqueName": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\08 AppSyncnfusion Met taal\\BlazorApp1\\BlazorApp1.csproj",
       "projectName": "BlazorApp1",
-      "projectPath": "C:\\Users\\Abdul\\Desktop\\Werk\\00 Blazor\\08 AppSyncnfusion Met taal\\BlazorApp1\\BlazorApp1.csproj",
-      "packagesPath": "C:\\Users\\Abdul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abdul\\Desktop\\Werk\\00 Blazor\\08 AppSyncnfusion Met taal\\BlazorApp1\\obj\\",
+      "projectPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\08 AppSyncnfusion Met taal\\BlazorApp1\\BlazorApp1.csproj",
+      "packagesPath": "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\08 AppSyncnfusion Met taal\\BlazorApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Abdul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AbdulAbdulbawab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7561,7 +7561,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://horlings.pkgs.visualstudio.com/_packaging/AeolusUpstream/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -7628,7 +7629,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

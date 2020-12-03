@@ -2,9 +2,12 @@
 @using XML_Read_object_data_from_an_file_xml.Controllers
 @using XML_Read_object_data_from_an_file_xml.Data
 
+
 <button @onclick="Readxml">Read XML Student</button>
 <button @onclick="ReadClassSchool">Read XML Class School</button>
 <button @onclick="ReadBerichtHeader">Read XML Header</button>
+
+
 
 
 @if (student != null)
@@ -40,14 +43,15 @@
 {
     if (bericht.Header != null)
     {
-<div>
-    Hallo Bericht Code: 
-    @bericht.Header.BerichtCode;
-</div>
+        <div>
+            Hallo Bericht Code:
+            @bericht.Header.BerichtCode;
+        </div>
     }
 
 }
 @code {
+
     ReadController controller = new ReadController();
     Student student;
     ClassSchool classSchool;
@@ -67,6 +71,8 @@
         bericht = controller.ReadBerichtHeader();
         StateHasChanged();
     }
+
+
 
 
 }
