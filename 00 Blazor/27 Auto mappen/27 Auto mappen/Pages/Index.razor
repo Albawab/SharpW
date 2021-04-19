@@ -1,0 +1,109 @@
+﻿@page "/"
+@using AutoMapper;
+@using _27_Auto_mappen.Data;
+
+<h6>@destination.Id</h6>
+<h6>@destination.FirstName</h6>
+<h6>@destination.LastName</h6>
+<h6>@destination.Address</h6>
+<br>
+<br>
+
+<h1>Met Object Address</h1>
+
+<h4>@metAddressObject.Id</h4>
+<h4>@metAddressObject.FirstName</h4>
+<h4>@metAddressObject.LastName</h4>
+<h4>@metAddressObject.Address</h4>
+<h4>@metAddressObject.AddressObject.City</h4>
+<h4>@metAddressObject.AddressObject.Country</h4>
+<h4>@metAddressObject.AddressObject.State</h4>
+<br>
+<br>
+
+
+<h1>Mappen List</h1>
+@foreach (var addressPersists in authorModel.AddressPersists)
+{
+    <h4>@addressPersists.City</h4>
+}
+
+@code{
+    AuthorDTO destination;
+    AuthorModel metAddressObject;
+    AuthorModel authorModel = new AuthorModel();
+    protected override void OnInitialized()
+    {
+        var config = new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<AuthorModel, AuthorDTO>();
+        });
+        IMapper iMapper = config.CreateMapper();
+        var source = new AuthorModel();
+        source.Id = 1;
+        source.FirstName = "Joydip";
+        source.LastName = "Kanjilal";
+        source.Address = "India";
+        destination = iMapper.Map<AuthorModel, AuthorDTO>(source);
+
+        //=========================================================================================================> Letop: De namen.
+        var configObject = new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<AuthorDTO, AuthorModel>().ForMember(d => d.AddressObject, map => map.MapFrom(
+            source => new AddressFullDto
+            {
+                City = source.City,
+                State = source.State,
+                Country = source.Country
+            }));
+        });
+
+        IMapper iMapperObject = configObject.CreateMapper();
+        var sourceObject = new AuthorDTO();
+        sourceObject.Id = 3;
+        sourceObject.FirstName = "Joydip";
+        sourceObject.LastName = "Kanjilal";
+        sourceObject.Address = "India";
+
+        sourceObject.City = "Amsterdam";
+        sourceObject.Country = "Nederland";
+        sourceObject.State = "G";
+
+        AddressFullDto HuidigeAddressObject = new AddressFullDto();
+        metAddressObject = iMapperObject.Map<AuthorDTO, AuthorModel>(sourceObject);
+
+        //=========================================================================================================> List;
+
+        var configuration = new MapperConfiguration(cfg => cfg.CreateMap<AddressFullDto, AddressPersist>());
+        IMapper iMapperlist = configuration.CreateMapper();
+
+        AuthorDTO authorDTO = new();
+        authorDTO.AddressObjects = new() { new AddressFullDto { City = "Amsterdanm" }, new AddressFullDto { City = "Utrecht" }, new AddressFullDto { City = "Alphen a/d /Rijn" } };
+
+        IList<AddressPersist> list = iMapperlist.Map<List<AddressFullDto>, IList<AddressPersist>>(authorDTO.AddressObjects);
+
+
+        authorModel.AddressPersists = list.ToList();
+
+        //=========================================================================================================> List;
+
+        var configurationDifferentName = new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<DifferentNameFull, DifferentNamePresist>().ForMember(d => d.IdPresist, map => map.MapFrom(
+            source => new DifferentNameFull
+            {
+                Id = source.Id,
+            })) ;
+        });
+
+        IMapper iMapperDifferentName = configurationDifferentName.CreateMapper();
+
+        DifferentNameFull differentNameFull = new() { Id = 1 };
+        iMapperDifferentName.Map<DifferentNameFull,DifferentNamePresist>(differentNameFull);
+
+        DifferentNamePresist differentNamePresist = new();
+        differentNamePresist = iMapperDifferentName.Map<DifferentNameFull, DifferentNamePresist>(differentNameFull);
+
+        //https://stackoverflow.com/questions/21173057/automapper-map-objects-with-ienumerableanothertype
+    }
+}

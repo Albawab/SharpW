@@ -1,18 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ClassSchool>
-  <Naam>Mborijnland</Naam>
-  <Students>
-    <Student>
-      <Id>1</Id>
-      <Naam>Abdul</Naam>
-    </Student>
-    <Student>
-      <Id>2</Id>
-      <Naam>Sam</Naam>
-    </Student>
-    <Student>
-      <Id>3</Id>
-      <Naam>Rayan</Naam>
-    </Student>    
-  </Students>
+	<Naam>Mborijnland</Naam>
+	<Students>
+		<Student>
+			<Id>1</Id>
+			<Naam>Abdul</Naam>
+			<Langte>180</Langte>
+			<GD>1987-06-04</GD>
+
+		</Student>
+		<Student>
+			<Id>2</Id>
+			<Naam>Sam</Naam>
+			<Langte>XXXLang</Langte>
+			<GD>2016-12-15</GD>
+		</Student>
+		<Student>
+			<Id>3</Id>
+			<Naam>Rayan</Naam>
+			<Langte>M</Langte>
+			<GD>2018-12-04</GD>
+		</Student>
+	</Students>
 </ClassSchool>

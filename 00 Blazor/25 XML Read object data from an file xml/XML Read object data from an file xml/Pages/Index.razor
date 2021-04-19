@@ -2,12 +2,14 @@
 @using XML_Read_object_data_from_an_file_xml.Controllers
 @using XML_Read_object_data_from_an_file_xml.Data
 
-
 <button @onclick="Readxml">Read XML Student</button>
-<button @onclick="ReadClassSchool">Read XML Class School</button>
+<br />
+<button @onclick="ReadClassSchool">Read XML Class School</button> Er is Twee manieren om Enum te lezen.
+<br />
 <button @onclick="ReadBerichtHeader">Read XML Header</button>
-
-
+<br />
+<button @onclick="ReadInheritance">Read XML inheritance </button>
+<br />
 
 
 @if (student != null)
@@ -31,6 +33,8 @@
             <h5>Student</h5>
             <div><label>Id: </label>@huidigeStudent.Id</div>
             <div><label>Name: </label>@huidigeStudent.Naam</div>
+            <div><label>Langte: </label>@huidigeStudent.Langte</div>
+            <div><label>GD: </label>@huidigeStudent.GD</div>
             <br />
             <hr />
 
@@ -41,6 +45,8 @@
 
 @if (bericht != null)
 {
+    <br />
+    <hr />
     if (bericht.Header != null)
     {
         <div>
@@ -48,14 +54,32 @@
             @bericht.Header.BerichtCode;
         </div>
     }
+    <br />
+    <hr />
+
+}
+
+@if (Baby != null)
+{
+    <br />
+    <hr />
+    <div>
+        Hallo Baby: @Baby.Naam
+    </div>
+    <div>
+        Soort Melk Drinken: @Baby.SoortMelkDrinken
+    </div>
+    <br />
+    <hr />
 
 }
 @code {
-
     ReadController controller = new ReadController();
     Student student;
     ClassSchool classSchool;
     Bericht bericht;
+    Person person;
+    Baby Baby;
     private void Readxml()
     {
         student = controller.ReadXml();
@@ -72,7 +96,13 @@
         StateHasChanged();
     }
 
-
-
+    private void ReadInheritance()
+    {
+        person = controller.ReadInheritance();
+        if (person is Baby baby)
+        {
+            this.Baby = baby;
+        }
+    }
 
 }
