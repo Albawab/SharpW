@@ -13,6 +13,8 @@ namespace _27_Auto_mappen.Data
         public string Address {get; set;}
         public AddressFullDto AddressObject {get; set;}
         public List<AddressPersist> AddressPersists { get; set; }
+
+        public DifferentNamePresist DifferentNamePresist { get; set; }
     }
 }
 

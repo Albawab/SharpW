@@ -22,16 +22,26 @@
 <br>
 
 
+
+
 <h1>Mappen List</h1>
 @foreach (var addressPersists in authorModel.AddressPersists)
 {
     <h4>@addressPersists.City</h4>
 }
 
+
+
+<h1>Met Andere naam van een property.</h1>
+<h4>@differentNameFull.Id</h4>
+<h4>@differentNameFull.FirstName</h4>
+<h4>@differentNameFull.DifferentNamePresist.IdPresist ===============> Hier</h4>
+
 @code{
     AuthorDTO destination;
     AuthorModel metAddressObject;
     AuthorModel authorModel = new AuthorModel();
+    AuthorModel differentNameFull = new();
     protected override void OnInitialized()
     {
         var config = new MapperConfiguration(cfg =>
@@ -85,25 +95,27 @@
 
         authorModel.AddressPersists = list.ToList();
 
-        //=========================================================================================================> List;
+        //=========================================================================================================> Andere naam;
 
         var configurationDifferentName = new MapperConfiguration(cfg =>
         {
-            cfg.CreateMap<DifferentNameFull, DifferentNamePresist>().ForMember(d => d.IdPresist, map => map.MapFrom(
-            source => new DifferentNameFull
+            cfg.CreateMap<AuthorDTO, AuthorModel>().ForMember(d => d.DifferentNamePresist, map => map.MapFrom(
+            source => new DifferentNamePresist
             {
-                Id = source.Id,
-            })) ;
+                IdPresist = source.DifferentNameFull.Id
+            }));
         });
 
         IMapper iMapperDifferentName = configurationDifferentName.CreateMapper();
 
-        DifferentNameFull differentNameFull = new() { Id = 1 };
-        iMapperDifferentName.Map<DifferentNameFull,DifferentNamePresist>(differentNameFull);
+        var authorDTODifferentName = new AuthorDTO();
+        authorDTODifferentName.Id = 4;
+        authorDTODifferentName.FirstName = "Different Name";
+        authorDTODifferentName.LastName = "Different Name";
+        authorDTODifferentName.Address = "Different Name";
+        authorDTODifferentName.DifferentNameFull = new DifferentNameFull() { Id = 1 };
 
-        DifferentNamePresist differentNamePresist = new();
-        differentNamePresist = iMapperDifferentName.Map<DifferentNameFull, DifferentNamePresist>(differentNameFull);
 
-        //https://stackoverflow.com/questions/21173057/automapper-map-objects-with-ienumerableanothertype
+        differentNameFull = iMapperDifferentName.Map<AuthorDTO, AuthorModel>(authorDTODifferentName);
     }
 }

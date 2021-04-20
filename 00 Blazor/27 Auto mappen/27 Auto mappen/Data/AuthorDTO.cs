@@ -17,5 +17,7 @@ namespace _27_Auto_mappen.Data
         public string Country { get; set; }
 
         public List<AddressFullDto> AddressObjects { get; set; }
+
+        public DifferentNameFull DifferentNameFull { get; set; }
     }
 }
