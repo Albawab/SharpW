@@ -16,7 +16,7 @@
 <h4>@metAddressObject.LastName</h4>
 <h4>@metAddressObject.Address</h4>
 <h4>@metAddressObject.AddressObject.City</h4>
-<h4>@metAddressObject.AddressObject.Country</h4>
+<h4>@metAddressObject.AddressObject.CountryFullDto</h4>
 <h4>@metAddressObject.AddressObject.State</h4>
 <br>
 <br>
@@ -29,19 +29,38 @@
 {
     <h4>@addressPersists.City</h4>
 }
+<br>
+<br>
 
+
+<h1>Mappen List Inside andere object. Elke item heeft andere naam.</h1>
+@foreach (var addressPersists in allObjectMetListEnAnotherName.AddressPersists)
+{
+    <h4>@addressPersists.CountryPersist</h4>
+}
+<br>
+<br>
 
 
 <h1>Met Andere naam van een property.</h1>
 <h4>@differentNameFull.Id</h4>
 <h4>@differentNameFull.FirstName</h4>
 <h4>@differentNameFull.DifferentNamePresist.IdPresist ===============> Hier</h4>
+<br>
+<br>
+
+<h1>To Int.</h1>
+<h4>@destinationToInt.ToInt</h4>
+<br>
+<br>
 
 @code{
     AuthorDTO destination;
+    AuthorModel destinationToInt;
     AuthorModel metAddressObject;
     AuthorModel authorModel = new AuthorModel();
     AuthorModel differentNameFull = new();
+    AuthorModel allObjectMetListEnAnotherName;
     protected override void OnInitialized()
     {
         var config = new MapperConfiguration(cfg =>
@@ -64,7 +83,7 @@
             {
                 City = source.City,
                 State = source.State,
-                Country = source.Country
+                CountryFullDto = source.Country
             }));
         });
 
@@ -94,6 +113,24 @@
 
 
         authorModel.AddressPersists = list.ToList();
+        // =============================================> List met object met another naam.
+
+        var configurationListMetObject = new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<AuthorDTO, AuthorModel>().ForMember(d => d.AddressPersists, map => map.MapFrom(source => source.AddressObjects));
+            cfg.CreateMap<AddressFullDto, AddressPersist>().ForMember(d => d.CountryPersist, map => map.MapFrom(source => source.CountryFullDto ));
+
+        }) ;
+
+        IMapper iMapperlistListMetObject = configurationListMetObject.CreateMapper();
+
+        AuthorDTO ListMetObject = new();
+        ListMetObject.AddressObjects = new() { new AddressFullDto { CountryFullDto = "Holland" }, new AddressFullDto { CountryFullDto = "Syria" }, new AddressFullDto { CountryFullDto = "Lebanon" } };
+
+
+        allObjectMetListEnAnotherName = iMapperlistListMetObject.Map<AuthorDTO, AuthorModel>(ListMetObject);
+
+
 
         //=========================================================================================================> Andere naam;
 
@@ -117,5 +154,45 @@
 
 
         differentNameFull = iMapperDifferentName.Map<AuthorDTO, AuthorModel>(authorDTODifferentName);
+
+
+        //======================================================================================================================> list inside class met property.
+
+
+        var configListWitProperty = new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<AuthorModel, AuthorDTO>();
+        });
+        IMapper iMapperListWitProperty = configListWitProperty.CreateMapper();
+        var ListWitProperty = new AuthorModel();
+        ListWitProperty.Id = 1;
+        ListWitProperty.FirstName = "Joydip";
+        ListWitProperty.LastName = "Kanjilal";
+        ListWitProperty.Address = "India";
+        ListWitProperty.Emails = new List<Emails>() { new Emails() { Email = "A@A.C" } };
+
+        destination = iMapperListWitProperty.Map<AuthorModel, AuthorDTO>(ListWitProperty);
+        //======================================================================================================================> string To int.
+        var configurationToInt = new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<AuthorDTO, AuthorModel>().ForMember(d => d.ToInt, map => map.MapFrom(
+            source => int.Parse(source.ToInt)));
+        });
+
+        IMapper iMapperToInt = configurationToInt.CreateMapper();
+        var sourceToInt = new AuthorDTO();
+        sourceToInt.ToInt = "33";
+        destinationToInt = iMapperToInt.Map<AuthorDTO, AuthorModel>(sourceToInt);
+
+
     }
+
 }
+
+
+<style>
+    h1{
+        color:red;
+    }
+
+</style>

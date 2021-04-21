@@ -8,6 +8,7 @@ namespace _27_Auto_mappen.Data
     public class AuthorDTO
     {
         public int Id { get; set; }
+        public string ToInt { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Address { get; set; }
@@ -19,5 +20,7 @@ namespace _27_Auto_mappen.Data
         public List<AddressFullDto> AddressObjects { get; set; }
 
         public DifferentNameFull DifferentNameFull { get; set; }
+
+        public ICollection<Emails> Emails { get; set; }
     }
 }
