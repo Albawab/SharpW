@@ -1,0 +1,48 @@
+﻿@page "/"
+
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Calendars
+@using Syncfusion.Blazor.Grids
+@using _27_Grid_EditTemplate_DateTime_Validatie.Data
+
+<SfGrid DataSource="weatherForecasts" Toolbar="@(new List<string>() {"Add","Edit", "Delete"})">
+    <GridEditSettings AllowAdding="true" AllowDeleting="true" Mode="EditMode.Dialog"></GridEditSettings>
+
+    <GridColumns>
+        @foreach (var property in typeof(WeatherForecast).GetProperties())
+        {
+
+
+            @if (property.PropertyType == typeof(DateTime?))
+            {
+                <GridColumn Field=@property.Name Type="ColumnType.Date" EditType="EditType.DatePickerEdit" DefaultValue="DateTime.Now" Format="@(property.PropertyType == typeof(DateTime?) ? "dd-MM-yyyy" : "")" TextAlign="TextAlign.Center">
+                    <EditTemplate>
+
+                        <SfDatePicker TValue="DateTime?" @bind-Value="@((context as WeatherForecast).Date)" Min='@DateTime.Now'>
+                        </SfDatePicker>
+
+                    </EditTemplate>
+
+                    <Template>
+                        @{
+                            if (context is WeatherForecast)
+                            {
+                                var apiResourceSecretPersistDto = (context as WeatherForecast);
+                                <span>@apiResourceSecretPersistDto.Date</span>
+                            }
+                        }
+                    </Template>
+                </GridColumn>
+            }
+            else
+            {
+                <GridColumn Field=@property.Name ValidationRules="(new ValidationRules() { Number = true})" TextAlign="TextAlign.Center" ShowColumnMenu="true"></GridColumn>
+            }
+
+        }
+    </GridColumns>
+</SfGrid>
+
+@code{
+    List<WeatherForecast> weatherForecasts = new List<WeatherForecast>();
+}
