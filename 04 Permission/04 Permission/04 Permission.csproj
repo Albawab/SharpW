@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>_04_Permission</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Aeolus\Aeolus.Shared.Permissions\src\Aeolus.Shared.Permissions\Aeolus.Shared.Permissions.csproj" />
+  </ItemGroup>
+
+</Project>
