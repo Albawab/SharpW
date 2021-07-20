@@ -1178,11 +1178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\000 Werk\\Import\\Import\\Import.csproj",
+      "projectUniqueName": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\000 Werk\\Import\\Import\\Import.csproj",
       "projectName": "Import",
-      "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\000 Werk\\Import\\Import\\Import.csproj",
+      "projectPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\000 Werk\\Import\\Import\\Import.csproj",
       "packagesPath": "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\000 Werk\\Import\\Import\\obj\\",
+      "outputPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\000 Werk\\Import\\Import\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1201,9 +1201,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\000 Werk\\Import\\Aeolus.Blazor.Common\\Aeolus.Blazor.Common.csproj": {
-              "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\000 Werk\\Import\\Aeolus.Blazor.Common\\Aeolus.Blazor.Common.csproj"
+            "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\000 Werk\\Import\\Aeolus.Blazor.Common\\Aeolus.Blazor.Common.csproj": {
+              "projectPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\000 Werk\\Import\\Aeolus.Blazor.Common\\Aeolus.Blazor.Common.csproj"
             }
           }
         }
@@ -1216,6 +1217,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "StyleCop.Analyzers": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -1250,7 +1252,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
