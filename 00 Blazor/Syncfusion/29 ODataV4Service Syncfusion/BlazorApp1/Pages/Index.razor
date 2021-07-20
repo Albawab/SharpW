@@ -1,0 +1,64 @@
+﻿@page "/"
+@using System.ComponentModel.DataAnnotations;
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Data
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.DropDowns
+@using Newtonsoft.Json
+
+
+@inject IJSRuntime JSRuntime
+
+<SfButton OnClick="onclick">Log as <b>Active</b> false</SfButton>
+<SfButton OnClick="ClearFilter">ClearFiltering</SfButton>
+
+<SfGrid @ref="Grid" AllowFiltering="true" TValue="CustomerViewModel" Query="@QueryData">
+    <SfDataManager Url="http://localhost:64956/odata/books" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
+    <GridColumns>
+        <GridColumn Field=@nameof(CustomerViewModel.Id) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(CustomerViewModel.Name) HeaderText="Customer Name" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(CustomerViewModel.LastName) HeaderText="Last Name" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(CustomerViewModel.CreditLimit) HeaderText="Credit Limit" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(CustomerViewModel.Active) HeaderText="Active" Type="ColumnType.Boolean" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+@code{
+
+    public Query QueryData = new Query();
+    SfGrid<CustomerViewModel> Grid { get; set; }
+    public List<string> GenderDropDown { get; set; } = new List<string>();
+
+    public void onclick()
+    {
+        QueryData = new Query();
+        var ColPre = new WhereFilter();
+        List<WhereFilter> Predicate = new List<WhereFilter>();
+        Predicate.Add(new WhereFilter()
+        {
+            Field = "Active",
+            value = false,
+            Operator = "equal",
+            IgnoreCase = true
+        });
+        ColPre = WhereFilter.Or(Predicate);
+        QueryData = new Query().Where(ColPre);
+    }
+    public async Task ClearFilter()
+    {
+        await Grid.ClearFiltering();
+    }
+    public class CustomerViewModel
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public DateTime? RegistrationDate { get; set; }
+        public int CreditLimit { get; set; }
+        public bool Active { get; set; }
+        public bool IsDeleted { get; set; }
+    }
+}

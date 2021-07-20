@@ -7134,7 +7134,7 @@
       ]
     },
     "System.Net.NameResolution/4.3.0": {
-      "sha512": "AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
+      "sha512": "bquZf2n1wlrt8dOxNoH9FXQFSJvpVFID6QWqYL/QjqQy4R0FhczzyyLyQZWmFq6wm8WrbQtoBKrqTWuDuG5BAg==",
       "type": "package",
       "path": "system.net.nameresolution/4.3.0",
       "files": [
@@ -9949,6 +9949,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\06 Grid\\Aeolus.Blazor.Common\\Aeolus.Blazor.Common.csproj": {
               "projectPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\06 Grid\\Aeolus.Blazor.Common\\Aeolus.Blazor.Common.csproj"
@@ -9964,6 +9965,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Blazor.HttpClient": {
             "target": "Package",
@@ -10036,7 +10038,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "2CwY3WZG4bTA4JZQqNDnSWyr8YNABc5JpGVFlOTtfJU6f4+HbLFcjUT8MkZ/ju8Fvla9+M++pObaOQpR2VFoaw==",
+  "dgSpecHash": "Eb8GvWUAx9INbv/lPEkU7LzvbZsa9IPOD0K/NXdjDqbzOpv1ZvApIs1xFzjdUhkx8MBtvUZty+mNMua4qB2KUA==",
   "success": true,
   "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\00 Blazor\\02 FormEdit-syncfusion\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\syncfusion.ej2.blazor\\17.2.0.40-beta\\syncfusion.ej2.blazor.17.2.0.40-beta.nupkg.sha512",
-    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
-    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
-    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
   ],
   "logs": []
 }

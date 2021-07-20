@@ -1,0 +1,14 @@
+﻿<h3>Error</h3>
+
+<CascadingValue Value="this">
+    @ChildContent
+</CascadingValue>
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public void ProcessError(Exception ex)
+        {
+
+        }
+}

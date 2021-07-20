@@ -1,0 +1,9 @@
+﻿@page "/"
+
+@inject HttpClient httpClient
+
+@code{     protected override void OnInitialized()
+    {
+        var result = httpClient.GetAsync("http://localhost:6506/WeatherForecast");
+    }
+}

@@ -1,0 +1,18 @@
+SET IDENTITY_INSERT [dbo].ApiResources ON
+GO
+INSERT INTO [dbo].ApiResources (  [Id]
+      ,[Enabled]
+      ,[Name]
+      ,[DisplayName]
+      ,[Description]
+      ,[AllowedAccessTokenSigningAlgorithms]
+      ,[ShowInDiscoveryDocument]
+      ,[Created]
+      ,[Updated]
+      ,[LastAccessed]
+      ,[NonEditable])
+VALUES ( '3', '1','aeolus.beveiliging.api','aeolus.beveiliging.api','aeolus.beveiliging.api','','1','2020-2-2','','','1')
+GO
+/* Turn Identity Insert OFF  */
+SET IDENTITY_INSERT [dbo].ApiResources OFF
+GO

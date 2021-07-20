@@ -23,7 +23,9 @@ namespace _04_Permission
         public static string PackPermissionsIntoString(this IEnumerable<Permission> permissions)
         {
             var packPermissionsIntoString = permissions.Aggregate("", (s, permission) => s + (char)permission);
-            return permissions.Aggregate("", (s, permission) => s + (char)permission);
+            var a = "㈁";
+            var b = "⇿";
+            return packPermissionsIntoString;
         }
 
 
