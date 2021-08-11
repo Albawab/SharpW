@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ph+SxeeD3i1oRwuDf8Ln5ni062mKAYYMuom0h0Bcf0W7z61/y/jIdTSp3a498daYRo/zD0nsUTF4SMC/f90Dg==",
+  "dgSpecHash": "xPq7wpBCTot62+w2Oz8xh7NIt7LsetLFvQ2AM9L+cJVBgzMzWjk39KxtvEhICpCZssnFVeapngjVDlhTuP9PVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\Balck Jack\\ConsoleBlack Jack.csproj",
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\Balck Jack\\ConsoleBlack Jack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",

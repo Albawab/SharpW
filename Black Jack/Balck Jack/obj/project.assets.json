@@ -1179,11 +1179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\Balck Jack\\ConsoleBlack Jack.csproj",
+      "projectUniqueName": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\Balck Jack\\ConsoleBlack Jack.csproj",
       "projectName": "ConsoleBlack Jack",
-      "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\Balck Jack\\ConsoleBlack Jack.csproj",
+      "projectPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\Balck Jack\\ConsoleBlack Jack.csproj",
       "packagesPath": "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\Balck Jack\\obj\\",
+      "outputPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\Balck Jack\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1197,16 +1197,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://horlings.pkgs.visualstudio.com/_packaging/AeolusUpstream/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\BlackJackResources\\BlackJackResources.csproj": {
-              "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\BlackJackResources\\BlackJackResources.csproj"
+            "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\BlackJackResources\\BlackJackResources.csproj": {
+              "projectPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\BlackJackResources\\BlackJackResources.csproj"
             },
-            "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\GameBlackJack\\GameBlackJack.csproj": {
-              "projectPath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\GameBlackJack\\GameBlackJack.csproj"
+            "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\GameBlackJack\\GameBlackJack.csproj": {
+              "projectPath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\GameBlackJack\\GameBlackJack.csproj"
             }
           }
         }
@@ -1219,6 +1221,7 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
@@ -1243,7 +1246,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

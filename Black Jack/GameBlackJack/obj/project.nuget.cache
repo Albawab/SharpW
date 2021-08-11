@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YANEgZnZ24L6ai25ngwqGZiXN7OcBAh+MLT5XOSs3TSDVc0W0Cx8WRWxrTBoqg4HNwVjuORzuZTC+8dt0DF8nw==",
+  "dgSpecHash": "N6zBRv58wslIppbcXDGHjl3JhZGn8iSZIpWYP7lHFK+5ORCTLdqHvZ0tu/A032Mr9YTz6C9piA6/STnmA5sTxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Desktop\\Sharp\\Black Jack\\GameBlackJack\\GameBlackJack.csproj",
+  "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\GameBlackJack\\GameBlackJack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
