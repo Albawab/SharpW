@@ -1,0 +1,54 @@
+﻿@page "/"
+
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Data
+@using Syncfusion.Blazor.Calendars
+
+
+<SfDateRangePicker TValue="DateTime?" @ref="DatePicker" Placeholder="Choose a Range">
+    <DateRangePickerEvents  TValue="DateTime?" ValueChange="OnChange"></DateRangePickerEvents>
+</SfDateRangePicker>
+
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" Query="@Qry" AllowPaging="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Customer Name" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(Order.OrderDate) HeaderText=" Order Date" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code{
+    private SfGrid<Order> DefaultGrid;
+    public Query Qry = new Query();
+    SfDateRangePicker<DateTime?> DatePicker { get; set; }
+    public List<Order> Orders { get; set; }
+    public void OnChange(RangePickerEventArgs<DateTime?> Args)
+    {
+        var Col1Pre = new WhereFilter();
+        var predicate = new List<WhereFilter>();
+        predicate.Add(new WhereFilter() { Condition = "or", Field = "OrderDate", value = Args.StartDate, Operator = "greaterthanorequal" });
+        predicate.Add(new WhereFilter() { Condition = "or", Field = "OrderDate", value = Args.EndDate, Operator = "lessthanorequal" });
+        Col1Pre = WhereFilter.And(predicate);
+        Qry = new Query().Where(Col1Pre); // to filter the Grid 
+    }
+    protected override void OnInitialized()
+    {
+        Orders = Enumerable.Range(1, 75).Select(x => new Order()
+        {
+            OrderID = 1000 + x,
+            CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+            Freight = 2.1 * x,
+            OrderDate = DateTime.Now.AddDays(-x),
+        }).ToList();
+    }
+    public class Order
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public double? Freight { get; set; }
+    }
+}

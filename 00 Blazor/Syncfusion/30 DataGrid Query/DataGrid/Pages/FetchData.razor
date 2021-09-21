@@ -1,0 +1,77 @@
+﻿@page "/fetchdata"
+@using Syncfusion.Blazor.Navigations
+<SfToolbar>
+    <ToolbarItems>
+        @foreach (var item in Tool)
+        {
+            if (item.GetType().Name == "String")
+            {
+                <ToolbarItem @key="@(item)" Id="@($"{Parent}_{item}")" Text="@($"{item}")"></ToolbarItem>
+            }
+            else
+            {
+                IDictionary<string, object> _toolOptions = new Dictionary<string, object>();
+                if (item is ToolbarItem tItem)
+                {
+                    _toolOptions = new Dictionary<string, object>() {
+                            { nameof(tItem.Id), tItem.Id },
+                            { nameof(tItem.TooltipText), tItem.TooltipText },
+                            { nameof(tItem.Text), tItem.Text },
+                            { nameof(tItem.PrefixIcon), tItem.PrefixIcon },
+                            { nameof(tItem.Align), tItem.Align },
+                            { nameof(tItem.CssClass), tItem.CssClass },
+                            { nameof(tItem.Disabled), tItem.Disabled },
+                            { nameof(tItem.HtmlAttributes), tItem.HtmlAttributes },
+                            { nameof(tItem.Overflow), tItem.Overflow },
+                            { nameof(tItem.ShowAlwaysInPopup), tItem.ShowAlwaysInPopup },
+                            { nameof(tItem.ShowTextOn), tItem.ShowTextOn },
+                            { nameof(tItem.SuffixIcon), tItem.SuffixIcon },
+                            { nameof(tItem.Template), tItem.Template },
+                            { nameof(tItem.Type), tItem.Type },
+                            { nameof(tItem.Visible), tItem.Visible },
+                            { nameof(tItem.Width), tItem.Width }
+                        };
+                }
+
+                if (item is ItemModel iItem)
+                {
+                    _toolOptions = new Dictionary<string, object>() {
+                            { nameof(iItem.Id), iItem.Id },
+                            { nameof(iItem.TooltipText), iItem.TooltipText },
+                            { nameof(iItem.Text), iItem.Text },
+                            { nameof(iItem.PrefixIcon), iItem.PrefixIcon },
+                            { nameof(iItem.Align), iItem.Align },
+                            { nameof(iItem.CssClass), iItem.CssClass },
+                            { nameof(iItem.Disabled), iItem.Disabled },
+                            { nameof(iItem.HtmlAttributes), iItem.HtmlAttributes },
+                            { nameof(iItem.Overflow), iItem.Overflow },
+                            { nameof(iItem.ShowAlwaysInPopup), iItem.ShowAlwaysInPopup },
+                            { nameof(iItem.ShowTextOn), iItem.ShowTextOn },
+                            { nameof(iItem.SuffixIcon), iItem.SuffixIcon },
+                            { nameof(iItem.Template), iItem.Template },
+                            { nameof(iItem.Type), iItem.Type },
+                            { nameof(iItem.Visible), iItem.Visible },
+                            { nameof(iItem.Width), iItem.Width }
+                        };
+                }
+                <ToolbarItem @key="@(item)" @attributes="@GetAttributes(_toolOptions, item)"></ToolbarItem>}
+
+        }
+    </ToolbarItems>
+</SfToolbar>
+@code{
+    public class Order
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public double? Freight { get; set; }
+    }
+    public string Parent { get; set; } = "Grid";
+    public List<object> Tool = new List<object>() { "Add", "Edit", "Delete", "Cancel", "Update", new ItemModel() { Template = z } };
+    private IDictionary<string, object> GetAttributes(IDictionary<string, object> _toolOptions, object currentItem)
+    {
+        return _toolOptions;
+    }
+    private static RenderFragment z =>@<ExportComp T="Order"></ExportComp>;
+}

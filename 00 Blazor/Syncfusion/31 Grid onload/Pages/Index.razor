@@ -1,0 +1,48 @@
+﻿@page "/"
+
+@using Syncfusion.Blazor.Grids;
+
+<div style="height: calc(100vw - 58rem);">
+    <SfGrid DataSource="@Orders" AllowPaging="true" AllowFiltering="true" AllowTextWrap="true" Height="100%">
+        <GridEvents OnLoad="Onload" TValue="Order"></GridEvents>
+        <GridColumns>
+            <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Center" Width="120"></GridColumn>
+            <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Customer Name" TextAlign="TextAlign.Center" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(Order.OrderDate) HeaderText=" Order Date" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Center" Width="130"></GridColumn>
+            <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Center" Width="120"></GridColumn>
+        </GridColumns>
+    </SfGrid>
+</div>
+@code{
+    private string gridHeight = "330";
+    public List<Order> Orders { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("started1");
+        await Task.Delay(600); //mimic asynchronous operation
+        Orders = Enumerable.Range(1, 75).Select(x => new Order()
+        {
+            OrderID = 1000 + x,
+            CustomerID = (new string[] { "ALFKI", "ANABOLNTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+            Freight = 2.1 * x,
+            OrderDate = (new DateTime[] { new DateTime(2010, 5, 1), new DateTime(2010, 5, 2), new DateTime(2010, 5, 3), })[new Random().Next(3)],
+        }).ToList();
+        Console.WriteLine("finished1");
+    }
+
+    private void Onload()
+    {
+        Console.WriteLine("started2");
+        //gridHeight = "630";
+        //StateHasChanged();
+        Console.WriteLine("finished2");
+    }
+
+    public class Order
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public double? Freight { get; set; }
+    }
+}

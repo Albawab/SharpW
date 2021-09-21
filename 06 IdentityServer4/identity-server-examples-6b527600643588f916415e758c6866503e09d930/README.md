@@ -1,0 +1,14 @@
+# Identity Server Quickstart
+
+This repository is based on the Quickstart guides from the [IdentityServer4 documentation](https://identityserver4.readthedocs.io/). The following projects are included: 
+
+* **Api** - An API application that can return a set of user claims in response to a get request to `/Identity`. This is created by by following the [Protecting an API using Client Credentials](https://identityserver4.readthedocs.io/en/latest/quickstarts/1_client_credentials.html) guide.
+* **Client** - A console application that makes a request to the Identity Server to request a token. It then uses that token to access the API application. This is created by following the [Protecting an API using Client Credentials](https://identityserver4.readthedocs.io/en/latest/quickstarts/1_client_credentials.html) guide.
+* **IdentityServer** - One example version of the Identity server. It uses in-memory users. This is created by following the [Interactive Applications with ASP.NET Core](https://identityserver4.readthedocs.io/en/latest/quickstarts/2_interactive_aspnetcore.html) guide.
+* **IdentityServerAspNetIdentity** - A more advanced instance of the IdentityServer4 setup. This links to part of the Identity framework from ASP.NET Core. This provides a way to add roles to users. The roles can be requested during the Authentication process with OpenID Connect. This was created by following the [Using ASP.NET Core Identity](https://identityserver4.readthedocs.io/en/latest/quickstarts/6_aspnet_identity.html) guide.
+* **MvcClient** - A MVC application that uses OpenID Connect for the authentication step. Once the user is authenticated by the IdentityServerAspNetIdentity project, a set of claims are returned. These include the roles. The project uses that information to guard one of the pages for users in the Owners role. This is created by following [Interactive Applications with ASP.NET Core](https://identityserver4.readthedocs.io/en/latest/quickstarts/2_interactive_aspnetcore.html) guide. It was then changed to work with the IdentityServerAspNetIdentity example.
+
+
+## Certificate Issues
+
+On macOS, runnning .NET Core 3.1.403, I needed to go into KeyChain and manually update the trust settings for the localhost development certificate. The SSL connection was refused until that was done. The advice for trying to resolve that was not working, including an [Microsoft GitHub issue](https://github.com/dotnet/aspnetcore/issues/19590) and a [linked article](https://gist.github.com/javiercn/d04855b7a3581bf97d1ab9597935413f#file-generate-sh) that talks about running through the steps to trust the certificate.

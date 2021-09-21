@@ -25,6 +25,7 @@ namespace _04_Permission
             var packPermissionsIntoString = permissions.Aggregate("", (s, permission) => s + (char)permission);
             var a = "㈁";
             var b = "⇿";
+            // packPermissionsIntoString = ℏ℔
             return packPermissionsIntoString;
         }
 

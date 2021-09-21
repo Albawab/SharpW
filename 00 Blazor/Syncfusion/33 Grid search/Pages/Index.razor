@@ -1,0 +1,90 @@
+﻿@page "/"
+
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Data
+@using Syncfusion.Blazor.Inputs
+
+<SfCheckBox @ref="CheckOne" TChecked="bool" Label="AREIL" ValueChange="ValueChangeOne" ></SfCheckBox>
+<SfCheckBox @ref="CheckTwo" TChecked="bool" Label="ANANTR"  ValueChange="ValueChangeTwo"></SfCheckBox>
+
+<SfTextBox Placeholder="Enter Text to Search" OnInput="SearchValueChange" ></SfTextBox>
+
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <div class="row">
+            @foreach (var day in GridData)
+            {
+
+            <h5 style="padding-top: 25px;">@day.Day.ToString("yyyy-MM-dd")</h5>
+            <SfGrid @ref="Grid" DataSource="@day.Digests" AllowPaging="true" Query="@QueryData">
+                <GridSearchSettings Key="@SearchKey"></GridSearchSettings>
+                <GridPageSettings PageCount="5" PageSizes="true"></GridPageSettings>
+                <GridColumns>
+                    <GridColumn Field=@nameof(OrdersDetails.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+                    <GridColumn Field=@nameof(OrdersDetails.CustomerID) HeaderText="Customer Name" Width="150"></GridColumn>
+                    <GridColumn Field=@nameof(OrdersDetails.OrderDate) HeaderText="Order Date" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+                    <GridColumn Field=@nameof(OrdersDetails.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+                </GridColumns>
+            </SfGrid>
+            }
+        </div>
+    </div>
+</div>
+@code{
+    SfGrid<OrdersDetails> Grid;
+    public string SearchKey = "";
+    public async Task SearchValueChange(Microsoft.AspNetCore.Components.ChangeEventArgs args)
+    {
+        SearchKey = args.Value.ToString();
+    }
+
+    SfCheckBox<bool> CheckOne;
+    SfCheckBox<bool> CheckTwo;
+    Query QueryData = new Query();
+    public void ValueChangeOne(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args)
+    {
+        if (args.Checked)
+        {
+            QueryData = new Query().Where("CustomerID", "equal", CheckOne.Label);
+        }
+        else
+            QueryData = new Query();
+    }
+    public void ValueChangeTwo(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args)
+    {
+        if (args.Checked)
+        {
+            QueryData = new Query().Where("CustomerID", "equal", CheckTwo.Label);
+        }
+        else
+            QueryData = new Query();
+    }
+    public List<Order> GridData { get; set; }
+    protected override void OnInitialized()
+    {
+        GridData = Enumerable.Range(1, 25).Select(x => new Order()
+        {
+            Day = DateTime.Now.AddDays(-x),
+            Digests = Enumerable.Range(1, 25).Select(x => new OrdersDetails()
+            {
+                OrderID = 1000 + x,
+                CustomerID = (new string[] { "AREIL", "ANTON", "ANANTR", "BLONP", "BOLID" })[new Random().Next(5)],
+                Freight = 2.1 * x,
+                OrderDate = DateTime.Now.AddDays(-x),
+            }).ToList()
+        }).ToList();
+    }
+    public class Order
+    {
+        public DateTime Day { get; set; }
+        public List<OrdersDetails> Digests { get; set; }
+    }
+    public class OrdersDetails
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public double? Freight { get; set; }
+    }
+}
