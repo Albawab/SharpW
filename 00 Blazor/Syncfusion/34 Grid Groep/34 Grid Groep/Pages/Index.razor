@@ -1,0 +1,139 @@
+﻿@page "/"
+
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Data
+@using Syncfusion.Blazor
+@using System.Collections
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <div class="row">
+            <SfGrid TValue="Customer" ID="Grid" AllowGrouping="true" AllowPaging="true" AllowSorting="true">
+                <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
+                <GridGroupSettings EnableLazyLoading="true" ShowGroupedColumn="true" Columns="@GroupedColumns">
+                    <CaptionTemplate>
+                        @{
+                            var order = (context as CaptionTemplateContext);
+                            <div>@order.Key</div>
+                        }
+                    </CaptionTemplate>
+                </GridGroupSettings>
+                <GridEvents OnActionBegin="GroupActionHandler" TValue="Customer"></GridEvents>
+                <GridAggregates>
+                    <GridAggregate>
+                        <GridAggregateColumns>
+                            <GridAggregateColumn Field=@nameof(Customer.UnitsInStock) Type="AggregateType.Sum">
+                                <GroupFooterTemplate>
+                                    @{
+                                        var Unit = (context as AggregateTemplateContext);
+                                        <div>
+                                            Total units: @Unit.Sum                                            
+                                        </div>
+                                    }
+                                </GroupFooterTemplate>
+                            </GridAggregateColumn>
+                        </GridAggregateColumns>
+                    </GridAggregate>
+                </GridAggregates>
+                <GridColumns>
+                    <GridColumn Field=@nameof(Customer.OrderID) HeaderText="Order ID" AllowGrouping="false" TextAlign="@TextAlign.Center" Width="180"></GridColumn>
+                    <GridColumn Field=@nameof(Customer.ProductName) HeaderText="Product" Width="200"></GridColumn>
+                    <GridColumn Field=@nameof(Customer.CustomerID) HeaderText="Customer Name" Width="170"></GridColumn>
+                    <GridColumn Field=@nameof(Customer.UnitsInStock) HeaderText="Units In Stock" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+                </GridColumns>
+            </SfGrid>
+        </div>
+    </div>
+</div>
+@code{
+    public string[] GroupedColumns = new string[] { "ProductName", "CustomerID" };
+    public void GroupActionHandler(ActionEventArgs<Customer> args)
+    {
+        // prevented ungrouping for product column.
+        if (args.RequestType == Syncfusion.Blazor.Grids.Action.UnGrouping && args.ColumnName == "ProductName")
+        {
+            args.Cancel = true;
+        }
+    }
+
+
+    // Implementing custom adaptor by extending the DataAdaptor class
+    public class CustomAdaptor : DataAdaptor
+    {
+        public List<Customer> customers { get; set; } = Customer.GetAllRecords();
+        // Performs data Read operation
+        public override object Read(DataManagerRequest dm, string key = null)
+        {
+            IEnumerable<Customer> DataSource = customers;
+            if (dm.Search != null && dm.Search.Count > 0)
+            {
+                // Searching
+                DataSource = DataOperations.PerformSearching(DataSource, dm.Search);
+            }
+            if (dm.Sorted != null && dm.Sorted.Count > 0)
+            {
+                // Sorting
+                DataSource = DataOperations.PerformSorting(DataSource, dm.Sorted);
+            }
+            if (dm.Where != null && dm.Where.Count > 0)
+            {
+                // Filtering
+                DataSource = DataOperations.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
+            }
+            int count = DataSource.Cast<Customer>().Count();
+            if (dm.Skip != 0)
+            {
+                //Paging
+                DataSource = DataOperations.PerformSkip(DataSource, dm.Skip);
+            }
+            if (dm.Take != 0)
+            {
+                DataSource = DataOperations.PerformTake(DataSource, dm.Take);
+            }
+            DataResult DataObject = new DataResult();
+            if (dm.Group != null)
+            {
+                IEnumerable ResultData = DataSource.ToList();
+                // Grouping
+                ResultData = DataUtil.Group<Customer>(DataSource, dm.Group[0], dm.Aggregates, 0, dm.GroupByFormatter, dm.LazyLoad, dm.LazyExpandAllGroup);
+                DataObject.Result = ResultData;
+                DataObject.Count = ResultData.Cast<object>().Count();
+                return dm.RequiresCounts ? DataObject : (object)ResultData;
+            }
+            return dm.RequiresCounts ? new DataResult() { Result = DataSource, Count = count } : (object)DataSource;
+        }
+    }
+    public class Customer
+    {
+        public int OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public string CustomerName { get; set; }
+        public string CustomerAddress { get; set; }
+        public string ProductName { get; set; }
+        public int ProductID { get; set; }
+        public string Quantity { get; set; }
+        public int UnitsInStock { get; set; }
+
+
+        public static List<Customer> GetAllRecords()
+        {
+            List<Customer> customers = new List<Customer>();
+            string[] CustomerId = {"VINET", "TOMSP", "HANAR", "VICTE", };
+
+
+            string[] Product = { "Chai", "Chang", "Outback Lager", "Flotemysost", "Mozzarella di Giovanni", "Röd Kaviar", "Longlife Tofu", "Rhönbräu Klosterbier", "Lakkalikööri", "Original Frankfurter" };
+            string[] CustomerName = { "Maria", "Ana Trujillo", "Antonio Moreno", "Thomas Hardy", "Helvetius Nagy", "Palle Ibsen", "Mary Saveley", "Paul Henriot", "Rita Müller", "Pirkko Koskitalo", "Paula Parente", "Karl Jablonski", "Matti Karttunen", "Zbyszek Piestrzeniewicz" };
+            string[] CustomerAddress = { "507 - 20th Ave. E.\r\nApt. 2A","Kirchgasse 6", "Sierras de Granada 9993", "Mehrheimerstr. 369", "Rua da Panificadora, 12", "2817 Milton Dr.", "Mehrheimerstr. 369" };
+            string[] QuantityPerUnit = { "10 boxes x 20 bags", "24 - 12 oz bottles", "12 - 550 ml bottles", "48 - 6 oz jars", "36 boxes", "12 - 8 oz jars", "12 - 1 lb pkgs.", "12 - 12 oz jars", "18 - 500 g pkgs.", "12 - 200 ml jars",
+                "1 kg pkg.", "10 - 500 g pkgs.", "100 - 250 g bags" };
+            int OrderID = 1001;
+            int i = 0; int j = 0; int k = 0; int l = 0; int m = 0;
+            for (int x = 0; x < 20000; x++)
+            {
+                i = i >= CustomerId.Length ? 0 : i; j = j >= CustomerName.Length ? 0 : j; k = k >= CustomerAddress.Length ? 0 : k; l = l >= Product.Length ? 0 : l; m = m >= QuantityPerUnit.Length ? 0 : m;
+                customers.Add(new Customer() { OrderID = OrderID + x, CustomerID = CustomerId[i], CustomerName = CustomerName[j], CustomerAddress = CustomerAddress[k], ProductName = Product[l], ProductID = x, Quantity = QuantityPerUnit[m], UnitsInStock = new Random().Next(1, 1000) });
+                i++; j++; k++; l++; m++;
+            }
+            return customers;
+        }
+    }
+}

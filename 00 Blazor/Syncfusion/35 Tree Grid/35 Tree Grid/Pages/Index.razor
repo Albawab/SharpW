@@ -1,0 +1,164 @@
+﻿@page "/"
+
+@using Syncfusion.Blazor.TreeGrid
+@using Syncfusion.Blazor.Grids
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <div class="row">
+            <SfTreeGrid @ref="TreeGrid" AllowSelection="true" DataSource="@TreeData" AutoCheckHierarchy="true" IdMapping="IdMapping" ParentIdMapping="ParentId" TreeColumnIndex="1">
+                <TreeGridEvents RowDataBound ="RowDataBoundHandler" DataBound="OnDataBound" OnLoad="OnTreeGridLoad"  TValue="TreeGridPermissionModel"></TreeGridEvents>
+                <TreeGridSelectionSettings EnableToggle="true" PersistSelection="true"></TreeGridSelectionSettings>
+                <TreeGridColumns>
+                    <TreeGridColumn Field="Id"  HeaderText="ID"></TreeGridColumn>
+                    <TreeGridColumn  ShowCheckbox="true" Field="Machtiging" IsPrimaryKey="true" HeaderText="Machtiging"></TreeGridColumn>
+                    <TreeGridColumn Field="Omschrijven" HeaderText="Omschrijven"></TreeGridColumn>
+                </TreeGridColumns>
+            </SfTreeGrid>
+        </div>
+    </div>
+</div>
+<br />
+<input type="submit" value="Save" @onclick="Save" />
+
+@code{        
+    
+    private void OnTreeGridLoad() 
+    {
+        this.TreeGrid.HideColumnAsync("ID");
+    }
+
+@*    bool MagDoor = true;
+    private async void RowSelectHandler(RowSelectEventArgs<TreeGridPermissionModel> args)
+    {
+        if (MagDoor)
+        {
+            await this.TreeGrid.SelectRowsAsync(new double[] {1,3, 2});
+        }
+
+
+        var checkedBox = this.TreeGrid.GetCheckedRecordsAsync().Result.ToList();
+        StateHasChanged();
+        MagDoor = false;
+    }*@
+public double[] SelectedNodeIndex = new double[] {1, 3 };
+
+
+private SfTreeGrid<TreeGridPermissionModel>
+TreeGrid;
+private void Save()
+{
+    var rijen = this.TreeGrid.GetSelectedRecordsAsync().Result.ToList();
+}
+
+public async Task OnDataBound(object args)
+{
+    await this.TreeGrid.SelectCheckboxesAsync(SelectedNodeIndex);
+}
+
+public void RowDataBoundHandler(RowDataBoundEventArgs<TreeGridPermissionModel> args)
+{
+
+    var Source = TreeGrid.GetCurrentViewRecords();
+    var keys = Source.GroupBy(rec => rec.ParentId).Where(g => g.Key != null).ToDictionary(g => g.Key?.ToString(), g => g.ToList()).Keys.ToList();//collect the ParentId values using GroupBy    
+    if (args.Data.ParentId == null || keys.Contains(args.Data.Id.ToString()))   //check whether the ParentId as null and TaskId contains the collected ParentId values 
+    {
+        args.Row.AddClass(new string[] { "parent-bold" });
+    }
+    else
+    {
+        args.Row.AddClass(new string[] { "child-padding" });
+    }
+}
+
+public List<TreeGridPermissionModel>
+TreeData { get; set; }
+
+protected override void OnInitialized()
+{
+    this.TreeData = TreeGridPermissionModel.GetPermissions();
+}
+
+
+public class TreeGridPermissionModel
+{
+    public int IdMapping { get; set; }
+    public int Id { get; set; }
+    public int? ParentId { get; set; }
+
+    public string Machtiging { get; set; }
+
+    public string Omschrijven { get; set; }
+
+    public static List<TreeGridPermissionModel>
+        GetPermissions()
+    {
+        List<TreeGridPermissionModel>
+            permissions = new();
+
+        permissions.AddRange(new List<TreeGridPermissionModel>
+            (){new TreeGridPermissionModel()
+                        {
+                        Id = 1,
+                        IdMapping = 1,
+                        ParentId = null,
+                        Machtiging = "Beveiliging",
+                        },
+
+                        new TreeGridPermissionModel()
+                        {
+                        Id = 1,
+                        IdMapping = 2,
+                        ParentId = 1,
+                        Machtiging = "Beheer",
+                        },
+
+                        new TreeGridPermissionModel()
+                        {
+                        Id = 2,
+                        IdMapping = 2,
+                        ParentId = null,
+                        Machtiging = "Overzichten",
+                        },
+
+                        new TreeGridPermissionModel()
+                        {
+                        Id = 3,
+                        IdMapping = 3,
+                        ParentId = 1,
+                        Machtiging = "Client Update",
+                        Omschrijven = "Deze permission geeft geen toestemming om een client te kunnen updaten."
+                        } });
+
+        return permissions;
+    }
+}
+}
+
+<style>
+    .parent-bold {
+        font-weight: bold;
+        background-color: #ededed;
+    }
+    .child-padding{
+        padding-left:20px;
+    }
+
+        .child-padding .e-rowcell:not(.e-gridclip) .e-treecolumn-container {
+            padding-left: 20px;
+        }
+
+    .e-grid .e-rowcell {
+        height: 45px
+    }
+
+    .e-columnheader {
+        height: 45px;
+    }
+
+    .e-grid .e-gridheader {
+        height: 45px;
+    }
+        .e-grid .e-gridheader .e-headercell {
+            background-color: lightgray;
+        }
+</style>
