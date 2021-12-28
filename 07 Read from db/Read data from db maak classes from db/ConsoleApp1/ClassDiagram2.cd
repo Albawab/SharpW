@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HenE.Aeolus.Beveiliging.Domein.AeolusRole">
+    <Position X="8.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAQAAEAAAAAQABAAAAAAAAAAgBAAAAAA=</HashCode>
+      <FileName>Entity\AeolusRole.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="RolePermissions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="HenE.Aeolus.Beveiliging.Domein.AeolusTenant">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQCAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\AeolusTenant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HenE.Aeolus.Beveiliging.Domein.AeolusRoleClaim">
+    <Position X="5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Entity\AeolusRoleClaim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HenE.Aeolus.Beveiliging.Domein.AeolusRolePermission">
+    <Position X="4.5" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAgAAAAEAAAAAAAAAAAAAAAEAAAAABAAAA=</HashCode>
+      <FileName>Entity\AeolusRolePermission.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="RolePermissionApiResources" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="HenE.Aeolus.Beveiliging.Domein.RolePermissionApiResource">
+    <Position X="1" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAIEAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>RolePermissionApiResource.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AeolusRolePermission" />
+      <Property Name="AeolusApiResource" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HenE.Aeolus.Beveiliging.Domein.AeolusApiResource" Collapsed="true">
+    <Position X="1" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQCEAAAAAAgAIAAAAAAAAQAIAQAAIQAQAEAAEBAAAA=</HashCode>
+      <FileName>Entity\AeolusApiResource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ONW6tEUxFZEvFGpaLKJKz0sf7zfqcTeSLXG5exfhy9URamR3SdB5wm4WVgr9+gtPfqf7vqj4GS3122fhBqWL8Q==",
+  "dgSpecHash": "q2zSnTt2bIsrMLDroVoizW8qnd8qX2cHOpF3s+U5Z8/oo2mOTdkB99IsMmrN1IN5qrschq4HZk6gVupMWixvTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AbdulAbdulbawab\\Source\\Sharp\\Black Jack\\BlackJackResources\\BlackJackResources.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\AbdulAbdulbawab\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

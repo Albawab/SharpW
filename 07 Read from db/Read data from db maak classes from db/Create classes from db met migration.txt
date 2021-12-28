@@ -1,0 +1,4 @@
+Scaffold-DbContext  "Server=SQLDEVELOP\Sql2017;Initial Catalog=Aeolus_Beveiliging;User ID=sa;Password=Sebas0412;MultipleActiveResultSets=true"  Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+this put in pm> install-package hier but without install-package

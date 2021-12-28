@@ -42,7 +42,6 @@ namespace WebApplication2
                  Name = "admin",
             };
 
-           
             await roleManager.CreateAsync(role);
 
             await roleManager.AddClaimAsync(role, new Claim(ClaimTypes.Name, "add.role"));
