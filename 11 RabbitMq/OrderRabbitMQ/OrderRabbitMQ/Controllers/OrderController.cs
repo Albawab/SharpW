@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using OrderRabbitMQ.Models;
 using RabbitMQ.Client;
+using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 
@@ -47,7 +50,9 @@ namespace OrderRabbitMQ.Controllers
         private void SendMessageToRabbitMq(Order order, string key)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
-            using (var connection = factory.CreateConnection())
+            factory.UserName = "test";
+            factory.Password = "test";
+            var connection = factory.CreateConnection();
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(queue: key,

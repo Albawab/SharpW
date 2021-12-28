@@ -5,6 +5,8 @@ using RabbitMQ.Client.Events;
 using System.Text;
 
 var factory = new ConnectionFactory() { HostName = "localhost" };
+factory.UserName = "test";
+factory.Password = "test";
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
