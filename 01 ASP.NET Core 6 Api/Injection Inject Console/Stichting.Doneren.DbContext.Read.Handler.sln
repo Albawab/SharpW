@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stichting.Doneren.DbContext.Read.Handler", "Stichting.Doneren.DbContext.Read.Handler.csproj", "{2341221A-5917-4B7D-9752-0D554B5071BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2341221A-5917-4B7D-9752-0D554B5071BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2341221A-5917-4B7D-9752-0D554B5071BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2341221A-5917-4B7D-9752-0D554B5071BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2341221A-5917-4B7D-9752-0D554B5071BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E01CDC49-354F-4CC7-835A-575798C13FE8}
+	EndGlobalSection
+EndGlobal
