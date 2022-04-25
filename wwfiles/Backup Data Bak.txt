@@ -1,0 +1,7 @@
+Right click op db
+=> Tasks => bach Up => Add => chose => file name + .bak => ok
+
+Restore
+richt click op databases ? first databases folder no new db
+=>  Restore database => Device => chose
+

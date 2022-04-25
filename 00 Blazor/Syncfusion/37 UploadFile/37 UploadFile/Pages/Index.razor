@@ -1,0 +1,31 @@
+﻿@page "/"
+
+@using Microsoft.Extensions.FileProviders
+@using Syncfusion.Blazor.Inputs
+@using System.IO
+@using Microsoft.AspNetCore.Mvc.Core    
+
+@using Syncfusion.Blazor.Calendars
+
+<SfCalendar TValue="DateTime"></SfCalendar>
+
+<PageTitle>Index</PageTitle>
+
+<SfUploader AutoUpload="false">
+    <UploaderEvents ValueChange="OnChange"></UploaderEvents>
+</SfUploader>
+
+@code {
+
+    private void OnChange(UploadChangeEventArgs args)
+    {
+        foreach (var file in args.Files)
+        {
+            var path = @"path" + file.FileInfo.Name;
+            FileStream filestream = new FileStream(path, FileMode.Create, FileAccess.Write);
+            file.Stream.WriteTo(filestream);
+            filestream.Close();
+            file.Stream.Close();
+        }
+    }
+}

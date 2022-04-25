@@ -1,0 +1,41 @@
+﻿@page "/"
+@using _29_Scrollen_Virtualize_Overflow.Data
+
+<PageTitle>Contact</PageTitle>
+
+<div style="height:70%">
+    @if (contacts.Count > 0)
+    {
+        <Virtualize ItemSize=80 TItem="Contact" ItemsProvider="LoadOnlyVisibleContacts" Context="contact">
+            <ItemContent>
+                <div style="height:70px">
+                     @contact.Email
+                 </div>
+
+            </ItemContent>
+            <Placeholder>
+
+
+            </Placeholder>
+        </Virtualize>
+    }
+</div>
+@code{
+    private List<Contact> contacts = new();
+
+    protected override void OnInitialized()
+    {
+        contacts.AddRange( Enumerable.Range(1,500).Select(index => new Contact { Id = index, FirstName = $"Test First{index}", SecondName = $"Test Second{index}",Email = $"Test{index}@test.nl"}));
+    }
+
+    /// <summary>
+    /// Geeft d 
+    /// </summary>
+    /// <param name="itemsProviderRequest"></param>
+    /// <returns></returns>
+    private async ValueTask<ItemsProviderResult<Contact>> LoadOnlyVisibleContacts(ItemsProviderRequest itemsProviderRequest)
+    {
+        var a = itemsProviderRequest;
+        return new ItemsProviderResult<Contact>(contacts,499);        
+    }
+}

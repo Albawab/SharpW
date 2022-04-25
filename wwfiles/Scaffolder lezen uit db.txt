@@ -1,0 +1,10 @@
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+
+Scaffold-DbContext "Server=SQLDEVELOP\\SQL2017;Initial Catalog=Stichting.Doneren;User ID=sa;Password=Sebas0412;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Or
+
+Scaffold-DbContext "Data Source=SQLDEVELOP\SQL2017;Initial Catalog=CRM-HE;User ID=sa; Password=Sebas0412; Integrated Security=false" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+

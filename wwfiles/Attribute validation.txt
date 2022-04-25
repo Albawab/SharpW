@@ -22,6 +22,6 @@ RekeningNummer
 //================================================================================
 
 
-[RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Mag alleen letters toevoegen.")]
+[RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Mag alleen letters toevoegen.")]
 [RegularExpression("([0-9]+)", ErrorMessage = "Mag alleen cijfers toevoegen.")]
 

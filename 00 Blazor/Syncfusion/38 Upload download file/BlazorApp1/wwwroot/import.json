@@ -1,0 +1,21 @@
+{
+    "components": [
+        "color-picker",
+        "rich-text-editor"
+    ],
+    "minified": "true",
+    "injectables": {
+        "rich-text-editor": [
+            "Toolbar",
+            "QuickToolbar",
+            "HtmlEditor",
+            "PasteCleanup"
+        ]
+    },
+    "themes": [
+        "material"
+    ],
+    "version": "17.1.47",
+    "name": "ej2",
+    "isMinified": true
+}

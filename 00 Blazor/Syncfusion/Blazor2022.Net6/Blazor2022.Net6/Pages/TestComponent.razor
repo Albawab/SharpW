@@ -1,0 +1,16 @@
+﻿@using static Blazor2022.Net6.Pages.FetchData
+<h3>TestComponent</h3>
+
+<h1> @Name </h1>
+<ErrorBoundary>@wF.Summary</ErrorBoundary> 
+
+@code {
+    WeatherForecast wF = new WeatherForecast();
+    /// <summary>
+    /// Get or set de naam.
+    /// </summary>
+    [EditorRequired] 
+    [Parameter] 
+    public string? Name { get; set; } 
+}
+
